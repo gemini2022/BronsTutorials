@@ -1,0 +1,417 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    	<table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top">Shortcut trusts are one-way or two-way, transitive trusts that can be used when administrators need to optimize the authentication process. Authentication requests must first travel a trust path between domain trees, and in a complex forest this can take time, which can be reduced with shortcut trusts. A trust path is the series of domain trust relationships that must be traversed in order to pass authentication requests between any two domains. To learn how to make a shorcut trust, proceed with the following steps...</td>
+          	</tr>
+        </table>
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting <strong>'Start'</strong> at the bottom left corner of your  screen.</span></li>
+            </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then go to&nbsp;<strong>'Administrative Tools'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+                  <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select&nbsp;<strong>'Active Directory Domains and Trusts'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/CreatingUPNSuffix/3.jpg" width="285" height="545"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in 'Active Directory Domains and Trusts', expand down to the domain where you want to create the shortcut trust from. For example, in this case we are going to first expan</span>d the root domain 'bronstutorials.local'.</li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="360" height="150"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"> In this example, after 'bronstutorials.local' has been expanded, you'll notice two child domains</span>, 'east' and 'west'. We'll continue by expanding the 'west' child domain.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="360" height="183"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Now you'll notice that the 'west' domain has its own child domain called 'sales'. In this example, if a resource was to be accessed </span>in the 'east' domain from the 'sales' domain, the request would have to first go to the 'west' domain and then to the 'east' domain. But, instead we are going to make a shortcut from the 'sales' domain to the 'east' domain.</li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="360" height="162"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">To do this, first right click on the <strong>'sales.west.bronstutorials.local'</strong> domain.</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="360" height="160"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then select </span><strong>'Properties'</strong>.</li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="200" height="144"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in the properties of the 'sales' domain, select the <strong>'Trusts'</strong> tab.</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Here in the Trusts tab, the top portion of this screen displays all the domains that the outgoing trust is pointing to. This</span> means any domain that the 'sales' domain is pointing to, it trusts. In this case, the 'sales' domain trusts the 'west' domain.</li>
+                  <br>
+                  <li><span dir="LTR">The bottom portion of this screen displays all the domains that are pointing to the 'sales' domain. This</span> means any domain that points to the 'sales' domain trusts the 'sales' domain. In this case, the 'west' domain trusts the 'sales' domain.</li>
+                  <br>
+                  <li>Press the <strong>'New Trust...'</strong> button to launch the 'New Trust Wizard'.</li>
+                </ul>
+            <p>&nbsp;</p></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">The first screen of the wizard is the 'Welcome Screen'.</span></li>
+                  <br>
+                  <li>Click on the&nbsp;<strong>'Next'</strong>&nbsp;button to continue</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">In this screen of the wizard you are asked to type in the domain you want to make a shortcut trust to. In this case, we</span> are going to type <strong>'east.bronstutorials.local'</strong>.</li>
+                  <br>
+                  <li>After you type in the domain you want to make a shortcut trust to, press <strong>'Next'</strong>.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Here on this screen of the wizard you are to choose the direction of the shortcut trust. In this example, we are going to choose the option of <strong>'Two-way'</strong>, which will allow both the specified domain which we specified in the last screen and the 'sales' domain to trust each other.</span></li>
+                  <br>
+                  <li>Press <strong>'Next'</strong> to continue.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="10.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">On this screen, you are asked to decide which side of the trust you want to create. Since we belong to 'sales' domain, creating an 'outgoing' trust can easily be done. However, in order to create an 'incoming' trust from the specified domain, you need to have the appropriate permissions from that domain to do so. If not, someone in the specified domain will have to create the other side of the trust. In this case, we have the appropriate permissions from the specified domain, therefore we can choose the option <strong>'Both this domain and the specified domain'</strong>.</span></li>
+                  <br>
+                  <li>Click <strong>'Next'</strong> to continue.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Since we chose the option to create both sides of the trust in the last screen, we are now asked to provide a user name and password of the specified domain that has the appropriate administrative privileges</span>.</li>
+                  <br>
+                  <li>Once you enter in the user name and password of the specified domain that has the appropriate administrative privileges, click <strong>'Next'</strong> to continue.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="12.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">This screen of the wizard gives you an overview of the settings that you have selected. Notice that 'Windows' has detected the type of trust you are going to create.</span></li>
+                  <br>
+                  <li>Click<strong> 'Next'</strong> to create the trusts.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="13.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Provided things went right, you should arrive at this screen telling you that the trust was created successfully.</span></li>
+                  <br>
+                  <li>Click <strong>'Next' </strong>to continue.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="14.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">In this screen of the wizard, you are asked to confirm that the 'outgoing' trust has been created. Since we have created the 'outgoing' trust, we can confirm it by selecting the option, <strong>'Yes, confirm the outgoing trust'</strong>.</span></li>
+                  <br>
+                  <li>Click <strong>'Next'</strong> to continue.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="15.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">In this screen of the wizard, you are asked to confirm that the 'incoming' trust has been created. Since we have created the 'incoming' trust, we can confirm it by selecting the option, <strong>'Yes, confirm the incoming trust'</strong>.</span></li>
+                  <br>
+                  <li>Click <strong>'Next'</strong> to continue.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="16.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">The last screen of the wizard is the 'Finish' screen. Click on the&nbsp;<strong>'Finish'&nbsp;</strong>button to compelte the wizard.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="17.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once the wizard is complete, notice that the new shortcut trust has been created in both the 'outgoing' and 'incoming' sections.</span></li>
+                  <br>
+                  <li>Press, <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="18.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

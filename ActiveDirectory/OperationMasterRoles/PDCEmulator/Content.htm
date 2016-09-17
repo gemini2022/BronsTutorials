@@ -1,0 +1,380 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    
+    	<table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top">The PDC Emulator (Primary Domain Controller) is the most used of all FSMO roles and has the widest range of functions. The domain controller that holds the PDC Emulator role is crucial in a mixed environment where Windows NT 4.0 BDCs are still present. This is because the PDC Emulator role emulates the functions of a Windows NT 4.0 PDC. But even if all Windows NT 4.0 domain controllers have been migrated to Windows 2000 or later, the domain controller that holds the PDC Emulator role still does a lot. The PDC Emulator is the domain source for time synchronization for all other domain controllers; in a multi-domain forest, the PDC Emulator in each domain synchronizes to the forest root PDC Emulator. All other domain member computers synchronize to their respective domain controllers. It is critically important that computer clocks are synchronized across the forest because excessive clock skew causes Kerberos authentication to fail. In addition, all password changes occur on the PDC Emulator and receive priority replication. To view which domain controller is currently holding this master role or to move this master role to another domain controller, proceed with the following steps...</td>
+                
+                
+          </tr>
+        </table>
+    
+    	<hr>
+    
+    <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Begin first by selecting <strong>'Start'</strong> at the bottom left corner of your  screen.<br>
+                  </li>
+                </ul></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then go to&nbsp;<strong>'Administrative Tools'</strong>...<br>
+                  </li>
+              </ul></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select&nbsp;<strong>'Active Directory Users and Computers'</strong>...<br>
+                  </li>
+              </ul></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/RaisingTheDomainFunctionalLevel/3.jpg" width="286" height="546"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+    
+        
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"></span><span dir="LTR">Right click on your domain found at the top left side of your screen.</span>&nbsp;In this case, it's 'bronstutorials.local'.<br>
+                  </li>
+          </ul></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/RaisingTheDomainFunctionalLevel/4.jpg" width="403" height="145"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select the option&nbsp;<strong>'Operations Masters...'</strong>.</li>
+</ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="../RIDMaster/1.jpg" width="194" height="203"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>At the top, you can see what domain controller is currently holding the 'PDC Emulator'. At the bottom, we can see what domain controller we want the 'PDC Emulator' to be transfered to. In this case, both the current domain controller and the target domain controller are the same, 'DC1'.<br>
+                  </li>
+        </ul></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Because both the current domain controller and the target domain controller are the same, when the&nbsp;<strong>'Change'</strong>button is clicked...</li>
+    </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>You will get a message telling you that in order to transfer the Operations Master, you must first target a different domain controller.<br>
+                  </li>
+            </ul></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="../RIDMaster/4.jpg" width="398" height="152"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>To do this, first close the 'Operations Master' form by clicking on the&nbsp;<strong>'Close'</strong>&nbsp;button at the bottom of the form.<br>
+                  </li>
+          </ul></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then go back to 'Active Directory Users and Computers' <span dir="LTR">and right click on your domain found at the top left side of your screen.</span>&nbsp;In this case, it's 'bronstutorials.local'.</li>
+      </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/RaisingTheDomainFunctionalLevel/4.jpg" width="403" height="145"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>This time, select the option&nbsp;<strong>'Change Domain Controller...'</strong>. This will open the 'Change Directory Server' form.<br>
+                  </li>
+            </ul></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="../RIDMaster/6.jpg" width="194" height="203"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>At the top of the 'Change Directory Form' you'll see the current directory server. In this case, it's 'DC1'. At the bottom of the form there will be a list of all the domain contollers in your domain. It is there where you will select the target domain controller. Here we are selecting 'DC2'.</li>
+                  <br>
+                  <li>Once you select the domain controller of your choice, click&nbsp;<strong>'OK'</strong></li>
+      </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="../RIDMaster/7.jpg" width="631" height="425"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Now that we've established the new domain controller that we will transfer the 'PDC Emulator' role to, we can once again go back to 'Active Directory Users and Computers'. Notice that the 'Active Directory Users and Computers' is now displaying 'DC2'.</li>
+                  <br>
+                  <li>Right click on&nbsp;your domain&nbsp;again.</li>
+    </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="../RIDMaster/8.jpg" width="403" height="145"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select&nbsp;<strong>'Operations Masters...'</strong>.</li>
+      </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="../RIDMaster/1.jpg" width="194" height="203"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Notice the current 'PDC Emulator' holder still remains as 'DC1', this is because we haven't changed that yet, but as you can see at the bottom, the target domain controller is now 'DC2'.<br>
+                  </li>
+      </ul></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Click on the&nbsp;<strong>'Change'</strong>&nbsp;button.<br>
+                  </li>
+          </ul></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once we click on the 'Change' button on the previous form, we will get a message asking if transfering the 'Operations Master' is what we want to do. Since this is what we want to do, click on the&nbsp;<strong>'Yes'&nbsp;</strong>button.<br>
+                  </li>
+          </ul></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="../RIDMaster/11.jpg" width="398" height="145"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>We will then get a message telling us that the transfer was successful. Proceed by clicking&nbsp;<strong>'OK'</strong>.<br>
+                  </li>
+            </ul></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="../RIDMaster/12.jpg" width="371" height="145"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>As you can see, the domain controller that now holds the 'PDC Emulator' role is 'DC2'.</li>
+                  <br>
+                  <li>Click&nbsp;<strong>'Close'</strong>.<br>
+                  </li>
+          </ul></td>
+                
+                <td align="right">
+                    <table width="631" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+    </body>
+</html>

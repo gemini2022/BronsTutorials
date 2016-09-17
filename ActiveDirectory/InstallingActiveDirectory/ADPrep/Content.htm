@@ -1,0 +1,211 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    	<table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top">Adprep.exe is a command-line tool that is included on the installation disk of each version of Windows&nbsp;Server. If you are adding a domain controller that runs a version of Windows&nbsp;Server that is later than the latest version that is running in your existing domain or if you asre upgrading a domain controller to a version of Windows&nbsp;Server that is later than the latest version that is running in your existing domain, then you will have to run Adprep. Adprep.exe has parameters that perform a variety of operations that help prepare an existing Active&nbsp;Directory environment for a domain controller that runs a later version of Windows&nbsp;Server. To learn what these parameters are and how to run Adprep, proceed with the following steps...</td>
+          	</tr>
+        </table>
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting <strong>'Start'</strong> at the bottom left corner of your  screen.</span></li>
+            </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="667" border="0">
+                        <tr>
+                            <td align="center"><img src="../AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then open the <strong>'Command Prompt'</strong>.</span></li>
+                </ul></td>
+                
+                <td align="right">
+                  <table width="667" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once the command prompt is open, you'll have to navigate to the adprep folder found in the support directory of your Windows Server installation DVD</span>.</li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="667" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="667" height="330"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">The first parameter of Adprep will prepare the forest. To do this, run the command <strong>adprep /forestprep</strong>.</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="667" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="667" height="330"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">After you run the command, you will be given a message</span> informing you that all domain controllers need to be at least Windows 2000 with service pack 4 or above.</li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="667" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="667" height="330"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">When you are ready to proceed, press the <strong>'c</strong></span><strong>'</strong> key and then press <strong>'Enter'</strong>.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="667" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="667" height="330"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Changes will now be made to the Active Directory forest to prepare it for a newer version of Windows Server.</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="667" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="667" height="330"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul type="disc">
+                <li>Now that the changes to the forest have been made, you are now ready to implement the second parameter of Adprep, which will prepare the domain. To do this, run the command <strong>adprep /domainprep</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="667" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="667" height="330"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">After you run the command, you will be given another message</span> telling you to run the 'gpprep' command as well to update some of the security settings. The 'gpprep' command is required to run on the domain controller that is holding the 'Operations Master' role. Once you verify that you are on the server that is holding the 'Operations Master' role, run the command <strong>adprep /domainprep /gpprep</strong>.</li></ul></td>
+                
+                <td align="right">
+              <table width="667" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="667" height="330"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">The last command you will only have to run if you are planning on deploying a read-only domain controller. The command is simply <strong>adprep /rodcprep</strong>.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="667" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="667" height="330"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">That's it! Your Active Directory enviroment is now ready for the new version of Windows Server.</span></li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="667" border="0">
+                        <tr>
+                            <td align="center"><img src="10.jpg" width="667" height="330"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

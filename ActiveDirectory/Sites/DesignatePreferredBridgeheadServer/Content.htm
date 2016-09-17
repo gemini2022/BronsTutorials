@@ -1,0 +1,198 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    	<table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>A bridgehead server is a domain controller that functions as the primary route of Active Directory replication data moving into and out of sites. You can  designate certain DCs as preferred so that the KCC focuses on those servers when making its selection. However, be aware that such manual designation affects the KCC's failover capabilities. If you let the KCC automatically select the bridgehead server, the KCC is free to recover from a failure of that server and identify a replacement. If you designate preferred bridgehead servers, the KCC can use only the servers that you designated. Therefore, if you designate only one DC as preferred, and that server goes offline, the KCC can't come to your rescue. If you decide to manually identify preferred bridgehead servers, make sure you identify a minimum of two for each  site. To learn how you can  designate a domain controller as preferred bridgehead server, proceed with the following steps...</p></td>
+          	</tr>
+        </table>
+        
+       
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+      </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        <hr>
+        <table width="100%" border="0">
+      <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then go to&nbsp;<strong>'Administrative Tools'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+                  <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select&nbsp;<strong>'Active Directory Sites and Services'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../OperationMasterRoles/SeizingRoles/40.jpg" width="286" height="546"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in 'Active Directory Sites and Services', expand <strong>'Sites'</strong></span><strong></strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../CreatingSites/1.jpg" width="360" height="150"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"> Then expand the site of the preferred bridgehead server</span>, in this case it's <strong>'NewYork'</strong>.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../MovingServersToSites/1.jpg" width="396" height="196"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then expand <strong>'Servers'</strong> to display the list of domain controllers that are currently configured for that site.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../MovingServersToSites/2.jpg" width="381" height="215"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Right-click the server that you want to designate as a preferred bridgehead server, in this case, <strong>'NYDC1'</strong>.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../ProtectFromAccidentalDeletion/1.jpg" width="360" height="227"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then select <strong>'Properties'.</strong></span></li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../ProtectFromAccidentalDeletion/2.jpg" width="107" height="255"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once in the properties of 'NYDC1', select the <strong>'IP'</strong> transport.</li>
+                  <br>
+                  <li>Then press the <strong>'Add &gt;&gt;'</strong> button.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Finally, press the <strong>'OK'</strong> button.</span></li></ul>
+            <p>&nbsp;</p></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        
+        
+    </body>
+</html>

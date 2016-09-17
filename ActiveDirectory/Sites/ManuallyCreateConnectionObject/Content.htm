@@ -1,0 +1,254 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    	<table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>The KCC Automatically creates connection objects in Active Directory. However, users can manually create connection objects to customize the network&rsquo;s topology or decrease the number of hops from one domain controller to another particular domain controller. When the KCC creates connection objects, the KCC automatically removes them when the replication topology changes. Connection objects that are manually created are not removed when the replication topology changes. Users have to manually remove these connection objects. To learn how to manually create a connection object, proceed with the following steps...</p></td>
+          	</tr>
+        </table>
+        
+       
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+      </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        <hr>
+        <table width="100%" border="0">
+      <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then go to&nbsp;<strong>'Administrative Tools'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+                  <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select&nbsp;<strong>'Active Directory Sites and Services'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="../../OperationMasterRoles/SeizingRoles/40.jpg" width="286" height="546"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in 'Active Directory Sites and Services', expand <strong>'Sites'</strong></span><strong></strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="../CreatingSites/1.jpg" width="360" height="150"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"> Then expand the site you want to make the connection object from. In this case we're going to expand the <strong>'NewYork'</strong> site.</span></li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="../MovingServersToSites/1.jpg" width="396" height="196"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then expand the <strong>'Servers'</strong> container.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="../MovingServersToSites/2.jpg" width="381" height="215"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once in the 'Servers' container, expand the domain controller you want to make the connection object from. In this case, we're going to expand the <strong>'NYDC1'</strong> domain controller.</li></ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="362" height="227"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then right-click on <strong>'NTDS Settings'</strong>.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="360" height="245"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And select <strong>'New Active Directory Domain Services Connection...'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="295" height="221"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">At the bottom of the form, select the domain controller you want to make a connection object to. In this case, we're going to select the <strong>'WASHDC1'</strong> domain controller.</span></li>
+                  <br>
+                  <li>Then press <strong>'OK'</strong>.</li>
+                </ul>
+<p>&nbsp;</p></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="523" height="459"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once you press 'OK' on the previous form, a message will appear if you already have a connection made from the source server to the destination server.</span></li>
+                  <br>
+                  <li>Press the <strong>'Yes' </strong>button to continue.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="393" height="152"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>At this point, you are to choose a name for your connection object. Windows will generate a name for you. You may use the generated name they come up with or simply make your own. We're going to go with the generated name and move on.</li>
+                  <br>
+                  <li>Press <strong>'OK'</strong> to create the connection object.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="441" height="371"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once the connection object is made, if you look to the far right side of your screen, you will see the connection object that you have just made within the list of the other &lt;automatically generated&gt; connections.</span></li></ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="523" height="153"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        
+    </body>
+</html>

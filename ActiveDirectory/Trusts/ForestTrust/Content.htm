@@ -1,0 +1,443 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    	<table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>A forest trust allows administrators to federate two Active Directory forests with a single trust relationship to provide a seamless authentication and authorization experience across the forests. A forest trust can be created only between a forest root domain in one  forest and a forest root domain in another  forest. Forest trusts can be created between two forests only and cannot be implicitly extended to a third forest. This means that if a forest trust is created between Forest 1 and Forest 2, and another forest trust is created between Forest 2 and Forest 3, Forest 1 does not have an implicit trust with Forest 3.  To learn how to make a forest trust, proceed with the following steps...</p></td>
+          	</tr>
+        </table>
+        
+        <hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" height="136" align="left" valign="top"><ul>
+                  <li>Before you create a forest trust, there are name resolution requirements that must be met so that you can establish the trust successfully. You can use DNS to resolve names for a forest for which you are attempting to establish a trust.&nbsp;There are two common DNS configurations that you can choose from when you establish DNS name resolution between forests, they are conditional forwarders and secondary zones with zone transfers enabled. Stub zones can be used to resolve DNS names, but are less commonly used than secondary zones and conditional forwarders.</li>
+                  <br>
+                  <li>Create either a conditional forwarder or a secondary zone with zone transfers enabled and then verify that name resolution can occur.</li>
+            </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="0.jpg" width="250" height="197"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+</table>
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">After name resolution has been configured and tested for connectivity between the two domains, begin creating your forest trust by first selecting <strong>'Start'</strong> at the bottom left corner of your  screen.</span></li>
+          </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        <hr>
+        <table width="100%" border="0">
+      <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then go to&nbsp;<strong>'Administrative Tools'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+                  <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select&nbsp;<strong>'Active Directory Domains and Trusts'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/CreatingUPNSuffix/3.jpg" width="285" height="545"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in 'Active Directory Domains and Trusts', select and right click your root domain. In this case our root</span>  domain is, 'bronstutorials.local'.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="360" height="150"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"> Then select <strong>'Properties'</strong>.</span></li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="../ShortcutTrust/5.jpg" width="200" height="144"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in the properties of your root domain, select the&nbsp;<strong>'Trusts'</strong>&nbsp;tab.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Here in the Trusts tab, the top portion of this screen displays all the domains that the outgoing trust is pointing to. This</span>&nbsp;means any domain that the 'bronstutorials' domain is pointing to, it trusts. The 'bronstutorials' domain has two child domains, so in this case the 'bronstutorials' domain trusts its child domains, 'east' and 'west'.</li>
+                  <br>
+                  <li><span dir="LTR">The bottom portion of this screen displays all the domains that are pointing to the 'bronstutorials' domain. This</span>&nbsp;means any domain that points to the 'bronstutorials' domain trusts the 'bronstutorials' domain. In this case, the 'east' and 'west' domains trusts the 'bronstutorials' domain.</li>
+                  <br>
+                  <li>Press the&nbsp;<strong>'New Trust...'</strong>&nbsp;button to launch the 'New Trust Wizard'.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">The first screen of the wizard is the 'Welcome Screen'.</span></li>
+                  <br>
+                  <li>Click on the&nbsp;<strong>'Next'</strong>&nbsp;button to continue.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="../ShortcutTrust/8.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">In this screen of the wizard you are asked to type in the domain you want to make a forest trust to. In this case, we</span>&nbsp;are going to type <strong>'otherguystutorials.local'</strong>.</li>
+                  <br>
+                  <li>After you type in the domain you want to make a forest trust to, press&nbsp;<strong>'Next'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>The next screen allows you to make a choice between two types of trust relationships. The first option is an 'External' trust, which is a nontransitive trust between the two domains, so only the two domains selected will be able to use this trust. No child of either domain would be part of this trust relationship. This trust is also the trust you would need to use for NT4 domains. </li>
+                  <br>
+                  <li>The second option is a 'Forest' trust, which is the trust we will select. This trust is a transitive trust and will allow any domain in either forest to access any other domain in the other forest.</li>
+                  <br>
+                  <li>Click on the&nbsp;<strong>'Next'</strong>&nbsp;button to continue.</li>
+                </ul>
+  <p>&nbsp;</p></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">On this next screen you can select which direction the trust will go</span>, 'One-way: incoming', 'One-way: outgoing' or choose the default option, 'Two-way'. In this case, both forests will be sharing resources with each other so we will accept the default option of, <strong>'Two way'</strong>.</li>
+                  <br>
+                  <li>Click on the&nbsp;<strong>'Next'</strong>&nbsp;button to continue.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="../ShortcutTrust/10.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">The next screen gives you the option to create the trust in this domain or both domains. In a lot of cases, you won't have an account in the other forest. This is especially the case if the other foest is another company. Unfortunately, we do not have creation privileges for the other domain</span>, so we will select the option, <strong>'This domain only'</strong>. Because we are only creating our side of the trust, the other side of the trust relationship will have to be created by the other forest.</li>
+                  <br>
+                  <li>Click on the&nbsp;<strong>'Next'</strong>&nbsp;button to continue.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">The next screen allows you to determine how the default authentication will work. The first option, 'Forest-wide authentication' automatically authenticates users from the other forest for all resources in this forest. In other words, this means that users will still have to have been granted access to resources, but users will be able to access any resource where the permissions are set to 'Everyone'</span> or be able to authenticate off of any domain controller in the forest.</li>
+                  <br>
+                  <li>The second option, 'Selective authentication' will only allow users to access servers that you decide they can access. This is a good option to choose if the other forest is another company. In our case, since the other forest is another company, we will select this option, <strong>'Selective authentication'</strong>.</li>
+                  <br>
+                  <li>Press <strong>'Next'</strong> to continue.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="10.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">On this screen, you get to enter in a password for the trust. This password will need to be entered in on the other side using the same wizard as here. When the two forests connect up for the first time, this password is used to ensure that both servers are talking to the correct party.</span></li>
+                  <br>
+                  <li>After you typed and confirmed a password that both sides agreed on, click <strong>'Next'</strong> to continue.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">This screen of the wizard gives you an overview of the settings that you have selected. Notice  the type of trust you are going to create.</span></li>
+                  <br>
+                  <li>Click<strong>&nbsp;'Next'</strong>&nbsp;to create the trust.</li>
+    </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="12.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">On this screen of the wizard, you will be informed that the forest trust was created.</span></li>
+                  <br>
+                  <li>Press <strong>'Next'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="13.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">STOP</span>! Before you can perform the next step, you need to ensure that an administrator in the other forest has also completed this wizard up to this point. Once you have confirmed that an administrator from the other forest has created their side of the trust, you may  proceed...</li></ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="14.jpeg" width="300" height="300"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">This screen will ask you if you want to confirm the 'outgoing' trust. Since you</span>r side of the trust has been created and as long as you have confirmed from an administrator from the other forest that their side of the trust has been created, then you may select the option, <strong>'Yes, confirm the outgoing trust'</strong>.</li>
+                  <br>
+                  <li>Click <strong>'Next' </strong>to continue.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="../ShortcutTrust/15.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">In the next screen, the 'incoming' trust can also be confirmed. In this case you will be required to enter in a user name and password from the other forest.</span> In a lot of cases you may not have this, especially if you are connecting to another company. <span dir="LTR">Since we are connecting to another comapny, and we do not have user name and password information of an account with administrative privileges from the other forest</span>, we will select the option, <strong>'No, do not confirm the incoming trust'</strong>.</li>
+                  <br>
+                  <li>Click <strong>'Next'</strong> to continue.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="15.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+              <li><span dir="LTR">The last screen of the wizard is the 'Finish' screen. Click on the&nbsp;<strong>'Finish'&nbsp;</strong>button to compelte the wizard.</span></li></ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="16.jpg" width="503" height="391"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once the wizard is complete, notice that the new forest trust has been created in both the 'outgoing' and 'incoming' sections.</span></li>
+                  <br>
+                  <li>Press, <strong>'OK'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="17.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        
+        
+    </body>
+</html>

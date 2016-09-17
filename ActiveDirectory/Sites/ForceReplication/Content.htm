@@ -1,0 +1,215 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    	<table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>You can use this procedure to force Active&nbsp;Directory replication to occur between two domain controllers on a one-time basis when you want changes to be replicated from the server that received the changes to a server in another site sooner than the site link schedule allows. To learn how to force a replication, proceed with the following steps...</p></td>
+          	</tr>
+        </table>
+        
+       
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+      </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        <hr>
+        <table width="100%" border="0">
+      <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then go to&nbsp;<strong>'Administrative Tools'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+                  <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select&nbsp;<strong>'Active Directory Sites and Services'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="../../OperationMasterRoles/SeizingRoles/40.jpg" width="286" height="546"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in 'Active Directory Sites and Services', expand <strong>'Sites'</strong></span><strong></strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="../CreatingSites/1.jpg" width="360" height="150"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"> Then expand the <strong>'NewYork'</strong> site.</span></li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="../MovingServersToSites/1.jpg" width="396" height="196"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then expand the <strong>'Servers'</strong> container.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="../MovingServersToSites/2.jpg" width="381" height="215"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once in the 'Servers' container, expand  <strong>'NYDC1'</strong>.</li></ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="../ManuallyCreateConnectionObject/1.jpg" width="362" height="227"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then click on <strong>'NTDS Settings'</strong>.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="../ManuallyCreateConnectionObject/2.jpg" width="360" height="245"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>At the far right of your screen, right-click on a server. In this case we're going to right-click on the <strong>'LONDC1'</strong> server which is located in the 'London' site.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="523" height="153"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then select <strong>'Replicate Now'</strong>.</span></li>
+                </ul>
+<p>&nbsp;</p></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="112" height="161"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once you press 'Replicate Now', you will get a confirmation dialog telling you that the replication</span> was sucessful. This is a fast way of testing the replication in you 'Active Directory' enviroment to ensure that it is working correctly.</li>
+                  <br>
+                  <li>Press the <strong>'OK' </strong>button.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="523" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="417" height="165"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        
+    </body>
+</html>

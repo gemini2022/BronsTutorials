@@ -1,0 +1,692 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    	<table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>Networks usually consist of a set of LANs that are connected by WANs. In 'Active Directory', site link objects represent the WAN connections between sites. 'Active Directory' creates a default site link called 'DEFAULTIPSITELINK'. You are free to rename the defalut site link, or create a new site link and remove the default site link, or simply leave the default site link in 'Active Directory' unused. Because replication within a site is triggered automatically when a directory update occurs, replication between sites  is scheduled to occur every 3 hours. You can change the default schedule to occur during the periods that you specify, and at the intervals that you specify, so that you can control WAN link traffic.  To learn how to create a site link, proceed with the following steps...</p></td>
+          	</tr>
+        </table>
+        
+       
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+      </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        <hr>
+        <table width="100%" border="0">
+      <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then go to&nbsp;<strong>'Administrative Tools'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+                  <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select&nbsp;<strong>'Active Directory Sites and Services'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="../../OperationMasterRoles/SeizingRoles/40.jpg" width="286" height="546"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in 'Active Directory Sites and Services', expand <strong>'Sites'</strong></span><strong></strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="../CreatingSites/1.jpg" width="360" height="150"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"> Then expand, <strong>'Inter-Site Transports'</strong>.</span></li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="394" height="195"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once you exapand 'Inter-Site Transports' you will see that there are two transports available. 'IP' and 'SMTP'. The 'SMTP' transport is used for old technology, so we will go ahead and click on the&nbsp;<strong>'IP' </strong>transport.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="360" height="224"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once you click on the 'IP' transport, you will notice that on the right hand side of your screen there is already a  site link called 'DEFAULTIPSITELINK'. This is created by default by 'Active Directory' when it is first installed. If you never create any additional site links in 'Active Directory', all of your sites that you create will be linked to each other using the default site link. You are free to rename the defalut site link, or create a new site link and remove the default site link, or simply leave the default site link in 'Active Directory' unused.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="515" height="150"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">In this case, we are going to rename the default site link. To do this, right click on </span><strong>'DEFAULTIPSITELINK'</strong>.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="515" height="150"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select <strong>'Rename'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="103" height="92"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">In this case, we're going to rename the default site link to <strong>'NewYorkToWashington'</strong>.</span></li>
+                </ul>
+<p>&nbsp;</p></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="515" height="150"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once renaming is complete, we need to configure our newly named site link</span>. To do this, right click on the site that is now named <strong>'NewYorkToWashington'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="515" height="150"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And select  <strong>'Properties'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="103" height="92"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in the properties of the site link, remain on the 'General' tab.</span></li></ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="407" height="484"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Since this site link was originally the default site link, all three sites are listed here. We only want the 'NewYork' and 'Washington' site to be in this site link, so we will remove the London site from the list. To do this, select the <strong>'London'</strong> site.</li>
+                  <br>
+                  <li>Then press the <strong>'&lt;&lt; Remove'</strong> button.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="10.jpg" width="407" height="484"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Now you can see that 'London' is under the <strong>'Sites not in this site link:'</strong> section, and 'NewYork' and 'Washington' are under the <strong>'Sites in this site link:'</strong> section.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="10B.jpg" width="407" height="484"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Now we will also change the replication cost to <strong>'40'</strong> so that this site link is favored over any other site link that has a higher cost value assigned to it.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="407" height="484"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">And we will change the replication interval to <strong>'15'</strong> minutes, the lowest it can go. This means that replication will occur every 15 minutes on this site link.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="12.jpg" width="407" height="484"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">At the bottom of the form, you'll notice a button labeled  <strong>'Change Schedule...'</strong>.</span> When this button is pressed...</li></ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="13.jpg" width="407" height="484"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>A form will appear that allows you to select the times when replication will occur. However, you can also configure replication to be disabled at certain times as well.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="14.jpg" width="515" height="314"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">For example, you could disable replication if you wanted to for Monday through Friday during business hours. To do this, select an area where you want to disable replication.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="15.jpg" width="515" height="314"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+              <li><span dir="LTR">Then select the option <strong>'Replication Not Available'</strong>.</span></li>
+              <br>
+              <li>Then press <strong>'OK'</strong>.</li>
+                </ul>
+            <p>&nbsp;</p></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="16.jpg" width="515" height="314"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">We are now finished configuring this site link, so we can press<strong> 'OK'</strong> to close this form.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="17.jpg" width="407" height="484"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">We now have to create two more site links, one for New York to London and another one for Washington to London. To do this we going to go back to the left side of our screen and right click on the <strong>'IP'</strong> transport.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="360" height="224"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then select <strong>'New Site Link...'</strong>.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="18.jpg" width="152" height="221"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Here in the top section fo the form is where you give the new site link a name. In this case, we are going to name it <strong>'NewYorkToLondon'</strong>.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="19.jpg" width="441" height="420"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then select the two sites that will be used for this site link. In this case we are going to select <strong>'London' </strong>and <strong>'NewYork'</strong>.</span></li>
+                  <br>
+                  <li>Once the sites are selected, press the <strong>'Add &gt;&gt;'</strong> button.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="20.jpg" width="441" height="420"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">As you can see, the two sites that will be used for this site link is <strong>'London'</strong> and <strong>'NewYork'</strong>.</span></li>
+                  <br>
+                  <li>Now press <strong>'OK'</strong> to complete the creation of this site link.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="21.jpg" width="441" height="420"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Now that the 'NewYorkToLondon' site link is created, go back to the right side of the screen. Here we want to now configure the cost for the 'NewYorkToLondon' site to </span><strong>'40'</strong>, just like the 'NewYorkToWashington' site link. This is so that this site will also get preference over any site link that has a higher cost value.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="22A.jpg" width="515" height="150"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">To do this, right click on the <strong>'NewYorkToLondon'</strong> site link.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="22.jpg" width="515" height="150"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">And select <strong>'Properties'</strong>.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="103" height="92"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">And set its cost to <strong>'40'</strong>.</span></li>
+                  <br>
+                  <li>Then press <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="23.jpg" width="407" height="484"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Finally, we need to create the site link for Washington to London. To do this, we</span> need to go back to the left side of our screen and right click again on the<strong> 'IP'</strong> transport.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="360" height="224"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then once again select <strong>'New Site Link...'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="18.jpg" width="152" height="221"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Name the site link <strong>'WashingtonToLondon'</strong>.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="24.jpg" width="441" height="420"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then select the <strong>'London'</strong> and <strong>'Washington'</strong> site and press <strong>'Add &gt;&gt;'</strong>.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="25.jpg" width="441" height="420"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">As you can see, the two sites that will be used for this site link is <strong>'London'</strong> and <strong>'Washington'</strong>.</span></li>
+                  <br>
+                  <li>Now press <strong>'OK'</strong> to complete the creation of this site link.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="26.jpg" width="441" height="420"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Now we have site links for all the sites. We will leave the cost for the 'WashingtonToLondon' site link as '100'. This will ensure that the 'WashingtonToLondon' site link will only be used if one of the other site links were to go down.</span></li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="27.jpg" width="515" height="150"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

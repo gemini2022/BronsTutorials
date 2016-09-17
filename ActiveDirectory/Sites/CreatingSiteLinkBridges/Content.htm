@@ -1,0 +1,272 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    	<table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>A site link bridge connects two or more site links. A site link bridge enables transitivity between site links. Each site link in a bridge must have a site in common with another site link in the bridge. By default, all site links are transitive and it is recommended to keep transitivity enabled by not changing the default value of &quot;Bridge all site links&quot; (enabled by default). However, you may need to disable &quot;Bridge all site links&quot; and create a site link bridge if the IP network is not fully routed because of the networks separated by firewalls or when you need to control the replication flow in Active Directory yourself. To learn how to create a site link bridge, proceed with the following steps...</p></td>
+          	</tr>
+        </table>
+        
+       
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+      </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        <hr>
+        <table width="100%" border="0">
+      <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then go to&nbsp;<strong>'Administrative Tools'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+                  <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select&nbsp;<strong>'Active Directory Sites and Services'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="../../OperationMasterRoles/SeizingRoles/40.jpg" width="286" height="546"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in 'Active Directory Sites and Services', expand <strong>'Sites'</strong></span><strong></strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="../CreatingSites/1.jpg" width="360" height="150"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"> Then expand, <strong>'Inter-Site Transports'</strong>.</span></li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="../CreatingSiteLinks/1.jpg" width="394" height="195"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once you exapand 'Inter-Site Transports' you will see that there are two transports available. 'IP' and 'SMTP'. The 'SMTP' transport is used for old technology, so we will go ahead and right click on the&nbsp;<strong>'IP' </strong>transport.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="../CreatingSiteLinks/2.jpg" width="360" height="224"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select <strong>'Properties'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="152" height="221"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>When you first open the properties for the 'IP' transport, you will notice an option, 'Ignore schedules'. Selecting this option will disable any schedules you configured, but we will leave this option unchecked.</li>
+                  <br>
+                  <li>For the second option, 'Bridge all site links' or (BASL), we want this option unchecked. In order for any site link bridge that is manually created to work, we first have to have this option disabled. By disabling this option 'Bridge all site links' or (BASL), we are essentially preventing a connection to be made between two sites that&nbsp;are are not part of the same site link. To put it in another way, we're making all the site link connections non-transitive. This option is selected by default. To disable this option, deselect it and leave it unchecked.</li>
+                  <br>
+                  <li>Press <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Now we want to go back and right click again on the <strong>'IP'</strong> transport.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="../CreatingSiteLinks/2.jpg" width="360" height="224"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">This time select <strong>'New Site Link Bridge...'</strong>.</span></li>
+                </ul>
+<p>&nbsp;</p></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="152" height="221"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">The first thing you'll want to do is name your new site link bridge. In this case, we're naming it <strong>'Bridge Link</strong>'.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="441" height="420"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select the site links you want to be in this site link bridge. In this case we're selecting <strong>'NewYorkToLondon'</strong> and <strong>'NewYorkToWashington'</strong>.</li>
+                  <br>
+                  <li>Then press the <strong>'Add &gt;&gt;'</strong> button.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="441" height="420"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once you press the 'Add &gt;&gt;' button, then press the <strong>'OK'</strong> button to create the site link bridge.</span></li></ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="441" height="420"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>If you look to the right side of your screen, you'll notice the site link bridge that you created is within the list of all the site links we created earlier.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="515" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="515" height="165"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>
