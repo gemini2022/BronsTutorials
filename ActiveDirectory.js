@@ -383,7 +383,47 @@ function ActiveDirectory() {
                             new HierarchicalUnit(tutorialList.child[0].child[0].child[8].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                 new Link(tutorialList.child[0].child[0].child[8].child[5].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "ActiveDirectory/ComputerAccounts/GeneralTab");
 
+                            //Operating System Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[0].child[8].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[0].child[8].child[5].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Operating System Tab", "ActiveDirectory/ComputerAccounts/OperatingSystemTab");
 
+                            //Member Of Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[0].child[8].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[0].child[8].child[5].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Member Of Tab", "ActiveDirectory/ComputerAccounts/MemberOfTab");
+
+                             //Delegation Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[0].child[8].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[0].child[8].child[5].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Delegation Tab", "ActiveDirectory/ComputerAccounts/DelegationTab");
+
+                            //Password Replication Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[0].child[8].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[0].child[8].child[5].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Password Replication Tab", "ActiveDirectory/ComputerAccounts/PasswordReplicationTab");
+
+                            //Location Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[0].child[8].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[0].child[8].child[5].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Location Tab", "ActiveDirectory/ComputerAccounts/LocationTab");
+
+                            //Managed By Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[0].child[8].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[0].child[8].child[5].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Managed By Tab", "ActiveDirectory/ComputerAccounts/ManagedByTab");
+
+                            //Object Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[0].child[8].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[0].child[8].child[5].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Object Tab", "ActiveDirectory/ComputerAccounts/ObjectTab");
+
+                            //Security Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[0].child[8].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[0].child[8].child[5].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Security Tab", "ActiveDirectory/ComputerAccounts/SecurityTab");
+
+                            //Dial-in Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[0].child[8].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[0].child[8].child[5].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Dial-in Tab", "ActiveDirectory/ComputerAccounts/Dial-inTab");
+
+                            //Attribute Editor Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[0].child[8].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[0].child[8].child[5].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Attribute Editor Tab", "ActiveDirectory/ComputerAccounts/AttributeEditorTab");
+
+                           
 
 
 
