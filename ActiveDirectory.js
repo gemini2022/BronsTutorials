@@ -427,27 +427,25 @@ function ActiveDirectory() {
             new HierarchicalUnit(tutorialList.child[0].child[0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                 new ExpandCollapse(tutorialList.child[0].child[0].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Groups", root);        
 
-                    //Group Types
+                    //Local Groups
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapse(tutorialList.child[0].child[0].child[9].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Group Types", root);
+                        new Link(tutorialList.child[0].child[0].child[9].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Local Groups", "ActiveDirectory/Groups/LocalGroups");
 
-                            //Local Groups
-                            new HierarchicalUnit(tutorialList.child[0].child[0].child[9].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[0].child[9].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Local Groups", "ActiveDirectory/Groups/GroupTypes/LocalGroups");
+                    //Domain Local Groups
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[9].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Domain Local Groups", "ActiveDirectory/Groups/DomainLocalGroups");
 
-                            //Domain Local Groups
-                            new HierarchicalUnit(tutorialList.child[0].child[0].child[9].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[0].child[9].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Domain Local Groups", "ActiveDirectory/Groups/GroupTypes/DomainLocalGroups");
+                    //Global Groups
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[9].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Global Groups", "ActiveDirectory/Groups/GlobalGroups");
 
-                            //Global Groups
-                            new HierarchicalUnit(tutorialList.child[0].child[0].child[9].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[0].child[9].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Global Groups", "ActiveDirectory/Groups/GroupTypes/GlobalGroups");
+                    //Universal Groups
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[9].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Universal Groups", "ActiveDirectory/Groups/UniversalGroups");
 
-                            //Universal Groups
-                            new HierarchicalUnit(tutorialList.child[0].child[0].child[9].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[0].child[9].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Universal Groups", "ActiveDirectory/Groups/GroupTypes/UniversalGroups");
-
-
+                    //Creating Groups
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[9].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Creating Groups", "ActiveDirectory/Groups/CreatingGroups");
 
     
 }
