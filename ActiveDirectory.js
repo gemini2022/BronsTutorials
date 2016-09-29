@@ -447,5 +447,23 @@ function ActiveDirectory() {
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[0].child[9].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Creating Groups", "ActiveDirectory/Groups/CreatingGroups");
 
-    
+                    //Builtin Groups
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[9].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Builtin Groups", "ActiveDirectory/Groups/BuiltinGroups");
+
+                    //Domain Groups
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[9].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Domain Groups", "ActiveDirectory/Groups/DomainGroups");
+
+
+
+
+
+
+
+
+
+
+
+
 }
