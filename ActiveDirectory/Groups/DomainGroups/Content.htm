@@ -6,7 +6,7 @@
 	
     	<table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to create a group, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>To learn about domain groups, proceed with the following steps...</p></td>
           	</tr>
         </table>
         
@@ -100,12 +100,13 @@
             </tr>
         </table>
         
+        
         <hr>
         
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then select <strong>'New'</strong>...</span></li>
+                  <li>Members of this group will have their password cached on the read-only domain controller when they are authenticated using this read-only domain controller. Remember that the password attribute is not normally replicated to a read-only domain controller. This means that if they attempt to authenticate off the read-only domain controller during a network outage they will still be able to authenticate from the read-only domain controller even though a writeable domain controller is not available.</li>
           </ul></td>
                 
                 <td align="right">
@@ -122,12 +123,12 @@
         
         <table width="100%" border="0">
             <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li>Then <strong>'Group'</strong>.</li>
-            </ul></td>
+                <td width="100%" height="188" align="left" valign="top"><ul>
+                  <li>A global group that includes all computers that are running an enterprise certificate authority. Cert Publishers are authorized to publish certificates for User objects in Active Directory.</li>
+          </ul></td>
                 
                 <td align="right">
-              <table width="403" border="0">
+      <table width="403" border="0">
                         <tr>
                             <td align="center"><img src="3.jpg" width="403" height="420"></td>
                         </tr>
@@ -140,12 +141,12 @@
         
         <table width="100%" border="0">
             <tr>
-                <td width="100%" height="188" align="left" valign="top"><ul>
-                  <li>Once you get to the new group form, start by entering in the name of the group.</li>
-            </ul></td>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>If a user account is a member of this group, their user password will not be cached on a read-only domain controller. Passwords will not be cached on a read-only domain controller if it has be configured. If a user is a member of this group and password caching has been configured their password will not be cached. Deny always overrides allow.&nbsp;</li>
+      </ul></td>
                 
                 <td align="right">
-      <table width="403" border="0">
+              <table width="403" border="0">
                         <tr>
                             <td align="center"><img src="4.jpg" width="403" height="420"></td>
                         </tr>
@@ -159,8 +160,9 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Here in this section, you can choose in what group scope you want this group to be in. In this case, we will leave the scope as the default, <strong>'Global'</strong>.</li>
-        </ul></td>
+                  <li>Members of this group have administrative access to the DNS Server service. This group has no default members.</li>
+                </ul>
+<p>&nbsp;</p></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -177,9 +179,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This section allows you to choose between the two group types. </span>In this case, we will leave the type as the default, <strong>'Security'</strong>.</li>
-                </ul>
-<p>&nbsp;</p></td>
+                  <li>Members of this group are DNS clients that can perform dynamic updates on behalf of other clients, such as DHCP servers. This group has no default members.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -196,8 +197,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>The domain admins group has administrator's rights to all users and computers in the domain including domain controllers. When a computer is added to the domain, this group is added to the local administrators group on that computer.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -214,8 +215,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>This group contains all the computers in the domain expect domain controllers. When you add a computer to the domain, the computer account for that computer automatically gets added to this group.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -232,8 +233,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>This group contains all the computer accounts for all the domain controllers in the domain except for domain controllers that are in read-only domain controllers. When a server is promoted to a domain controller, if the computer account is in the domain computers group, it will be moved in the domain controllers group.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -250,8 +251,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>This group has no rights or permissions in the domain. It is not added to the local guest on any computer when they are added to the domain and thus does not have any rights on any computers in the domain. For this reason, a user that is added to this group will not be able to login to any computers in the domain unless they are a member of another group that grants them this right.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -268,8 +269,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>Members of this group can login in to workstations, run applications and change computer settings that relate to them. This group is automatically added to the local users group on a computer when it is added to the domain.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -286,8 +287,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>This group is the most powerful group in Active Directory. It is automatically made a member of the Domain Administrators group for all domains in the forest thus giving members of this group administrator's rights on all domains in the forest. This group also has additional rights forest wide like changing forest wide information and adding/removing domains from the forest.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -304,8 +305,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>This group exists only in the root of the forest. It has no members by default, even if you add read only domain controllers to the root domain, the computer account for these read only domain controllers does not get added to this group.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -322,8 +323,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>A global group that is authorized to create new Group Policy objects in Active Directory. By default, the only member of the group is Administrator. The default owner of a new Group Policy object is usually the user who created it. If the user is a member of Administrators or Domain Admins, all objects that are created by the user are owned by the group. Owners have full control of the objects they own.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -340,8 +341,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>Servers in this group are permitted access to the remote access properties of users. A domain local group . By default, this group has no members. Computers that are running the Routing and Remote Access service are added to the group automatically. Members of this group have access to certain properties of User objects, such as Read Account Restrictions, Read Logon Information, and Read Remote Access Information.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -358,8 +359,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>This group contains all the read-only domain controllers in your domain. This group does not contain writeable domain controllers or computer accounts.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -376,8 +377,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>This is the only group that can make changes to the schema. The schema defines the active directory database. This group only exists in the root domain of the forest.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -388,42 +389,6 @@
                 </td>
             </tr>
         </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
-                
-                <td align="right">
-              <table width="403" border="0">
-                        <tr>
-                            <td align="center"><img src="18.jpg" width="403" height="420"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
-                
-                <td align="right">
-              <table width="403" border="0">
-                        <tr>
-                            <td align="center"><img src="19.jpg" width="403" height="420"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
+       
     </body>
 </html>
