@@ -6,7 +6,7 @@
 	
     	<table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to create a group, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>To learn about builtin groups, proceed with the following steps...</p></td>
           	</tr>
         </table>
         
@@ -105,8 +105,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then select <strong>'New'</strong>...</span></li>
-          </ul></td>
+                  <li>Members of this group can perform Active Directory administration such as create new users and groups. Although it is not required for Active Directory administration, members of this group can login to a Domain Controller. Once logged in, they can only perform Active Directory Administration: they cannot perform other tasks on the Domain Controller like rebooting. It should be remembered that account operators are not administrators in the domain, and thus some Active Directory administration cannot be done due to security reasons. This includes making changes to the Domain Controllers OU, changing members of the Domain/Enterprise Administrations group, or changing properties for any user that is an administrator.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -123,8 +123,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then <strong>'Group'</strong>.</li>
-            </ul></td>
+                  <li>A built-in group . After the initial installation of the operating system, the only member of the group is the Administrator account. When a computer joins a domain, the Domain Admins group is added to the Administrators group. When a server becomes a domain controller, the Enterprise Admins group also is added to the Administrators group. The Administrators group has built-in capabilities that give its members full control over the system. The group is the default owner of any object that is created by a member of the group.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -141,8 +141,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" height="188" align="left" valign="top"><ul>
-                  <li>Once you get to the new group form, start by entering in the name of the group.</li>
-            </ul></td>
+                  <li>A built-in group. By default, the group has no members. Backup Operators can back up and restore all files on a computer, regardless of the permissions that protect those files. Backup Operators also can log on to the computer and shut it down.</li>
+          </ul></td>
                 
                 <td align="right">
       <table width="403" border="0">
@@ -159,8 +159,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Here in this section, you can choose in what group scope you want this group to be in. In this case, we will leave the scope as the default, <strong>'Global'</strong>.</li>
-        </ul></td>
+                  <li>This group exists on both Domain Controllers and member servers. If users that use DCom need access to certificates, they need to be added to this group.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -177,7 +177,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This section allows you to choose between the two group types. </span>In this case, we will leave the type as the default, <strong>'Security'</strong>.</li>
+                  <li>Members are authorized to perform cryptographic operations.</li>
                 </ul>
 <p>&nbsp;</p></td>
                 
@@ -196,8 +196,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>Members of this group are allowed to launch, activate, and use distributed COM objects on this computer.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -214,7 +214,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
+                  <li>Members of this group have access to read event logs.</li>
       </ul></td>
                 
                 <td align="right">
@@ -232,8 +232,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>The guest group gives the user the ability to login and run software. Any changes that are made by that user, for example changing the wallpaper, will be lost when the user logs off. The guest account is usually used for computers that are set up as kiosks. In this case, you want the user to have access to run software and make changes if they need to, but when the next user uses the computer, you want to ensure that the new user gets the default settings and not the modified settings.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -250,7 +250,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
+                  <li>This group has permissions to run IIS.</li>
       </ul></td>
                 
                 <td align="right">
@@ -268,8 +268,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>A group whose members can create incoming, one-way forest trusts to the forest-root domain. For example, members of this group residing in forest A can create a one-way incoming forest trust from forest B. This one-way incoming forest trust allows users in forest A to access resources that are located in forest B. Members of this group are assigned the permission Create Inbound Forest Trust on the forest-root domain. This group has no default members.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -286,7 +286,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
+                  <li>Members of this group can change network settings like the IP address of the computer. They can also renew and release DHCP information.</li>
       </ul></td>
                 
                 <td align="right">
@@ -304,7 +304,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
+                  <li>Members of this group are allowed to monitor performance counters on the computer. This includes monitoring from remote, assuming that has been configured of course. They can also create data collector sets.</li>
       </ul></td>
                 
                 <td align="right">
@@ -322,8 +322,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>Members of this group are also allowed to monitor performance counters on the computer. This also includes monitoring from remote. But the difference between this group and the 'Performance Log Users' group is that this group can not create data collector sets.</li>
+  </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -340,8 +340,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>A backward compatibility group which allows read access on all users and groups in the domain. By default, the special identity Everyone is a member of this group. Add users to this group only if they are running Windows NT 4.0 or earlier.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -358,8 +358,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>Members of this group can manage printers on Domain Controllers and printer objects in Active Directory. In order to manage printers on a Domain Controller, member of this group can also login to a Domain Controller. Allthough they don not have the rights to perform day to day administration on the Domain Controller, members of this group can shut down the Domain Controller.</li>
+  </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -376,8 +376,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>Members in this group are granted the right to logon remotely.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -394,8 +394,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>In NT 4 domains, this group was called Replicators and is used by the directory replication service. In 2K/XP the group is present but is not used. Do not add users to this group.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -412,8 +412,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>This group allows members to login to Domain Controllers, start and stop services on the Domain Controllers, perform backup and restore operations, format disks, create shares, and shut down and restart Domain Controllers. This group has no default members and does not give the user access to any other servers that are not domain controllers. This group is aimed at someone who is performing maintenance on Domain Controllers. For this reason, members cannot perform Active Directory administration.</li>
+  </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -430,8 +430,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>Inside an Active Directory user account is information stored about terminal server licenses. The terminal services licensing server needs to access this information. In order to only give this server the minimum required access to Active Directory to get this information, you can add the computer account of the licensing server to this group.</li>
+  </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -448,8 +448,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>This group is designed for the general user. It allows them to run software and change settings that relate to them.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
@@ -466,8 +466,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong> to create the group.</li>
-      </ul></td>
+                  <li>In the user account in Active Directory there is a computed token. This is a computed version of the same security token that is created when a user logs in. You only need to add users to this group for special software that requires this access.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="403" border="0">
