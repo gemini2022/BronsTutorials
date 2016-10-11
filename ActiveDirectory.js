@@ -463,9 +463,13 @@ function ActiveDirectory() {
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[0].child[10].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Creating Group Policies", "ActiveDirectory/GroupPolicy/CreatingGroupPolicies");
 
+                    //Centralizing The ADMX File
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[10].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Centralizing The ADMX File", "ActiveDirectory/GroupPolicy/CentralizingTheADMXFile");
 
-
-
+                    //Enforcing and Blocking Group Policies
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[10].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Enforcing and Blocking Group Policies", "ActiveDirectory/GroupPolicy/EnforcingAndBlockingGroupPolicies");
 
 
 

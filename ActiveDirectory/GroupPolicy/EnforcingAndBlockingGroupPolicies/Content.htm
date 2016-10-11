@@ -1,0 +1,194 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    	<table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>To learn how to block and enforce group policies, proceed with the following steps...</p></td>
+          	</tr>
+        </table>
+        
+       
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+      </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        <hr>
+        <table width="100%" border="0">
+      <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then go to&nbsp;<strong>'Administrative Tools'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+                  <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select&nbsp;<strong>'Group Policy Management'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../CreatingGroupPolicies/1.jpg" width="286" height="546"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in 'Group Policy Management', you'll notice a</span> group policy we created earlier called, <strong>'Domain Wide Group Policy'</strong>. This group policy was originally created to configure settings for users and computers. However,  we don't want any domain controllers in our domain to be effected by this policy. So in order to prevent this from happening, we can simply have the 'Domain Controllers' OU configured to block inheritance from any of its parent objects. Since 'bronstutorials.local' is a parent of the 'Domain Controllers' OU and the 'Domain Wide Group Policy' is under the 'bronstutorials.local' object, this will work.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../CentralizingTheADMXFile/1.jpg" width="403" height="304"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">To do this, right-click on the <strong>'Domain Controllers'</strong> OU...</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="403" height="304"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"> And select <strong>'Block Inheritance'</strong>.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="270" height="221"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Notice that after we have selected the 'Block Inheritance' option, that the icon for the 'Domain Controllers' OU changes to an exclamation mark. This is to indicate that block inheritance has been enabled. Now, anything in the 'Domain Controllers' OU will not be affected </span>by the 'Domain Wide Group Policy'. The problem with this approach is now the <span dir="LTR">'Domain Controllers' OU will also not be affected </span>by the 'Default Domain Policy'. We want the 'Default Domain Policy' to take effect to anything in the 'Domain Controllers' OU, just not the 'Domain Wide Group Policy'.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="403" height="304"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>To remedy this, we can simply right-click on the <strong>'Default Domain Policy'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="403" height="304"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" height="188" align="left" valign="top"><ul>
+                  <li>And select <strong>'Enforced'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+      <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="157" height="203"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Notice that after we have selected the 'Enforced' option, that the icon for the 'Default Domain Policy' changes to a lock. This is to indicate that this group policy has been enforced. What this means is that essentially this will enforce the policy onto any child of this group policy no matter if any of its children is set to block inheritance or not.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="403" height="304"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>
