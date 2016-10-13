@@ -471,7 +471,9 @@ function ActiveDirectory() {
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[0].child[10].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Enforcing and Blocking Group Policies", "ActiveDirectory/GroupPolicy/EnforcingAndBlockingGroupPolicies");
 
-
+                    //Loopback Processing
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[10].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Loopback Processing", "ActiveDirectory/GroupPolicy/LoopbackProcessing");
 
 
 
