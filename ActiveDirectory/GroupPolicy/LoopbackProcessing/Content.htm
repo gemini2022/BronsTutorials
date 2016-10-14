@@ -6,7 +6,7 @@
 	
     	<table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to create a group policy, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Loopback processing changes the algorithm used to apply Group Policy to a computer. This allows the administrator to effectively ignore or merge the user configuration that would be normally applied to the computer. To learn how to configure Loopback Processing, proceed with the following steps...</p></td>
           	</tr>
         </table>
         
@@ -69,7 +69,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once in 'Group Policy Management', you'll notice a group policy named <strong>'Default Domain Policy'</strong>. This group policy is created when the domain is first created. This group policy is required to define the security settings for the domain. It also defines password settings in the domain, such as how long and complex a password must be when setup for a user.</span></li>
+                  <li><span dir="LTR">In this example we have an OU that we created in an earlier tutorial called <strong>'New York'</strong>. We will use this OU to demonstrate how to configure loopback processing. First, expand the 'New York' OU.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -87,7 +87,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"> The next group policy that is created by default with the domain, can be found under <strong>'Domain Controllers'</strong>.</span></li>
+                  <li><span dir="LTR"> Next, we will expand the <strong>'Computers'</strong> OU.</span></li>
           </ul></td>
                 
                 <td align="right">
@@ -105,7 +105,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">If you select this group policy...</span></li>
+                  <li><span dir="LTR">Then we'll expand the <strong>'Training Lab'</strong> OU.</span></li>
           </ul></td>
                 
                 <td align="right">
@@ -123,7 +123,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>You will get a warning message. This message informs the administrator that this is a link to another group policy. What this means is the group policy that you selected, esentially works the same as a hyper-link or a shortcut would link to an electronic document. Just like a document can have many shortcuts that link to the same document, group policy can have many links that refer to the same group policy object.</li>
+                  <li>Inside the 'Training Lab' OU we have created a group policy called <strong>'Training Lab Group Policy'</strong>. This group policy will be applied to all of the computers that reside in the 'Training Lab' OU. Right-click this group policy...</li>
             </ul></td>
                 
                 <td align="right">
@@ -141,9 +141,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" height="188" align="left" valign="top"><ul>
-                  <li>Select the <strong>'Do not show this message again'</strong> option.</li>
-                  <br>
-                  <li>Then press <strong>'OK'</strong>.</li>
+                  <li>And select <strong>'Edit...'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -161,8 +159,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>If we expand <strong>'Group Policy Objects'</strong>...</li>
-        </ul></td>
+                  <li>Configuring Group Policy 'Loopback Processing' is done in the<strong> 'Computer Configuration' </strong>section of Group Policy. But before we configure Loopback processing, we'll first open <strong>'Policies' </strong> found under the <strong>'User Configuration'</strong> section.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -179,7 +177,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">You can see the two default group policy objects that were created when the domain was created. These are the actuall group policy objects. The group policy that we selected earlier was just the link.</span> The benefit of having group policy links is that you can create a group policy and link it to multiple OUs.</li>
+                  <li><span dir="LTR">Then we'll open <strong>'Administrative Templates'</strong>.</span></li>
                 </ul>
 <p>&nbsp;</p></td>
                 
@@ -198,7 +196,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>We will now create a brand new group policy. To do this, we can either right-click an OU or right-click on the domain. In this case, we are going to right-click on the 'bronstutorials.local' domain and create the new group policy under this domain.</li>
+                  <li>Inside 'Administrative Templates', we'll open <strong>'Desktop'</strong>.</li>
         </ul></td>
                 
                 <td align="right">
@@ -216,7 +214,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Because we right-clicked on the domain we will get the option, <strong>'Create a GPO in this domain, and link it here...'</strong>.</li>
+                  <li>And then finally we'll select the <strong>'Desktop'</strong> settings.</li>
             </ul></td>
                 
                 <td align="right">
@@ -234,10 +232,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once you select that option, you will be presented with a form that will allow you to name your new group policy. In this case, we are going to name our group policy, <strong>'Domain Wide Group Policy'</strong>.</li>
-                  <br>
-                  <li>Press <strong>'OK'</strong> to continue.</li>
-            </ul></td>
+                  <li>In the 'Desktop' settings, we'll open the setting <strong>'Desktop Wallpaper'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -254,7 +249,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Notice now that our new group policy that we created is now within the 'Group Policy Object'</li>
+                  <li>You'll notice that this setting has been configured, and keep in mind that this setting has been configured under the user side of group policy. This user setting will configure the desktop wallpapper when it is applied. However, since no user account exists in the 'Training Lab' OU where this group policy resides, this setting will never get applied. This is where 'Loopback Processing' will come into play. When 'Loopback Processing' is configured to this 'Group Policy', it will apply this 'User Configuration' setting to the 'Computer Configuration' side of group policy.</li>
               </ul></td>
                 
                 <td align="right">
@@ -272,8 +267,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And the link to that group policy is under the domain where we specified it to be created.</li>
-              </ul></td>
+                  <li>So lets configure 'Loopback Processing' for this 'Group Policy'! Configuring 'Loopback Processing' is done in the 'Computer Configuration' section of Group Policy, so we'll close the <strong>'User Configuration'</strong> section.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -290,7 +285,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Now that the group policy has been created, it can be edited by right-clicking the link, or the object itself. Here we will right-click on the group policy link...</li>
+                  <li>And then open <strong>'Policies' </strong> under the <strong>'Computer Configuration'</strong> section.</li>
               </ul></td>
                 
                 <td align="right">
@@ -308,7 +303,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And select <strong>'Edit...'</strong>.</li>
+                  <li>And then expand <strong>'Administrative Templates'</strong>.</li>
               </ul></td>
                 
                 <td align="right">
@@ -326,8 +321,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The 'Group Policy Management Editor' will now open and display the settings for this group policy. You can see that this group policy is divided into two parts, which are sometimes referred to as nodes. The first part is, 'Computer Configuration'. Any settings that are configured in this section are applied to the computer as a whole, effecting all users that use that computer.</li>
-            </ul></td>
+                  <li>Inside 'Administrative Templates', open <strong>'System'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -344,8 +338,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The second part is, 'User Configuration'. Any settings that are configured in this section are applied to  users. Since this group policy was created under the domain, the settings that are configured will effect all users in the domain.</li>
-              </ul></td>
+                  <li>And then finally select the <strong>'Group Policy'</strong> settings.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -362,7 +356,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Both 'Computer Configuration' and 'User Configuration' sections have  a folder called <strong>'Policies'</strong>. Within the policy folder are where the traditional group policy settings reside. I say traditional because before Sever 2008, the 'Policies' folder did not exist. All of the settings found under policies were essentially all the settings you would find in group policy.</li>
+                  <li>The setting that we are looking for is called <strong>'User Group Policy Loopback Processing Mode'</strong>. To get to it, we have to scroll down the list.</li>
             </ul></td>
                 
                 <td align="right">
@@ -380,8 +374,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>But now starting with server 2008,  both 'Computer Configuration' and 'User Configuration' sections have  a folder called <strong>'Preferences'</strong>. Preferences was originally a third party product called 'Policy Maker' that was purchased by Microsoft. There is a big fundamental difference between policies and preferences. Any settings applied under 'Policies', the user is forced to have, they do not have a choice. Any settings applied under 'Preferences', the user has a choice if they want the setting or not.</li>
-          </ul></td>
+                  <li>Then when you find it, open the <strong>'User Group Policy Loopback Processing Mode'</strong> setting by double-clicking it.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -398,7 +392,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>If we open the 'Policies' folder under 'User Configuration'...</li>
+                  <li>Once this setting is open, all you need to do is enable it...</li>
             </ul></td>
                 
                 <td align="right">
@@ -416,7 +410,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>We will see three additional folders. The first folder is <strong>'Software Settings'</strong>.</li>
+                  <li>And choose which mode type this setting will be configured with.</li>
             </ul></td>
                 
                 <td align="right">
@@ -435,8 +429,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>If you decide to use group policy to deploy and manage software, this is where the group policy software settings would be configured.</li>
-            </ul></td>
+                  <li>Selecting the <strong>'Replace'</strong> option  will change how user configuration is applied. Instead of user configuration being applied based on where the user account is in Active Directory, user settings are applied based on where the computer account is located in Active Directory.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -453,8 +447,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The next folder down is <strong>'Windows Settings'</strong>.</li>
-            </ul></td>
+                  <li>If the <strong>'Merge'</strong> option is selected, Group Policy is first applied like it would be normally. That is, the computer configuration based on where the computer account is located in Active Directory and user configuration based on where the user account is located in Active Directory is applied. The difference is that an extra step is added. The extra step applies user configuration based on where the computer account is located in Active Directory. This is often used for Remote Desktop Services where you want the user to have their user settings applied, but want the option to override or add additional settings as required.&nbsp;</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -471,7 +465,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Things like user logon and logoff scripts can be configured here.</li>
+                  <li>Press<strong> 'OK'</strong> when finished.</li>
             </ul></td>
                 
                 <td align="right">
