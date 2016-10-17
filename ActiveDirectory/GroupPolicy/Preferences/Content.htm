@@ -69,7 +69,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once in 'Group Policy Management', you'll notice a group policy named <strong>'Default Domain Policy'</strong>. This group policy is created when the domain is first created. This group policy is required to define the security settings for the domain. It also defines password settings in the domain, such as how long and complex a password must be when setup for a user.</span></li>
+                  <li><span dir="LTR">Once in 'Group Policy Management', you'll need to open 'Group Policy Management Editor' for any of the group policies defined, or create a new group policy. In this case, we're going to edit the <strong>'Domain Wide Group Policy' </strong> that we created in an eariler tutorial</span>. To do this, right-click it.</li>
             </ul></td>
                 
                 <td align="right">
@@ -87,7 +87,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"> The next group policy that is created by default with the domain, can be found under <strong>'Domain Controllers'</strong>.</span></li>
+                  <li><span dir="LTR"> Then select <strong>'Edit...'</strong>.</span></li>
           </ul></td>
                 
                 <td align="right">
@@ -105,13 +105,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">If you select this group policy...</span></li>
+                  <li><span dir="LTR">Once in 'Group Policy Management Editor', expand the <strong>'Preferences'</strong> folder.</span></li>
           </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="1.jpg" width="699" height="572"></td>
+                            <td align="center"><img src="1.jpg" width="735" height="572"></td>
                         </tr>
                   </table>
                 </td>
@@ -123,7 +123,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>You will get a warning message. This message informs the administrator that this is a link to another group policy. What this means is the group policy that you selected, esentially works the same as a hyper-link or a shortcut would link to an electronic document. Just like a document can have many shortcuts that link to the same document, group policy can have many links that refer to the same group policy object.</li>
+                  <li>You can see that 'Preferences' are divided into two sections, <strong>'Windows Settings'</strong>...</li>
             </ul></td>
                 
                 <td align="right">
@@ -141,9 +141,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" height="188" align="left" valign="top"><ul>
-                  <li>Select the <strong>'Do not show this message again'</strong> option.</li>
-                  <br>
-                  <li>Then press <strong>'OK'</strong>.</li>
+                  <li>And <strong>'Control Panel Settings'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -161,13 +159,12 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>If we expand <strong>'Group Policy Objects'</strong>...</li>
-        </ul></td>
+                  <li>Let's take a look at <strong>'Window Settings'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="4.jpg" width="699" height="572"></td>
+                            <td align="center"><img src="4.jpg" width="715" height="572"></td>
                         </tr>
                   </table>
                 </td>
@@ -179,7 +176,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">You can see the two default group policy objects that were created when the domain was created. These are the actuall group policy objects. The group policy that we selected earlier was just the link.</span> The benefit of having group policy links is that you can create a group policy and link it to multiple OUs.</li>
+                  <li><span dir="LTR">For this example, we will start by using 'Preferences' to create a folder on all of the computers in the domain that are under the 'Domain Wide Group Policy'. To do this, right-click on the <strong>'Folders'</strong> icon...</span></li>
                 </ul>
 <p>&nbsp;</p></td>
                 
@@ -198,7 +195,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>We will now create a brand new group policy. To do this, we can either right-click an OU or right-click on the domain. In this case, we are going to right-click on the 'bronstutorials.local' domain and create the new group policy under this domain.</li>
+                  <li>Select <strong>'New'</strong>...</li>
         </ul></td>
                 
                 <td align="right">
@@ -216,7 +213,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Because we right-clicked on the domain we will get the option, <strong>'Create a GPO in this domain, and link it here...'</strong>.</li>
+                  <li>Then <strong>'Folder'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -234,10 +231,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once you select that option, you will be presented with a form that will allow you to name your new group policy. In this case, we are going to name our group policy, <strong>'Domain Wide Group Policy'</strong>.</li>
-                  <br>
-                  <li>Press <strong>'OK'</strong> to continue.</li>
-            </ul></td>
+                  <li>On the <strong>'New Folder Properties'</strong> form, click on the ellipsis button.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -254,13 +249,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Notice now that our new group policy that we created is now within the 'Group Policy Object'</li>
+                  <li>We want to create a folder on the (C:) drive of each computer, so we'll expand <strong>'Computer'</strong>.</li>
               </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="9.jpg" width="326" height="372"></td>
+                            <td align="center"><img src="9.jpg" width="367" height="372"></td>
                         </tr>
                   </table>
                 </td>
@@ -272,7 +267,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And the link to that group policy is under the domain where we specified it to be created.</li>
+                  <li>And then select <strong>'Windows (C:)'</strong>.</li>
               </ul></td>
                 
                 <td align="right">
@@ -290,7 +285,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Now that the group policy has been created, it can be edited by right-clicking the link, or the object itself. Here we will right-click on the group policy link...</li>
+                  <li>Now click on the <strong>'Make New Folder'</strong> button.</li>
               </ul></td>
                 
                 <td align="right">
@@ -308,7 +303,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And select <strong>'Edit...'</strong>.</li>
+                  <li>Once the 'Make New Folder' Button is clicked, a new folder will appear with the option to allow us to name that new folder.</li>
               </ul></td>
                 
                 <td align="right">
@@ -326,7 +321,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The 'Group Policy Management Editor' will now open and display the settings for this group policy. You can see that this group policy is divided into two parts, which are sometimes referred to as nodes. The first part is, 'Computer Configuration'. Any settings that are configured in this section are applied to the computer as a whole, effecting all users that use that computer.</li>
+                  <li>We'll name this folder, <strong>'Wallpaper'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -344,7 +339,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The second part is, 'User Configuration'. Any settings that are configured in this section are applied to  users. Since this group policy was created under the domain, the settings that are configured will effect all users in the domain.</li>
+                  <li>When finished naming the folder,  press the <strong>'Select'</strong> button.</li>
               </ul></td>
                 
                 <td align="right">
@@ -362,7 +357,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Both 'Computer Configuration' and 'User Configuration' sections have  a folder called <strong>'Policies'</strong>. Within the policy folder are where the traditional group policy settings reside. I say traditional because before Sever 2008, the 'Policies' folder did not exist. All of the settings found under policies were essentially all the settings you would find in group policy.</li>
+                  <li>Now that the folder is created, we can click on the <strong>'OK' </strong>button to continue.</li>
             </ul></td>
                 
                 <td align="right">
@@ -380,7 +375,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>But now starting with server 2008,  both 'Computer Configuration' and 'User Configuration' sections have  a folder called <strong>'Preferences'</strong>. Preferences was originally a third party product called 'Policy Maker' that was purchased by Microsoft. There is a big fundamental difference between policies and preferences. Any settings applied under 'Policies', the user is forced to have, they do not have a choice. Any settings applied under 'Preferences', the user has a choice if they want the setting or not.</li>
+                  <li>In the next step, we'll create some files. To do this, right-click on the <strong>'Files'</strong> icon...</li>
           </ul></td>
                 
                 <td align="right">
@@ -398,7 +393,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>If we open the 'Policies' folder under 'User Configuration'...</li>
+                  <li>Select <strong>'New'</strong>...</li>
             </ul></td>
                 
                 <td align="right">
@@ -416,8 +411,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>We will see three additional folders. The first folder is <strong>'Software Settings'</strong>.</li>
-            </ul></td>
+                  <li>Then <strong>'File'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -434,8 +429,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>If you decide to use group policy to deploy and manage software, this is where the group policy software settings would be configured.</li>
-            </ul></td>
+                  <li>On the <strong>'New File Properties'</strong> form, begin by entering in a path to a source file. In this case, the source file we're going to use is a jpg file found under the 'DesktopWappers' directory on 'DC1'.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -452,7 +447,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The next folder down is <strong>'Windows Settings'</strong>.</li>
+                  <li>The next part is to enter in the destination. This is where the magic happens. For the destination, we will enter in the <strong>'Wallpaper'</strong> folder we created on the (C:) drive.</li>
             </ul></td>
                 
                 <td align="right">
@@ -470,7 +465,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Things like user logon and logoff scripts can be configured here.</li>
+                  <li>However, we will change the name of the file to <strong>'default'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -488,7 +483,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Also, things relating to security settings can be configured here.</li>
+                  <li>Next, select the <strong>'Common'</strong> tab.</li>
             </ul></td>
                 
                 <td align="right">
@@ -506,13 +501,12 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The third folder is <strong>'Administrative Templates'</strong>. This folder contains the bulk of the group policy settings.</li>
-            </ul></td>
+                  <li>On the 'Common' tab, is the option, <strong>'Item-level targeting'</strong>, probably the most powerful feature of 'Preferences'. Select this option...</li></ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="23.jpg" width="404" height="447"></td>
+                            <td align="center"><img src="23.jpg" width="434" height="447"></td>
                         </tr>
                   </table>
                 </td>
@@ -524,7 +518,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>If we select the option at the bottom, <strong>'All Settings'</strong>, notice that all the group policies settings found under 'Administrative Templates' are shown, 1454 to be exact.</li>
+                  <li>Then click on the <strong>'Targeting...'</strong> button.</li>
             </ul></td>
                 
                 <td align="right">
@@ -544,7 +538,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>To make it easier to find a particular setting, we can right-click any of the folders, in this case the 'All Settings' folder...</li>
+                  <li>At the top, select the option <strong>'New Item'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -563,13 +557,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And select <strong>'Filter On'</strong>.</li>
+                  <li>Here you are provided with a list of items that you can specifically target settings for. You can test for a particular operating system, the CPU, RAM, the computer name, just to name a few. In this case, we will select the option <strong>'Operating System'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="26.jpg" width="176" height="554"></td>
+                            <td align="center"><img src="26.jpg" width="241" height="554"></td>
                         </tr>
                   </table>
                 </td>
@@ -581,7 +575,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once the filter is on, I can then right-click on that folder again...</li>
+                  <li>Here we can choose the operating system we want to target..</li>
             </ul></td>
                 
                 <td align="right">
@@ -599,7 +593,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And select <strong>'Filter Options...'</strong> to configure what group policy settings you want to show.</li>
+                  <li>As you can see, there are several operating systems to choose from, but we will go with the default, <strong>'Windows 7'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -617,7 +611,9 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once you select 'Filter Options...' you will be presented with a form that gives you a lot of filtering options. The first option is, <strong>'Managed'</strong>. Selecting this option will allow you to filter the list to contain either group policy settings that are managed or unmanaged. If a group policy setting is managed and it is later removed, any changes made by that group policy setting will be reversed. However, if the group policy setting is unmanaged, this will mean that once the group policy setting is removed, the changes will not be reversed and will have to be reversed manually.</li>
+                  <li>Along with choosing an operation system, you also have the option to chose its edition, release, or computer role.</li>
+                  <br>
+                  <li>Click <strong>'OK'</strong> when finished.</li>
             </ul></td>
                 
                 <td align="right">
@@ -635,7 +631,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>In this case, we will select <strong>'Yes'</strong> so that the list contains only managed group policy settings.</li></ul></td>
+                  <li>We now have a setting that will copy the Windows7.jpg image to every computer in the domain, but only if the operating system on that computer is Windows 7.</li>
+                  <br>
+                  <li>Click the<strong> 'OK' </strong>button.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -652,13 +651,15 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The next option allows you to filter the list to contain either group policy settings that are configured or not configured.</li>
+                  <li>The next part we will configure is the the 'desktop Wallpaper' setting found under 'User Configuration'. This is not a 'Preference' setting, but this will show how the settings can be used together to achieve a result that would normally not possible without the use of 'Preferences'.</li>
+                  <br>
+                  <li>First, close <strong>'Preferences'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="31.jpg" width="699" height="572"></td>
+                            <td align="center"><img src="31.jpg" width="734" height="572"></td>
                         </tr>
                   </table>
                 </td>
@@ -670,13 +671,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Since no group policy settings have not yet been configured, we will leave this filter option as <strong>'Any'</strong>.</li>
+                  <li>Then expand <strong>'Policies' </strong> under <strong>'User Configuration'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="32.jpg" width="699" height="572"></td>
+                            <td align="center"><img src="32.jpg" width="733" height="572"></td>
                         </tr>
                   </table>
                 </td>
@@ -688,13 +689,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The next option allows you to filter the list to contain either group policy settings that have comments applied to them or no comments applied to them.</li>
+                  <li>Then <strong>'Administrative Templates'</strong>...</li>
           </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="33.jpg" width="699" height="572"></td>
+                            <td align="center"><img src="33.jpg" width="714" height="572"></td>
                         </tr>
                   </table>
                 </td>
@@ -706,7 +707,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Again, since no group policy settings have not yet been configured, we will leave this filter option as <strong>'Any'</strong>.</li>
+                  <li>And then <strong>'Desktop'</strong>...</li>
           </ul></td>
                 
                 <td align="right">
@@ -724,7 +725,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The next option allows a keyword to be entered in. First you must enable this option...</li>
+                  <li>And then finally, click on <strong>'Desktop'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -742,7 +743,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then, enter in the keyword. In this case we're going to enter the keyword <strong>'Desktop Wallpaper'</strong>. Doing this will filter out the list to only the group policy settings that contain word 'Desktop Wallpaper' in it.</li>
+                  <li>Next, double-click on the  <strong>'Desktop Wallpaper'</strong> setting.</li>
             </ul></td>
                 
                 <td align="right">
@@ -760,13 +761,15 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>If we then select the option to right...</li>
+                  <li>This setting is not available under the 'Computer Configuration' side of group policy, but what we are essentially going to do is configure the desktop wallpaper based on the operating system a computer is using.</li>
+                  <br>
+                  <li>First, we'll enable the setting.</li>
             </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="37.jpg" width="700" height="640"></td>
+                            <td align="center"><img src="37.jpg" width="752" height="640"></td>
                         </tr>
                   </table>
                 </td>
@@ -778,14 +781,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>We then have three additional options:</li>
-                  <ul>
-                    <li><strong>Any:</strong> The list includes any of the words in the&nbsp;keywords you defined.</li>
-                    <li><strong>All:</strong> The list includes all of the words in the&nbsp;keywords you defined.</li>
-                    <li><strong>Exact:</strong> The list includes exact matches of the words in the&nbsp;keywords you defined.</li>
-                  </ul>
-                  <br>
-                  <li>In this case, we will go with the option <strong>'Any'</strong>.</li>
+                  <li>Then enter the wallpaper image we're going to use. In this case we're going to use the 'default.jpg' image we created earlier using 'Preferences'. What 'Preferences' will do is make sure that the correct wallpaper image will be used based on the operating system of the computer. However, the setting here that we're configuring now will only ensure that this file is used for the wallpaper.</li>
 <p>&nbsp;</p>
               </ul></td>
                 
@@ -804,7 +800,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Here you can choose whether or not the keywords will be within the policy setting title. In this case, we will leave this option selected.</li>
+                  <li>After specifying the wallpaper image, select the dropdown...</li>
             </ul></td>
                 
                 <td align="right">
@@ -822,7 +818,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Next you can choose whether or not the keywords will be within the help text. As you can see, this option is selected by default, but we will deselect it so that the list doesn't contain any group policy settings that have the words 'Desktop Wallpaper' in its help text.</li></ul></td>
+                  <li>Choose the wallpaper style, in this case we're going to select <strong>'Stretch'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -839,7 +835,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Next you can choose whether or not the keywords will be within the policy setting comments. Again, as you can see, this option is also selected by default, but we will deselect it so that the list doesn't contain any group policy settings that have the words 'Desktop Wallpaper' in its comments.</li>
+                  <li>And then finally click the <strong>'OK'</strong> button to configure the setting.</li>
         </ul></td>
                 
                 <td align="right">
