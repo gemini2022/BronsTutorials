@@ -475,7 +475,9 @@ function ActiveDirectory() {
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[0].child[10].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Loopback Processing", "ActiveDirectory/GroupPolicy/LoopbackProcessing");
 
-
+                    //Preferences
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[10].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Preferences", "ActiveDirectory/GroupPolicy/Preferences");
 
 
 }
