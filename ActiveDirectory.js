@@ -479,5 +479,15 @@ function ActiveDirectory() {
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[0].child[10].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Preferences", "ActiveDirectory/GroupPolicy/Preferences");
 
+                    //Starter GPOs
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[10].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Starter GPOs", "ActiveDirectory/GroupPolicy/StarterGPOs");
 
+                    //Copying GPOs
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[10].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copying GPOs", "ActiveDirectory/GroupPolicy/CopyingGPOs");
+
+                    //Copying GPOs to Another Domain
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[10].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copying GPOs to Another Domain", "ActiveDirectory/GroupPolicy/CopyingGPOsToAnotherDomain");
 }
