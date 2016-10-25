@@ -463,31 +463,92 @@ function ActiveDirectory() {
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[0].child[10].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Creating Group Policies", "ActiveDirectory/GroupPolicy/CreatingGroupPolicies");
 
+
+                    //Group Policy Tabs
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new ExpandCollapseLink(tutorialList.child[0].child[0].child[10].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Group Policy Tabs", root, "ActiveDirectory/GroupPolicy/GroupPolicyTabs");
+
+                            //Scope Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[0].child[10].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[0].child[10].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Scope Tab", "ActiveDirectory/GroupPolicy/ScopeTab");
+
+                            //Details Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[0].child[10].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[0].child[10].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Details Tab", "ActiveDirectory/GroupPolicy/DetailsTab");
+
+                            //Settings Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[0].child[10].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[0].child[10].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Settings Tab", "ActiveDirectory/GroupPolicy/SettingsTab");
+
+                            //Delegation Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[0].child[10].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[0].child[10].child[2].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Delegation Tab", "ActiveDirectory/GroupPolicy/DelegationTab");
+
+
                     //Centralizing The ADMX File
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[0].child[10].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Centralizing The ADMX File", "ActiveDirectory/GroupPolicy/CentralizingTheADMXFile");
+                        new Link(tutorialList.child[0].child[0].child[10].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Centralizing The ADMX File", "ActiveDirectory/GroupPolicy/CentralizingTheADMXFile");
 
                     //Enforcing and Blocking Group Policies
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[0].child[10].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Enforcing and Blocking Group Policies", "ActiveDirectory/GroupPolicy/EnforcingAndBlockingGroupPolicies");
+                        new Link(tutorialList.child[0].child[0].child[10].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Enforcing and Blocking Group Policies", "ActiveDirectory/GroupPolicy/EnforcingAndBlockingGroupPolicies");
 
                     //Loopback Processing
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[0].child[10].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Loopback Processing", "ActiveDirectory/GroupPolicy/LoopbackProcessing");
+                        new Link(tutorialList.child[0].child[0].child[10].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Loopback Processing", "ActiveDirectory/GroupPolicy/LoopbackProcessing");
 
                     //Preferences
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[0].child[10].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Preferences", "ActiveDirectory/GroupPolicy/Preferences");
+                        new Link(tutorialList.child[0].child[0].child[10].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Preferences", "ActiveDirectory/GroupPolicy/Preferences");
 
                     //Starter GPOs
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[0].child[10].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Starter GPOs", "ActiveDirectory/GroupPolicy/StarterGPOs");
+                        new Link(tutorialList.child[0].child[0].child[10].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Starter GPOs", "ActiveDirectory/GroupPolicy/StarterGPOs");
 
                     //Copying GPOs
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[0].child[10].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copying GPOs", "ActiveDirectory/GroupPolicy/CopyingGPOs");
+                        new Link(tutorialList.child[0].child[0].child[10].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copying GPOs", "ActiveDirectory/GroupPolicy/CopyingGPOs");
 
                     //Copying GPOs to Another Domain
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[0].child[10].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copying GPOs to Another Domain", "ActiveDirectory/GroupPolicy/CopyingGPOsToAnotherDomain");
+                        new Link(tutorialList.child[0].child[0].child[10].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copying GPOs to Another Domain", "ActiveDirectory/GroupPolicy/CopyingGPOsToAnotherDomain");
+
+                    //Restricted Groups
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[10].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Restricted Groups", "ActiveDirectory/GroupPolicy/RestrictedGroups");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

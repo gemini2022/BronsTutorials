@@ -1,0 +1,804 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    	<table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>Restricted Groups allows the administrator to configure local groups on client computers. For example, you could add a helpdesk support group to all clients on your desktop. To learn how to configure local groups on your client computer using Group Policy rather than visiting each computer to make the changes, proceed with the following steps...</p></td>
+          	</tr>
+        </table>
+        
+       
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+      </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        <hr>
+        <table width="100%" border="0">
+      <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then go to&nbsp;<strong>'Administrative Tools'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+                  <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select&nbsp;<strong>'Group Policy Management'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="../CreatingGroupPolicies/1.jpg" width="286" height="546"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in 'Group Policy Management', we'll expand the OU  <strong>'New York'</strong>.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="../LoopbackProcessing/1.jpg" width="405" height="304"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"> Inside our 'New York' OU you'll notice that there is a Group Policy named 'New York Office'. </span>For this example, we are going to configure this Group Policy to create a new a group to the local 'Administrators' group of every computer that lies uder this 'New York' OU. To do this, we'll first right-click on the <strong>'New York Office'</strong> GPO...</li></ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="403" height="368"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">And select <strong>'Edit...'</strong>.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="../CreatingGroupPolicies/15.jpg" width="157" height="186"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once the Group Policy is open for editing, start by first expaning <strong>'Policies'</strong> under <strong>'Computer Configuration'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="734" height="571"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" height="188" align="left" valign="top"><ul>
+                  <li>Then expand <strong>'Windows Settings'</strong>.</li></ul></td>
+                
+                <td align="right">
+      <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="713" height="571"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Next, expand <strong>'Security Settings'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="698" height="571"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And then select <strong>'Restricted Groups'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="699" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>After selecting 'Restricted Groups', right-click it...</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="699" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And select <strong>'Add Group...'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="107" height="152"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>As stated earlier, we're going to add a group to the local 'Administrators' group of every computer that lies uder this 'New York' OU. The approach we're going to take in this example is essentially remove every member from the local 'Administrators' group and readd back the ones we want. To do this, first type into the text field <strong>'Administrators'</strong>.</li>
+                  <br>
+                  <li>Then press <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="10.jpg" width="372" height="152"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>To reset group membership, we'll want to use the top section of this form, <strong>'Members of this group:'</strong>.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="364" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>To begin, click on the <strong>'Add..'</strong> button.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="11b.jpg" width="364" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then press <strong>'Browse...'</strong>.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="12.jpg" width="372" height="152"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then enter in the group name you want to add. In this case, we will start with the <strong>'domain admins'</strong> group. This group is added automatically to the local administrators group when the computer is added to the domain. It is important NOT to forget to add this group back, otherwise your domain administrators will have their administrator access revoked.</li>
+                  <br>
+                  <li>Press <strong>'OK'</strong> when finished.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="13.jpg" width="464" height="247"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Press <strong>'OK'</strong> to add the group.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="14.jpg" width="372" height="152"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Now we will add our new group to the local 'Administrator' group. To do this, again press the <strong>'Add...' </strong>button.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="15.jpg" width="364" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then <strong>'Browse...'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="12.jpg" width="372" height="152"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>The new group we are going to add is called <strong>'helpdesk administrators'</strong>. This is a group we created for the helpdesk technicians. This will give them administrator access to the client operating systems without having to give them domain administrator access.</li>
+                  <br>
+                  <li>Then press <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="17.jpg" width="464" height="247"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Press <strong>'OK'</strong> to add the group.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="18.jpg" width="372" height="152"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>So now, as you can see, we have two groups that are members of the local 'Administrators' group. This was done by essentially removing everything that once existed in the local 'Administrators' group and then adding back the members we wanted. This option is useful for when an adimistrator wants to clear unwated users and groups  from a group and only have the users and groups that is wanted.</li>
+                  <br>
+                  <li>However, 'Restricted Groups' also gives you the option to add users and groups to a group without having to first remove all its contents first and then rebuild, but to just simply add the users and groups that is wanted. To do this, we'll first close this form by clicking <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="19.jpg" width="364" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And then close the GPO editor.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="20.jpg" width="699" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Back in 'Group Policy Management', we'll expand the <strong>'Computers'</strong> OU found under the <strong>'New York'</strong> OU.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="21.jpg" width="403" height="368"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then, inside the 'Computers' OU, we have an OU called <strong>'Training Lab'</strong>. If we exapand that OU...</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="22.jpg" width="403" height="382"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>You'll find a Group Policy called <strong>'Training Lab Group Policy'</strong>. Right-click that GPO...</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="23.jpg" width="403" height="399"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And select <strong>'Edit...'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="../CreatingGroupPolicies/15.jpg" width="157" height="186"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once the Group Policy is open for editing, we'll once again expand <strong>'Policies'</strong> under <strong>'Computer Configuration'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="25.jpg" width="733" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+       
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then expand <strong>'Windows Settings'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="26.jpg" width="712" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+       
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Next, expand <strong>'Security Settings'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="27.jpg" width="698" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And then select <strong>'Restricted Groups'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="28.jpg" width="698" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>After selecting 'Restricted Groups', right-click it...</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="28.jpg" width="698" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And select <strong>'Add Group...'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="107" height="152"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>From here, press the <strong>'Browse'</strong> button.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="30.jpg" width="372" height="152"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+            <li>In this case, we want to add a group to the local 'Administrators' group, not reset the group and start from scratch. So, this time, instead of entering in the 'Administrators' group, we'll enter the group we want to add, which will be <strong>'training lab administrators'</strong>.</li>
+            <br>
+            <li>Press <strong>'OK'</strong> when finished.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="31.jpg" width="464" height="247"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Press <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="32.jpg" width="372" height="152"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>To add to group membership, we'll want to use the bottom section of this form, <strong>'This group is a member of:'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="33.jpg" width="364" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>To begin, click on the <strong>'Add..'</strong> button.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="33b.jpg" width="364" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then press <strong>'Browse...'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="34.jpg" width="372" height="152"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In here, we want to enter in the local 'Administrators' group.</li>
+                  <br>
+                  <li>Then press <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="35.jpg" width="464" height="247"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And then press <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="36.jpg" width="372" height="152"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Now what we have is the 'Training Lab Administrators' group will be a member of the local 'Administrators' group, and no resetting was involved, we just simply added the group as a member.</li>
+                  <br>
+                  <li>Press <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="37.jpg" width="364" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>
