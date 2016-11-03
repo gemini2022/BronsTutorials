@@ -6,7 +6,7 @@
 	
     	<table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to copy GPO's to another domain, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>To learn about the Group Policy Scope tab, proceed with the following steps...</p></td>
           	</tr>
         </table>
         
@@ -17,7 +17,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+                  <li><span dir="LTR">The first section allows for setting the location of where the</span> group policy will be displayed. For example, if we select the dropdown...</li>
       </ul>                  <br></td>
                 
                 <td align="right">
@@ -33,7 +33,7 @@
         <table width="100%" border="0">
       <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then go to&nbsp;<strong>'Administrative Tools'</strong>...</li>
+                  <li>We can see that we have the option of displaying the Group Policy in the 'Entire Forest'...</li>
               </ul></td>
                 
                 <td align="right">
@@ -51,7 +51,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then select&nbsp;<strong>'Group Policy Management'</strong>...</li>
+                  <li>'All Sites'...</li>
               </ul></td>
                 
                 <td align="right">
@@ -69,7 +69,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once in 'Group Policy Management', Expand&nbsp;<strong>'Group Policy Objects'</strong>.</span></li>
+                  <li><span dir="LTR">Or just the domain, which in this case is 'bronstutorials.local'.</span></li>
           </ul></td>
                 
                 <td align="right">
@@ -87,8 +87,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And right-click the Group Policy Object you want to copy. In this case, we're going to right-click the&nbsp;<strong>'New York Office'</strong>&nbsp;Group Policy Object.</span></li>
-      </ul></td>
+                  <li><span dir="LTR">Here in this section, you will see all the OUs this Group Policy is applied to. In this case, only one OU is applied, which hapeens to be entiere domain 'bronstutorials.local'.</span> If this Group Policy was applied to other OUs, those OUs would be displayed in this list.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="552" border="0">
@@ -105,7 +105,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And select the option <strong>'Back Up...'</strong>.</span></li></ul></td>
+                  <li>Here, this section determines what users and computers this Group Policy will be applied to. At present, the group that this Group Policy is being applied to is 'Authenticated Users'. Authenticated users means any users and computers that where authenticated by the domain controller succesfully.</li></ul></td>
                 
                 <td align="right">
               <table width="552" border="0">
@@ -122,7 +122,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once you select the 'Back Up...' option, you'll need to provide a location as to where the backup copy of the GPO will be placed. In this case, we will backup the GPO to the desktop. To do this, we will first click on <strong>'Browse...'</strong>.</li>
+                  <li>But for this example, we want to be more specific as to what group this Group Policy is being applied to, so we will remove this group. To do this, we will press the <strong>'Remove'</strong> button.</li>
             </ul></td>
                 
                 <td align="right">
@@ -140,7 +140,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" height="188" align="left" valign="top"><ul>
-                  <li>Then select <strong>'Desktop'</strong>.</li>
+                  <li>Then press <strong>'OK'</strong> to confirm the removal of the group.</li>
             </ul></td>
                 
                 <td align="right">
@@ -158,7 +158,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And press <strong>'OK'</strong>.</li>
+                  <li>Now we want to add a group. To do this, press the <strong>'Add...'</strong> button.</li>
         </ul></td>
                 
                 <td align="right">
@@ -176,7 +176,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the location of the backup is defined, you have the option to add a brief description.</span></li>
+                  <li><span dir="LTR">Here we will enter in the group that we want. In this case we will enter the group <strong>'gsales_staff'</strong>.</span></li>
                 </ul>
 <p>&nbsp;</p></td>
                 
@@ -195,7 +195,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once complete, press the <strong>'Back Up' </strong>button.</li>
+                  <li>This Group Policy will now apply to only users and computers that are members of this group. This is a good way of narrowing down which users and computers this Group Policy will have an effect on.</li>
         </ul></td>
                 
                 <td align="right">
@@ -213,7 +213,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The backup process does not take long.</li>
+                  <li>This section is for the case where you may not be able to use groups to narrow down or target particular users or computers for a Group Policy. For example, perhaps you want to target particular computers that are running a particular operating system. To do this, you can link a WMI filter to the Group Policy. If we select this dropdown...</li>
             </ul></td>
                 
                 <td align="right">
@@ -231,7 +231,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once complete, press&nbsp;<strong>'OK'</strong>.</li>
+                  <li>You will see that there are no WMI filters to select from, so we will need to create one first.</li>
         </ul></td>
                 
                 <td align="right">
@@ -249,7 +249,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The next step is to import the settings. For this example, we will be copying the GPO to the same domain, but in a real situation, you would more than likly be copying the GPO to another domain. Since the settings will be imported, it is a good idea to create a new Group Policy. If you use an existing Group Policy Object, you will merge the backup settings with the settings that exist in the Group Policy. In this case we will create a new Group Policy Object by right-clicking <strong>'Group Policy Objects'</strong>...</li>
+                  <li>To do this, right-click <strong>'WMI Filters'</strong> back at the left side of the window.</li>
               </ul></td>
                 
                 <td align="right">
@@ -267,7 +267,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And selecting <strong>'New'</strong>.</li>
+                  <li>Then select the option <strong>'New'</strong>.</li>
               </ul></td>
                 
                 <td align="right">
@@ -285,7 +285,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once you select 'New', a 'New Starter GPO' form will appear.</li>
+                  <li>Once you select 'New', a 'New WMI Filter' form will appear.</li>
           </ul></td>
                 
                 <td align="right">
@@ -303,9 +303,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>In this case, we will name the Group Policy Object, <strong>'LA Office'</strong>.</li>
-                  <br>
-                  <li>Then press <strong>'OK'</strong>.</li>
+                  <li>For this WMI Filter, we will create a filter that will check for computers that are running Windows 7. Therefore, we will call this WMI Filter <strong>'Windows 7'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -323,7 +321,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Now that the Group Policy Object is created....</li>
+                  <li>And then give it a brief description.</li>
             </ul></td>
                 
                 <td align="right">
@@ -341,7 +339,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>We can then right-click it...</li>
+                  <li>The next step is to then click on the <strong>'Add'</strong> button.</li>
               </ul></td>
                 
                 <td align="right">
@@ -359,8 +357,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And select <strong>'Import Settings...'</strong>.</li>
-            </ul></td>
+                  <li>Once you select 'Add', a 'WMI Query' form will appear.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="552" border="0">
@@ -377,8 +375,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once in the 'Import Settings Winzard', you can skip pass the welcome screen by pressing <strong>'Next'</strong>.</li>
-          </ul></td>
+                  <li>The information we will be adding is actually standard SQL. In short, the query is selecting any computer that is running Windows 7.</li>
+                  <br>
+                  <li>When finished, press <strong>'OK'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="552" border="0">
@@ -395,9 +395,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The next screen gives you the option to backup the GPO before starting the import. This is a good idea if you are merging the settings with an existing Group Policy. In this case, we are importing the settings into a brand new empty Group Policy, so there is really no need to backup the settings.</li>
-                  <br>
-                  <li>Click <strong>'Next'</strong> to continue.</li>
+                  <li>Press the <strong>'Save'</strong> button to create the WMI Filter.</li>
             </ul></td>
                 
                 <td align="right">
@@ -415,13 +413,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>On the next screen, we need to give the path to where we backed up the previous Group Policy. To do this, we will click <strong>'Browse'</strong>.</li>
+                  <li>Now if we select the dropdown...</li>
             </ul></td>
                 
                 <td align="right">
               <table width="552" border="0">
                         <tr>
-                            <td align="center"><img src="23.jpg" width="552" height="533"></td>
+                            <td align="center"><img src="12.jpg" width="552" height="533"></td>
                         </tr>
                   </table>
                 </td>
@@ -433,7 +431,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Select <strong>'Desktop'</strong>.</li>
+                  <li>We now have a WMI Filter to choose from, which is the WMI Filter we just created. Select the WMI Filter to continue.</li>
             </ul></td>
                 
                 <td align="right">
@@ -451,31 +449,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And press <strong>'OK'</strong>.</li>
+                  <li>And then finally, press the <strong>'Yes'</strong> button to confirm the changes and commit to the selected WMI Filter.</li>
             </ul></td>
                 
                 <td align="right">
               <table width="552" border="0">
                         <tr>
                             <td align="center"><img src="25.jpg" width="356" height="145"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li>Once the path to the backup is defined, press <strong>'Next'</strong>.</li>
-            </ul></td>
-                
-                <td align="right">
-              <table width="552" border="0">
-                        <tr>
-                            <td align="center"><img src="26.jpg" width="552" height="533"></td>
                         </tr>
                   </table>
                 </td>
