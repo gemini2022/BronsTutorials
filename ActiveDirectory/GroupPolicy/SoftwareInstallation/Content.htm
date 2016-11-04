@@ -6,7 +6,7 @@
 	
     	<table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to create a group policy, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>To learn how to install software using group policy, proceed with the following steps...</p></td>
           	</tr>
         </table>
         
@@ -111,7 +111,7 @@
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="1.jpg" width="700" height="572"></td>
+                            <td align="center"><img src="1.jpg" width="737" height="572"></td>
                         </tr>
                   </table>
                 </td>
@@ -129,7 +129,7 @@
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="2.jpg" width="700" height="572"></td>
+                            <td align="center"><img src="2.jpg" width="716" height="572"></td>
                         </tr>
                   </table>
                 </td>
@@ -196,7 +196,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The first step is to browse to the location of the install media.</li></ul></td>
+                <li>The first step is to browse to the location of the install media. This location must be a shared folder somewhere on the network because the computers in the domain have to access it. In this case the shared folder on the network is called <strong>'Software'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -213,10 +213,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Here we will enter in the path to the shared folder that holds the install media.</li>
-                  <br>
-                  <li>Then press <strong>'Open'</strong>.</li>
-            </ul></td>
+                  <li>Once the path to the install media has been entered, press <strong>'Open'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -233,7 +230,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then select the msi package you want to use for installation. In this case, we are going to use <strong>'googlechromestandaloneenterprise64.msi'</strong> to install Google Chrome to all computers in the domain.</li>
+                  <li>After the shared folder on the network has been opened, select the msi package you want to use for installation. In this case, we are going to use <strong>'googlechromestandaloneenterprise64.msi'</strong> to install Google Chrome to all computers in the domain.</li>
                   <br>
                   <li>Then press <strong>'Open'</strong>.</li>
             </ul></td>
@@ -273,15 +270,15 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>However, for this example, we will select the <strong>'Advanced'</strong> option. Selecting the 'Advanced' option gives us the ability to reconfigure any options later. Selecting the 'Assigned' option would limit us to what options could be changed at a later time. For this reason, it's a good idea to always select the 'Advanced' option to configure the options you want, knowing you can change them later.</li>
-                  <br>
+                  <li>However, for this example, we will select the <strong>'Advanced'</strong> option. Selecting the 'Advanced' option gives us the ability to reconfigure any options later. Selecting the 'Assigned' option would limit us to what options could be changed at a later time. For this reason, it's a good idea to always select the 'Advanced' option to configure the options you want, knowing you can change them later.<br>
+                  </li>
                   <li>Press <strong>'OK'</strong>.</li>
-          </ul></td>
+        </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="12.jpg" width="347" height="233"></td>
+                            <td align="center"><img src="12.jpg" width="386" height="233"></td>
                         </tr>
                   </table>
                 </td>
@@ -311,13 +308,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Here on the 'Deployment' tab, are additonal options that can be configured. In this case, because the application is being deployed at the computer level, most of the options are greyed out. We do however, have the option to <strong>'Uninstall this application when it falls out of the scope of management'</strong>. What this means is that if the Group Policy is no longer being applied to a computer, for example, if it is deleted or permissions are changed, the application will then be removed from the computer.</li>
+                  <li>Here on the 'Deployment' tab, are additonal options that can be configured. In this case, because the application is being deployed at the computer level, most of the options are greyed out. We do however have the option to <strong>'Uninstall this application when it falls out of the scope of management'</strong>. What this means is that if the Group Policy is no longer being applied to a computer, for example, if it is deleted or permissions are changed, the application will then be removed from the computer. For this example, we will select this option.</li>
               </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="14.jpg" width="404" height="448"></td>
+                            <td align="center"><img src="14.jpg" width="433" height="448"></td>
                         </tr>
                   </table>
                 </td>
@@ -349,13 +346,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Now for this example, we will deploy</span> software to all users in the domain. Therefore, we will begin by expanding the <strong>'Policies'</strong> folder under <strong>'User Configuration'</strong>.</li>
+                  <li><span dir="LTR">Now for the next example, we will deploy</span> software to all users in the domain. Therefore, we will begin by expanding the <strong>'Policies'</strong> folder under <strong>'User Configuration'</strong>.</li>
         </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="16.jpg" width="700" height="572"></td>
+                            <td align="center"><img src="16.jpg" width="735" height="572"></td>
                         </tr>
                   </table>
                 </td>
@@ -373,7 +370,7 @@
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="17.jpg" width="700" height="572"></td>
+                            <td align="center"><img src="17.jpg" width="716" height="572"></td>
                         </tr>
                   </table>
                 </td>
@@ -487,7 +484,7 @@
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="25.jpg" width="347" height="233"></td>
+                            <td align="center"><img src="25.jpg" width="385" height="233"></td>
                         </tr>
                   </table>
                 </td>
@@ -500,7 +497,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>If we select the <strong>'Deployment'</strong> tab...</li>
+                  <li>If we then select the <strong>'Deployment'</strong> tab...</li>
             </ul></td>
                 
                 <td align="right">
@@ -536,7 +533,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>If we select the <strong>'Modifications'</strong> tab...</li>
+                  <li>If we now select the <strong>'Modifications'</strong> tab...</li>
             </ul></td>
                 
                 <td align="right">
@@ -616,7 +613,7 @@
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="33.jpg" width="404" height="448"></td>
+                            <td align="center"><img src="33.jpg" width="446" height="448"></td>
                         </tr>
                   </table>
                 </td>
@@ -634,7 +631,7 @@
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="34.jpg" width="700" height="572"></td>
+                            <td align="center"><img src="18.jpg" width="700" height="572"></td>
                         </tr>
                   </table>
                 </td>
@@ -725,7 +722,7 @@
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="39.jpg" width="309" height="173"></td>
+                            <td align="center"><img src="39.jpg" width="359" height="173"></td>
                         </tr>
                   </table>
                 </td>
@@ -742,7 +739,7 @@
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="40.jpg" width="309" height="173"></td>
+                            <td align="center"><img src="40.jpg" width="359" height="173"></td>
                         </tr>
                   </table>
                 </td>
