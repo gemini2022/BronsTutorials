@@ -521,7 +521,9 @@ function ActiveDirectory() {
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[0].child[10].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Software Installation (GPSI)", "ActiveDirectory/GroupPolicy/SoftwareInstallation");
 
-
+                    //AppLocker
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[10].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "AppLocker", "ActiveDirectory/GroupPolicy/AppLocker");
 
 
 
