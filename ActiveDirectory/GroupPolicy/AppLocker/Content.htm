@@ -6,7 +6,7 @@
 	
     	<table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to create a group policy, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>AppLocker is a new feature in Windows&nbsp;7 and Windows Server&nbsp;2008&nbsp;R2 that allows you to specify which users or groups can run particular applications in your organization based on unique identities of files. If you use AppLocker, you can create rules to allow or deny applications from running.To learn how to use and configure AppLocker, proceed with the following steps...</p></td>
           	</tr>
         </table>
         
@@ -105,13 +105,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once in the 'Group Policy Management Editor', the first thing we need to do is configure the service that is required for AppLocker. If this service is not running on the client, the AppLocker settings will be ignored. By default, this service is not running</span>. To turn on this service, we will expand <strong>'Policies'</strong> under 'Computer Configuration'.</li>
+                  <li><span dir="LTR">Once in the 'Group Policy Management Editor', the first thing we need to do is configure the service that is required for AppLocker to run. If this service is not running on the client, the AppLocker settings will be ignored. By default, this service is not running</span>. To turn on this service, we will expand <strong>'Policies'</strong> under 'Computer Configuration'.</li>
           </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="0.jpg" width="700" height="572"></td>
+                            <td align="center"><img src="0.jpg" width="735" height="572"></td>
                         </tr>
                   </table>
                 </td>
@@ -129,7 +129,7 @@
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="1.jpg" width="700" height="572"></td>
+                            <td align="center"><img src="1.jpg" width="715" height="572"></td>
                         </tr>
                   </table>
                 </td>
@@ -202,7 +202,7 @@
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="5.jpg" width="404" height="375"></td>
+                            <td align="center"><img src="5.jpg" width="447" height="375"></td>
                         </tr>
                   </table>
                 </td>
@@ -222,7 +222,7 @@
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="6.jpg" width="404" height="375"></td>
+                            <td align="center"><img src="6.jpg" width="427" height="375"></td>
                         </tr>
                   </table>
                 </td>
@@ -293,7 +293,7 @@
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="11.jpg" width="365" height="544"></td>
+                            <td align="center"><img src="11.jpg" width="389" height="544"></td>
                         </tr>
                   </table>
                 </td>
@@ -329,7 +329,7 @@
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="13.jpg" width="365" height="544"></td>
+                            <td align="center"><img src="13.jpg" width="385" height="544"></td>
                         </tr>
                   </table>
                 </td>
@@ -347,7 +347,7 @@
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="14.jpg" width="365" height="544"></td>
+                            <td align="center"><img src="14.jpg" width="389" height="544"></td>
                         </tr>
                   </table>
                 </td>
@@ -658,7 +658,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>You can also select the option, <strong>'View rules that will be automatically created'</strong> to review the rules.</li>
+                  <li>You can also select the option, <strong>'View rules that will be automatically created'</strong> to review the rules that the wizard will create.</li>
             </ul></td>
                 
                 <td align="right">
@@ -732,8 +732,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The wizard will now create the rules. However, you also have the option to manually create a rule. To do this we first have scroll down to the bottom...</li>
-            </ul></td>
+                  <li>The wizard will now create the rules. </li>
+                  <br>
+                  <li>You also have the option to manually create a rule. We do this by right-clicking again anywhere in the white space. But, in this case no white space is visible because of all the rules created. So we first have scroll down to the bottom...</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -750,7 +752,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And right-click on the available white space.</li>
+                  <li>And then right-click on the available white space.</li>
 <p>&nbsp;</p>
               </ul></td>
                 
@@ -804,7 +806,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This next screen will ask what the action of this rule will be. In this case, we will select the option <strong>'Deny'</strong>. An application that matches this rule will not be allowd to run.</li>
+                  <li>This next screen will ask what the action of this rule will be. In this case, we will select the option <strong>'Deny'</strong>. When selecting this option, an application that matches this rule will not be allowd to run.</li>
         </ul></td>
                 
                 <td align="right">
@@ -822,7 +824,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>On this screen we can also select which users or groups this rule will apply to.</li>
+                  <li>On this screen we can also select which users or groups this rule will apply to. In this case we will leave the default as <strong>'Everyone'</strong>.</li>
                   <br>
                   <li>Press <strong>'Next &gt;'</strong>.</li>
                   </ul>
