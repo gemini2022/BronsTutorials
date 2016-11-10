@@ -525,7 +525,9 @@ function ActiveDirectory() {
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[0].child[10].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "AppLocker", "ActiveDirectory/GroupPolicy/AppLocker");
 
-
+                    //Change Domain Controller
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[10].child[13], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Change Domain Controller", "ActiveDirectory/GroupPolicy/ChangeDomainController");
 
 
 
