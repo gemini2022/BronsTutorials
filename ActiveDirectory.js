@@ -529,9 +529,13 @@ function ActiveDirectory() {
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[0].child[10].child[13], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Change Domain Controller", "ActiveDirectory/GroupPolicy/ChangeDomainController");
 
+                    //Group Policy Modeling
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[10].child[14], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Group Policy Modeling", "ActiveDirectory/GroupPolicy/GroupPolicyModeling");
 
-
-
+                    //Group Policy Results
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[10].child[15], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Group Policy Results", "ActiveDirectory/GroupPolicy/GroupPolicyResults");
 
 
 

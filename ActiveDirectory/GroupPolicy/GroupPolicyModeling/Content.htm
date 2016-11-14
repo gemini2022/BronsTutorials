@@ -1,0 +1,557 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    	<table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>To take advantage of the benefits of .admx files, you must create a Central Store in the SYSVOL folder on a domain controller. The Central Store is a file location that is checked by the Group Policy tools. The Group Policy tools use any .admx files that are in the Central Store. The files that are in the Central Store are later replicated to all domain controllers in the domain. To learn how to create a Central Store, proceed with the following steps...</p></td>
+          	</tr>
+        </table>
+        
+       
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+      </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        <hr>
+        <table width="100%" border="0">
+      <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then go to&nbsp;<strong>'Administrative Tools'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+                  <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select&nbsp;<strong>'Group Policy Management'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="../CreatingGroupPolicies/1.jpg" width="286" height="546"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in 'Group Policy Management', right-click a group policy</span>. In this case, we will right-click on the group policy we created earlier, <strong>'Domain Wide Group Policy'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="403" height="304"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"> Then select <strong>'Edit...'</strong>.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="196" height="75"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">In the 'Group Policy Management Editor', expand the <strong>'Policies'</strong> folder.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then hover your cursor over the <strong>'Administrative Templates'</strong> folder</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" height="188" align="left" valign="top"><ul>
+                  <li>Once you hover over the 'Administrative Templates' folder, a tooltip will appear that informs you that policy definitions are currently being retrieved from the local machine. To make management of the ADMX files easier, we will move them to a central store. To do this, we will do the following:</li>
+            </ul></td>
+                
+                <td align="right">
+      <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>First, go back and select&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then go to&nbsp;<strong>'Computer'</strong>...</li>
+                </ul>
+<p>&nbsp;</p></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="464" height="247"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And open your local hard disk of your computer.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then go into the <strong>'Windows'</strong> folder.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once in the 'Windows' folder, right-click on the <strong>'PolicyDefinitions'</strong> folder.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="10.jpg" width="464" height="247"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And select <strong>'Copy'</strong>.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>While still in the 'Windows' folder, go the the <strong>'SYSVOL'</strong> folder and open that.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="12.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then open the <strong>'domain'</strong> folder.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="13.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And then finally open the <strong>'Policies'</strong> folder. </li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="14.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="15.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="16.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="17.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="18.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="19.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="20.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="21.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="22.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="23.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="24.jpg" width="524" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="25.jpg" width="552" height="533"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="26.jpg" width="552" height="533"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="552" border="0">
+                        <tr>
+                            <td align="center"><img src="27.jpg" width="552" height="533"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        
+        
+    </body>
+</html>
