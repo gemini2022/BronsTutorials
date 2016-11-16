@@ -69,7 +69,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once in 'Group Policy Management', right-click a group policy</span>. In this case, we will right-click on the group policy we created earlier, <strong>'Domain Wide Group Policy'</strong>.</li>
+                  <li><span dir="LTR">Once in 'Group Policy Management', right-click </span> <strong>'Group Policy Modeling'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -87,7 +87,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"> Then select <strong>'Edit...'</strong>.</span></li>
+                  <li><span dir="LTR"> Then select <strong>'Group Policy Modeling Wizard...'</strong>.</span></li>
           </ul></td>
                 
                 <td align="right">
@@ -105,8 +105,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">In the 'Group Policy Management Editor', expand the <strong>'Policies'</strong> folder.</span></li>
-          </ul></td>
+                  <li><span dir="LTR">The first screen of the wizard is the welcome screen, to continue, press&nbsp;<strong>'Next &gt;'</strong>.</span></li>
+      </ul></td>
                 
                 <td align="right">
               <table width="552" border="0">
@@ -123,7 +123,9 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then hover your cursor over the <strong>'Administrative Templates'</strong> folder</li>
+                  <li>The next screen of the wizard will ask which domain controller you wish to connect to. You can choose any domain controller that is above Windows Sever 2003.</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -141,7 +143,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" height="188" align="left" valign="top"><ul>
-                  <li>Once you hover over the 'Administrative Templates' folder, a tooltip will appear that informs you that policy definitions are currently being retrieved from the local machine. To make management of the ADMX files easier, we will move them to a central store. To do this, we will do the following:</li>
+                  <li>On this screen, you can select which container or user you want to perform the modeling with. For the user information, we will select <strong>'User'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -159,7 +161,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>First, go back and select&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</li>
+                  <li>Then press the<strong> 'Browse...' </strong> button.</li>
       </ul></td>
                 
                 <td align="right">
@@ -177,7 +179,9 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then go to&nbsp;<strong>'Computer'</strong>...</li>
+                  <li>And then enter in the user we want to use for the modeling. In this case we will enter in <strong>'administrator'</strong>.</li>
+                  <br>
+                  <li>Press <strong>'OK'</strong>.</li>
                 </ul>
 <p>&nbsp;</p></td>
                 
@@ -196,7 +200,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And open your local hard disk of your computer.</li>
+                  <li>For the computer information, we will select the <strong>'Computer'</strong> option.</li>
         </ul></td>
                 
                 <td align="right">
@@ -214,7 +218,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then go into the <strong>'Windows'</strong> folder.</li>
+                  <li>Then press <strong>'Browse'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -232,7 +236,9 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once in the 'Windows' folder, right-click on the <strong>'PolicyDefinitions'</strong> folder.</li>
+                  <li>And enter in the computer we want to use for the modeling. In this case we'll enter in <strong>'dc1'</strong>.</li>
+                  <br>
+                  <li>Press <strong>'OK'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -250,7 +256,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And select <strong>'Copy'</strong>.</li>
+                  <li>Now press <strong>'Next &gt;'</strong> to continue.</li>
               </ul></td>
                 
                 <td align="right">
@@ -268,7 +274,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>While still in the 'Windows' folder, go the the <strong>'SYSVOL'</strong> folder and open that.</li>
+                  <li>This screen allows you to choose some additional simulation options. Like for example, you can select this option to simulate a slow network connection. This means that the Group Policy setting will be processed as if the computer detected a slow network connection.</li>
               </ul></td>
                 
                 <td align="right">
@@ -286,7 +292,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then open the <strong>'domain'</strong> folder.</li>
+                  <li>The next option allows you to configure Loopback processing. If you are thinking about using loopback processing, it is a good idea to test the configuration out in Group Policy Modeling before you configure it for real, in case there are any potential problems.</li>
               </ul></td>
                 
                 <td align="right">
@@ -304,7 +310,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And then finally open the <strong>'Policies'</strong> folder. </li>
+                  <li>If you select the dropdown...</li>
               </ul></td>
                 
                 <td align="right">
@@ -322,7 +328,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+                  <li>You can select what site will be used. In this case, there is only on site to select from.</li>
             </ul></td>
                 
                 <td align="right">
@@ -340,7 +346,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+                  <li>Press <strong>'Next &gt;'</strong> to continue.</li>
             </ul></td>
                 
                 <td align="right">
@@ -358,7 +364,9 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+                  <li>On this next screen, you can choose where you want the simulation to consider where the user and computer account is to be located. We will keep the default and move on.</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -376,8 +384,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
-            </ul></td>
+                  <li>On this screen, you can choose what security group the user is a member of. This is useful to test out group changes if you are using security filtering.</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="552" border="0">
@@ -394,8 +404,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
-            </ul></td>
+                  <li>This screen is like the previous screen, but allows you to choose what security group the computer is a member of.</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="552" border="0">
@@ -412,7 +424,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+                  <li>This screen you can configure which WMI filters will be used for the user. If we select <strong>'Only these filters'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -430,8 +442,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
-            </ul></td>
+                  <li>We then will have the option to select which WMI filters to use. However, as you can see, in this case, there are no WMI filters to choose from.</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="552" border="0">
@@ -448,8 +462,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
-            </ul></td>
+                  <li>On this next screen we have the same options for WMI filters, except these apply to computer configuration. Again, we are not using any WMI filters, so we will move on.</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="552" border="0">
@@ -466,8 +482,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
-            </ul></td>
+                  <li>This next screen will provide a summary of all the options that have been chosen.</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="552" border="0">
@@ -484,8 +502,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
-            </ul></td>
+                  <li>Any finally, the finish screen.</li>
+                  <br>
+                  <li>Press <strong>'Finish'</strong>.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="552" border="0">
@@ -502,8 +522,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
-            </ul></td>
+                  <li>Once the wizard is complete, the results will be displayed on the far right of the 'Group Policy Management' window. The first tab will display the summary of the results. If we select the <strong>'Settings'</strong> tab...</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="552" border="0">
@@ -520,8 +540,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
-            </ul></td>
+                  <li>You will be able to view all the Group Policy settings. If we select the <strong>'Query'</strong> tab.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="552" border="0">
@@ -538,7 +558,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>In the 'Policies' folder, there will be a folder for each of the group policies that have been created in the domain.</li>
+                  <li>This tab shows the settings that were used to generate the report. </li>
             </ul></td>
                 
                 <td align="right">
