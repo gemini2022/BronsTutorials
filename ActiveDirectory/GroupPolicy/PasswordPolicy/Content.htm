@@ -1,0 +1,286 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    	<table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>AppLocker is a new feature in Windows&nbsp;7 and Windows Server&nbsp;2008&nbsp;R2 that allows you to specify which users or groups can run particular applications in your organization based on unique identities of files. If you use AppLocker, you can create rules to allow or deny applications from running.To learn how to use and configure AppLocker, proceed with the following steps...</p></td>
+          	</tr>
+        </table>
+        
+       
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+      </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        <hr>
+        <table width="100%" border="0">
+      <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then go to&nbsp;<strong>'Administrative Tools'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+                  <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select&nbsp;<strong>'Group Policy Management'</strong>...</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="../CreatingGroupPolicies/1.jpg" width="286" height="546"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in 'Group Policy Management', you'll need to edit a Group Policy. In this case, we're going to edit the <strong>'Domain Wide Group Policy'</strong>. To do this, right-click the Group Policy.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="403" height="304"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"> And then select <strong>'Edit...'</strong>.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="../CreatingGroupPolicies/15.jpg" width="157" height="186"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in the 'Group Policy Management Editor', the first thing we need to do is configure the service that is required for AppLocker to run. If this service is not running on the client, the AppLocker settings will be ignored. By default, this service is not running</span>. To turn on this service, we will expand <strong>'Policies'</strong> under 'Computer Configuration'.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="700" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then <strong>'Windows Settings'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="700" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" height="188" align="left" valign="top"><ul>
+                  <li>And finally, <strong>'Security Settings'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+      <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="700" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once you expand 'Security Settings', select <strong>'System Services'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="700" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>The service that we need to enable is <strong>'Application Identity'</strong>. To enable it, first double-click on the service.</li>
+                </ul>
+<p>&nbsp;</p></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="700" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once the settings have been opened, select the option <strong>'Define this policy setting'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="700" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And then set the startup mode to <strong>'Automatic'</strong>. This ensures that when the client computer starts up, the 'Application Identity' service starts running, which will enable AppLocker to work.</li>
+                  <br>
+                  <li>Press <strong>'OK'</strong> to continue.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="700" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Now that the service is configured, we will now need to configure AppLocker. To do this, first expand <strong>'Application Control Policies'</strong>.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="10.jpg" width="700" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And then select <strong>'AppLocker'</strong>.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="700" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Before we start configuring AppLocker, we will first start with the AppLocker properties. To open the properties, select the option, <strong>'Configure rule enforcement'</strong>.</li></ul></td>
+                
+                <td align="right">
+              <table width="700" border="0">
+                        <tr>
+                            <td align="center"><img src="12.jpg" width="700" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+       
+    </body>
+</html>
