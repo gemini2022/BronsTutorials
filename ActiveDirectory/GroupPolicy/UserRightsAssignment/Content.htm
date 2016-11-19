@@ -6,7 +6,7 @@
 	
     	<table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>AppLocker is a new feature in Windows&nbsp;7 and Windows Server&nbsp;2008&nbsp;R2 that allows you to specify which users or groups can run particular applications in your organization based on unique identities of files. If you use AppLocker, you can create rules to allow or deny applications from running.To learn how to use and configure AppLocker, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>To learn how to configure user rights assignments, proceed with the following steps...</p></td>
           	</tr>
         </table>
         
@@ -105,7 +105,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once in the 'Group Policy Management Editor', the first thing we need to do is configure the service that is required for AppLocker to run. If this service is not running on the client, the AppLocker settings will be ignored. By default, this service is not running</span>. To turn on this service, we will expand <strong>'Policies'</strong> under 'Computer Configuration'.</li>
+                  <li><span dir="LTR">Once in the 'Group Policy Management Editor', we next have to expand <strong>'Policies'</strong>...</span></li>
           </ul></td>
                 
                 <td align="right">
@@ -141,7 +141,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" height="188" align="left" valign="top"><ul>
-                  <li>And finally, <strong>'Security Settings'</strong>.</li>
+                  <li>Then, <strong>'Security Settings'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -159,7 +159,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once you expand 'Security Settings', select <strong>'System Services'</strong>.</li>
+                  <li>Once you expand 'Security Settings', select <strong>'User Rights Assignment'</strong>.</li>
         </ul></td>
                 
                 <td align="right">
@@ -177,7 +177,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The service that we need to enable is <strong>'Application Identity'</strong>. To enable it, first double-click on the service.</li>
+                  <li>On the right side of the window, you will see many different user right policy settings that can be configured. However, the policy settings we are interested in is the 'deny' policy settings. These options can be used to effectively remove access to users or groups without requiring any knowledge of what permissions have already been applied.</li>
                 </ul>
 <p>&nbsp;</p></td>
                 
@@ -196,7 +196,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once the settings have been opened, select the option <strong>'Define this policy setting'</strong>.</li>
+                  <li>If we right-click on one of the 'Deny' settings, for example, the <strong>'Deny log on through Remote Desktop Services'</strong>.</li>
         </ul></td>
                 
                 <td align="right">
@@ -214,10 +214,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And then set the startup mode to <strong>'Automatic'</strong>. This ensures that when the client computer starts up, the 'Application Identity' service starts running, which will enable AppLocker to work.</li>
-                  <br>
-                  <li>Press <strong>'OK'</strong> to continue.</li>
-        </ul></td>
+                  <li>And select&nbsp;<strong>'Properties'</strong>.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -234,13 +232,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Now that the service is configured, we will now need to configure AppLocker. To do this, first expand <strong>'Application Control Policies'</strong>.</li>
+                  <li>We can then configure the settings. To do this is a simple matter of selecting the option <strong>'Define these policy settings'</strong>.</li>
               </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="5.jpg" width="421" height="500"></td>
+                            <td align="center"><img src="5.jpg" width="464" height="500"></td>
                         </tr>
                   </table>
                 </td>
@@ -252,7 +250,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And then select <strong>'AppLocker'</strong>.</li>
+                  <li>And then adding the required user or group by selecting the <strong>'Add User or Group...'</strong> button</li>
               </ul></td>
                 
                 <td align="right">
@@ -270,7 +268,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Before we start configuring AppLocker, we will first start with the AppLocker properties. To open the properties, select the option, <strong>'Configure rule enforcement'</strong>.</li></ul></td>
+                  <li>In this case, we will add the group <strong>'domain users'</strong>.</li>
+                  <br>
+                  <li>And then press <strong>'OK'</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -287,7 +288,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once the properties have been opened, select the <strong>'Configured'</strong> option under 'Executable rules'.</li>
+                  <li>This setting will now prevent any user in the 'domain users' group from using Remote Desktop to access the computer.</li>
               </ul></td>
                 
                 <td align="right">

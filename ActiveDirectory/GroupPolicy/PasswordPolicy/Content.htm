@@ -6,7 +6,7 @@
 	
     	<table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>AppLocker is a new feature in Windows&nbsp;7 and Windows Server&nbsp;2008&nbsp;R2 that allows you to specify which users or groups can run particular applications in your organization based on unique identities of files. If you use AppLocker, you can create rules to allow or deny applications from running.To learn how to use and configure AppLocker, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>To learn how to configure password policies for the domain, proceed with the following steps...</p></td>
           	</tr>
         </table>
         
@@ -69,7 +69,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once in 'Group Policy Management', you'll need to edit a Group Policy. In this case, we're going to edit the <strong>'Domain Wide Group Policy'</strong>. To do this, right-click the Group Policy.</span></li>
+                  <li><span dir="LTR">Once in 'Group Policy Management', we'll go ahead and take a look at the <strong>'Default Domain Policy'</strong>. This Group Policy is created when the domain is created, and is the only Group Policy you should consider configuring the default password settings for your domain.</span> To begin, we'll edit this policy by first right-clicking it.</li>
             </ul></td>
                 
                 <td align="right">
@@ -105,13 +105,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once in the 'Group Policy Management Editor', the first thing we need to do is configure the service that is required for AppLocker to run. If this service is not running on the client, the AppLocker settings will be ignored. By default, this service is not running</span>. To turn on this service, we will expand <strong>'Policies'</strong> under 'Computer Configuration'.</li>
-          </ul></td>
+                  <li><span dir="LTR">Once in the 'Group Policy Management Editor', the password policies can be found in&nbsp;<strong>'Policies'</strong>...</span></li>
+      </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="3.jpg" width="700" height="572"></td>
+                            <td align="center"><img src="3.jpg" width="735" height="572"></td>
                         </tr>
                   </table>
                 </td>
@@ -129,7 +129,7 @@
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="4.jpg" width="700" height="572"></td>
+                            <td align="center"><img src="4.jpg" width="716" height="572"></td>
                         </tr>
                   </table>
                 </td>
@@ -141,8 +141,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" height="188" align="left" valign="top"><ul>
-                  <li>And finally, <strong>'Security Settings'</strong>.</li>
-            </ul></td>
+                  <li>And then,&nbsp;<strong>'Security Settings'</strong>.</li>
+        </ul></td>
                 
                 <td align="right">
       <table width="700" border="0">
@@ -159,8 +159,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once you expand 'Security Settings', select <strong>'System Services'</strong>.</li>
-        </ul></td>
+                  <li>Then finally,&nbsp;<strong>'Account Policies'</strong>.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -177,7 +177,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The service that we need to enable is <strong>'Application Identity'</strong>. To enable it, first double-click on the service.</li>
+                  <li>The settings are divided into three parts. The first part is <strong>'Password Policy'</strong>.</li>
                 </ul>
 <p>&nbsp;</p></td>
                 
@@ -196,8 +196,17 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once the settings have been opened, select the option <strong>'Define this policy setting'</strong>.</li>
-        </ul></td>
+                  <li>Within 'Password Policy' you have the option to configure the following six settings:</li>
+                  <ul>
+                    <li>Enforce password history</li>
+                    <li>Maximum password age</li>
+                    <li>Minimum password age</li>
+                    <li>Minimum password length</li>
+                    <li>Password must meet complexity requirements</li>
+                    <li>Store passwords using reversible encryption</li>
+                  </ul>
+                </ul>
+        <p>&nbsp;</p></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -214,9 +223,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And then set the startup mode to <strong>'Automatic'</strong>. This ensures that when the client computer starts up, the 'Application Identity' service starts running, which will enable AppLocker to work.</li>
-                  <br>
-                  <li>Press <strong>'OK'</strong> to continue.</li>
+                  <li>Next is <strong>'Account Lockout Policy'</strong>.</li>
         </ul></td>
                 
                 <td align="right">
@@ -234,8 +241,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Now that the service is configured, we will now need to configure AppLocker. To do this, first expand <strong>'Application Control Policies'</strong>.</li>
-              </ul></td>
+                  <li>This policy allows the option to configure these three settings:</li>
+                  <ul>
+                    <li>Account lockout duration</li>
+                    <li>Account lockout threshold</li>
+                    <li>Reset account lockout counter after            </li>
+                  </ul>
+                </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -252,7 +264,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And then select <strong>'AppLocker'</strong>.</li>
+                  <li>And then finally <strong>'Kerberos Policy'</strong>.</li>
               </ul></td>
                 
                 <td align="right">
@@ -270,7 +282,15 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Before we start configuring AppLocker, we will first start with the AppLocker properties. To open the properties, select the option, <strong>'Configure rule enforcement'</strong>.</li></ul></td>
+                  <li>With this policy, you have the option to configure these five settings:</li>
+                  <ul>
+                    <li>Enforce user logon restrictions</li>
+                    <li>Maximum lifetime for service ticket</li>
+                    <li>Maximum lifetime for user ticket</li>
+                    <li>Maximum lifetime for user ticket renewal</li>
+                    <li>Maximum tolerance for computer clock synchronization</li>
+                  </ul>
+                </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">

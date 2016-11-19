@@ -6,7 +6,7 @@
 	
     	<table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>AppLocker is a new feature in Windows&nbsp;7 and Windows Server&nbsp;2008&nbsp;R2 that allows you to specify which users or groups can run particular applications in your organization based on unique identities of files. If you use AppLocker, you can create rules to allow or deny applications from running.To learn how to use and configure AppLocker, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>To learn how to configure audit policies for the domain, proceed with the following steps...</p></td>
           	</tr>
         </table>
         
@@ -105,8 +105,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once in the 'Group Policy Management Editor', the first thing we need to do is configure the service that is required for AppLocker to run. If this service is not running on the client, the AppLocker settings will be ignored. By default, this service is not running</span>. To turn on this service, we will expand <strong>'Policies'</strong> under 'Computer Configuration'.</li>
-          </ul></td>
+                  <li><span dir="LTR">Once in the 'Group Policy Management Editor', the auditing settings can be found in <strong>'Policies'</strong> under 'Computer Configuration'...</span></li></ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -141,7 +140,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" height="188" align="left" valign="top"><ul>
-                  <li>And finally, <strong>'Security Settings'</strong>.</li>
+                  <li>And then, <strong>'Security Settings'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -159,7 +158,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once you expand 'Security Settings', select <strong>'System Services'</strong>.</li>
+                  <li>Then finally, <strong>'Local Policies'</strong>.</li>
         </ul></td>
                 
                 <td align="right">
@@ -177,7 +176,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The service that we need to enable is <strong>'Application Identity'</strong>. To enable it, first double-click on the service.</li>
+                  <li>Once in 'Local Polices', select <strong>'Audit Policy'</strong>.</li>
                 </ul>
 <p>&nbsp;</p></td>
                 
@@ -196,7 +195,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once the settings have been opened, select the option <strong>'Define this policy setting'</strong>.</li>
+                  <li>On the right side of the window, you will see nine different audit settings that can be configured.</li>
         </ul></td>
                 
                 <td align="right">
@@ -214,9 +213,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And then set the startup mode to <strong>'Automatic'</strong>. This ensures that when the client computer starts up, the 'Application Identity' service starts running, which will enable AppLocker to work.</li>
-                  <br>
-                  <li>Press <strong>'OK'</strong> to continue.</li>
+                  <li>If we right-click on <strong>'Audit account logon events'</strong>.</li>
         </ul></td>
                 
                 <td align="right">
@@ -234,7 +231,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Now that the service is configured, we will now need to configure AppLocker. To do this, first expand <strong>'Application Control Policies'</strong>.</li>
+                  <li>And select <strong>'Properties'</strong>.</li>
               </ul></td>
                 
                 <td align="right">
@@ -252,13 +249,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And then select <strong>'AppLocker'</strong>.</li>
+                  <li>Once in the 'Audit account logon events Properties', we can select the option <strong>'Define these policy settings'</strong>.</li>
               </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="6.jpg" width="421" height="500"></td>
+                            <td align="center"><img src="6.jpg" width="463" height="500"></td>
                         </tr>
                   </table>
                 </td>
@@ -270,7 +267,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Before we start configuring AppLocker, we will first start with the AppLocker properties. To open the properties, select the option, <strong>'Configure rule enforcement'</strong>.</li></ul></td>
+                  <li>After selecting the 'Define these policy settings' option, we will then get the choice to audit 'Success' and/or 'Failure'.</li></ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -287,7 +284,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once the properties have been opened, select the <strong>'Configured'</strong> option under 'Executable rules'.</li>
+                  <li>When choosing which settings to audit and which not to audit, it is worth having a look at the <strong>'Explain'</strong> tab.</li>
               </ul></td>
                 
                 <td align="right">
@@ -305,7 +302,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then select the dropdown.</li>
+                  <li>The 'Explain' tab will give you a detailed description of what the setting does.</li>
             </ul></td>
                 
                 <td align="right">
