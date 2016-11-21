@@ -549,7 +549,9 @@ function ActiveDirectory() {
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[0].child[10].child[18], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Password Policy", "ActiveDirectory/GroupPolicy/PasswordPolicy");
 
-
+                    //Fine Grained Password Policy
+                    new HierarchicalUnit(tutorialList.child[0].child[0].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[0].child[10].child[19], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Fine Grained Password Policy", "ActiveDirectory/GroupPolicy/FineGrainedPasswordPolicy");
 
 
 
