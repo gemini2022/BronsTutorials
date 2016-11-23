@@ -6,7 +6,7 @@
 	
     	<table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>AppLocker is a new feature in Windows&nbsp;7 and Windows Server&nbsp;2008&nbsp;R2 that allows you to specify which users or groups can run particular applications in your organization based on unique identities of files. If you use AppLocker, you can create rules to allow or deny applications from running.To learn how to use and configure AppLocker, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>You can use fine grained password policies to specify multiple password policies within a single domain. You can use fine-grained password policies to apply different restrictions for password and account lockout policies to different sets of users in a domain. For example, you can apply stricter settings to privileged accounts and less strict settings to the accounts of other users. In other cases, you might want to apply a special password policy for accounts whose passwords are synchronized with other data sources. To learn how to configure a fine grained password policy, proceed with the following steps...</p></td>
           	</tr>
         </table>
         
@@ -51,7 +51,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then select&nbsp;<strong>'Group Policy Management'</strong>...</li>
+                  <li>Then select&nbsp;<strong>'ADSI Edit'</strong>...</li>
               </ul></td>
                 
                 <td align="right">
@@ -69,7 +69,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once in 'Group Policy Management', you'll need to edit a Group Policy. In this case, we're going to edit the <strong>'Domain Wide Group Policy'</strong>. To do this, right-click the Group Policy.</span></li>
+                  <li>ADSI Edit is a low level Active Directory editing tool that is used to modify the Active Directory database. The first thing we will do once we've opended the ADSI Edit window, is to right-click on <strong>'ADSI Edit'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -87,25 +87,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"> And then select <strong>'Edit...'</strong>.</span></li>
-          </ul></td>
-                
-                <td align="right">
-              <table width="700" border="0">
-                        <tr>
-                            <td align="center"><img src="3.jpg" width="700" height="579"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once in the 'Group Policy Management Editor', the first thing we need to do is configure the service that is required for AppLocker to run. If this service is not running on the client, the AppLocker settings will be ignored. By default, this service is not running</span>. To turn on this service, we will expand <strong>'Policies'</strong> under 'Computer Configuration'.</li>
+                  <li><span dir="LTR">Then select the option <strong>'Connect to...'</strong>.</span></li>
           </ul></td>
                 
                 <td align="right">
@@ -123,8 +105,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then <strong>'Windows Settings'</strong>.</li>
-            </ul></td>
+                  <li>In this case, the default option will connect to our domain. This is what we want.</li>
+                  <br>
+                  <li>Press <strong>'OK' </strong> to continue.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -141,7 +125,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" height="188" align="left" valign="top"><ul>
-                  <li>And finally, <strong>'Security Settings'</strong>.</li>
+                  <li>Next, select the <strong>'Default naming context'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -159,13 +143,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once you expand 'Security Settings', select <strong>'System Services'</strong>.</li>
+                  <li>Then expand it.</li>
         </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="7.jpg" width="700" height="579"></td>
+                            <td align="center"><img src="7.jpg" width="755" height="579"></td>
                         </tr>
                   </table>
                 </td>
@@ -177,7 +161,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The service that we need to enable is <strong>'Application Identity'</strong>. To enable it, first double-click on the service.</li>
+                  <li>Then select this...</li>
                 </ul>
 <p>&nbsp;</p></td>
                 
@@ -196,13 +180,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once the settings have been opened, select the option <strong>'Define this policy setting'</strong>.</li>
+                  <li>And expand it.</li>
         </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="9.jpg" width="700" height="579"></td>
+                            <td align="center"><img src="9.jpg" width="735" height="579"></td>
                         </tr>
                   </table>
                 </td>
@@ -214,9 +198,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And then set the startup mode to <strong>'Automatic'</strong>. This ensures that when the client computer starts up, the 'Application Identity' service starts running, which will enable AppLocker to work.</li>
-                  <br>
-                  <li>Press <strong>'OK'</strong> to continue.</li>
+                  <li>Next, select <strong>'System'</strong>...</li>
         </ul></td>
                 
                 <td align="right">
@@ -234,13 +216,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Now that the service is configured, we will now need to configure AppLocker. To do this, first expand <strong>'Application Control Policies'</strong>.</li>
+                  <li>Then expand it.</li>
               </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
                         <tr>
-                            <td align="center"><img src="11.jpg" width="700" height="579"></td>
+                            <td align="center"><img src="11.jpg" width="716" height="579"></td>
                         </tr>
                   </table>
                 </td>
@@ -252,7 +234,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And then select <strong>'AppLocker'</strong>.</li>
+                  <li>And then finally, select <strong>'Password Settings Container'</strong>.</li>
               </ul></td>
                 
                 <td align="right">
@@ -270,7 +252,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Before we start configuring AppLocker, we will first start with the AppLocker properties. To open the properties, select the option, <strong>'Configure rule enforcement'</strong>.</li></ul></td>
+                  <li>To create a password settings object,  right-click it.</li></ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -287,7 +269,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once the properties have been opened, select the <strong>'Configured'</strong> option under 'Executable rules'.</li>
+                  <li>Then select <strong>'New'</strong>.</li>
               </ul></td>
                 
                 <td align="right">
@@ -305,7 +287,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then select the dropdown.</li>
+                  <li><strong>'Object...'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -323,7 +305,9 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Notice you have the option, <strong>'Audit only'</strong>. It is recomended, that when you deploy AppLocker in your organization, configure it in audit mode first. This will allow you to test your configuration out first before deploying it.</li>
+                  <li>In this case there is only one object to choose from, which is <strong>'msDS-PasswordSettings'</strong>.</li>
+                  <br>
+                  <li>To continue, press <strong>'Next &gt;'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -341,8 +325,11 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>If you choose the option <strong>'Enforce rules'</strong> however, this will enforce any rules that have been defined rather than simpy logging the results.</li>
-            </ul></td>
+                  <li>Throughout this wizard, you will be asked several questions that help define the type of 'PSO' you want to create. The first question asks for a friendly name to be entered to identify the 'PSO'. In this case, the name we will enter is <strong>'Password PSO'</strong>.</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+                </ul>
+      <p>&nbsp;</p></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -359,10 +346,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The 'Audit only' and 'Enforce rules' options are also available for 'Windows Installer' and 'Scripts' if you wish to use AppLocker with msi packages or scripts like VB script.</li>
+                  <li>This next screen will ask for the precedence number. This needs to be a value of '1' or above, with '1' have the highest priority, if there is a conflict. In this case, we will use the value of <strong>'2'</strong>, incase we want to create another 'PSO' later on, we can then use the value of '1' to override the settings in this 'PSO' if we choose to.</li>
                   <br>
-                  <li>Press <strong>'OK'</strong>.</li>
-          </ul></td>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -379,8 +366,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>If we now scroll down to the bottom...</li>
-            </ul></td>
+                  <li>The next setting in the wizard will ask if the password should be stored using reverible encryption. In this case we will enter in <strong>'False'</strong> and move on</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -397,8 +386,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>You'll notice that this gives you an overview of what rules have been created. In this case, no rules have been created as of yet.</li>
-            </ul></td>
+                  <li>The next question will ask how many passwords you would like to save using the password history option in Active Directory. For this value, we will enter in <strong>'24'</strong> and move on.</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -415,8 +406,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>There are three different areas where rules can be created, 'Executabe Rules', 'Windows Installer Rules', and 'Script Rules'. In this case, we will create some rules for executables. To do this, click on <strong>'Executable Rules'</strong>.</li>
-            </ul></td>
+                  <li>The next question will ask if you want to make sure that when passwords are changed, they must meet complex password requirements. In this case we will enter in <strong>'True'</strong> and move on.</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -433,8 +426,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once in the 'Executable Rules' section, right-click anywhere in the white space...</li>
-            </ul></td>
+                  <li>The next screen will ask what the minimum length of the password should be. In this case, we want to increase the security for password requirements for this 'PSO', therefore will will enter in the value of <strong>'10'</strong>, forcing the users to have a password that is at least ten characters long.</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -451,8 +446,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And select the option, <strong>'Automatically Generate Rules...'</strong>. This will launch a wizard that will create a set of rules based on the software on this computer. In this case, we are using a server to create these rules, however, in a production enviroment, you most likely want to use a client computer to create the rules set. This will allow the wizard to see the kinds of software that your organization is using, therefore creating rules based on those applications.</li>
-          </ul></td>
+                  <li>The next screen will ask what the minimum age for the password needs to be. Settings like these use the format of 'Day' : 'Hours' : 'Minutes' : 'Seconds'. In this case we will set it to one day, <strong>'1:00:00:00'</strong>, which means the user will only be able to change their password once a day.</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -469,10 +466,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The first screen of the wizard will ask which folder do you want to analyze. In this case, we will leave it on the default, <strong>'Program Files'</strong>.</li>
+                  <li>On this next screen we need to enter in the time period that the user will be able to use the password before it expires and will need to be changed. For this value we will enter in 30 days <strong>'30:00:00:00'</strong>.</li>
                   <br>
                   <li>Press <strong>'Next &gt;'</strong>.</li>
-            </ul></td>
+        </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -489,7 +486,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>On this screen, you can decide which type of rules you want the wizard to create. The top option will create Publisher rules for files that are digitally signed.</li></ul></td>
+                  <li>On this screen we will be asked to enter in the number in incorrect passwords before the user account will be locked out. In this case we will enter in <strong>'5'</strong> and move on.</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -506,8 +506,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>If you choose to create Publisher rules, then you also have the option to use hash values if the file does not contain a digital signature.</li>
-            </ul></td>
+                  <li>The next option indicates the time period before the incorrect password counter is reset. In this case we will enter in a half-hour <strong>'0:00:30:00'</strong>. This means when an account is locked out because of the number of unsuccessful login attempts exceeds the password policy lockout threshold, it will take a half-hour before the number of unsuccessful login attempts is reset to 0.</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -526,8 +528,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Or this option of a path rule for non-digitally signed files.</li>
-            </ul></td>
+                  <li>On this next screen we can enter in a value for how long the account will stay locked out before it will automatically be unlocked. In this case we will enter in one hour <strong>'0:01:00:00'</strong>. If you want the account to stay locked out until an administrator unlocks it, you need to enter in the value of '(never)'. If you enter in the value of '(never)', the account will stay locked out until an administrator unlocks it.</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -545,7 +549,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This option will create hash rules for all files.</li>
+                  <li>This will complete the wizard. To create the 'PSO', press <strong>'Finish'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -563,9 +567,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The last option will allow the wizard to analyze the rules that it will create, checking  to see if there are any overlaps. It is recommended to leave this option on, as it will greatly reduce the number of files created. The less rules you have, the eaiser it will be to manage.</li>
-                  <br>
-                  <li>Press <strong>'Next &gt;'</strong>.</li>
+                  <li>The next step is to associate the 'PSO' with a user or group. To do this, right click the object...</li>
                 </ul>
         <p>&nbsp;</p></td>
                 
@@ -584,7 +586,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>After pressing 'Next &gt;' on the previous screen, the wizard will start generating the rules.</li>
+                  <li>And select <strong>'Properties'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -602,7 +604,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>After the rules have been generated, the wizard will bring you to the last screen. This screen will allow you to review what results the wizard has created.</li>
+                  <li>This will show the attributes of the object. If we scroll down...</li>
             </ul></td>
                 
                 <td align="right">
@@ -620,7 +622,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>If you want to see which files were reviewed, you can select the option, <strong>'Review files that were analyzed'</strong>.</li></ul></td>
+                  <li>The attribute that we need to edit is <strong>'msDS-PSOAppliesTo'</strong>. To edit this attribute, select it...</li></ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -637,10 +639,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Here you can see a list of all the files that a rule will be created for. You can clear the check box next to a file to prevent a rule from being created for that file.</li>
-                  <br>
-                  <li>Press <strong>'OK'</strong>.</li>
-              </ul></td>
+                  <li>And then press <strong>'Edit'</strong>.</li></ul></td>
                 
                 <td align="right"><table width="700" border="0">
                       <tr>
@@ -656,8 +655,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>You can also select the option, <strong>'View rules that will be automatically created'</strong> to review the rules that the wizard will create.</li>
-            </ul></td>
+                  <li>Then press the <strong>'Add Windows Account...'</strong> button.</li></ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -674,10 +672,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This will open a screen that shows you all the rules that will be created.</li>
+                  <li>Here is where we will enter in the user or group that the 'PSO' will associate with. In this case we will enter in the group <strong>'laptop users'</strong>.</li>
                   <br>
                   <li>Press <strong>'OK'</strong>.</li>
-        </ul></td>
+            </ul></td>
                 
                 <td align="right">
               <table width="700" border="0">
@@ -694,7 +692,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>No rules have been created yet. To create the rules, press the <strong>'Create'</strong> button.</li>
+                  <li>This is all that needs to be configured. The Password settings object is now being applied to all the users in the 'Laptop Users' group.</li>
           </ul></td>
                 
                 <td align="right">
