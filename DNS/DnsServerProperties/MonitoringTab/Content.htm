@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top">To learn how to add the 'DNS Server Role' to a server, proceed with the following steps...</td>
+                <td width="100%" align="left" valign="top">With the  Monitoring tab you can perform the DNS lookup test that will run queries against your  DNS server. You can also configure automated test that will run at a configured time interval to ensure the DNS server is operating correctly:</td>
                 
                 
           </tr>
@@ -17,13 +17,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting <strong>'Start'</strong> at the bottom left corner of your  screen.</span></li>
-            </ul>                  <br></td>
+                  <li><span dir="LTR">First, select the option <strong>'A simple query against this DNS server'</strong>. This option tests name resolution for the zone loaded on this DNS server.</span></li>
+          </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="1.jpg" width="404" height="466"></td>
+                            <td align="center"><img src="1.jpg" width="447" height="466"></td>
                         </tr>
                   </table>
               </td>
@@ -35,13 +35,13 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then go to <strong>'Administrative Tools'</strong>...</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Then select the option <strong>'A recursive query to other DNS servers'</strong>. This option tests forwarding. If the simple query passes and the recursive query fails, then the problem is with forwarding.</span></li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="404" border="0">
                         <tr>
-                            <td align="center">&nbsp;</td>
+                            <td align="center"><img src="2.jpg" width="446" height="466"></td>
                         </tr>
                     </table>
                 </td>
@@ -53,13 +53,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then <strong>'Server Manager'</strong>...</span></li>
+                  <li><span dir="LTR">Once either of the above options are selected, press the <strong>'Test Now'</strong> button.</span></li>
                 </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center">&nbsp;</td>
+                            <td align="center"><img src="3.jpg" width="404" height="466"></td>
                         </tr>
                     </table>
                 </td>
@@ -71,13 +71,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once in Server Manager, select <strong>'Roles'</strong> at the upper left corner of  your screen.</span></li>
-                </ul></td>
+                  <li>Here is where it will show the results of the test. In this case, both the 'Simple Query' and the 'Recursive Query' passed. However, if you get a failure, a yellow flag will appear on the server icon in the left-hand pane of the DNS management snap-in.  Just be aware that the monitor test produces that flag, and will remain there until you run a successful test.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center">&nbsp;</td>
+                            <td align="center"><img src="4.jpg" width="404" height="466"></td>
                         </tr>
                     </table>
                 </td>
@@ -89,13 +89,48 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then, at the far right side of your screen, select <strong>'Add Roles'</strong> to  launch the Add Roles Wizard.</span></li>
+                  <li>Selecting this option, <strong>'Perform automatic testing at the following interval' </strong>will allow testing to occur at a constant interval that you define.</li>
                 </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center">&nbsp;</td>
+                            <td align="center"><img src="5.jpg" width="446" height="466"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once that option is selected, press <strong>'Apply'</strong>.</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="404" height="466"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">The test will then automatically perform at the interval that was defined.</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="404" height="466"></td>
                         </tr>
                   </table>
                 </td>
