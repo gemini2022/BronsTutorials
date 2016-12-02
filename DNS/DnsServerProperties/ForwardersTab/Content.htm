@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top">To learn how to add the 'DNS Server Role' to a server, proceed with the following steps...</td>
+                <td width="100%" align="left" valign="top"><p>The Forwarders tab allows you to configure forwarders. A forwarder is a Domain Name System (DNS) server on a network that is used to forward DNS queries for external DNS names to DNS servers outside that network. By using a forwarder, you can manage name resolution for names outside your network, such as names on the Internet, which can improve the efficiency of name resolution for the computers in your network</p></td>
                 
                 
           </tr>
@@ -17,11 +17,11 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting <strong>'Start'</strong> at the bottom left corner of your  screen.</span></li>
+                  <li><span dir="LTR">First, you'll notice the option <strong>'Use root hints if no forwarders are available</strong></span><strong>'</strong> is currently greyed out. This is because no forwarders have been configured.</li>
             </ul>                  <br></td>
                 
                 <td align="right">
-                    <table width="404" border="0">
+                    <table width="536" border="0">
                         <tr>
                             <td align="center"><img src="1.jpg" width="404" height="466"></td>
                         </tr>
@@ -35,13 +35,13 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then go to <strong>'Administrative Tools'</strong>...</span></li>
-                </ul></td>
+                  <li><span dir="LTR">To be able to edit the option, </span> at least one forwarder has to be configured. To configure a forwarder, first press the <strong>'Edit...'</strong> button</li>
+              </ul></td>
                 
                 <td align="right">
-                  <table width="404" border="0">
+                  <table width="536" border="0">
                         <tr>
-                            <td align="center">&nbsp;</td>
+                            <td align="center"><img src="2.jpg" width="404" height="466"></td>
                         </tr>
                     </table>
                 </td>
@@ -53,13 +53,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then <strong>'Server Manager'</strong>...</span></li>
+                  <li><span dir="LTR">After pressing the 'Edit...' button on the previous screen, you will be able to enter in the IP addresss of the DNS server you want to forward the DNS queries to.</span></li>
                 </ul></td>
                 
                 <td align="right">
-              <table width="404" border="0">
+              <table width="536" border="0">
                         <tr>
-                            <td align="center">&nbsp;</td>
+                            <td align="center"><img src="3.jpg" width="536" height="440"></td>
                         </tr>
                     </table>
                 </td>
@@ -71,13 +71,15 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once in Server Manager, select <strong>'Roles'</strong> at the upper left corner of  your screen.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">In this case, we will enter in the IP address of the DNS server from our ISP.</span></li>
+                  <br>
+                  <li>Once the IP address has been entered, press the 'Enter' key.</li>
+            </ul></td>
                 
                 <td align="right">
-              <table width="404" border="0">
+              <table width="536" border="0">
                         <tr>
-                            <td align="center">&nbsp;</td>
+                            <td align="center"><img src="4.jpg" width="536" height="440"></td>
                         </tr>
                     </table>
                 </td>
@@ -89,13 +91,69 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then, at the far right side of your screen, select <strong>'Add Roles'</strong> to  launch the Add Roles Wizard.</span></li>
+                  <li><span dir="LTR">Your local ISP should have at least two DNS servers for redundancy. Some ISP will even have more.</span></li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="536" height="440"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">So in this case, we will enter in the second IP address of the DNS server from our ISP.</span></li>
+                  <br>
+                  <li>Once the IP address has been entered, press the 'Enter' key.</li>
                 </ul></td>
                 
                 <td align="right">
-              <table width="404" border="0">
+<table width="536" border="0">
                         <tr>
-                            <td align="center">&nbsp;</td>
+                            <td align="center"><img src="6.jpg" width="536" height="440"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">After you have completed entering  all the IP address of the DNS servers you want to use as forwarders, press <strong>'OK'</strong>.</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="536" height="440"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">You can see now that the option</span> <span dir="LTR">'Use root hints if no forwarders are available</span>' is now enabled. In most cases you'll want this option selected because if for any reason the forwarders that have been configured can not be contacted, then your DNS server will resort to using the root hints instead. However, in some cases it is a good idea to keep this option uncheked for security reasons. Keeping this option off will prevent the DNS server from contacting any root hint servers, avoiding directly communicating to the internet.</li>
+                </ul></td>
+                
+                <td align="right">
+      <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="404" height="466"></td>
                         </tr>
                   </table>
                 </td>
