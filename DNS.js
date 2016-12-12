@@ -55,17 +55,33 @@ function DNS() {
                             new HierarchicalUnit(tutorialList.child[0].child[1].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                 new Link(tutorialList.child[0].child[1].child[2].child[1].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Monitoring Tab", "DNS/DnsServerProperties/MonitoringTab");
 
+            //Zone
+            new HierarchicalUnit(tutorialList.child[0].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                new ExpandCollapse(tutorialList.child[0].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Zones", root);
+            
+                    //Primary Zone
+                    new HierarchicalUnit(tutorialList.child[0].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[1].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Primary Zone", "DNS/Zones/PrimaryZone");
 
+                    //Secondary Zone
+                    new HierarchicalUnit(tutorialList.child[0].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[1].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Secondary Zone", "DNS/Zones/SecondaryZone");
 
+                    //Stub Zone
+                    new HierarchicalUnit(tutorialList.child[0].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[1].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Stub Zone", "DNS/Zones/StubZone");
 
+                    //Reverse Lookup Zone
+                    new HierarchicalUnit(tutorialList.child[0].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[1].child[3].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Reverse Lookup Zone", "DNS/Zones/ReverseLookupZone");
 
+                    //Conditional Forwarders
+                    new HierarchicalUnit(tutorialList.child[0].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[1].child[3].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Conditional Forwarders", "DNS/Zones/ConditionalForwarders");
 
-
-
-
-
-
-
+                    //Active Directory-Integrated Zone
+                    new HierarchicalUnit(tutorialList.child[0].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[1].child[3].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Active Directory-Integrated Zone", "DNS/Zones/ActiveDirectoryIntegratedZone");
 
 
 

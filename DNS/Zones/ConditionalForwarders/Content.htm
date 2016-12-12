@@ -1,0 +1,195 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top">The Advanced tab provides advanced settings that can be configured for the DNS server.</td>
+                
+                
+          </tr>
+        </table>
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">This first option is off by default. If selected, it essentially means the DNS server, when ask a query it does not know, will NOT contact other DNS servers in order to answer the query. If you have a DNS server that is on a network that is not intended to contact other DNS servers for an</span>swers, for example, the DNS server is on a secure network, you should consider enabling this option.</li>
+            </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">This next option is also off by default. If your DNS server replicates with BIND servers that are below BIND 4.9.4, you will need to enable this option. However, with that being said, unless you are using a very old UNIX based system, it is very unlikly that you will ever need to enable this option.</span></li>
+                </ul></td>
+                
+                <td align="right">
+                  <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">This option is also off by default. If this option is enabled, it will cause the zone file to not load if there are any errors in the data of the zone. For example, if a DNS record contained any illegal characters</span>. If you enable this option, and your zone file becomes corrupted for any reason, this will prevent the zone from loading and thus prevent the DNS server answering queries for that zone.</li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="../../DnsServerProperties/DnsServerPropertyTabs/1.jpg" width="252" height="406"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">This next option is selected by default, but only comes into effect when there are multiple records that exist with the same name. When this occurs, the records will be returned in sequence, which provides very basic load balancing. If you disable this option, the DNS server will always return the first DNS record it finds in the zone file.</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="../PrimaryZone/1.jpg" width="418" height="135"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">This option is also selected by default. When it is enabled, the DNS server will attempt to return DNS records that are in the same network as the client.</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="360" height="174"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">This last option is also selected by default and helps prevent false records from being added to the cache. This option should be left on.</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="360" height="174"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">On Windows Server 2012 there is a seventh option available, <strong>'Enable DNSSEC validation for remote responses'</strong>, and is enabled by default. DNSSEC is a system that allows a client to validate a DNS record. This essentially means that the client can check the DNS record returned by the DNS to ensure that it has not been tampered with. </span>DNSSEC can also be used by the client to confirm that a DNS record does not exist. This prevents an attacker telling the client a DNS record does not exist when it does, and thus causing a denial of service attack.</li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="186" height="118"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>This option allow you to select the type of name checking to be performed for all zones.</li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="536" height="440"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">This option allow you to select where the server obtains zone data when it starts.</span></li></ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="536" height="440"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"></span>With this option, you can define scavenging parameters. It deletes DNS records that have not been updated in a defined period of time. Be careful with this one. While it is a good thing to scavenge stale records, if you are using third-party DNS tools that don't properly update your Windows DNS servers, you could scavenge valid, active records.</li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="536" height="440"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>
