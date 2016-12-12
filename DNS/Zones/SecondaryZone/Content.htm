@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top">The Advanced tab provides advanced settings that can be configured for the DNS server.</td>
+                <td width="100%" align="left" valign="top">Secondary zones are the read-only copies of the primary zone of the DNS domain. Therefore, unlike a primary zone, one DNS domain can have multiple secondary zones. When secondary zones are configured for a domain, administrators can schedule zone transfers in which DNS records are transferred from the primary (read/write) zone to the secondary (read-only) zone. DNS zone transfers are one-way in this case, i.e. from primary to the secondary zone. Since secondary DNS zones are the read only copies of the primary DNS zone and do not allow DNS records to be created on them, no unauthorized person or hacker can create false DNS records or poison the DNS database. This is the reason why secondary zones are mostly installed and configured to face the external networks, i.e. the Internet. In production environments, servers that are configured to run secondary DNS zones are located in the Demilitarized Zones or DMZ. To learn how to create a secondary zone, proceed with the following steps...</td>
                 
                 
           </tr>
@@ -166,7 +166,7 @@
                 <td align="right">
               <table width="503" border="0">
                         <tr>
-                            <td align="center"><img src="4.jpg" width="503" height="386"></td>
+                            <td align="center"><img src="4.jpg" width="523" height="386"></td>
                         </tr>
                   </table>
                 </td>

@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top">The Advanced tab provides advanced settings that can be configured for the DNS server.</td>
+                <td width="100%" align="left" valign="top"><p>Normal DNS queries are forward lookup queries, they request the IP address that corresponds to a fully qualified domain name. A reverse lookup is the opposite of a forward lookup, it returns the fully qualified domain name of a host based on its IP address. Reverse lookups are possible because of a special domain called the in-addr.arpa domain, which provides a separate fully qualified domain name for every possible IP address on the Internet. To enable a reverse lookup for a particular IP address, all you have to do is create a PTR record in a reverse lookup zone (a zone that is authoritative for a portion of the in-addr.arpa domain). The PTR record maps the in-addr.arpa domain name for the address to the host&rsquo;s actual domain name. The technique used to create the reverse domain name for a given IP address is pretty clever. It creates subdomains beneath the in-addr.arpa domain by using the octets of the IP address, listing them in reverse order. For example, the reverse domain name for the IP address 207.126.67.129 is 129.67.126.207.in-addr.arpa. Why list the octets in reverse order? Because that correlates the network portions of the IP address (which work from left to right) with the subdomain structure of DNS names (which works from right to left). To learn how to create a reverse lookup zone, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -166,7 +166,7 @@
                 <td align="right">
               <table width="503" border="0">
                         <tr>
-                            <td align="center"><img src="../PrimaryZone/6.jpg" width="503" height="386"></td>
+                            <td align="center"><img src="../PrimaryZone/6.jpg" width="522" height="386"></td>
                         </tr>
                   </table>
                 </td>
@@ -184,7 +184,7 @@
                 <td align="right">
               <table width="503" border="0">
                         <tr>
-                            <td align="center"><img src="6.jpg" width="503" height="386"></td>
+                            <td align="center"><img src="6.jpg" width="522" height="386"></td>
                         </tr>
                   </table>
                 </td>
@@ -238,7 +238,7 @@
                 <td align="right">
               <table width="503" border="0">
                         <tr>
-                            <td align="center"><img src="../PrimaryZone/9.jpg" width="503" height="386"></td>
+                            <td align="center"><img src="../PrimaryZone/9.jpg" width="523" height="386"></td>
                         </tr>
                   </table>
                 </td>

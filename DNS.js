@@ -83,7 +83,9 @@ function DNS() {
                     new HierarchicalUnit(tutorialList.child[0].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[1].child[3].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Active Directory-Integrated Zone", "DNS/Zones/ActiveDirectoryIntegratedZone");
 
-
+                    //Global Names
+                    new HierarchicalUnit(tutorialList.child[0].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[1].child[3].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Global Names", "DNS/Zones/GlobalNames");
 
 
 

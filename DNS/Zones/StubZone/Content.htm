@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top">The Advanced tab provides advanced settings that can be configured for the DNS server.</td>
+                <td width="100%" align="left" valign="top">Stub zones contain only NS Name Servers (DNS server) records of their authoritative DNS domains. Stub zones of a DNS domain are mostly configured in child domains, from where the DNS queries for the parent domain are to be resolved. Since stub zones contain only NS records that point to the authoritative DNS domain to which they belong, they are best suited for the environments in which zone transfers rely on slow WAN links, such as 56 Kbps dial-up connections. When the address of name server of the parent DNS domain changes, stub zones automatically update their databases with the updated NS record that points to the new name server. To learn how to create a stub zone, proceed with the following steps...</td>
                 
                 
           </tr>
@@ -166,7 +166,7 @@
                 <td align="right">
               <table width="503" border="0">
                         <tr>
-                            <td align="center"><img src="1.jpg" width="503" height="386"></td>
+                            <td align="center"><img src="1.jpg" width="522" height="386"></td>
                         </tr>
                   </table>
                 </td>
