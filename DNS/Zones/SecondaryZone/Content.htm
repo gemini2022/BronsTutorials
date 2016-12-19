@@ -17,8 +17,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This first option is off by default. If selected, it essentially means the DNS server, when ask a query it does not know, will NOT contact other DNS servers in order to answer the query. If you have a DNS server that is on a network that is not intended to contact other DNS servers for an</span>swers, for example, the DNS server is on a secure network, you should consider enabling this option.</li>
-            </ul>                  <br></td>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+        </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="503" border="0">
@@ -35,8 +35,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This next option is also off by default. If your DNS server replicates with BIND servers that are below BIND 4.9.4, you will need to enable this option. However, with that being said, unless you are using a very old UNIX based system, it is very unlikly that you will ever need to enable this option.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="503" border="0">
@@ -53,8 +53,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option is also off by default. If this option is enabled, it will cause the zone file to not load if there are any errors in the data of the zone. For example, if a DNS record contained any illegal characters</span>. If you enable this option, and your zone file becomes corrupted for any reason, this will prevent the zone from loading and thus prevent the DNS server answering queries for that zone.</li>
-                </ul></td>
+                  <li><span dir="LTR">Then&nbsp;<strong>'DNS'</strong>...</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -71,8 +71,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This next option is selected by default, but only comes into effect when there are multiple records that exist with the same name. When this occurs, the records will be returned in sequence, which provides very basic load balancing. If you disable this option, the DNS server will always return the first DNS record it finds in the zone file.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once in DNS, expand your server, in this case it is&nbsp;<strong>'DC1'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -89,8 +89,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option is also selected by default. When it is enabled, the DNS server will attempt to return DNS records that are in the same network as the client.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Then select&nbsp;<strong>'Forward Lookup Zones'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -107,8 +107,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This last option is also selected by default and helps prevent false records from being added to the cache. This option should be left on.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once 'Forward Lookup Zones' has been selected, right-click it...</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -125,8 +125,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">On Windows Server 2012 there is a seventh option available, <strong>'Enable DNSSEC validation for remote responses'</strong>, and is enabled by default. DNSSEC is a system that allows a client to validate a DNS record. This essentially means that the client can check the DNS record returned by the DNS to ensure that it has not been tampered with. </span>DNSSEC can also be used by the client to confirm that a DNS record does not exist. This prevents an attacker telling the client a DNS record does not exist when it does, and thus causing a denial of service attack.</li>
-                </ul></td>
+                  <li><span dir="LTR">And select&nbsp;<strong>'New Zone...'</strong>&nbsp;to launch the 'New Zone Wizard'.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -143,8 +143,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This option allow you to select the type of name checking to be performed for all zones.</li>
-                </ul></td>
+                  <li>The first screen of the wizard is the welcome screen. Press<strong>&nbsp;'Next &gt;'</strong>&nbsp;to continue.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -161,7 +161,9 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option allow you to select where the server obtains zone data when it starts.</span></li></ul></td>
+                  <li><span dir="LTR">On this next screen, we are asked to select the type of zone we want to create. In this case, we will select the option&nbsp;<strong>'Secondary zone'</strong></span>. Another thing to note is that since secondary zones are the read-only copy of the primary zone, secondary zones can NOT be configured to be Active Directory-Integrated.</li>
+                  <br>
+            <li>Press&nbsp;<strong>'Next &gt;'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -178,8 +180,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>With this option, you can define scavenging parameters. It deletes DNS records that have not been updated in a defined period of time. Be careful with this one. While it is a good thing to scavenge stale records, if you are using third-party DNS tools that don't properly update your Windows DNS servers, you could scavenge valid, active records.</li>
-                </ul></td>
+                  <li>Here on this next screen, we are to enter in the name of the zone. The zone name is basically the DNS name we want to replicate. So in this case, the zone name we will enter will be&nbsp;<strong>'east.bronstutorials.local'</strong>, since this is the zone we want to replicate.</li>
+                  <br>
+                  <li>Press&nbsp;<strong>'Next &gt;'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -196,7 +200,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                  <li><span dir="LTR"></span>On this screen, we need to enter in the name or the IP address of the DNS server that this secondary zone will get information from. It should be pointed out here, that even though the DNS server we are getting the information from holds a primary zone, there is nothing stopping you from getting this information from a DNS server that holds a secondary zone.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -214,8 +218,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li><span dir="LTR"></span>In this case, we will enter in the name of the DNS server, which will be <strong>'DC1'</strong>. Once the name or the IP address has been entered, press the <strong>'Enter'</strong> key.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -232,8 +236,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li><span dir="LTR"></span>After the 'Enter' key has been pressed, the DNS server that you entered should get resolved. If this isn't the case, check to see if the DNS server you are trying to reach is configured to allow zone transfers.</li>
+                  <br>
+                  <li>Press&nbsp;<strong>'Next &gt;'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -250,8 +256,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li>This will complete the wizard. Press&nbsp;<strong>'Finish'</strong>&nbsp;to create the secondary zone.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">

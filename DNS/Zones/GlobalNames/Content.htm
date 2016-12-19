@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top">The Advanced tab provides advanced settings that can be configured for the DNS server.</td>
+                <td width="100%" align="left" valign="top">A common requirement in computer networks is the ability to resolve simple, single-label names. The use of single-label names makes it possible for a computer to access hosts such as file and Web servers by using short, easy-to-remember names instead of the fully qualified domain names. To make the use of single-label names possible, many networks deploy Windows Internet Name Service (WINS) technology in their environment. As a name resolution protocol, WINS is an alternative to DNS. It is an older service that uses NetBIOS over TCP/IP (NetBT). WINS and NetBT do not support Internet Protocol version 6 (IPv6) protocols; therefore, they are being phased out in many networks. To help network administrators migrate to DNS for all name resolution, the DNS Server role in Windows Server 2008 supports a specially named zone, called GlobalNames. By deploying a zone with this name, you can have the static, global records with single-label names, without relying on WINS. These single-label names typically refer to records for important, well-known and widely-used servers&mdash;servers that are already assigned static IP addresses and that are currently managed by IT-administrators using WINS. The GlobalNames zone is not designed to be a complete replacement for WINS. You should not use the GlobalNames zone to support the name resolution of records that are dynamically registered in WINS, records which typically are not managed by IT administrators. Support for these dynamically registered records is not scalable, especially for larger customers with multiple domains or multiple forests. To learn how to configure a GlobalNames zone, proceed with the following steps...</td>
                 
                 
           </tr>
@@ -17,8 +17,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This first option is off by default. If selected, it essentially means the DNS server, when ask a query it does not know, will NOT contact other DNS servers in order to answer the query. If you have a DNS server that is on a network that is not intended to contact other DNS servers for an</span>swers, for example, the DNS server is on a secure network, you should consider enabling this option.</li>
-            </ul>                  <br></td>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+        </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="503" border="0">
@@ -35,8 +35,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This next option is also off by default. If your DNS server replicates with BIND servers that are below BIND 4.9.4, you will need to enable this option. However, with that being said, unless you are using a very old UNIX based system, it is very unlikly that you will ever need to enable this option.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Then open the&nbsp;<strong>'Command Prompt'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="503" border="0">
@@ -53,8 +53,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option is also off by default. If this option is enabled, it will cause the zone file to not load if there are any errors in the data of the zone. For example, if a DNS record contained any illegal characters</span>. If you enable this option, and your zone file becomes corrupted for any reason, this will prevent the zone from loading and thus prevent the DNS server answering queries for that zone.</li>
-                </ul></td>
+                  <li><span dir="LTR">Once the command prompt is open, the first step for configuring global names support is to run the command <strong>'DNSCmd'</strong>.</span> This command needs to be run on every DNS server that will be answering DNS single-label names. This will allow the DNS server to start answering queries for single-label names.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -71,8 +71,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This next option is selected by default, but only comes into effect when there are multiple records that exist with the same name. When this occurs, the records will be returned in sequence, which provides very basic load balancing. If you disable this option, the DNS server will always return the first DNS record it finds in the zone file.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Next, you need to enter in the DNS server that you want to configure. In this case, <strong>'dc1'</strong> is our DNS server.</span></li></ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -89,7 +88,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option is also selected by default. When it is enabled, the DNS server will attempt to return DNS records that are in the same network as the client.</span></li>
+                  <li><span dir="LTR">Then you need to enter in <strong>'/Config'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -107,7 +106,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This last option is also selected by default and helps prevent false records from being added to the cache. This option should be left on.</span></li>
+                  <li><span dir="LTR">Followed by <strong>'/EnableGlobalNamesSupport'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -125,7 +124,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">On Windows Server 2012 there is a seventh option available, <strong>'Enable DNSSEC validation for remote responses'</strong>, and is enabled by default. DNSSEC is a system that allows a client to validate a DNS record. This essentially means that the client can check the DNS record returned by the DNS to ensure that it has not been tampered with. </span>DNSSEC can also be used by the client to confirm that a DNS record does not exist. This prevents an attacker telling the client a DNS record does not exist when it does, and thus causing a denial of service attack.</li>
+                  <li><span dir="LTR">And then finally, followed by a <strong>'1'</strong>.</span> Then press 'Enter'.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -143,7 +142,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This option allow you to select the type of name checking to be performed for all zones.</li>
+                  <li>This command changes the configuration of the DNS server so that it will respond when asked for single-label names.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -161,7 +160,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option allow you to select where the server obtains zone data when it starts.</span></li></ul></td>
+                  <li><span dir="LTR">Next, we need to configure the DNS server. To do this, </span>select&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -178,8 +178,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>With this option, you can define scavenging parameters. It deletes DNS records that have not been updated in a defined period of time. Be careful with this one. While it is a good thing to scavenge stale records, if you are using third-party DNS tools that don't properly update your Windows DNS servers, you could scavenge valid, active records.</li>
-                </ul></td>
+                  <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -196,8 +196,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li><span dir="LTR">Then&nbsp;<strong>'DNS'</strong>...</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -214,8 +214,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li><span dir="LTR">Once in DNS, expand your server, in this case it is&nbsp;<strong>'DC1'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -232,8 +232,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li><span dir="LTR">Then select&nbsp;<strong>'Forward Lookup Zones'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -250,8 +250,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li><span dir="LTR">Once 'Forward Lookup Zones' has been selected, right-click it...</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -268,8 +268,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li><span dir="LTR">And select&nbsp;<strong>'New Zone...'</strong>&nbsp;to launch the 'New Zone Wizard'.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -286,8 +286,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li>The first screen of the wizard is the welcome screen. Press<strong>&nbsp;'Next &gt;'</strong>&nbsp;to continue.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -304,8 +304,30 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                  <li><span dir="LTR"></span>Next, we need to make sure that <strong>'Primary zone'</strong> is selected, and also the option <strong>'Store the zone in Active Directory (available only if DNS server is a writeable domain controller)'</strong> is selected.</li>
+                  <br>
+                  <li>Press&nbsp;<strong>'Next &gt;'</strong>.</li>
                 </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="center"><img src="../ActiveDirectoryIntegratedZone/1.jpg" width="523" height="386"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"></span>This next screen will determine the replication of the DNS zone. Since this will be the 'GlobalNames' zone, we need to make sure that the top option, <strong>'To all DNS servers running on domain controllers in this forest'</strong> is selected. GlobalNames can be used throughout the entire forest. In fact, that is the whole idea, to have a single name that can be used throughout the forest without having to worry about which domain the client is in. For this reason, make sure that you always replicate this data to all DNS servers in the forest.</li>
+                  <br>
+                  <li>Press&nbsp;<strong>'Next &gt;'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -322,8 +344,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li>Here on this next screen, we are to enter in the name of the zone. In this case, the name of the zone needs be&nbsp;<strong>'GlobalNames'</strong>.</li>
+                  <br>
+                  <li>Press&nbsp;<strong>'Next &gt;'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -340,8 +364,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li>On this screen, configure the zone with the option <strong>'Do not allow dynamic updates'</strong>. If a user was able to make changes to the GlobalNames zone, they would be able to create a DNS record that would be used in all domains in the forest. This would be a security concern, so dynamic updates should be switched off.</li>
+                  <br>
+                  <li>Press&nbsp;<strong>'Next &gt;'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -358,8 +384,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li>This will complete the wizard. Press&nbsp;<strong>'Finish'</strong>&nbsp;to create the GlobalNames zone.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -376,8 +402,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li><span dir="LTR"></span>Now that the GlobalNames zone has been created, we now have to go into the zone. To do this, first expand <strong>'Forward Lookup Zones'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -394,7 +419,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                  <li>And select the <strong>'GlobalNames'</strong> zone you just created.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -411,7 +436,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                  <li><span dir="LTR"></span>Then, to the far right of the window, right-click anywhere in the white space...</li>
                 </ul></td>
                 
                 <td align="right">
@@ -429,7 +454,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                  <li>And select <strong>'New Alias (CNAME)...'</strong> to create a CNAME.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -447,8 +472,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li><span dir="LTR"></span>In the Alias text box, enter the required name for the server/workstation. In this case we are creating a global name for the intranet server.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -465,7 +490,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                  <li>After the name has been entered, press <strong>'Browse...'</strong>.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -483,8 +508,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li><span dir="LTR"></span>From here, we need to select the server/workstation that will be associated with this global name. To start, we will first double-click on our DNS server <strong>'DC1'</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -501,7 +526,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                  <li><span dir="LTR"></span>Then double-click <strong>'Forward Lookup Zones'</strong>.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -518,8 +543,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li><span dir="LTR"></span>Then double-click the zone of where the DNS records of the server/workstation you're trying to reach is located. In this case it's <strong>'bronstutorials.local'</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -535,8 +560,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li><span dir="LTR"></span>And then finally, select the A record for that server/workstation and press <strong>'OK'</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -547,12 +572,13 @@
                 </td>
             </tr>
         </table>
+        
         <hr>
         
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                  <li>Now when we press <strong>'OK'</strong> on this form, the CNAME record will be created.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -564,18 +590,19 @@
                 </td>
             </tr>
         </table>
+        
         <hr>
         
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                  <li>If we select the <strong>'GlobalNames'</strong> zone</li>
                 </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
                         <tr>
-                            <td align="center"><img src="22.jpg" width="360" height="282"></td>
+                            <td align="center"><img src="12.jpg" width="360" height="254"></td>
                         </tr>
                   </table>
                 </td>
@@ -586,7 +613,24 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                  <li><span dir="LTR"></span>And then take a look at the far right of the screen, we will notice that the CNAME record for 'intranet' is pointing to the DNS record 'dc1', just as we configured it. So now, if changes need to be made, these changes can be made to  'dc1's' DNS record, either by an administrator or dynamically, and never have the need to update our global name.</li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="503" border="0">
+                        <tr>
+                            <td align="right"><img src="22.jpg" width="453" height="154"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"></span>One last thing that needs to be done. The DNS server has had a configuration change to enable GlobalName support, however this change does not take effect until the DNS server has been restarted. To do this, right-click on the DNS server, in this case it's <strong>'DC1'</strong>.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -603,7 +647,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                  <li>And select <strong>'All Tasks'</strong>...</li>
                 </ul></td>
                 
                 <td align="right">
@@ -621,7 +665,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                  <li>Then <strong>'Restart' </strong>to restart the DNS server.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -639,7 +683,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                  <li><span dir="LTR"></span>Once the DNS server has been restarted, Global Names support will be enabled.</li>
                 </ul></td>
                 
                 <td align="right">

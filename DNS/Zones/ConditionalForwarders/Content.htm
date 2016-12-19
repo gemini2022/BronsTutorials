@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top">Conditional forwarders are DNS servers that only forward queries for specific domain names. Instead of forwarding all queries it cannot resolve locally to a forwarder, a conditional forwarder is configured to forward a query to specific forwarders based on the domain name contained in the query. Conditional forwarding according to domain names improves conventional forwarding by adding a name-based condition to the forwarding process. For example, you can configure a DNS server to forward all the queries it receives for names ending with widgets.contoso.com to the IP address of a specific DNS server or to the IP addresses of multiple DNS servers. To learn how to create a conditional forwarder, proceed with the following steps...</td>
+                <td width="100%" align="left" valign="top">Conditional forwarders are DNS servers that only forward queries for specific domain names. Instead of forwarding all queries it cannot resolve locally to a forwarder, a conditional forwarder is configured to forward a query to specific forwarders based on the domain name contained in the query. This option is heavily used, and many look at them as the best regarding security concerns with zone data exposure, because no data is exposed. This option has worked very well in many environments. With Conditional Forwarders, no information is being transerred and shared. The only thing you would need to know is one or more of your business partner's DNS server IPs to configure it, and they don't have to be the SOA, rather any DNS server that hosts the zone or that has a reference to the zone. However, it does require open communication and let each other know when their DNS server IPs may change, because you must manually set them. Windows 2003 introduced Conditional Forwarders, but it did not have the option to make it AD Integrated. If you had ten DNS servers, you then had to create the Conditional Forwarder on each server manually. The AD integrated option was added to Windows 2008 or later, so now with using these new versions of Windows server, you  don't have to manually create them on each DNS server. This way the Conditional Forwarder will be available domain or forest-wide. To learn how to create a conditional forwarder, proceed with the following steps...</td>
                 
                 
           </tr>
@@ -17,8 +17,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This first option is off by default. If selected, it essentially means the DNS server, when ask a query it does not know, will NOT contact other DNS servers in order to answer the query. If you have a DNS server that is on a network that is not intended to contact other DNS servers for an</span>swers, for example, the DNS server is on a secure network, you should consider enabling this option.</li>
-            </ul>                  <br></td>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+        </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="503" border="0">
@@ -35,8 +35,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This next option is also off by default. If your DNS server replicates with BIND servers that are below BIND 4.9.4, you will need to enable this option. However, with that being said, unless you are using a very old UNIX based system, it is very unlikly that you will ever need to enable this option.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="503" border="0">
@@ -53,8 +53,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option is also off by default. If this option is enabled, it will cause the zone file to not load if there are any errors in the data of the zone. For example, if a DNS record contained any illegal characters</span>. If you enable this option, and your zone file becomes corrupted for any reason, this will prevent the zone from loading and thus prevent the DNS server answering queries for that zone.</li>
-                </ul></td>
+                  <li><span dir="LTR">Then&nbsp;<strong>'DNS'</strong>...</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -71,8 +71,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This next option is selected by default, but only comes into effect when there are multiple records that exist with the same name. When this occurs, the records will be returned in sequence, which provides very basic load balancing. If you disable this option, the DNS server will always return the first DNS record it finds in the zone file.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once in DNS, expand your server, in this case it is&nbsp;<strong>'DC1'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -89,8 +89,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option is also selected by default. When it is enabled, the DNS server will attempt to return DNS records that are in the same network as the client.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Then select&nbsp;<strong>'Conditional Forwarders'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -107,8 +107,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This last option is also selected by default and helps prevent false records from being added to the cache. This option should be left on.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once 'Conditional Forwarders' has been selected, right-click it...</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -125,8 +125,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">On Windows Server 2012 there is a seventh option available, <strong>'Enable DNSSEC validation for remote responses'</strong>, and is enabled by default. DNSSEC is a system that allows a client to validate a DNS record. This essentially means that the client can check the DNS record returned by the DNS to ensure that it has not been tampered with. </span>DNSSEC can also be used by the client to confirm that a DNS record does not exist. This prevents an attacker telling the client a DNS record does not exist when it does, and thus causing a denial of service attack.</li>
-                </ul></td>
+                  <li><span dir="LTR">And select&nbsp;<strong>'New Conditional Forwarder...'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -143,7 +143,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This option allow you to select the type of name checking to be performed for all zones.</li>
+                  <li>At the top of the form, we need to enter in the DNS name that we want to forward. In this case, the DNS domain will be <strong>'otherguystutorials.local'</strong>.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -161,7 +161,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option allow you to select where the server obtains zone data when it starts.</span></li></ul></td>
+                  <li><span dir="LTR">And then here, we need to enter in the DNS server or servers that can resolve queries for this domain</span>. In this case we are going enter in <strong>'192.168.0.2'</strong> and then press 'Enter'.</li></ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
@@ -178,8 +178,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>With this option, you can define scavenging parameters. It deletes DNS records that have not been updated in a defined period of time. Be careful with this one. While it is a good thing to scavenge stale records, if you are using third-party DNS tools that don't properly update your Windows DNS servers, you could scavenge valid, active records.</li>
-                </ul></td>
+                  <li><span dir="LTR"></span>Once the DNS server has been entered, press <strong>'OK'</strong> to create the conditional forwarder. <strong>Note:</strong> Validation may fail with the error <strong>'The server with this IP address is not authoritative for the required zone.'</strong> Ignore this error if you are certain that the server is authoritative for the given zone.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="503" border="0">
