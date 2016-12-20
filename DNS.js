@@ -131,9 +131,9 @@ function DNS() {
                     new HierarchicalUnit(tutorialList.child[0].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[1].child[5].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Mail Exchanger (MX)", "DNS/DNSRecords/MailExchangerRecord");
 
-                    //Less Common Records
+                    //Other Records
                     new HierarchicalUnit(tutorialList.child[0].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[1].child[5].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Less Common Records", "DNS/DNSRecords/LessCommonRecords");
+                        new Link(tutorialList.child[0].child[1].child[5].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Other Records", "DNS/DNSRecords/OtherRecords");
 
 
 
