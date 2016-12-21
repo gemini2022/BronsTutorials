@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top">The Advanced tab provides advanced settings that can be configured for the DNS server.</td>
+                <td width="100%" align="left" valign="top">A Start of Authority (SOA) resource record indicates which domain name server (DNS) is the best source of information for the specified domain. Every domain must have an SOA record. An SOA Record is the most essential part of a Zone file. The SOA record is a way for the Domain Administrator to give out simple information about the domain like, how often it is updated, when it was last updated, when to check back for more info, what is the admins email address and so on. A Zone file can contain only one SOA Record. The SOA record refers to a DNS zone instead of a domain. The zone is simply the portion of a domain that is controlled by a particular server. One server can control many domains, but the SOA helps to establish the primary server for the individual zone, thus helping to point toward the correct working operator for that zone. Without this protocol, it would be much harder to collect and use the information that resides in the SOA.</td>
                 
                 
           </tr>
@@ -143,6 +143,24 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">On Windows Server 2012 there is a seventh option available, <strong>'Enable DNSSEC validation for remote responses'</strong>, and is enabled by default. DNSSEC is a system that allows a client to validate a DNS record. This essentially means that the client can check the DNS record returned by the DNS to ensure that it has not been tampered with. </span>DNSSEC can also be used by the client to confirm that a DNS record does not exist. This prevents an attacker telling the client a DNS record does not exist when it does, and thus causing a denial of service attack.</li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="7B.jpg" width="404" height="483"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
                   <li>This option allow you to select the type of name checking to be performed for all zones.</li>
                 </ul></td>
                 
@@ -167,6 +185,23 @@
               <table width="404" border="0">
                         <tr>
                             <td align="center"><img src="9.jpg" width="404" height="483"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">This option allow you to select where the server obtains zone data when it starts.</span></li></ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="9B.jpg" width="404" height="483"></td>
                         </tr>
                   </table>
                 </td>
@@ -203,6 +238,24 @@
               <table width="404" border="0">
                         <tr>
                             <td align="center"><img src="11.jpg" width="404" height="483"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="11B.jpg" width="404" height="483"></td>
                         </tr>
                   </table>
                 </td>
