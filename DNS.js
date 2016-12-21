@@ -115,6 +115,10 @@ function DNS() {
                             new HierarchicalUnit(tutorialList.child[0].child[1].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                 new Link(tutorialList.child[0].child[1].child[4].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Zone Transfers Tab", "DNS/ZoneProperties/ZoneTransfersTab");
 
+                            //Security Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[1].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[1].child[4].child[1].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Security Tab", "DNS/ZoneProperties/SecurityTab");
+
             //DNS Records
             new HierarchicalUnit(tutorialList.child[0].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                 new ExpandCollapse(tutorialList.child[0].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DNS Records", root);
