@@ -6,7 +6,8 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top">The Advanced tab provides advanced settings that can be configured for the DNS server.</td>
+                <td width="100%" align="left" valign="top">The DNS Server service can use Windows Internet Name Service (WINS) servers to look up names that are not found in the DNS domain namespace by checking the NetBIOS namespace that is managed by WINS.<br>
+                To use WINS lookup integration, two special resource record types are enabled and added to a zone, the WINS and WINS-R resource records. When the WINS resource record is used, DNS queries that fail to find a matched host (A) resource record in the zone are forwarded to WINS servers that are configured in the WINS resource record. For reverse lookup zones, the WINS-R resource record can be enabled and used to provide a similar benefit for further resolving a reverse query that is not answerable in the reverse in-addr.arpa domain. This tab is not available for stub zones.</td>
                 
                 
           </tr>
@@ -17,8 +18,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This first option is off by default. If selected, it essentially means the DNS server, when ask a query it does not know, will NOT contact other DNS servers in order to answer the query. If you have a DNS server that is on a network that is not intended to contact other DNS servers for an</span>swers, for example, the DNS server is on a secure network, you should consider enabling this option.</li>
-            </ul>                  <br></td>
+                  <li><span dir="LTR">To enable DNS to use WINS resolution, first select the option <strong>'Use WINS forward lookup'</strong>.</span></li>
+          </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="404" border="0">
@@ -35,8 +36,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This next option is also off by default. If your DNS server replicates with BIND servers that are below BIND 4.9.4, you will need to enable this option. However, with that being said, unless you are using a very old UNIX based system, it is very unlikly that you will ever need to enable this option.</span></li>
-                </ul></td>
+                  <li><span dir="LTR"></span>If you are replicating this zone between DNS servers that do not recognize the WINS or WINS-R resource records, select this check box. This prevents these records from being replicated to these other servers during zone transfers. If this zone will be used in performing zone transfers to BIND servers, this is a critical option because Berkeley Internet Name Domain (BIND) will not recognize WINS records.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="404" border="0">
@@ -53,8 +54,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option is also off by default. If this option is enabled, it will cause the zone file to not load if there are any errors in the data of the zone. For example, if a DNS record contained any illegal characters</span>. If you enable this option, and your zone file becomes corrupted for any reason, this will prevent the zone from loading and thus prevent the DNS server answering queries for that zone.</li>
-                </ul></td>
+                  <li><span dir="LTR">Here, type the IP address of a WINS server to be used for resolution of names that are not found in DNS. In this case, the IP address of our WINS server is <strong>'192.168.0.2'</strong>.</span></li>
+              </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -71,7 +72,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This next option is selected by default, but only comes into effect when there are multiple records that exist with the same name. When this occurs, the records will be returned in sequence, which provides very basic load balancing. If you disable this option, the DNS server will always return the first DNS record it finds in the zone file.</span></li>
+                  <li><span dir="LTR">After the IP address of the WINS servers has been entered, press the <strong>'Add'</strong> button.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -89,7 +90,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option is also selected by default. When it is enabled, the DNS server will attempt to return DNS records that are in the same network as the client.</span></li>
+                  <li><span dir="LTR">It is here where a list of WINS servers will be listed.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -107,8 +108,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This last option is also selected by default and helps prevent false records from being added to the cache. This option should be left on.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">As an option, you can click the <strong>'Advanced'</strong> button to adjust advanced WINS lookup parameters.</span></li>
+              </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -125,7 +126,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">On Windows Server 2012 there is a seventh option available, <strong>'Enable DNSSEC validation for remote responses'</strong>, and is enabled by default. DNSSEC is a system that allows a client to validate a DNS record. This essentially means that the client can check the DNS record returned by the DNS to ensure that it has not been tampered with. </span>DNSSEC can also be used by the client to confirm that a DNS record does not exist. This prevents an attacker telling the client a DNS record does not exist when it does, and thus causing a denial of service attack.</li>
+                  <li><span dir="LTR">It is here where you can configure the <strong>'Cache time out'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -143,8 +144,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This option allow you to select the type of name checking to be performed for all zones.</li>
-                </ul></td>
+                  <li>And here you can configure the <strong>'Lookup time-out'</strong>.</li>
+                  <br>
+                  <li>Press <strong>'OK'</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -161,7 +164,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option allow you to select where the server obtains zone data when it starts.</span></li></ul></td>
+                  <li><span dir="LTR">This option allow you to select where the server obtains zone data when it starts.</span></li>
+                  <br>
+                  <li>Press <strong>'OK'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">

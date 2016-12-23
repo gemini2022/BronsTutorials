@@ -17,8 +17,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This first option is off by default. If selected, it essentially means the DNS server, when ask a query it does not know, will NOT contact other DNS servers in order to answer the query. If you have a DNS server that is on a network that is not intended to contact other DNS servers for an</span>swers, for example, the DNS server is on a secure network, you should consider enabling this option.</li>
-            </ul>                  <br></td>
+                  <li>In this field, a serial number of the zone file that is incremented each time a change is made is displayed.  The secondary name servers compares the serial number returned by the primary name server with the serial number in their copy of the zone file to determine if they should update their zone file.  If the serial number from the primary name server is greater than their serial number, they will do a zone update transfer.  Otherwise, no action is taken. If you make a change to the zone file on the primary name server and forget to increment the serial number, the change will not be propagated to the secondary name servers even if you attempt to force a zone update transfer.  The primary and secondary name servers will remain out of sync until the serial number is incremented on the primary name server.  Unless you are manually editing the zone files (something that is not uncommon when using BIND), most DNS servers or frontend DNS applications will increment the serial number for you.  But if you find that updates are not being propagated to the secondary name servers, the serial number is the first thing you should check. In the early days of DNS, the serial number was just that &mdash; a number that was incremented by 1 each time the zone file was changed.  So that one could have a better idea of when the zone file was actually changed, it's recommended (but not required) that you use the format YYYYMMDDnn, where YYYY is the year, MM is the month, DD is the day, and nn is the revision number (in case the zone file is changed more than once in a single day). Never use a decimal in the serial number, such as 20130511.01, even if it is allowed by your DNS server.  The serial number is an unsigned 32-bit number, so using a decimal in the serial number will cause it be converted to something unexpected.</li>
+    </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="404" border="0">
@@ -35,8 +35,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This next option is also off by default. If your DNS server replicates with BIND servers that are below BIND 4.9.4, you will need to enable this option. However, with that being said, unless you are using a very old UNIX based system, it is very unlikly that you will ever need to enable this option.</span></li>
-                </ul></td>
+                  <li>In this field, the fully-qualified domain name of the primary or master name server for the zone file is displayed.  Within the structure of DNS, there can only be one server that holds the master, editable zone file.  All secondary name servers create their zone files by transferring the contents from the primary name server.  Changes to the domain's resource records are made to the primary name server's zone file and are then propagated to the secondary name servers when they check for updates. The domain name of the primary name server must end with a period.</li>
+        </ul></td>
                 
                 <td align="right">
                   <table width="404" border="0">
@@ -53,8 +53,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option is also off by default. If this option is enabled, it will cause the zone file to not load if there are any errors in the data of the zone. For example, if a DNS record contained any illegal characters</span>. If you enable this option, and your zone file becomes corrupted for any reason, this will prevent the zone from loading and thus prevent the DNS server answering queries for that zone.</li>
-                </ul></td>
+                  <li>In this field, an email address of the person responsible for the domain's zone file is displayed.  Often it will be an alias or group address rather than a particular idividual.  It uses a special format where the &quot;@&quot; character is replaced with a &quot;.&quot; (period) character and the email address ends with a period.  So the email address hostmaster@example.com would become hostmaster.example.com. (note that the endding period is part of the email address). Never use an email address which uses a period before the &quot;@&quot; character (such as host.master@example.com) since DNS will automatically interpret the first period as the &quot;@&quot; character (where host.master.example.com. would become host@master.example.com).</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -71,8 +71,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This next option is selected by default, but only comes into effect when there are multiple records that exist with the same name. When this occurs, the records will be returned in sequence, which provides very basic load balancing. If you disable this option, the DNS server will always return the first DNS record it finds in the zone file.</span></li>
-                </ul></td>
+                  <li>In this field is the time a secondary name server should wait between zone file update checks.  The value should not be so short that the primary name server is overwhelmed by update checks and not so long that propagation of changes to the secondary name servers are unduely delayed.  If you control the secondary name servers and the zone file doesn't change that often, then you might want to set this to as long as day, especially if you can force an update on the secondary name servers if needed.  But if your secondary name servers are not under your control, then you'll probably want to set this to somewhere between 30 minutes and 2 hours to ensure any changes you make are propagated in a timely fashion. Even if you configure your primary name server to send NOTIFY messages  to the secondary name servers whenever a change is made, you should never completely depend on this to ensure timely propagation of the changes, especially when using third-party secondary name servers. The decision to honor a NOTIFY message is entirely up to the secondary name server and some DNS servers do not support NOTIFY.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -84,49 +84,14 @@
             </tr>
         </table>
         
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option is also selected by default. When it is enabled, the DNS server will attempt to return DNS records that are in the same network as the client.</span></li>
-                </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="5.jpg" width="404" height="483"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
         
         <hr>
         
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This last option is also selected by default and helps prevent false records from being added to the cache. This option should be left on.</span></li>
-                </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="6.jpg" width="404" height="483"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">On Windows Server 2012 there is a seventh option available, <strong>'Enable DNSSEC validation for remote responses'</strong>, and is enabled by default. DNSSEC is a system that allows a client to validate a DNS record. This essentially means that the client can check the DNS record returned by the DNS to ensure that it has not been tampered with. </span>DNSSEC can also be used by the client to confirm that a DNS record does not exist. This prevents an attacker telling the client a DNS record does not exist when it does, and thus causing a denial of service attack.</li>
-                </ul></td>
+                  <li>In this field is the time that a secondary name server should wait before trying to contact the primary name server again after a failed attempt to check for a zone file update.  There are all kinds of reasons why a zone file update check could fail, and not all of them mean that there is something wrong with the primary name server.  Perhaps it was too busy handling other requests just then.  The Retry Interval simply tells the secondary name server to wait for a period of time before trying again.  A good retry value would be between 10 minutes and 1 hour, depending on the length of the Refresh Interval. The retry interval should always be shorter than the refresh interval.  But don't make this value too short.  When in doubt, use a 10 minute  retry interval.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -138,48 +103,13 @@
             </tr>
         </table>
         
+       
         <hr>
         
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">On Windows Server 2012 there is a seventh option available, <strong>'Enable DNSSEC validation for remote responses'</strong>, and is enabled by default. DNSSEC is a system that allows a client to validate a DNS record. This essentially means that the client can check the DNS record returned by the DNS to ensure that it has not been tampered with. </span>DNSSEC can also be used by the client to confirm that a DNS record does not exist. This prevents an attacker telling the client a DNS record does not exist when it does, and thus causing a denial of service attack.</li>
-                </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="7B.jpg" width="404" height="483"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li>This option allow you to select the type of name checking to be performed for all zones.</li>
-                </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="8.jpg" width="404" height="483"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option allow you to select where the server obtains zone data when it starts.</span></li></ul></td>
+            <li>In this field is the time that a secondary name server will treat its zone file as valid when the primary name server cannot be contacted.  If your primary name server goes offline for some reason, you want the secondary name names to keep answering DNS queries for your domain until you can get the primary back online.  Make this value too short and your domain will disapear from the Internet before you can bring the primary back online.  A good value would be something between 1 day and 2 days. If you stop using a domain and delete it from the configuration of the primary name server, remember to remove it from the secondary name servers as well.  This is especially important if you use third-party secondary name servers since they will continue to answer queries for the deleted domain &mdash; answers which could now be completely incorrect &mdash; until the expiry interval is reached.</li></ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -196,43 +126,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option allow you to select where the server obtains zone data when it starts.</span></li></ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="9B.jpg" width="404" height="483"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>With this option, you can define scavenging parameters. It deletes DNS records that have not been updated in a defined period of time. Be careful with this one. While it is a good thing to scavenge stale records, if you are using third-party DNS tools that don't properly update your Windows DNS servers, you could scavenge valid, active records.</li>
-                </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="10.jpg" width="404" height="483"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li><span dir="LTR"></span>This field specifies the minimum TTL value. This is the length of time that other DNS servers use to determine how long to cache information for a record in the zone before they expire and discard it. The standard setting is one hour.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -249,43 +144,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="11B.jpg" width="404" height="483"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="12.jpg" width="404" height="483"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                  <li><span dir="LTR"></span>This field represents the TTL for the SOA record itself.</li>
                 </ul></td>
                 
                 <td align="right">

@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top">The Advanced tab provides advanced settings that can be configured for the DNS server.</td>
+                <td width="100%" align="left" valign="top">If the zone is Active Directory&ndash;integrated, the Security tab is available and can be used to configure permissions to the zone file. This is where you can control who can perform dynamic updates.</td>
                 
                 
           </tr>
@@ -17,8 +17,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This first option is off by default. If selected, it essentially means the DNS server, when ask a query it does not know, will NOT contact other DNS servers in order to answer the query. If you have a DNS server that is on a network that is not intended to contact other DNS servers for an</span>swers, for example, the DNS server is on a secure network, you should consider enabling this option.</li>
-            </ul>                  <br></td>
+                  <li>For example, we can select&nbsp;<strong>'Everyone'</strong>...</li>
+        </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="404" border="0">
@@ -35,8 +35,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This next option is also off by default. If your DNS server replicates with BIND servers that are below BIND 4.9.4, you will need to enable this option. However, with that being said, unless you are using a very old UNIX based system, it is very unlikly that you will ever need to enable this option.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And give 'Everyone' full control of this zone.</span></li>
+                  <br>
+                  <li>Press&nbsp;<strong>'OK'</strong>&nbsp;when finished</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="404" border="0">

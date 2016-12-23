@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top">The Advanced tab provides advanced settings that can be configured for the DNS server.</td>
+                <td width="100%" align="left" valign="top">A primary server has the &quot;master copy&quot; of a zone, and secondary servers keep copies of the zone for redundancy. When changes are made to zone data on the primary DNS server, these changes must be distributed to the secondary DNS servers for the zone. This is done through zone transfers. Most DNS servers automatically notifies secondary servers whenever changes are made through a NOTIFY request, and most DNS servers will request a Zone Transfer whenever such a notification is received. Secondary servers also periodically check for changes by querying the primary server for the SOA-record of the zone, and checking the serial number. In addition to whatever other changes are made to a zone and its records, the serial number of the SOA-record must always be incremented. The periodic polling by the secondary servers is controlled by the refresh, retry, and expire parameters of the SOA-record. The secondary server waits for the &quot;refresh&quot; interval before checking with the primary for a new serial number. If this check cannot be completed, new checks are started every &quot;retry&quot; interval. If the secondary finds it impossible to perform a serial check within the &quot;expire&quot; interval, it discards the zone. When the poll shows that the zone has changed (higher serial number), the secondary server will fetch a fresh copy of the zone through a zone transfer request. The actual zone transfer operation transfers all the records in the zone from the primary to the secondary server.</td>
                 
                 
           </tr>
@@ -17,7 +17,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This first option is off by default. If selected, it essentially means the DNS server, when ask a query it does not know, will NOT contact other DNS servers in order to answer the query. If you have a DNS server that is on a network that is not intended to contact other DNS servers for an</span>swers, for example, the DNS server is on a secure network, you should consider enabling this option.</li>
+                  <li><span dir="LTR">In order for a zone to be allowed to transfer its zone data, the option <strong>'Allow zone transfers:'</strong> must be first selected.</span></li>
             </ul>                  <br></td>
                 
                 <td align="right">
@@ -35,7 +35,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This next option is also off by default. If your DNS server replicates with BIND servers that are below BIND 4.9.4, you will need to enable this option. However, with that being said, unless you are using a very old UNIX based system, it is very unlikly that you will ever need to enable this option.</span></li>
+                  <li><span dir="LTR">Once the 'Allow zone transfers:' option has been selected, you then have the option of choosing what server is allowd to receive</span> a copy of the zone. The first option, <strong>'To any server'</strong> allows any server anywhere to request a copy for the zone data. This option is not very secure.</li>
                 </ul>
                 <p>&nbsp;</p></td>
                 
@@ -54,7 +54,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option is also off by default. If this option is enabled, it will cause the zone file to not load if there are any errors in the data of the zone. For example, if a DNS record contained any illegal characters</span>. If you enable this option, and your zone file becomes corrupted for any reason, this will prevent the zone from loading and thus prevent the DNS server answering queries for that zone.</li>
+                  <li><span dir="LTR">This next option, <strong>'Only to servers listed on the Name Servers tab'</strong> limits transfers to servers you specify. This is a more secure</span> setting than the previous option 'To any server', because it limits zone transfers to other servers from the same zone.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -72,7 +72,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This next option is selected by default, but only comes into effect when there are multiple records that exist with the same name. When this occurs, the records will be returned in sequence, which provides very basic load balancing. If you disable this option, the DNS server will always return the first DNS record it finds in the zone file.</span></li>
+                  <li><span dir="LTR">And finally this last option, <strong>'Only to the following servers'</strong> allows you to specify exactly which servers are allowed to request zone transfers. This list</span> can be larger or smaller than the list specifed on the Name Servers tab.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -90,7 +90,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option is also selected by default. When it is enabled, the DNS server will attempt to return DNS records that are in the same network as the client.</span></li>
+                  <li><span dir="LTR">Once the option 'Only to the following servers' has been selected, you can then press the <strong>'Edit'</strong> button.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -108,7 +108,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This last option is also selected by default and helps prevent false records from being added to the cache. This option should be left on.</span></li>
+                  <li><span dir="LTR">Once the 'Edit' button on the previous form has been pressed, you can then begin to add the servers you want to receive zone transfers. To do this, first select the clickable area.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -126,7 +126,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">On Windows Server 2012 there is a seventh option available, <strong>'Enable DNSSEC validation for remote responses'</strong>, and is enabled by default. DNSSEC is a system that allows a client to validate a DNS record. This essentially means that the client can check the DNS record returned by the DNS to ensure that it has not been tampered with. </span>DNSSEC can also be used by the client to confirm that a DNS record does not exist. This prevents an attacker telling the client a DNS record does not exist when it does, and thus causing a denial of service attack.</li>
+                  <li><span dir="LTR">Then enter in the IP address of the server you want to receive zone transfers and then press the 'Enter' key.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -144,7 +144,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This option allow you to select the type of name checking to be performed for all zones.</li>
+                  <li>You can add or remove as many servers as needed. Once complete, press <strong>'OK'</strong>.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -162,7 +162,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">This option allow you to select where the server obtains zone data when it starts.</span></li></ul></td>
+                  <li><span dir="LTR">The notify option is for setting up automatic notification triggers that are sent to secondary servers for this zone. Those triggers signal the secondary</span> servers that changes have occured on the primary server so that the secondary servers can request updates sooner than their normally scheduled interval. To configure this notify option, first press the <strong>'Notify...'</strong> button.</li></ul></td>
                 
                 <td align="right">
               <table width="536" border="0">
@@ -179,8 +179,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>With this option, you can define scavenging parameters. It deletes DNS records that have not been updated in a defined period of time. Be careful with this one. While it is a good thing to scavenge stale records, if you are using third-party DNS tools that don't properly update your Windows DNS servers, you could scavenge valid, active records.</li>
-                </ul></td>
+                  <li>Next, select the <strong>'Automatically notify:' </strong>option.</li></ul></td>
                 
                 <td align="right">
               <table width="536" border="0">
@@ -197,7 +196,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                  <li><span dir="LTR"></span>Here you have the option of either letting the servers listed on the Name Servers tab to be notified...</li>
                 </ul></td>
                 
                 <td align="right">
@@ -215,7 +214,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                  <li><span dir="LTR"></span>Or, the following servers</li>
                 </ul></td>
                 
                 <td align="right">
@@ -233,8 +232,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li><span dir="LTR"></span>Similar to before, if you want to compile a list of servers, <span dir="LTR">first select the clickable area.</span> </li>
+          </ul></td>
                 
                 <td align="right">
               <table width="536" border="0">
@@ -251,8 +250,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li><span dir="LTR"></span>Then enter in the IP address of the server you want to notify and then press the 'Enter' key.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="536" border="0">
@@ -269,8 +268,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
-                </ul></td>
+                  <li><span dir="LTR"></span>You can add or remove as many servers as needed. Once complete, press <strong>'OK'</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="536" border="0">
@@ -287,7 +286,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Selecting this button clears all the bad decisions you made in this tab and restores the default settings.</li>
+                  <li>Press <strong>'OK'</strong>.</li>
                 </ul></td>
                 
                 <td align="right">
