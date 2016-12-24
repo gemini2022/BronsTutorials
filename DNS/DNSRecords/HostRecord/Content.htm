@@ -71,7 +71,43 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once in DNS, expand your server, in this case it is&nbsp;<strong>'DC1'</strong>.</span></li>
+                  <li><span dir="LTR">Once in 'DNS',&nbsp;</span>select&nbsp;<strong>'View'</strong>&nbsp;on the top menu of the 'DNS Manager' window.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="0.jpg" width="360" height="135"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select&nbsp;<strong>'Advanced'</strong>. This will unhide any additional options that are normally hidden.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="0B.jpg" width="161" height="186"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Now expand your server, in this case it is&nbsp;<strong>'DC1'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -215,14 +251,33 @@
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
                   <li><span dir="LTR"></span>When this option is selected, it permits the resource record to be updated dynamically. When the update is performed, the host that requests the update is granted permission to modify the resource record, but all other nonadministrative permissions are removed from the access control list (ACL) that protects the resource record. This makes it possible for the administrator to create a secure resource record for a host that is not yet online and still enable the resource record to be updated dynamically when the host obtains its IP address through Dynamic Host Configuration Protocol (DHCP).</li>
-                  <br>
-                  <li>Press&nbsp;<strong>'Add Host'</strong>.</li>
-        </ul></td>
+    </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
                         <tr>
                             <td align="center"><img src="8.jpg" width="347" height="347"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"></span>Here at the bottom is the time to live value. This value is what was made present when the 'Advanced' option in the 'View' menu was switched on. For this DNS record, the time to live is set to one hour. This means that a DNS server will only be able to keep this DNS record in its cache for one hour before it is forced to contact an athoritative DNS server to obtain the DNS record again. This value can be edited, but you should consider how often the record will be changed. Because of caching, changes to a DNS record will not reach the entire network until the original TTL has expired - a good reason for setting a short TTL. However, caching helps reduce network traffic. The longer the TTL, the longer the record will live in other DNS server caches around the world, and so fewer requests to the original DNS server are needed - a good reason for setting a long TTL. Generally, for a record pointing to a server/device with a static IP address and no need for quick updates, a TTL of one day is a good starting point. However, if the record is for a host with a dynamic IP address or for server which is part of a failover set, you should be using a TTL value of a few minutes or less.</li>
+                </ul>
+                  <ul>
+                    <li>Press&nbsp;<strong>'Add Host'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="8B.jpg" width="347" height="347"></td>
                         </tr>
                   </table>
                 </td>
