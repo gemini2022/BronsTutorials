@@ -1,0 +1,214 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top">The DNS Server service supports aging and scavenging features. These features are provided as a mechanism for performing cleanup and removal of stale resource records, which can accumulate in zone data over time. You can use this procedure to set the default aging and scavenging properties for the zones on a server. To learn how to set aging/scavenging for all zones, proceed with the following steps...</td>
+                
+                
+          </tr>
+        </table>
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting <strong>'Start'</strong> at the bottom left corner of your  screen.</span></li>
+            </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then go to <strong>'Administrative Tools'</strong>...</span></li>
+                </ul></td>
+                
+                <td align="right">
+                  <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then <strong>'DNS'</strong>...</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../DnsServerProperties/1.jpg" width="252" height="406"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in DNS, right-click your server, in this case it is <strong>'DC1'</strong>.</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../DnsServerProperties/2.jpg" width="360" height="135"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then select <strong>'Set Aging/Scavenging for All Zones...'</strong>.</span> You would think by the wording, that this would configure scavenging for all zones, but, this is not the case. This only sets the default for Active Directory-Integrated zones.</li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="277" height="306"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+              <li>First, select the option <strong>'Scavenge stale resource records'</strong>.</li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="438" height="379"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>DNS clients by default update their DNS resource records every 24 hours. There are two ways to do this. The first way is if the client&rsquo;s IP has changed since the last update. If it has, this is considered an &ldquo;update&rdquo;. The second way is if the IP has&nbsp;<strong>NOT</strong>&nbsp;changed then it is considered a &ldquo;refresh&rdquo;. In both cases a new timestamp is set.</li>
+                  <br>
+              <li>The No-Refresh interval is the period of time when the DNS server will&nbsp;<strong>NOT</strong>&nbsp;accept a &ldquo;refresh&rdquo; from the client. The DNS server will accept an "update' (where the IP changes), but&nbsp;<strong>NOT</strong>&nbsp;a "refresh'. The reason for this is to cut down on DNS replication. If you have multiple DC&rsquo;s, then this makes sense. There is no point of updating a record with a new timestamp and causing unnecessary replication traffic if nothing else has changed. By setting the No-refresh interval you prevent these refreshes from taking place causing less replication.</li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="384" height="379"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>The Refresh interval starts AFTER the no-refresh interval. Within this time, both an "update' and a "refresh" are allowed to happen. If a resource record hasn&rsquo;t been updated by the time the no-refresh and refresh intervals have elapsed, then that resource record becomes eligible for scavenging.</li>
+                  <br>
+              <li>Press&nbsp;<strong>'OK'</strong>.</li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="384" height="379"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Next, you will be presented with a dialogue message. You will notice that the dialogue states</span> that <strong>'Scavenge stale resource records: Enabled'</strong>. This would tend to suggest that all zones are changed.</li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="384" height="205"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">However, you'll notice here that this setting only changes the <strong>'Default settings for new Active Directory-integrated zones:'</strong>.</span> This does not effect existing zones, and if you decide to create any other non-Active Directory-integrated zones later, this setting will also <strong>NOT</strong> apply to those zones either.</li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="384" height="205"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">If you want these settings to apply to existing Active Directory-integrated zones</span>, you can select this option <strong>'Apply these settings to the existing Active Directory-integrated zones'</strong>.</li>
+                  <br>
+                  <li>Press <strong>'OK'</strong>.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="384" height="205"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>
