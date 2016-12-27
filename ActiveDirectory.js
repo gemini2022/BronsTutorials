@@ -2,15 +2,7 @@ function ActiveDirectory() {
 
     //Active Directory
     new HierarchicalUnit(tutorialList.child[0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-
-    
-
         new ExpandCollapse(tutorialList.child[0].child[0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Active Directory", root);
-
-
-        
-
-
         tutorialList.child[0].child[0].child[0].child[1].font.size = 14;
         tutorialList.child[0].child[0].child[0].child[1].font.style = FontStyle.Bold;
         tutorialList.child[0].child[0].child[0].child[1].baseline = LabelBaseline.Bottom;

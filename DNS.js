@@ -97,7 +97,7 @@ function DNS() {
                     
                     //DNS Delegation
                     new HierarchicalUnit(tutorialList.child[0].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[1].child[3].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DNS Delegation", "DNS/Zones/DNSDelegation");
+                        new Link(tutorialList.child[0].child[1].child[3].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DNS Delegation", "DNS/Zones/DnsDelegation");
 
                     //Zone Properties
                     new HierarchicalUnit(tutorialList.child[0].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
@@ -146,22 +146,4 @@ function DNS() {
                     //Other Records
                     new HierarchicalUnit(tutorialList.child[0].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[1].child[4].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Other Records", "DNS/DNSRecords/OtherRecords");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

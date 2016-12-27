@@ -1,0 +1,364 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top">When the authoritative name server for a domain receives a request for a subdomain's records and responds with NS records for other name servers, that is DNS delegation. Essentially it is saying &quot;I am passing on authority for this subdomain to another collection of name servers, go ask them for the details.&quot; For example, &quot;com&quot; is a domain that delegates all (or perhaps almost all) of its subdomains to other name servers. When a request is received at a &quot;com&quot; name server for &quot;google.com&quot;, the &quot;com&quot; name server responds with NS records pointing to Google's name servers. You can divide your Domain Name System (DNS) namespace into one or more zones. You can then delegate management of part of your namespace to another location or department in your organization by delegating the management of the corresponding zone. To learn how to configure delegation for your zones, proceed with the following steps...</td>
+                
+                
+          </tr>
+        </table>
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+        </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
+            </ul></td>
+                
+                <td align="right">
+                  <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then&nbsp;<strong>'DNS'</strong>...</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="../../DnsServer/DnsServerProperties/1.jpg" width="252" height="406"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in DNS, expand your server, in this case it is&nbsp;<strong>'DC1'</strong>.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="../PrimaryZone/1.jpg" width="418" height="135"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then expand&nbsp;<strong>'Forward Lookup Zones'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="../../DNSRecords/HostRecord/1.jpg" width="401" height="174"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once 'Forward Lookup Zones' has been expanded, select a zone. In this case, we're going to select the&nbsp;<strong>'bronstutorials.local'</strong>&nbsp;zone.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="../../DNSRecords/HostRecord/2.jpg" width="360" height="254"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Now that the zone has been selected, right-click it.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="../../DNSRecords/HostRecord/3.jpg" width="360" height="254"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And select<strong>&nbsp;'New Delegation...'</strong> to launch the 'New Delegation Wizard'.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="177" height="306"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>The first screen of the wizard is the welcome screen. Press <strong>'Next'</strong> to continue.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="503" height="386"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>On this screen, we need to enter in the name of the delegated domain. In this case, <strong>'West'</strong>.</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+              </ul></td>
+                
+                <td align="right">
+      <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="503" height="386"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>On this screen, we need to enter in the address of a DNS server that is authoritative for the west.bronstutorials.local zone. To do this, first press the <strong>'Add...'</strong> button.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="503" height="386"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>After pressing 'Add...' on the previous screen, we then need to add the fully qualified domain name of the authoritative server for the west.bronstutorials.local zone. In this case it's <strong>'dc1.west.bronstutorials.local'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="536" height="402"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>If we then press the <strong>'Resolve'</strong> button...</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="5B.jpg" width="536" height="402"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>We get an error message that states, &quot;The IP address for this server cannot be found&quot;. This is because currently there is no way to resolve request for the 'west' DNS domain.</li>
+                  <br>
+                  <li>Press <strong>'OK'</strong>.</li>
+              </ul></td>
+                
+                <td align="right">
+<table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="347" height="145"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>To get around this, we can just manually enter in the IP address of the DNS server, rather than relying on the 'Resolve' button to try to resolve the name. If we wanted to use the name, what we would need to do is create another host record in the 'bronstutorials.local' zone for the 'west' DNS server. This is referred to as a 'Glue' record. 'Glue' records allow the DNS server to resolve host names that it cannot resolve using other methods.</li>
+                  <br>
+                  <li>After entering in the IP address, which in this case is <strong>'192.168.0.2'</strong>, press 'Enter'.</li>
+              </ul></td>
+                
+                <td align="right">
+      <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="536" height="402"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then press <strong>'OK'.</strong></li>
+        </ul></td>
+                
+                <td align="right">
+      <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="536" height="402"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Now press <strong>'Next &gt;'</strong> to continue.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="503" height="386"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>This will complete the wizard. Press&nbsp;<strong>'Finish'</strong>&nbsp;to create the new delegation.</li>
+        </ul></td>
+                
+                <td align="right">
+<table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="10.jpg" width="503" height="386"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Notice that when the delegation is created, in the zone file, it appears as grey. This indicates that it is a delegation and thus not stored on this DNS server.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="536" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="360" height="384"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+       
+    </body>
+</html>
