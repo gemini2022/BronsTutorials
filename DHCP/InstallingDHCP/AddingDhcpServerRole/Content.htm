@@ -127,7 +127,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Select the <strong>'DNS Server'</strong> option.</span></li>
+                  <li><span dir="LTR">Select the <strong>'DHCP Server'</strong> option.</span></li>
                   <br>
                   <li>Then press <strong>'Next &gt;'</strong>.</li>
               </ul></td>
@@ -147,7 +147,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul type="disc">
-                <li><span dir="LTR">This screen of the wizard gives a brief introduction to DNS. </span></li>
+                <li><span dir="LTR">This screen of the wizard gives a brief introduction to DHCP. </span></li>
                 <br>
                 <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
         </ul></td>
@@ -167,8 +167,10 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Confirm the installation selections, then click <strong>'Install'</strong>.</li>
-            </ul></td>
+                <li>On this screen, you first need to set the IPv4 address you wish to bind to the DHCP server. The DHCP server will listen and send responses on this interface.</li>
+                <br>
+                <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
+        </ul></td>
                 
                 <td align="right">
               <table width="780" border="0">
@@ -185,13 +187,13 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Wait while the Add Roles Wizard installs the DNS Server role.</span></span></li>
-          </ul></td>
+                <li>On this next screen, you'll need to specify the name of the parent domain that clients will use for name resolution. This domain will be used for all scopes that is created on this DHCP server. If this server is part of a domain, this field will automatically be filled in, which is the case for this example. If however this server is not part of a domain, this field will need to be entered manually.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="780" border="0">
                         <tr>
-                            <td align="center"><img src="4.jpg" width="780" height="575"></td>
+                            <td align="center"><img src="4a.jpg" width="780" height="575"></td>
                         </tr>
                   </table>
                 </td>
@@ -203,7 +205,43 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li><span dir="LTR"><span dir="LTR">And then here, a preferred DNS server needs to be entered.</span></span> The wizard in most cases will enter a DNS server for you, based on the primary DNS server this computer has configured.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="780" border="0">
+                        <tr>
+                            <td align="center"><img src="4b.jpg" width="780" height="575"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR"><span dir="LTR">You can validate this DNS server by pressing the <strong>'Validate'</strong> button.</span></span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="780" border="0">
+                        <tr>
+                            <td align="center"><img src="4c.jpg" width="780" height="575"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>If the DNS server that is entered is valid, then a 'valid' icon will appear.</li>
             </ul></td>
                 
                 <td align="right">
@@ -221,7 +259,27 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>You can then enter in an alternate DNS server. This field is optional.</li>
+                <br>
+                <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="780" border="0">
+                        <tr>
+                            <td align="center"><img src="5b.jpg" width="780" height="575"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>On this screen, you can set a WINS server if you are using one.WINS is Microsoft's name resolution software before Microsoft switched to DNS when Windows Server 2000 was introduced. Your network may or may not have a WINS server. If your network does <strong>NOT</strong> then you can leave it on the default option of, <strong>'WINS is not required for applications on this network'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -239,7 +297,27 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>If your network does have a WINS server, then select this option, <strong>'WINS is required for applications on this network'</strong>, then proceed with filling in the additonal required information.</li>
+                <br>
+                <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="780" border="0">
+                        <tr>
+                            <td align="center"><img src="6b.jpg" width="780" height="575"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>This screen allows you to add DHCP scopes. A scope is simply a group of IP addresses which can be given out to  clients on the network. You have the option of creating a scrop now or later after DHCP has been installed. In this case, we will add a scope later, but we'll go ahead and press the <strong>'Add...'</strong> button now to demonstrate the options that are available if we were to create one.</li>
             </ul></td>
                 
                 <td align="right">
@@ -257,8 +335,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
-            </ul></td>
+                <li>After pressing the 'Add...' button on the previous screen, the first field is asking to enter in the name of the scope. It is possible to have multiple scopes, therefore is the reasoning for giving a name to the scope.</li></ul></td>
                 
                 <td align="right">
               <table width="780" border="0">
@@ -275,7 +352,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>This field is asking for the first IP address of the scope.</li>
             </ul></td>
                 
                 <td align="right">
@@ -293,7 +370,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>And this field is asking for the last IP address of the scope.</li>
             </ul></td>
                 
                 <td align="right">
@@ -311,7 +388,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>For this field, if we select the dropdown...</li>
             </ul></td>
                 
                 <td align="right">
@@ -329,7 +406,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>We can then choose the subnet type, either wired or wireless.</li>
             </ul></td>
                 
                 <td align="right">
@@ -347,7 +424,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>Here you have the option of activating the scope. Before the DHCP server can issue any IP address, the scope must first be activated. You have the option of activating the scope now.</li>
             </ul></td>
                 
                 <td align="right">
@@ -365,7 +442,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>The subnet mask of the IP addresses for this scope can be entered here.</li>
             </ul></td>
                 
                 <td align="right">
@@ -383,8 +460,10 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
-            </ul></td>
+                <li>And finally, the default gateway can be entered here.</li>
+                <br>
+                <li><span dir="LTR">Press <strong>'Cancel'</strong> because we're not going to configure any scopes at this time.</span></li>
+        </ul></td>
                 
                 <td align="right">
               <table width="780" border="0">
@@ -401,8 +480,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
-            </ul></td>
+                <li>Click <strong>'Next &gt;'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="780" border="0">
@@ -419,8 +498,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
-            </ul></td>
+                <li>This next screen enables IPv6 stateless mode or disables it. If you  have a router on your network that can advertise IPv6 network IDs, then you can enable stateless mode for this server.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="780" border="0">
@@ -437,13 +516,15 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
-            </ul></td>
+                <li>If however, you do not have a router on your network that can advertise IPv6 network IDs, then you'll need to disable stateless mode for this server. With stateless mode disabled, the DHCP server will advertise the network ID for your clients.</li>
+                <br>
+                <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
+        </ul></td>
                 
                 <td align="right">
               <table width="780" border="0">
                         <tr>
-                            <td align="center"><img src="18.jpg" width="780" height="575"></td>
+                            <td align="center"><img src="17b.jpg" width="780" height="575"></td>
                         </tr>
                   </table>
                 </td>
@@ -455,8 +536,44 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
-            </ul></td>
+                <li>On this next screen, you'll need to specify the name of the parent domain that clients will use for name resolution. This domain will be used for all scopes that is created on this stateless IPv6 DHCP server. If this server is part of a domain, this field will automatically be filled in, which is the case for this example. If however this server is not part of a domain, this field will need to be entered manually.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="780" border="0">
+                        <tr>
+                            <td align="center"><img src="18a.jpg" width="780" height="575"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR"><span dir="LTR">And then here, a preferred DNS server IPv6 address needs to be entered.</span></span> IP addresses in version 6 are difficult to remember and easy to mistype. To make sure the IPv6 address of DNS server that is being entered is accurate we can do the following:</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="780" border="0">
+                        <tr>
+                            <td align="center"><img src="18b.jpg" width="780" height="575"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>First, select <strong>'Start'</strong> at the bottom left corner of your  screen.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="780" border="0">
@@ -473,7 +590,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>Then select the <strong>'Command Prompt'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -491,13 +608,13 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>Once the command prompt has been opend, ping your DNS server. In this case, our DNS server is 'dc1', therefore the command we will enter is <strong>'ping dc1'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
               <table width="780" border="0">
                         <tr>
-                            <td align="center"><img src="19.jpg" width="668" height="331"></td>
+                            <td align="center"><img src="19a.jpg" width="668" height="331"></td>
                         </tr>
                   </table>
                 </td>
@@ -509,7 +626,25 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>The output from the command we will pipe to clip. Clip coppies the output to the clipboard. To do this, type <strong>'| clip'</strong>, then press 'Enter'.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="780" border="0">
+                        <tr>
+                            <td align="center"><img src="19b.jpg" width="668" height="331"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>After the command has been run, close the command prompt.</li>
             </ul></td>
                 
                 <td align="right">
@@ -527,7 +662,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>Then go back down to <strong>'Start'</strong>....</li>
             </ul></td>
                 
                 <td align="right">
@@ -545,7 +680,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>And this time select <strong>'Notepad'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -562,7 +697,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>Once 'Notepad' has been opened, paste the contents of the clipboard into it.</li>
             </ul></td>
                 
                 <td align="right">
@@ -580,7 +715,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>From here, select and copy the IPv6 address of the DNS server you pinged earlier. In this case the IPv6 address is <strong>'fe80::c0a8:2'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -598,7 +733,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>Now, back at the 'Add Roles Wizard' screen, select the current preferred DNS address.</li>
             </ul></td>
                 
                 <td align="right">
@@ -616,8 +751,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
-            </ul></td>
+                <li>And paste in the correct IPv6 address.</li></ul></td>
                 
                 <td align="right">
               <table width="780" border="0">
@@ -634,7 +768,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>From here, we can press the <strong>'Validate'</strong> button.</li>
             </ul></td>
                 
                 <td align="right">
@@ -652,7 +786,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>To confirm that it is valid.</li>
             </ul></td>
                 
                 <td align="right">
@@ -670,13 +804,15 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
-            </ul></td>
+                <li>Here we have the option to enter an alternate DNS server, but we will leave as is and move on.</li>
+                <br>
+                <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
+        </ul></td>
                 
                 <td align="right">
               <table width="780" border="0">
                         <tr>
-                            <td align="center"><img src="28.jpg" width="780" height="575"></td>
+                            <td align="center"><img src="27b.jpg" width="780" height="575"></td>
                         </tr>
                   </table>
                 </td>
@@ -688,7 +824,63 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li>On this screen of the wizard, you can provide credentials to authorize the DHCP server in 'Active Directory'. A DHCP server will need to be authorized in 'Active Directory' before you can use it on your network. This option will allow the 'Administrator' to authorize the DHCP server.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="780" border="0">
+                        <tr>
+                            <td align="center"><img src="28a.jpg" width="780" height="575"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>With this option, you can specify an alternate user for authorizing the DHCP server.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="780" border="0">
+                        <tr>
+                            <td align="center"><img src="28b.jpg" width="780" height="575"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Or you can choose not to authorize the DHCP server at this time. But, if you choose this option, keep in mind that the DHCP server, at some point, must be authorized in 'Active Directory' before it can service clients.</li>
+                <br>
+                <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="780" border="0">
+                        <tr>
+                            <td align="center"><img src="28c.jpg" width="780" height="575"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Confirm the installation selections, then click&nbsp;<strong>'Install'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -706,7 +898,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>View the installation results and then click the <strong>'Close'</strong> button.</li>
+                <li><span dir="LTR">Wait while the Add Roles Wizard installs the DHCP server.</span></li>
             </ul></td>
                 
                 <td align="right">
