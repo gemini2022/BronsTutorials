@@ -15,5 +15,50 @@ function DHCP() {
                     new HierarchicalUnit(tutorialList.child[0].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Adding DHCP Server Role", "DHCP/InstallingDHCP/AddingDhcpServerRole");
 
+            //DHCP Server
+            new HierarchicalUnit(tutorialList.child[0].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                new ExpandCollapse(tutorialList.child[0].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DHCP Server", root);
             
+                    //Manage Authorized Servers
+                    new HierarchicalUnit(tutorialList.child[0].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[2].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Manage Authorized Servers", "DHCP/DhcpServer/ManageAuthorizedServers");
+
+                    //Add/Remove Bindings
+                    new HierarchicalUnit(tutorialList.child[0].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[2].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Add/Remove Bindings", "DHCP/DhcpServer/AddRemoveBindings");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
