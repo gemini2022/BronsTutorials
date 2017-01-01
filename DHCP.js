@@ -27,17 +27,37 @@ function DHCP() {
                     new HierarchicalUnit(tutorialList.child[0].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[2].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Add/Remove Bindings", "DHCP/DhcpServer/AddRemoveBindings");
 
+                    //Authorize/Unauthorize
+                    new HierarchicalUnit(tutorialList.child[0].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[2].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Authorize/Unauthorize", "DHCP/DhcpServer/AuthorizeUnauthorize");
 
+                    //Backup
+                    new HierarchicalUnit(tutorialList.child[0].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[2].child[2].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Backup", "DHCP/DhcpServer/Backup");
 
+                    //Restore
+                    new HierarchicalUnit(tutorialList.child[0].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[2].child[2].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Restore", "DHCP/DhcpServer/Restore");
 
+                    //Start/Stop/Pause Server
+                    new HierarchicalUnit(tutorialList.child[0].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[2].child[2].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Start/Stop/Pause Server", "DHCP/DhcpServer/StartStopPauseServer");
 
+                    //DHCP Server Properties
+                    new HierarchicalUnit(tutorialList.child[0].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new ExpandCollapseLink(tutorialList.child[0].child[2].child[2].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DHCP Server Properties", root, "DHCP/DhcpServer/DhcpServerProperties");
 
+                            //Advanced Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[2].child[2].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[2].child[2].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Advanced Tab", "DHCP/DhcpServer/AdvancedTab");
 
-
-
-
-
-
+            //IPv4
+            new HierarchicalUnit(tutorialList.child[0].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                new ExpandCollapse(tutorialList.child[0].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IPv4", root);
+            
+                    //Statistics
+                    new HierarchicalUnit(tutorialList.child[0].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[2].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Statistics", "DHCP/IPv4/Statistics");
 
 
 
