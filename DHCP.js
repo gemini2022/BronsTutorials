@@ -59,7 +59,9 @@ function DHCP() {
                     new HierarchicalUnit(tutorialList.child[0].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[2].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Statistics", "DHCP/IPv4/Statistics");
 
-
+                    //Scope
+                    new HierarchicalUnit(tutorialList.child[0].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new ExpandCollapseLink(tutorialList.child[0].child[2].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Scope", root, "DHCP/IPv4/Scope");
 
 
 
