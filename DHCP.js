@@ -67,9 +67,13 @@ function DHCP() {
                             new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                 new Link(tutorialList.child[0].child[2].child[3].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Address Pool", "DHCP/IPv4/AddressPool");
 
+                            //Address Pool
+                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[2].child[3].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Address Leases", "DHCP/IPv4/AddressLeases");
 
-
-
+                            //Reservations
+                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[2].child[3].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Reservations", "DHCP/IPv4/Reservations");
 
 
 
