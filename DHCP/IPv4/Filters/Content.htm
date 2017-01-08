@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top">A DHCP reservation is a permanent IP address assignment. It is a specific IP address within a DHCP scope that is permanently reserved for leased use to a specific DHCP client. You can configure a DHCP reservation in the DHCP server when you need to reserve a permanent IP address assignment. Reservations are used for DHCP enabled devices like print and file servers or other application servers that always have the fixed IP address on the network. To learn how to configure a DHCP reservation, proceed with the following steps...</td>
+                <td width="100%" align="left" valign="top">It may sometimes be desirable to restrict the range of devices which are allowed to lease IP addresses from a DHCP server. For example, if your environment includes a wireless network, you may wish to allow only certain WiFi-enabled devices to obtain an address. The Windows DHCP service provides MAC address filters for this purpose. To learn how to configure filters, proceed with the following steps...</td>
                 
                 
           </tr>
@@ -107,13 +107,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then expand <strong>'Scope'</strong>.</span></li>
+                  <li><span dir="LTR">Once 'IPv4' has been expanded, expand <strong>'Filters'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="../AddressPool/2.jpg" width="381" height="192"></td>
+                            <td align="center"><img src="1.jpg" width="381" height="176"></td>
                         </tr>
                   </table>
                 </td>
@@ -125,116 +125,78 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once 'Scope' has been expanded, select <strong>'Reservations'</strong>.</span></li>
-          </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="1.jpg" width="360" height="255"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li>Now that you have 'Reservations' selected, right-click it.</li>
-        </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="2.jpg" width="360" height="255"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li>Then select <strong>'New Reservation...'</strong>.</li>
-        </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="3.jpg" width="138" height="101"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li>First, we need to enter in the name of the reservation. In this case, we'll name this reservation <strong>'Windows 7 Client'</strong>.</li>
-        </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="4.jpg" width="348" height="331"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li>Then enter in the IP address you want to reserve. You are free to enter in any IP address here. The IP address may be in a scope or exclusion range. For this reservation, we'll use the IP address of <strong>'192.168.0.10'</strong>.</li>
-        </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="5.jpg" width="348" height="331"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li>In order to complte the reservation, you need the MAC address of the network card for the client computer. A good way to get this MAC address is...</li>
-        </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="6.jpg" width="348" height="331"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li>First,  select <strong>'Start'</strong> at the bottom left corner of your  screen.</li>
+                  <li>With filtering, you have the option to allow or deny a client from leasing an IP address based on its MAC address. In this case, we're going to deny a client from leasing an IP address. To do this, select <strong>'Deny'</strong>.</li>
       </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="360" height="208"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then righ-click it...</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="360" height="208"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And select <strong>'New Filter...'</strong>.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="107" height="135"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+              <li>In order for the filtering to work, you need the MAC address of client. A good way to get this MAC address is...</li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="387" height="165"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>First, select&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -251,8 +213,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then open the command prompt.</li>
-        </ul></td>
+                  <li>Then open the command prompt.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -269,13 +230,12 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once the command prompt is open, type the command <strong>'getmac'</strong>.</li>
-        </ul></td>
+                  <li>Once the command prompt is open, type the command&nbsp;<strong>'getmac'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="7.jpg" width="668" height="331"></td>
+                            <td align="center"><img src="../Reservations/7.jpg" width="668" height="331"></td>
                         </tr>
                   </table>
                 </td>
@@ -287,13 +247,12 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then type <strong>'/s'</strong>. This is a parameter that indicates you want to get the MAC address from a remote computer rather than this local computer.</li>
-      </ul></td>
+                  <li>Then type&nbsp;<strong>'/s'</strong>. This is a parameter that indicates you want to get the MAC address from a remote computer rather than this local computer.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="7b.jpg" width="668" height="331"></td>
+                            <td align="center"><img src="../Reservations/7b.jpg" width="668" height="331"></td>
                         </tr>
                   </table>
                 </td>
@@ -305,13 +264,12 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Next, enter in the IP address or name of the computer you want to get the MAC address from. In this case, we'll enter in the name of the computer <strong>'ws1'</strong>.</li>
-        </ul></td>
+                  <li>Next, enter in the IP address or name of the computer you want to get the MAC address from. In this case, we'll enter in the name of the computer&nbsp;<strong>'ws1'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="7c.jpg" width="668" height="331"></td>
+                            <td align="center"><img src="../Reservations/7c.jpg" width="668" height="331"></td>
                         </tr>
                   </table>
                 </td>
@@ -323,15 +281,14 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And then finally, type <strong>'| clip'</strong>. This will output the results to the clipboard.</li>
+                  <li>And then finally, type&nbsp;<strong>'| clip'</strong>. This will output the results to the clipboard.</li>
                   <br>
-                  <li>Press <strong>'Enter'</strong>.</li>
-            </ul></td>
+                  <li>Press&nbsp;<strong>'Enter'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="7d.jpg" width="668" height="331"></td>
+                            <td align="center"><img src="../Reservations/7d.jpg" width="668" height="331"></td>
                         </tr>
                   </table>
                 </td>
@@ -343,13 +300,12 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>After the command has been run, close the command prompt.</li>
-    </ul></td>
+                  <li>After the command has been run, close the command prompt.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="8.jpg" width="668" height="331"></td>
+                            <td align="center"><img src="../Reservations/8.jpg" width="668" height="331"></td>
                         </tr>
                   </table>
                 </td>
@@ -361,8 +317,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then go back down to&nbsp;<strong>'Start'</strong>....</li>
-    </ul></td>
+                  <li>Then go back down to&nbsp;<strong>'Start'</strong>....</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -379,8 +334,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And this time select&nbsp;<strong>'Notepad'</strong>.</li>
-    </ul></td>
+                  <li>And this time select&nbsp;<strong>'Notepad'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -397,8 +351,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once 'Notepad' has been opened, paste the contents of the clipboard into it.</li>
-    </ul></td>
+                  <li>Once 'Notepad' has been opened, paste the contents of the clipboard into it.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -415,13 +368,12 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>From here, select and copy the MAC address.</li>
-    </ul></td>
+                  <li>From here, select and copy the MAC address.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="9.jpg" width="571" height="340"></td>
+                            <td align="center"><img src="../Reservations/9.jpg" width="571" height="340"></td>
                         </tr>
                   </table>
                 </td>
@@ -433,13 +385,12 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Now, back at the 'New Reservation' screen, paste the MAC address you just coppied into the 'MAC address' field.</li>
-    </ul></td>
+                  <li>Now, back at the 'New Filter' screen, paste the MAC address you just coppied into the 'MAC address' field.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="10.jpg" width="348" height="331"></td>
+                            <td align="center"><img src="6.jpg" width="387" height="165"></td>
                         </tr>
                   </table>
                 </td>
@@ -451,13 +402,12 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Here you can enter in a description if you wish. In this case, we will enter <strong>'Windows 7 Client'</strong>.</li>
-        </ul></td>
+                  <li>Then enter in a description if you wish. In this case, we'll enter <strong>'Deny WS1'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="11.jpg" width="348" height="331"></td>
+                            <td align="center"><img src="7.jpg" width="387" height="165"></td>
                         </tr>
                   </table>
                 </td>
@@ -469,13 +419,12 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And then finally, press the <strong>'Add'</strong> button.</li>
-        </ul></td>
+                  <li>Once the MAC address and an optional description has been entered, press <strong>'Add'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="12.jpg" width="348" height="331"></td>
+                            <td align="center"><img src="8.jpg" width="387" height="165"></td>
                         </tr>
                   </table>
                 </td>
@@ -487,13 +436,63 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>The reservation has now been added. This workstation will now always get the same IP address.</li>
-        </ul></td>
+                  <li>You can add more if you wish, otherwise press <strong>'Close'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="13.jpg" width="348" height="331"></td>
+                            <td align="center"><img src="9.jpg" width="387" height="165"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In order for this deny filtering to work, you must first enable it. Do do this, right-click<strong></strong> it...</li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="360" height="208"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then press <strong>'Enable'</strong>.</li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="107" height="135"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Now the client computer 'WS1' will be denied leasing an IP address.<strong></strong></li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="12.jpg" width="360" height="208"></td>
                         </tr>
                   </table>
                 </td>

@@ -59,23 +59,33 @@ function DHCP() {
                     new HierarchicalUnit(tutorialList.child[0].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[2].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Statistics", "DHCP/IPv4/Statistics");
 
+                    //Server Options
+                    new HierarchicalUnit(tutorialList.child[0].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[2].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Options", "DHCP/IPv4/ServerOptions");
+
+                    //Filters
+                    new HierarchicalUnit(tutorialList.child[0].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[2].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Filters", "DHCP/IPv4/Filters");
+
                     //Scope
                     new HierarchicalUnit(tutorialList.child[0].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapseLink(tutorialList.child[0].child[2].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Scope", root, "DHCP/IPv4/Scope");
+                        new ExpandCollapseLink(tutorialList.child[0].child[2].child[3].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Scope", root, "DHCP/IPv4/Scope");
 
                             //Address Pool
-                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[2].child[3].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Address Pool", "DHCP/IPv4/AddressPool");
+                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[2].child[3].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Address Pool", "DHCP/IPv4/AddressPool");
 
                             //Address Pool
-                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[2].child[3].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Address Leases", "DHCP/IPv4/AddressLeases");
+                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[2].child[3].child[4].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Address Leases", "DHCP/IPv4/AddressLeases");
 
                             //Reservations
-                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[2].child[3].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Reservations", "DHCP/IPv4/Reservations");
+                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[2].child[3].child[4].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Reservations", "DHCP/IPv4/Reservations");
 
-
+                            //Scope Options
+                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[2].child[3].child[4].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Scope Options", "DHCP/IPv4/ScopeOptions");
 
 
 
