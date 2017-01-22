@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top">The DHCP server can be used to register and update the pointer (PTR) and host (A) resource records on behalf of its DHCP-enabled clients. To learn how to configure these options on the DNS tab, proceed with the following steps...</td>
+                <td width="100%" align="left" valign="top">The DHCP server can be used to register and update the pointer (PTR) and host (AAAA) resource records on behalf of its DHCP-enabled clients. To learn how to configure these options on the DNS tab, proceed with the following steps...</td>
                 
                 
           </tr>
@@ -89,49 +89,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"></span>Enabling this setting will ensure that DNS records are always updated when the DHCP server leases an address. Selecting this option configures the DHCP server to perform registration in a manner similar to when the Always Dynamically Update DNS records option is enabled.</li>
-          </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="5.jpg" width="404" height="448"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li>This option (available in Server 2012) configures the DHCP server to update host (A) records, but does not update records in a reverse lookup zone. This option is useful for organizations that haven&rsquo;t configured reverse lookup zones where attempts to register PTR records cause errors in the event log.</li>
-          </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="6.jpg" width="404" height="245"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">DHCP Name Protection is a feature that enables you to ensure that the hostnames that a DHCP server registers with a DNS server are not overwritten in the event that a non-Windows operating system has the same name. DHCP Name Protection also protects names from being overwritten by hosts that use static addresses that conflict with DHCP-assigned addresses. For example, in the contoso.com domain there is a computer running the Windows 8.1 operating system that has the name Auckland. It receives its IP address information from a Windows Server 2012 DHCP server. The DHCP server registers this name in DNS, and a record associating the name Auckland.contoso.com with the IP address assigned to the computer running Windows 8.1 is now present in the contoso.com DNS zone. A newly installed computer running on a distribution of Linux is also assigned the name Auckland. Because Name Protection has been enabled, this new computer is unable to overwrite the existing record with a record associating the name Auckland.contoso.com with the Linux computer&rsquo;s IP address. If Name Protection had not been enabled, it&rsquo;s possible that the record would have been overwritten.</span></li>
+                  <li><span dir="LTR"></span>DHCP Name Protection is a feature that enables you to ensure that the hostnames that a DHCP server registers with a DNS server are not overwritten in the event that a non-Windows operating system has the same name. DHCP Name Protection also protects names from being overwritten by hosts that use static addresses that conflict with DHCP-assigned addresses. For example, in the contoso.com domain there is a computer running the Windows 8.1 operating system that has the name Auckland. It receives its IP address information from a Windows Server 2012 DHCP server. The DHCP server registers this name in DNS, and a record associating the name Auckland.contoso.com with the IP address assigned to the computer running Windows 8.1 is now present in the contoso.com DNS zone. A newly installed computer running on a distribution of Linux is also assigned the name Auckland. Because Name Protection has been enabled, this new computer is unable to overwrite the existing record with a record associating the name Auckland.contoso.com with the Linux computer&rsquo;s IP address. If Name Protection had not been enabled, it&rsquo;s possible that the record would have been overwritten.</li>
         </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="7.jpg" width="404" height="448"></td>
+                            <td align="center"><img src="5.jpg" width="404" height="448"></td>
                         </tr>
                   </table>
                 </td>
@@ -149,7 +113,7 @@
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="8.jpg" width="404" height="448"></td>
+                            <td align="center"><img src="6.jpg" width="404" height="448"></td>
                         </tr>
                   </table>
                 </td>
@@ -163,18 +127,17 @@
                 <td width="100%" align="left" valign="top"><ul>
                   <li>Then select the option, <strong>'Enable Name Protection'</strong>.</li>
                   <br>
-                  <li>Press <strong>'OK'</strong>.</li>
-              </ul></td>
+              <li>Press <strong>'OK'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="9.jpg" width="382" height="350"></td>
+                            <td align="center"><img src="../../Scope/ScopeProperties/DnsTab/7.jpg" width="383" height="350"></td>
                         </tr>
                   </table>
                 </td>
             </tr>
         </table>
-        
+       
     </body>
 </html>
