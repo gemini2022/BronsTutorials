@@ -127,29 +127,33 @@ function DHCP() {
                     new HierarchicalUnit(tutorialList.child[0].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[2].child[3].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Vendor Classes", "DHCP/IPv4/VendorClasses");
 
+                    //Reconcile All Scopes
+                    new HierarchicalUnit(tutorialList.child[0].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[2].child[3].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Reconcile All Scopes", "DHCP/IPv4/ReconcileAllScopes");
+
                     //IPv4 Properties
                     new HierarchicalUnit(tutorialList.child[0].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapseLink(tutorialList.child[0].child[2].child[3].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IPv4 Properties", root, "DHCP/IPv4/IPv4Properties");
+                        new ExpandCollapseLink(tutorialList.child[0].child[2].child[3].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IPv4 Properties", root, "DHCP/IPv4/IPv4Properties");
 
                             //General Tab
-                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[2].child[3].child[9].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "DHCP/IPv4/IPv4Properties/GeneralTab");
+                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[2].child[3].child[10].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "DHCP/IPv4/IPv4Properties/GeneralTab");
 
                             //DNS Tab
-                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[2].child[3].child[9].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DNS Tab", "DHCP/IPv4/IPv4Properties/DnsTab");
+                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[2].child[3].child[10].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DNS Tab", "DHCP/IPv4/IPv4Properties/DnsTab");
 
                             //Network Access Protection Tab
-                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[2].child[3].child[9].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Network Access Protection Tab", "DHCP/IPv4/IPv4Properties/NetworkAccessProtectionTab");
+                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[2].child[3].child[10].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Network Access Protection Tab", "DHCP/IPv4/IPv4Properties/NetworkAccessProtectionTab");
 
                             //Filters Tab
-                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[2].child[3].child[9].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Filters Tab", "DHCP/IPv4/IPv4Properties/FiltersTab");
+                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[2].child[3].child[10].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Filters Tab", "DHCP/IPv4/IPv4Properties/FiltersTab");
 
                             //Advanced Tab
-                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[2].child[3].child[9].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Advanced Tab", "DHCP/IPv4/IPv4Properties/AdvancedTab");
+                            new HierarchicalUnit(tutorialList.child[0].child[2].child[3].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[2].child[3].child[10].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Advanced Tab", "DHCP/IPv4/IPv4Properties/AdvancedTab");
 
             //IPv6
             new HierarchicalUnit(tutorialList.child[0].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
@@ -199,21 +203,25 @@ function DHCP() {
                                     new HierarchicalUnit(tutorialList.child[0].child[2].child[4].child[3].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                         new Link(tutorialList.child[0].child[2].child[4].child[3].child[5].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Lease Tab", "DHCP/IPv6/Scope/ScopeProperties/LeaseTab");
 
+                    //User Classes
+                    new HierarchicalUnit(tutorialList.child[0].child[2].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[2].child[4].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "User Classes", "DHCP/IPv6/UserClasses");
+
                     //IPv6 Properties
                     new HierarchicalUnit(tutorialList.child[0].child[2].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapseLink(tutorialList.child[0].child[2].child[4].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IPv6 Properties", root, "DHCP/IPv6/IPv6Properties");
+                        new ExpandCollapseLink(tutorialList.child[0].child[2].child[4].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IPv6 Properties", root, "DHCP/IPv6/IPv6Properties");
 
                             //General Tab
-                            new HierarchicalUnit(tutorialList.child[0].child[2].child[4].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[2].child[4].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "DHCP/IPv6/IPv6Properties/GeneralTab");
+                            new HierarchicalUnit(tutorialList.child[0].child[2].child[4].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[2].child[4].child[5].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "DHCP/IPv6/IPv6Properties/GeneralTab");
 
                             //DNS Tab
-                            new HierarchicalUnit(tutorialList.child[0].child[2].child[4].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[2].child[4].child[4].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DNS Tab", "DHCP/IPv6/IPv6Properties/DnsTab");
+                            new HierarchicalUnit(tutorialList.child[0].child[2].child[4].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[2].child[4].child[5].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DNS Tab", "DHCP/IPv6/IPv6Properties/DnsTab");
 
                             //Advanced Tab
-                            new HierarchicalUnit(tutorialList.child[0].child[2].child[4].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[2].child[4].child[4].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Advanced Tab", "DHCP/IPv6/IPv6Properties/AdvancedTab");
+                            new HierarchicalUnit(tutorialList.child[0].child[2].child[4].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[2].child[4].child[5].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Advanced Tab", "DHCP/IPv6/IPv6Properties/AdvancedTab");
 
 
 
