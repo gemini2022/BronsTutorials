@@ -7,23 +7,25 @@ function Certificates() {
         tutorialList.child[0].child[3].child[0].child[1].font.style = FontStyle.Bold;
         tutorialList.child[0].child[3].child[0].child[1].baseline = LabelBaseline.Bottom;
 
-            //Enterprise
+            //Two Tier PKI Hierarchy
             new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                new ExpandCollapse(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Enterprise", root);
+                new ExpandCollapse(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Two Tier PKI Hierarchy", root);
             
-                    //Root CA
+                    //CAPolicy.inf
                     new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Root CA", "Certificates/Enterprise/RootCA");
+                        new Link(tutorialList.child[0].child[3].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "CAPolicy.inf", "Certificates/TwoTierPkiHierarchy/CaPolicy");
 
-            //Stand-Alone
-            new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                new ExpandCollapse(tutorialList.child[0].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Stand-Alone", root);
-            
-                    //Root CA
-                    new HierarchicalUnit(tutorialList.child[0].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Root CA", "Certificates/StandAlone/RootCA");
+                    //Standalone Root CA Installation
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Standalone Root CA Installation", "Certificates/TwoTierPkiHierarchy/StandaloneRootCaInstallation");
 
+                    //Enterprise Subordinate CA Installation
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Enterprise Subordinate CA Installation", "Certificates/TwoTierPkiHierarchy/EnterpriseSubordinateCaInstallation");
 
+                    //Copy CRL and AIA from Root CA
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copy CRL and AIA from Root CA", "Certificates/TwoTierPkiHierarchy/CopyCrlAndAiaFromRootCa");
 
 
 
