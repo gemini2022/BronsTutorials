@@ -1,0 +1,762 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top">The CAPolicy.inf is a file that contains various settings that are used when installing the Active Directory Certification Service (ADCS) or when renewing the CA certificate. The CAPolicy.inf file is not required to install ADCS with the default settings, but in many cases the default settings are insufficient. The CAPolicy.inf can be used to configure CAs in these more complicated deployments. Once you have created your CAPolicy.inf file, you must copy it into the %systemroot% folder (e.g., C:\Windows) of your server before you install ADCS or renew the CA certificate. To learn how to configure the CAPolicy.inf file, proceed with the following steps...</td>
+                
+                
+          </tr>
+        </table>
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">The CAPolicy.inf file uses the .INF file structure to specify sections, settings, and values for those settings. A section always appears in brackets, like the one in this example. This first section, <strong>[Version]</strong>, is the only required section, and must be at the beginning of your CAPolicy.inf file.</span> All other sections that can be configured in the CAPolicy.inf is completely optional. In fact, as stated earlier, the CAPolicy.inf file is not even required, but if it is used, the [Version] section must be in the file.</li>
+      </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="563" height="367"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Each section can contain 'Key' and 'Value' pairs. The [Version] section has only one 'Key' and 'Value' pair. In this case, the 'Key' is <strong>Signature</strong> and the 'Value' is <strong>&quot;$windows NT$&quot;</strong>. Therefore, really the only thing that is  required in the CAPolicy.inf file is these two lines, anything beyond this point is completely optional.</li>
+                </ul></td>
+                
+                <td align="right">
+                  <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="563" height="367"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Next is the<strong> [PolicyStatementExtension]</strong> section. This section lists the names of the policies for this CA.</span> Policies do not affect the operation of the CA or the clients that use the certificate. Policies are like the licenses agreement that is presented to the user when they install software. The policy defines the legal requirements the user needs to follow when using certificates issued from the CA. It is up to the person using the certificate to read the policy and make sure that they are following the policy.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="563" height="367"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">For example, this next line contains the 'Key', which is <strong>'Policies'</strong> and the value is the name of the CA policy, which is in this case <strong>'LegalPolicy'</strong>. The names can be whatever the CA administrator chooses when creating the CAPolicy.inf file, but</span> these names should have meaning in the context of a specific deployment, or in relation to custom applications that actually check for the presence of these policies.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="563" height="367"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Multiple policies can be defined and are separated by commas.</span></li></ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="563" height="367"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">For each policy defined in the [PolicyStatementExtension] section there must be a section that defines the settings for that particular policy. For example, the line above defines a policy called 'LegalPolicy', therefore this CAPolicy.inf must contain a <strong>[LegalPolicy]</strong> section.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="563" height="367"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">And for each policy, you need to provide a user-defined object identifier (OID)</span>. An 'OID' is a string, of decimal numbers, that uniquely identifies an object or in this case uniquely identifies the policy. This 'OID' is an 'OID' that Microsoft registered, but in a true deployment, you could obtain an 'OID' from your own 'OID' gatekeeper.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="563" height="367"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul type="disc">
+                <li><span dir="LTR">This next line is where you define the text for the policy statement.</span><span dir="LTR"></span></li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="563" height="367"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Or you could provide a URL pointer to the policy statement. In this example, we are providing both a text and a URL, which is prefectly acceptable.<span dir="LTR"></span> The URL can be in the form of an HTTP, FTP, or LDAP URL.</li>
+</ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="563" height="367"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>As previously stated, for each policy defined in the [PolicyStatementExtension] section, there must be a section that defines the settings for that particular policy. Therefore, this CAPolicy must also contain a <strong>[ManagementPolicy]</strong> section. </li>
+                <br>
+                <li>Notice that this policy contains a text policy statement and two URLs.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="10.jpg" width="563" height="367"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>In this section, you can specify CRL Distribution Points (CDPs) for a root CA certificate in the CAPolicy.inf. This section is only used if you are setting up a root CA or renewing the root CA certificate. Subordinate CA CDP extensions are determined by the CA which issues the subordinate CA&rsquo;s certificate.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="563" height="367"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>HTTP, FTP, and LDAP URLs are supported in a CDP, however,  HTTPS URLs are not. If no URLs are specified &ndash; that is, if the [CRLDistributionPoint] section exists in the file but is empty &ndash; the CRL Distribution Point extension will be omitted from the root CA certificate. This is usually preferable when setting up a root CA. Windows does not perform revocation checking on a root CA certificate so the CDP extension is unnecessary in a root CA certificate.</li>
+</ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="12.jpg" width="563" height="367"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>You can also specify the authority information access points in the CAPolicy.inf for the root CA certificate. This section is only used if you are setting up a root CA, or renewing the root CA certificate. Subordinate CA AIA extensions are determined by the CA which issued the subordinate CA&rsquo;s certificate.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="13.jpg" width="563" height="367"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Like the CRL Distribution Point, HTTP, FTP, and LDAP URLs are supported in an AIA, and  HTTPS URLs are not. If no URLs are specified &ndash; that is, if the&nbsp;<strong>[AuthorityInformationAccess]</strong>&nbsp;section exists in the file but is empty &ndash; the Authority Information Access Point extension will be omitted from the root CA certificate. Again, this would be the preferred setting in the case of a root CA certificate as there is no authority higher than a root CA that would need to be referenced by a link to its certificate.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="14.jpg" width="563" height="367"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Another section of the CAPolicy.inf file is&nbsp;<strong>[EnhancedKeyUsageExtension]</strong>, which is used to specify the Enhanced Key Usage extension OIDs placed in the CA certificate. This section can be used during CA setup or CA certificate renewal, and it can be used for both the root CA and for subordinate CAs. If this extension does not exist in a root CA certificate then that root CA certificate can be trusted for all purposes. By populating this section with specific OIDs, you are limiting the purposes for which the root CA certificate can be trusted. </li>
+    </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="15.jpg" width="563" height="393"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>For example, consider the following section. During the setup of the CA, the root CA certificate will be created with the two OIDs shown here in the Enhanced Key Usage extension. This root certificate, because of the OIDs specified, can only be trusted for Secure Email (signing and encrypting) and Smart Card Logon. Any certificate issued for some other purpose, such as Client or Server Authentication, would be considered invalid. This restriction would apply not only to this root CA, but also to any CA subordinate to this root.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="16.jpg" width="563" height="419"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>The Enhanced Key Usage extension contains a setting that allows this extension to be defined as critical or not critical. If an extension is defined as critical, then an application evaluating the certificate *must* understand the extension. If the application does not understand or recognize a critical extension, then the certificate must be rejected. In this case, this extension has been defined as not critical.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="17.jpg" width="563" height="432"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>You can use the CAPolicy.inf file to define the&nbsp;PathLength&nbsp;constraint in the <strong>[BasicConstraintsExtension]</strong> of the root CA certificate. Setting the PathLength basic constraint allows you to limit the path length of the CA hierarchy by specifying how many tiers of subordinate CAs can exist beneath the root.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="18.jpg" width="563" height="458"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>A PathLength of 1 means there can be at most one tier of CAs beneath the root. These subordinate CAs will have a PathLength basic constraint of 0, which means that they cannot issue any subordinate CA certificates. It is not recommended to use this section in the CAPolicy.inf file for a subordinate CA. To add a PathLength constraint to a subordinate CA certificate (if the parent CA has no PathLength constraint in its own certificate) you can set the&nbsp;CAPathLength<strong>&nbsp;</strong>registry value on the parent CA.&nbsp;</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="19.jpg" width="563" height="471"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>For example, to issue a subordinate CA certificate with a PathLength constraint of 1, you could use the following command to configure the parent CA: <strong>'certutil -setreg Policy\CAPathLength 2'</strong>.</li>
+                <br>
+                <li>So in this case, setting this value to '2' causes the CA to behave as though its own certificate had a PathLength constraint of '2', while any subordinate CA certificate issued by the parent CA would have a PathLength constraint of '1' in its Basic Constraints extension.</li>
+                <br>
+                <li>Active Directory Certificate Services must be restarted for any changes to take effect.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="19a.jpg" width="668" height="331"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>The [BasicConstraintsExtension] supports the 'Critical' setting. In this case, 'Critical' is set to <strong>'Yes'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="20.jpg" width="563" height="484"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>The cross certificate distribution points (CCDP) extension identifies where cross certificates related to the CA certificate can be obtained and how often that location is updated. The CCDP extension is useful if the CA has been cross-certified with another PKI hierarchy. Windows XP and later operating systems would use this extension for the discovery of cross-certificates that might be used during the path discovery and chain building process.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="21.jpg" width="563" height="510"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>The&nbsp;<strong>SyncDeltaTime</strong>&nbsp;key indicates how often, in seconds, the locations referred to by the&nbsp;<strong>URL</strong>&nbsp;key(s) are updated. While this entire section is optional, if it exists, and if the&nbsp;<strong>SyncDeltaTime</strong>&nbsp;key is present, then at least one&nbsp;<strong>URL</strong>&nbsp;key must also be present.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="22.jpg" width="563" height="536"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+              <li>The [CrossCertificateDistributionPointsExtension] supports the 'Critical' setting. In this case, 'Critical' is set to <strong>'No'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="23.jpg" width="563" height="549"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>The&nbsp;<strong>[RequestAttributes]</strong>&nbsp;section, when implemented on a subordinate CA, allows you to specify a custom subordinate certification authority template. There is already the default Subordinate Certificate Authority template that is published in Active Directory the first time an Enterprise CA is installed in the forest. This default template, however, is a v1 template (Windows 2000-style) and cannot be edited.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="24.jpg" width="563" height="575"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>The&nbsp;CertificateTemplate&nbsp;key allows you specify a different template for your subordinate CA certificate request, one that you created by duplicating the default template. In this case, the CertificateTemplate&nbsp;key is pointing to a template that was created called <strong>'SubCA'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="25.jpg" width="563" height="588"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Another optional section of the CAPolicy.inf is&nbsp;<strong>[certsrv_server]</strong>, which is used to specify renewal key length, the renewal validity period, and the certificate revocation list (CRL) validity period for a CA that is being renewed or installed. None of the keys in this section are required. Many of these settings have default values that are sufficient for most needs and can simply be omitted from the CAPolicy.inf file. Alternatively, many of these settings can be changed after the CA has been installed.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="26.jpg" width="563" height="614"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>
+                  <p>The<strong> RenewalKeyLength</strong>&nbsp;sets the key size for renewal only. This is only used when a new key pair is generated during CA certificate renewal. The key size for the initial CA certificate is set when the CA is installed. When renewing a CA certificate with a new key pair, the key length can be either increased or decreased. In the real world, a common scenario that occurs is a root CA key size of 4096 bytes or higher is set, and then is later discovered that Java apps or network devices in the orgainization  can only support key sizes of 2048 bytes. In that situation, we can use this setting in the CAPolicy.inf file to reduce the key size of the CA. Of course, that means that we have to reissue all the certificates issued by that CA. The higher up in the hierarchy the CA resides, the more inconvenient this procedure is.</p>
+</li>
+</ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="27.jpg" width="563" height="627"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><strong>RenewalValidityPeriod</strong>&nbsp;and&nbsp;<strong>RenewalValidityPeriodUnits</strong>&nbsp;establish the lifetime of the new root CA certificate when renewing the old root CA certificate. It only applies to a root CA. The certificate lifetime of a subordinate CA is determined by its superior.&nbsp;<strong>RenewalValidityPeriod</strong>&nbsp;can have the following values: Hours, Days, Weeks, Months, and Years.</li>
+  </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="28.jpg" width="563" height="653"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><strong>CRLPeriod&nbsp;</strong>and&nbsp;<strong>CRLPeriodUnits</strong>&nbsp;establish the validity period for the base CRL. CRL stand for 'certificate revocation list'. The certificate revocation list is a list of certificates that have been revoked. These settings essentially define how long the certificate revocation list is valid for.</li>
+                <br>
+                <li>The<strong> CRLPeriod</strong> can have the following values: Hours, Days, Weeks, Months, and Years.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="29.jpg" width="563" height="679"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Both of these settings can be configured after the CA has been installed.</li>
+                <br>
+                <li><strong>certutil -setreg CA\CRLPeriod &quot;Days&quot;</strong></li>
+                <br>
+                <li><strong>certutil -setreg CA\CRLPeriodUnits 2</strong></li>
+                <br>
+                <li>Active Directory Certificate Services must be restarted for any changes to take effect.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="29a.jpg" width="668" height="331"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>The<strong> CRLDeltaPeriod</strong>&nbsp;and&nbsp;<strong>CRLDeltaPeriodUnits</strong>&nbsp;establish the validity period of the delta CRL. Delta in this case refers to differences, so this setting is essentially saying, &quot;How often to send differences in the certificate revocation list&quot;.</li>
+                <br>
+                <li>The <strong>CRLDeltaPeriod</strong>&nbsp;can have the following values: Hours, Days, Weeks, Months, and Years.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="30.jpg" width="563" height="705"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Both of these settings can be configured after the CA has been installed.</li>
+                <br>
+                <li><strong>certutil -setreg CA\CRLDeltaPeriod &quot;Hours&quot;</strong></li>
+                <br>
+                <li><strong>certutil -setreg CA\CRLDeltaPeriodUnits 4</strong></li>
+                <br>
+                <li>Active Directory Certificate Services must be restarted for any changes to take effect.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="30a.jpg" width="668" height="331"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><strong>ClockSkewMinutes</strong>&nbsp;allows you to accommodate possible clock synchronization issues. The CA will set the effective time of the published base CRL and delta CRL to the current time less the&nbsp;<strong>ClockSkewMinutes</strong>. For example, if the clock skew is set to 5 minutes, and the current time is 4:00pm, then the effective time of a newly published CRL would be 3:55pm. The default value for&nbsp;<strong>ClockSkewMinutes</strong>&nbsp;is 10 minutes. If this interval is sufficient then this key can be omitted from the CAPolicy.inf file.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="31.jpg" width="563" height="718"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>This value can also be set after the CA has been installed.</li>
+                <br>
+                <li><strong>certutil -setreg CA\ClockSkewMinutes 10</strong></li>
+                <br>
+                <li>Active Directory Certificate Services must be restarted for any changes to take effect.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="31a.jpg" width="668" height="331"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><strong>LoadDefaultTemplates</strong>&nbsp;only applies during the install of an Enterprise CA. This setting, either True or False (or 1 or 0), dictates whether or not the CA is configured with any of the default templates.</p></li>
+                <br>
+                <li>In a default installation of the CA, a subset of the default certificate templates is added to the Certificate Templates folder in the Certification Authority snap-in. This means that as soon as the ADCS service starts after the role has been installed a user or computer with sufficient permissions can immediately enroll for a certificate. This behavior is not always desirable.</li>
+                <br>
+                <li>To illustrate the point, the Domain Controller and Domain Controller Authentication templates are among the default templates added to the CA as it is installed. The default permissions on these two templates allow all domain controllers in the forest to enroll for certificates based those two templates. Finally, the default behavior of a domain controller is to immediately enroll for a Domain Controller or Domain Controller Authentication template as soon as an Enterprise CA is detected in the forest (Windows 2000 DCs will attempt to enroll for a Domain Controller certificate; Windows Server 2003 and higher will attempt to enroll for a Domain Controller Authentication certificate).</li>
+                <br>
+                <li>You may not want to issue any certificates immediately after a CA has been installed, so you can use the&nbsp;<strong>LoadDefaultTemplates</strong>&nbsp;setting to prevent the default templates from being added to the Enterprise CA. If there are no templates configured on the CA then it can issue no certificates.</li>
+                <br>
+                <li>On Windows Server 2003 and Windows Server 2003 R2, the&nbsp;<strong>LoadDefaultTemplates</strong>&nbsp;setting only applies to a root Enterprise CA. It is ignored on a subordinate Enterprise CA.</li>
+                <br>
+                <li>On Windows Server 2008 and Windows Server 2008 R2, the&nbsp;<strong>LoadDefaultTemplates</strong>&nbsp;setting applies to both root and subordinate Enterprise CAs.
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                </li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="32.jpg" width="563" height="731"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><strong>AlternateSignatureAlgorithm</strong>&nbsp;configures the CA to support the PKCS#1 V2.1 signature format for both the CA certificate and certificate requests. When set to 1 on a root CA the CA certificate will include the PKCS#1 V2.1 signature format. When set on a subordinate CA, the subordinate CA will create a certificate request that includes the PKCS#1 V2.1 signature format.</li>
+    </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="33.jpg" width="563" height="744"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><strong>ForceUTF8</strong>&nbsp;changes the default encoding of relative distinguished names (RDNs) in Subject and Issuer distinguished names to UTF-8. Only those RDNs that support UTF-8, such as those that are defined as Directory String types by an RFC, are affected. For example, the RDN for Domain Component (DC) supports encoding as either IA5 or UTF-8, while the Country RDN (C) only supports encoding as a Printable String. The&nbsp;<strong>ForceUTF8</strong>&nbsp;directive will therefore affect a DC RDN but will not affect a C RDN.</li>
+    </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="34.jpg" width="563" height="757"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Finally,&nbsp;<strong>EnableKeyCounting</strong>&nbsp;configures the CA to increment a counter every time the CA&rsquo;s signing key is used. Do not enable this setting unless you have a Hardware Security Module (HSM) and associated cryptographic service provider (CSP) that supports key counting. Neither the Microsoft Strong CSP nor the Microsoft Software Key Storage Provider (KSP) support key counting.</li>
+    </ul></td>
+                
+                <td align="right">
+              <table width="563" border="0">
+                        <tr>
+                            <td align="center"><img src="35.jpg" width="563" height="770"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+       
+    </body>
+</html>

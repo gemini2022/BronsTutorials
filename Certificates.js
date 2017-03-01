@@ -15,17 +15,25 @@ function Certificates() {
                     new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[3].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "CAPolicy.inf", "Certificates/TwoTierPkiHierarchy/CaPolicy");
 
-                    //Standalone Root CA Installation
+                    //Offline Standalone Root CA Installation
                     new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Standalone Root CA Installation", "Certificates/TwoTierPkiHierarchy/StandaloneRootCaInstallation");
+                        new Link(tutorialList.child[0].child[3].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Offline Standalone Root CA Installation", "Certificates/TwoTierPkiHierarchy/OfflineStandaloneRootCaInstallation");
+
+                    //Set Domain Namespace For Offline Root CA
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Set Domain Namespace For Offline Root CA", "Certificates/TwoTierPkiHierarchy/SetDomainNamespaceForOfflineRootCa");
+
+                    //Set Validity Period For Root CA's Issued Certificates
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                    new Link(tutorialList.child[0].child[3].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Set Validity Period For Root CA's Issued Certificates", "Certificates/TwoTierPkiHierarchy/SetValidityPeriodForRootCaIssuedCertificates");
 
                     //Enterprise Subordinate CA Installation
                     new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Enterprise Subordinate CA Installation", "Certificates/TwoTierPkiHierarchy/EnterpriseSubordinateCaInstallation");
+                        new Link(tutorialList.child[0].child[3].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Enterprise Subordinate CA Installation", "Certificates/TwoTierPkiHierarchy/EnterpriseSubordinateCaInstallation");
 
-                    //Copy CRL and AIA from Root CA
+                    //Copy CRL & CRT File From Root CA To Sub CA
                     new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copy CRL and AIA from Root CA", "Certificates/TwoTierPkiHierarchy/CopyCrlAndAiaFromRootCa");
+                        new Link(tutorialList.child[0].child[3].child[1].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copy CRL & CRT File From Root CA To Sub CA", "Certificates/TwoTierPkiHierarchy/CopyCrlCrtFileFromRootCaToSubCa");
 
 
 

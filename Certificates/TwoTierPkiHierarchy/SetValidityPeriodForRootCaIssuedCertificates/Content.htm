@@ -1,0 +1,702 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>Because this is a Standalone CA and not an Enterprise CA, we don&rsquo;t have templates available to us that we can use to define the validity period for issued certificates. By default, the lifetime of a certificate that is issued by a Standalone CA is one year. For certificates that are issued by Enterprise CAs, the validity period is defined in the template that is used to create the certificate. But since this is a Standalone CA, having the lifetime of its issued certificates last only one year,  is not nearly long enough. Therefore, it is a good idea to increase this value. It is recommended to make the validity period for these issued certificates half the lifetime of Root CA&rsquo;s certificate validity period. For example,  if you have configured the root CA's validity period for 20 years, then the validity period of the certificate that this root CA will issue  would be set to a value of 10 years. To learn how to do this, proceed with the following steps...</p></td>
+                
+                
+          </tr>
+        </table>
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting <strong>'Start'</strong> at the bottom left corner of your  screen.</span></li>
+            </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then type&nbsp;<strong>'regedit' </strong>in the search field.</span></li>
+            </ul></td>
+                
+                <td align="right">
+                  <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Now click on <strong>'regedit'</strong>. This will open the 'Registry Editor'.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once the 'Registry Editor' is open, expand <strong>'HKEY_LOCAL_MACHINE'</strong>.</span></li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="804" height="452"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then expand <strong>'SYSTEM'</strong>.</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="785" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then <strong>'CurrentControlSet'</strong>.</span></li></ul></td>
+                
+                <td align="right">
+              <table width="780" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Expand <strong>'services'</strong>.</li></ul></td>
+                
+                <td align="right">
+              <table width="780" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul type="disc">
+                <li>Next, you might need to scroll down a little bit.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="780" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Scroll down until you find <strong>'CertSvc'</strong>, then expand it.</li></ul></td>
+                
+                <td align="right">
+              <table width="780" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+              <li>And then finally, expand <strong>'Configuration'</strong>.</li></ul></td>
+                
+                <td align="right">
+              <table width="780" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+              <li><span dir="LTR"><span dir="LTR">Once 'Configuration has been expanded, select the key that represents the name of your root CA. In this case, the name of the root CA is <strong>'RootCA'</strong>.</span></span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="780" border="0">
+                        <tr>
+                            <td align="center"><img src="10.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Once the root CA key has been selected, make your way down to the bottom of the list.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="780" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">The value that we are looking for is Validity Period. This value is  broken up into two parts, 'ValidityPeriod' and 'ValidityPeriodUnits'. </span>The value 'ValidityPeriod' can be set to either Hours, Days, Weeks, Months, or even Years. In this case, the value is set to 'Years', which is what we want. What  needs to be changed is the 'ValidityPeriodUnits'. This value is set to '1', but we want to set it to '10'.</li>
+  </ul></td>
+                
+                <td align="right">
+              <table width="600" border="0">
+                        <tr>
+                            <td align="center"><img src="12.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">To do this, double-click on <strong>'ValidityPeriodUnits'</strong>.</span></li>
+</ul></td>
+                
+                <td align="right">
+              <table width="550" border="0">
+                        <tr>
+                            <td align="center"><img src="13.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Then, select <strong>'Decimal'</strong>.</span></li>
+    </ul></td>
+                
+                <td align="right">
+              <table width="500" border="0">
+                        <tr>
+                            <td align="center"><img src="14.jpg" width="335" height="192"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+            <li>Then enter in the value in the <strong>'Value data:'</strong> field. In this case, the value we will enter is <strong>'10'</strong>.</li>
+            <br>
+            <li>Press <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="500" border="0">
+                        <tr>
+                            <td align="center"><img src="16.jpg" width="335" height="192"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+            <li>Once the Validity Period has been set, the certificate service needs to be restarted. However, before we do this, another way to set the Validity Period is by command line.</li></ul></td>
+                
+                <td align="right">
+              <table width="500" border="0">
+                        <tr>
+                            <td align="center"><img src="17.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+            <li>To do this, <span dir="LTR">begin  by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="500" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+          <li><span dir="LTR">Then open the&nbsp;<strong>'Command Prompt'</strong>.</span></li></ul></td>
+                
+                <td align="right">
+              <table width="500" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/ADPrep/1.jpg" width="405" height="456"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Once the command prompt is open, enter in the command&nbsp;<strong>'certutil -setreg ca\'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="18.jpg" width="694" height="333"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+            <li>Followed by <strong>'ValidityPeriodUnits'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="19.jpg" width="694" height="333"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>And then finally <strong>'10'</strong>.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="20.jpg" width="694" height="333"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>After the command has been entered, a message will appear stating that the certificate service may need to be restarted for changes to take effect.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="21.jpg" width="694" height="333"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">There is a couple of ways in which the certificate service can be restarted.</span>&nbsp;The first way is by command line. To do this, begin by entering in the command&nbsp;<strong>'net stop certsvc'</strong>.</li>
+                <br>
+                <li>Then press&nbsp;<strong>'Enter'</strong>.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="22.jpg" width="694" height="333"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">The command that you entered will stop the certificate service.</span></li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="23.jpg" width="694" height="333"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Once the certificate service has stopped, the next thing we'll need to do is start the service back up.</span></li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="24.jpg" width="694" height="333"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">To do this, enter in the command&nbsp;<strong>'net start certsvc'</strong>.</span></li>
+                <br>
+                <li>Then press&nbsp;<strong>'Enter'</strong>.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="25.jpg" width="694" height="333"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">After running this command, the certificate service will start back up.</span></li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="26.jpg" width="694" height="333"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Another way to restart the certificate service is by the gui.</span></li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="27.jpg" width="694" height="333"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">To do this, begin by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Then&nbsp;<strong>'Certification Authority'</strong>...</span></li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetDomainNamespaceForOfflineRootCa/11.jpg" width="252" height="406"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Once in Certification Authority, right-click the root node for the CA</span>, which in this case is&nbsp;<strong>'RootCA'</strong>.</li>
+  </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetDomainNamespaceForOfflineRootCa/12.jpg" width="360" height="135"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Then select&nbsp;<strong>'All Tasks'</strong>.</li>
+  </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetDomainNamespaceForOfflineRootCa/13.jpg" width="93" height="101"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>And then&nbsp;<strong>'Stop Service'</strong>.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetDomainNamespaceForOfflineRootCa/14.jpg" width="159" height="135"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Now that the service is stopped, we want to start the service back up. To do this,&nbsp;<span dir="LTR">right-click the root node for the CA</span>, which again is in this case&nbsp;<strong>'RootCA'</strong>.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetDomainNamespaceForOfflineRootCa/15.jpg" width="360" height="135"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Then select&nbsp;<strong>'All Tasks'</strong>.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetDomainNamespaceForOfflineRootCa/13.jpg" width="93" height="101"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>And then finally&nbsp;<strong>'Start Service'</strong>.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetDomainNamespaceForOfflineRootCa/16.jpg" width="159" height="135"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>
