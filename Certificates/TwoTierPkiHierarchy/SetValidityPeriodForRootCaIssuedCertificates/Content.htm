@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>Because this is a Standalone CA and not an Enterprise CA, we don&rsquo;t have templates available to us that we can use to define the validity period for issued certificates. By default, the lifetime of a certificate that is issued by a Standalone CA is one year. For certificates that are issued by Enterprise CAs, the validity period is defined in the template that is used to create the certificate. But since this is a Standalone CA, having the lifetime of its issued certificates last only one year,  is not nearly long enough. Therefore, it is a good idea to increase this value. It is recommended to make the validity period for these issued certificates half the lifetime of Root CA&rsquo;s certificate validity period. For example,  if you have configured the root CA's validity period for 20 years, then the validity period of the certificate that this root CA will issue  would be set to a value of 10 years. To learn how to do this, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Because this is a Standalone CA and not an Enterprise CA, we don&rsquo;t have templates available to us that we can use to define the validity period for issued certificates. By default, the lifetime of a certificate that is issued by a Standalone CA is one year. For certificates that are issued by Enterprise CAs, the validity period is defined in the template that is used to create the certificate. But since this is a Standalone CA and has no templates, having a default lifetime of only one year  is not nearly long enough. Therefore, it is a good idea to increase this value. It is recommended to make the validity period for these issued certificates half the lifetime of Root CA&rsquo;s certificate validity period. For example,  if you have configured the root CA's validity period for 20 years, then you would set the validity period of the certificate that this root CA will issue  to a value of 10 years. To learn how to do this, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -141,7 +141,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul type="disc">
-                <li>Next, you might need to scroll down a little bit.</li>
+                <li>Frome here, you may need to scroll down a  bit.</li>
       </ul></td>
                 
                 <td align="right">
@@ -211,7 +211,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Once the root CA key has been selected, make your way down to the bottom of the list.</li>
+                <li>Once the root CA key has been selected, in the window to the right, make your way down to the bottom of the list.</li>
             </ul></td>
                 
                 <td align="right">
@@ -229,7 +229,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">The value that we are looking for is Validity Period. This value is  broken up into two parts, 'ValidityPeriod' and 'ValidityPeriodUnits'. </span>The value 'ValidityPeriod' can be set to either Hours, Days, Weeks, Months, or even Years. In this case, the value is set to 'Years', which is what we want. What  needs to be changed is the 'ValidityPeriodUnits'. This value is set to '1', but we want to set it to '10'.</li>
+                <li><span dir="LTR">The value that we are looking for is Validity Period. This value is  broken up into two parts, 'ValidityPeriod' and 'ValidityPeriodUnits'. </span>The value 'ValidityPeriod' can be set to either Hours, Days, Weeks, Months, or even Years. In this case, the value is set to 'Years', which is what we want. What  needs to be changed is the 'ValidityPeriodUnits'. This value is set to '1', but in this case, we want to set it to '10'.</li>
   </ul></td>
                 
                 <td align="right">
@@ -392,7 +392,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>And then finally <strong>'10'</strong>.</li>
+                <li>And then finally, enter in the 'ValidityPeriodUnits' value, which in this case will be <strong>'10'</strong>.</li>
       </ul></td>
                 
                 <td align="right">
