@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>When the DHCP user classes are created and configured, the DHCP client computers must also be configured accordingly so that they can receive the settings that have been defined in the manually created DHCP user classes. For example, if the Accounts section in an organization is required to be configured to use a separate DNS server and the default gateway to communicate with the Internet, the DHCP administrators can create a new DHCP user class for the Accounts department, and can configure all the computers in the department to receive the settings as defined in the user class. This way, every time the DHCP client computers from the Accounts department request an IP address from the DHCP server, the settings that the DHCP administrators have configured for the Accounts DHCP user class would be assigned to the DHCP client computers in the Accounts section. Working with the DHCP user classes requires a three-step configuration where in the first step you are required to define a new DHCP user class, in the second step you configure the user class options, and the thrid step you configure the client computer to receive the DHCP options from the user class. To learn how to create a user class, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>After the root CA is installed, you must configure the Authority Information Access (AIA) and CRL distribution point (CDP) extensions before the CA issues any certificates. The AIA extension specifies where to find up-to-date certificates for the CA. The CDP extension specifies where to find up-to-date CRLs that are signed by the CA. These extensions apply to all certificates that are issued by that CA. Configuring these extensions ensures that this information is included in each certificate that the CA issues so that it is available to all clients. This ensures that PKI clients experience the least possible number of failures due to unverified certificate chains or certificate revocations, which can result in unsuccessful VPN connections, failed smart card sign-ins, or unverified email signatures. As a CA administrator, you can add, remove, or modify CRL distribution points and the locations for CDP and AIA certificate issuance. Modifying the URL for a CRL distribution point only affects newly issued certificates. Previously issued certificates will continue to reference the original location, which is why you should establish these locations before your CA distributes any certificates. To learn how to configure the AIA and CDP extensions, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -53,7 +53,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then <strong>'DHCP'</strong>...</span></li>
+                  <li><span dir="LTR">Then <strong>'Certification Authority'</strong>...</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -71,8 +71,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once in DHCP, expand your DHCP server, in this case the DHCP server is <strong>'dc1.bronstutorials.local'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once in Certification Authority, right-click the root node for the CA</span>, which in this case is&nbsp;<strong>'RootCA'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -89,7 +89,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then select <strong>'IPv4'</strong>.</span></li>
+                  <li><span dir="LTR">Then select <strong>'Properties'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -107,7 +107,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once 'IPv4' has been selected, right-click it...</span></li>
+                  <li><span dir="LTR">Once in the properties of the root CA, select the <strong>'Extensions'</strong> tab.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -125,7 +125,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then select <strong>'Define User Classes...'</strong>.</span></li>
+                  <li><span dir="LTR">In the 'Extensions' tab, select the <strong>'Select extension'</strong> dropdown.</span></li>
           </ul></td>
                 
                 <td align="right">
@@ -143,7 +143,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once the 'DHCP User Classes' dialogue box opens, press the <strong>'Add...'</strong> button.</li>
+                  <li>It is here where you have the option to configure the CDP or the AIA.</li>
             </ul></td>
                 
                 <td align="right">
@@ -161,7 +161,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then begin by entering in a name for the new class. In this case, since we're creating a user class for the Accounts department, we'll name the new class <strong>'Accounts'</strong>.</li></ul></td>
+                  <li>In this case, we'll start first with configuring the CDP.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -178,8 +178,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">You can also add a description if you wish. This field is optional, but for this example, we'll enter&nbsp;<strong>'DHCP user class for Accounts Department'</strong>.</span></li>
-    </ul></td>
+                  <li><span dir="LTR">The first distribution point in the list is the local distribution point or local path.</span> The CA uses the local CRL to validate all certificates that are generated before the certificates are issued.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -196,7 +196,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And then here under the 'ASCII' column, enter in the class ID. This ID will be used for the client to receive IP information from this class. In this case we'll enter the ID of <strong>'Accounts'</strong>.</li></ul></td>
+                <li>With the local path selected, deselect the option <strong>'Publish Delta CRLs to this location'</strong>. You should avoid publishing delta CRLs on an offline root CAs. In most cases, you do not revoke many certificates on an offline root CA, for this reason, a delta CRL is not needed.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -213,8 +213,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Press <strong>'OK'</strong>.</li>
-            </ul></td>
+                  <li>Next, we need to remove these locations from the list. We will replace these locations with a custom path using a HTTP URL location. This will ensure that  users and applications outside the organization can perform certificate validation.&nbsp;</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -231,7 +231,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then press <strong>'Close'</strong>.</li>
+                  <li>Begin removing these locations by first selecting the LDAP location. </li>
               </ul></td>
                 
                 <td align="right">
@@ -249,7 +249,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Now that the user class has been defined, we next have to apply options of the user class to a scope. We can apply these options to a single scope or all IPv4 scopes using the 'Server Options'. In this case, we will apply these options to a single scope. To do this, we'll first expand the scope</span>.</li>
+                  <li><span dir="LTR">Then press the <strong>'Remove'</strong> button.</span></li>
         </ul></td>
                 
                 <td align="right">
@@ -267,7 +267,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then select <strong>'Scope Options'</strong>.</span></li>
+                  <li><span dir="LTR">Once the 'Remove' button has been pressed, you'll need to confirm the removal. Press the <strong>'Yes'</strong> button to continue</span>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -285,7 +285,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once 'Scope Options' is selected, right-click it.</span></li>
+                  <li><span dir="LTR">Next, select the HTTP location</span>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -303,7 +303,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And select <strong>'Configure Options...'</strong>.</span></li>
+                  <li><span dir="LTR">And then press the <strong>'Remove'</strong> button.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -322,8 +322,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Scope Options' has been opened, select the <strong>'Advanced'</strong> tab.</span></li>
-            </ul></td>
+                  <li>Again, once the 'Remove' button has been pressed, you'll need to confirm the removal. Press the <strong>'Yes'</strong> button to continue.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -340,13 +340,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>We now have to select the user class we just created. To do this, select the <strong>'User class'</strong> dropdown.</li>
+                  <li>And then finally, select the file address location.</li>
             </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="14.jpg" width="404" height="530"></td>
+                            <td align="center"><img src="14.jpg" width="447" height="530"></td>
                         </tr>
                   </table>
                 </td>
@@ -358,7 +358,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And then select the newly created user class, in this case it's <strong>'Accounts'</strong>.</li>
+                  <li>And press <strong>'Remove'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -376,8 +376,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">From here you can configure any options needed for this class. For this example we'll select the option <strong>'Router'</strong>.</span></li>
-            </ul></td>
+                  <li>Once again, press the <strong>'Yes' </strong>button to confirm the removal.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -394,8 +394,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then enter in the option details. Here this option requires the IP address for the router.</span></li>
-            </ul></td>
+                  <li><span dir="LTR">Now, as we stated earlier, we will replace these locations with a custom path using a HTTP URL location. This will ensure that  users and applications outside the organization can perform certificate validation.&nbsp;</span>To do this, press the <strong>'Add...'</strong> button.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -412,7 +412,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the IP address has been entered, press the <strong>'Add'</strong> button.</span></li>
+                  <li><span dir="LTR">And then start by entering  <strong>'http://' </strong>in the 'Location' field</span>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -430,7 +430,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>You can configure as many options as needed, when finished, press the <strong>'OK'</strong> button.</li>
+                  <li>Followed by the address or the server name where CRL can be accessed. In this case we are using the name of the server that will be our Enterprise CA with IIS installed. However, in a production enviroment, using an outside web address ensures higher availability.</li>
               </ul></td>
                 
                 <td align="right">
@@ -448,8 +448,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Now, in order for the client computers in the Accounts department to receive the user class options we just created, we have to configure these client computers. To do this, first go to the client computer you want to configure and select&nbsp;<strong>'Start'</strong>&nbsp;or the&nbsp;<strong>'Start Orb'</strong>&nbsp;at the bottom left corner of your screen.</li>
-              </ul></td>
+                  <li>And finish by entering <strong>'/CertEnroll/&lt;CaName&gt;&lt;CRLNameSuffix&gt;&lt;DeltaCRLAllowed&gt;.crl'</strong>.</li>
+                  <br>
+                  <li>Press<strong> 'OK'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -466,8 +468,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And type&nbsp;<strong>'cmd'</strong>&nbsp;in the search field.</li>
-              </ul></td>
+                  <li>Once the HTTP location has been created, select the <strong>'Include in the CDP extension of issued certificates'</strong> option. This means that this CDP will be used in all certificates.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -484,7 +486,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then select the&nbsp;<strong>'cmd'&nbsp;</strong>icon to open the command prompt.</li>
+                  <li>The CDP extension is now complete. We now have to configure the AIA extension. To do this, select the <strong>'Select extension' </strong>dropdown.</li>
               </ul></td>
                 
                 <td align="right">
@@ -502,7 +504,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Once the command prompt has been opened, type in&nbsp;<strong>'ipconfig'</strong>.</li>
+                  <li>And select the option <strong>'Authority Information Access (AIA)</strong>.</li>
               </ul></td>
                 
                 <td align="right">
@@ -520,7 +522,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Followed by&nbsp;<strong>'/setclassid'</strong>.</li>
+                  <li>Like with the CDP extension, we will remove these unneeded locations.</li>
               </ul></td>
                 
                 <td align="right">
@@ -538,8 +540,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Then type in the name of the network adapter of the client computer in quotes. In this case, the name of the network adapter for this client computer is <strong>'&quot;Local Area Connection&quot;'</strong>.</li>
-              </ul></td>
+                  <li>Like before, begin removing these locations by first selecting the LDAP location.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -556,10 +558,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>And then finally, type the name of the class ID we created earlier. In this case the class ID is <strong>'Accounts'</strong>.</li>
-                  <br>
-                  <li>Press <strong>'Enter'</strong>.</li>
-              </ul></td>
+                  <li><span dir="LTR">Then press the&nbsp;<strong>'Remove'</strong>&nbsp;button.</span></li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -576,8 +576,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This client computer will now receive the newly created user class options.</li>
-              </ul></td>
+                  <li><span dir="LTR">Again, once the 'Remove' button has been pressed, you'll need to confirm the removal. Press the&nbsp;<strong>'Yes'</strong>&nbsp;button to continue</span>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -594,8 +594,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This client computer will now receive the newly created user class options.</li>
-              </ul></td>
+                  <li><span dir="LTR">Next, select the HTTP location.</span></li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -612,8 +612,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This client computer will now receive the newly created user class options.</li>
-              </ul></td>
+                  <li><span dir="LTR">And then press the&nbsp;<strong>'Remove'</strong>&nbsp;button.</span></li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -630,8 +630,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This client computer will now receive the newly created user class options.</li>
-              </ul></td>
+                  <li>Press <strong>'Yes'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -648,8 +648,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This client computer will now receive the newly created user class options.</li>
-              </ul></td>
+                  <li>And then finally, select the file address location.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -666,8 +666,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This client computer will now receive the newly created user class options.</li>
-              </ul></td>
+                  <li>And press&nbsp;<strong>'Remove'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -684,8 +684,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This client computer will now receive the newly created user class options.</li>
-              </ul></td>
+                  <li>And press <strong>'Yes'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -702,7 +702,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This client computer will now receive the newly created user class options.</li>
+                  <li>Now, press the <strong>'Add...'</strong> button to add the HTTP location for the AIA extension.</li>
               </ul></td>
                 
                 <td align="right">
@@ -720,8 +720,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This client computer will now receive the newly created user class options.</li>
-              </ul></td>
+                  <li><span dir="LTR">And then start by entering&nbsp;<strong>'http://'&nbsp;</strong>in the 'Location' field</span>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -738,8 +738,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This client computer will now receive the newly created user class options.</li>
-              </ul></td>
+                  <li>Followed by the address or the server name where CRL can be accessed. Again, in this case we are using the name of the server that will be our Enterprise CA with IIS installed. But, it is best to us an outside web address to ensure higher availability.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -756,8 +756,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This client computer will now receive the newly created user class options.</li>
-              </ul></td>
+                  <li>And finish by entering&nbsp;<strong>'/CertEnroll/&lt;ServerDNSName&gt;_&lt;CAName&gt;&lt;CertificateName&gt;.crt'</strong>.</li>
+                  <br>
+                  <li>Press<strong>&nbsp;'OK'</strong>.</li>
+          </ul> </td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -774,8 +776,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This client computer will now receive the newly created user class options.</li>
-              </ul></td>
+                  <li>Once the HTTP location has been created, select the <strong>'Include in the AIA extension of issued certificates'</strong> option. This means that this AIA will be used in all certificates.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -792,8 +794,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This client computer will now receive the newly created user class options.</li>
-              </ul></td>
+                  <li>The AIA extension is now complete.</li>
+                  <br>
+                  <li>Press <strong>'OK'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -810,7 +814,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>This client computer will now receive the newly created user class options.</li>
+                  <li>And then finally, press <strong>'Yes'</strong> to restart Certificate Services.</li>
               </ul></td>
                 
                 <td align="right">
