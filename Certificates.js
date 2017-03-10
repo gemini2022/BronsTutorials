@@ -31,13 +31,17 @@ function Certificates() {
                     new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[3].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Update CDP And AIA Location Informtion", "Certificates/TwoTierPkiHierarchy/UpdateCdpAiaLocationInformtion");
 
+                    //Update CRL Period
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[1].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Update CRL Period", "Certificates/TwoTierPkiHierarchy/UpdateCrlPeriod");
+
                     //Enterprise Subordinate CA Installation
                     new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[1].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Enterprise Subordinate CA Installation", "Certificates/TwoTierPkiHierarchy/EnterpriseSubordinateCaInstallation");
+                        new Link(tutorialList.child[0].child[3].child[1].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Enterprise Subordinate CA Installation", "Certificates/TwoTierPkiHierarchy/EnterpriseSubordinateCaInstallation");
 
                     //Copy CRL & CRT File From Root CA To Sub CA
                     new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[1].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copy CRL & CRT File From Root CA To Sub CA", "Certificates/TwoTierPkiHierarchy/CopyCrlCrtFileFromRootCaToSubCa");
+                        new Link(tutorialList.child[0].child[3].child[1].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copy CRL & CRT File From Root CA To Sub CA", "Certificates/TwoTierPkiHierarchy/CopyCrlCrtFileFromRootCaToSubCa");
 
 
 
