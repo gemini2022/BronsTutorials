@@ -35,15 +35,21 @@ function Certificates() {
                     new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[3].child[1].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Update CRL Period", "Certificates/TwoTierPkiHierarchy/UpdateCrlPeriod");
 
+                    //Publish CRL
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[1].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Publish CRL", "Certificates/TwoTierPkiHierarchy/PublishCrl");
+
                     //Enterprise Subordinate CA Installation
                     new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[1].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Enterprise Subordinate CA Installation", "Certificates/TwoTierPkiHierarchy/EnterpriseSubordinateCaInstallation");
+                        new Link(tutorialList.child[0].child[3].child[1].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Enterprise Subordinate CA Installation", "Certificates/TwoTierPkiHierarchy/EnterpriseSubordinateCaInstallation");
 
                     //Copy CRL & CRT File From Root CA To Sub CA
                     new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[1].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copy CRL & CRT File From Root CA To Sub CA", "Certificates/TwoTierPkiHierarchy/CopyCrlCrtFileFromRootCaToSubCa");
+                        new Link(tutorialList.child[0].child[3].child[1].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copy CRL & CRT File From Root CA To Sub CA", "Certificates/TwoTierPkiHierarchy/CopyCrlCrtFileFromRootCaToSubCa");
 
-
+                    //Copy Certificate Request From Sub CA To Root CA
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[1].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copy Certificate Request From Sub CA To Root CA", "Certificates/TwoTierPkiHierarchy/CopyCertificateRequestFromSubCaToRootCa");
 
 
 
