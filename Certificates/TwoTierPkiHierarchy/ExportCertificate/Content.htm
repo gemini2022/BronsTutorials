@@ -1,0 +1,452 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>In this step, we're going to export the certificate from the certificate store that was just issued and place it on the desktop so that later it can be transerred to the Enterprise Subordinate CA server. To learn how to export the certificate, proceed with the following steps...</p></td>
+                
+                
+          </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">If not already, log into the offline Standalone Root CA server.</span></li>
+        </ul></td>
+                
+                <td align="right">
+                  <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../CopyCrlCrtFileFromRootCaToSubCa/1.jpg" width="402" height="316"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+            </ul></td>
+                
+                <td align="right">
+                  <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then&nbsp;<strong>'Certification Authority'</strong>...</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetDomainNamespaceForOfflineRootCa/11.jpg" width="252" height="406"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in Certification Authority, expand the root node for the CA</span>, which in this case is&nbsp;<strong>'RootCA'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../UpdateCrlPeriod/1.jpg" width="418" height="135"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select <strong>'Issued Certificates'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="360" height="176"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once 'Issued Certificates' has been selected, look at the window to the right. There you will see the certificate we issued </span>in the previous step. This certificate needs to be installed on the Enterprise Subordinate CA server. In order to do this, the first step in the process is to export this certificate.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="550" height="176"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">To export the certificate, begin by double-clicking on it.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="2a.jpg" width="550" height="176"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once the certificate is double-clicked, a dialogue box will appear displaying information about the certificate.</span> On the first tab, the <strong>'General'</strong> tab, one thing that is worth pointing out is the section displaying how long this certificate is valid for. This information was defined when we set the validity period in a previous step. If you recall, we set the validity period for ten years.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="409" height="508"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>If we now select the <strong>'Certification Path'</strong> tab.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="409" height="508"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>This tab displays the certificate server&nbsp;hierarchy. In our case, the path should be displayed as a two level hierarchy, Root CA at the Top and Sub CA (Issuing CA) under the RootCA.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="409" height="508"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>If we move on to the <strong>'Details'</strong> tab.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="409" height="508"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>It is on this tab where we will begin the certificate export process. To do this, click on the <strong>'Copy to File...'</strong> button.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="409" height="508"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once the 'Copy to File..' button has been clicked, the 'Certificate Export Wizard' will appear. </li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="503" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>
+                    <p>If you are exporting certificates for import onto a computer running Windows, PKCS&nbsp;#7 format is the preferred export format. This format preserves the chain of certification authorities (CAs), or the certification path, of any certificate that includes countersignatures associated with signatures. If you are exporting certificates for import onto a computer running another operating system, it is possible that the PKCS&nbsp;#7 format is supported. If it is not supported, the DER-encoded binary format or the Base64-encoded format is provided for interoperability. In this case, we will be importing the certificate onto a computer running Windows, therefore we will select the <strong>'Cryptographic Message Syntax - PKCS #7 Certificate (.P7B)'</strong> option.</p>
+</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="505" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Also, be sure to select the <strong>'Include all certificates in the certification path if possible'</strong> option as well.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="10.jpg" width="503" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="503" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>On this screen, we will choose the location where the certificate will be exported. To do this, begin by pressing <strong>'Browse...'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="12.jpg" width="503" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>The certificate doesn't need to be exported to any particular location at this point, so in this case, we save it to the desktop. To do this, select <strong>'Desktop'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="13.jpg" width="647" height="460"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then give the certificate a name. In this case, we will name it <strong>'SubCert'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="14.jpg" width="647" height="460"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then press <strong>'Save'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="15.jpg" width="647" height="460"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once the location and the name of the certificate has been defined, press <strong>'Next &gt;'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="16.jpg" width="503" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And  finally, press <strong>'Finish' </strong>to export the certificate..</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="17.jpg" width="503" height="453"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once the certificate has been successfully exported, press <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="18.jpg" width="183" height="126"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

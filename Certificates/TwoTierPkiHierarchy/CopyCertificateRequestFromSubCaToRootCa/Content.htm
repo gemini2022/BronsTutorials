@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top">In this step, we need to copy both the crl and crt file from the Standalone Root CA to the Enterprise Subordinate CA. To learn how to do this, proceed with the following steps...</td>
+                <td width="100%" align="left" valign="top">In this step, we need to copy the certificate request from the Enterprise Subordinate CA to the Offline Standalone Root CA. To learn how to do this, proceed with the following steps...</td>
                 
                 
           </tr>
@@ -17,7 +17,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by logging into the server where the Standalone Root CA was installed.</span></li>
+                  <li><span dir="LTR">If you recall, when installing the Enterprise Subordinate CA, we chose the option to save the certificate request to the 'C' drive on the Enterprise Subordinate CA server.</span> This request needs to be accessible to the Offline Standalone Root CA. However, since the Standalone Root CA is offline, we'll need to manually move or copy the file to the Root CA server by some form of removable media.</li>
             </ul>                  <br></td>
                 
                 <td align="right">
@@ -35,7 +35,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by logging into the server where the Standalone Root CA was installed.</span></li>
+                  <li><span dir="LTR">To do this, if not already, log into Enterprise Subordinate CA server.</span></li>
             </ul>                  <br></td>
                 
                 <td align="right">
@@ -53,7 +53,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by logging into the server where the Standalone Root CA was installed.</span></li>
+                  <li><span dir="LTR">Then make your way to the 'C' drive on the Enterprise Subordinate CA server.</span></li>
             </ul>                  <br></td>
                 
                 <td align="right">
@@ -66,18 +66,35 @@
           </tr>
         </table>
         
+        <hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">And here you should see the certificate request (provided you did save it to this location).</span></li>
+            </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="682" border="0">
+                        <tr>
+                            <td align="center"><img src="1a.jpg" width="658" height="335"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
         <hr> 
    
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once logged in,  we'll need to get to the 'CertEnroll' folder where the crl and crt file resides.</span> To do this, go to <strong>'C:\Windows\System32\certsrv\CertEnroll'</strong>.</li>
-                </ul></td>
+                  <li><span dir="LTR">Next, right-click on the file.</span></li></ul></td>
                 
                 <td align="right">
                   <table width="682" border="0">
                         <tr>
-                            <td align="center"><img src="2.jpg" width="658" height="335"></td>
+                            <td align="center"><img src="2.jpg" width="658" height="354"></td>
                         </tr>
                     </table>
                 </td>
@@ -89,7 +106,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once there, select both files...</span></li>
+                  <li><span dir="LTR">And select <strong>'Copy'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -107,8 +124,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then right-click</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Now again, because the Root CA server is offline, the only way of getting the certificate request to&nbsp;</span>the Root CA server is by some form of removable media. Insert the removable media of your choice into the Enterprise Subordinate CA server.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="682" border="0">
@@ -125,8 +142,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And select <strong>'Copy'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the removable media of your choice has been inserted, right-click in the window...</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="682" border="0">
@@ -143,8 +160,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Now, because this server is offline, the only way of getting the two coppied files to </span>the Enterprise Subordinate CA server is by some form of removable media. Insert the removable media of your choice into the Standalone Root CA server.</li>
-              </ul></td>
+                  <li><span dir="LTR">And select&nbsp;<strong>'Paste'</strong>.</span></li>
+          </ul></td>
                 
                 <td align="right">
               <table width="682" border="0">
@@ -161,7 +178,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the removable media of your choice has been inserted, right-click in the window...</span></li></ul></td>
+              <li>After the certificat request has been pasted, safely remove the removable media from the server, and make your way to the other server where the Standalone Root CA has been installed.</li></ul></td>
                 
                 <td align="right">
               <table width="682" border="0">
@@ -178,8 +195,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul type="disc">
-                <li><span dir="LTR">And select <strong>'Paste'</strong>.</span></li>
-      </ul></td>
+                <li>Log into the offline Standalone Root CA server.</li>
+  </ul></td>
                 
                 <td align="right">
               <table width="682" border="0">
@@ -196,8 +213,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>After the two files have been pasted, safely remove the removable media from the server, and make your way to the other server where the Enterprise Subordinate CA has been installed.<span dir="LTR"></span></li>
-    </ul></td>
+                <li><span dir="LTR"><span dir="LTR">Now insert the removable media that has a copy of the certificate request file into the Standalone Root CA server.</span></span><span dir="LTR"></span></li>
+</ul></td>
                 
                 <td align="right">
               <table width="682" border="0">
@@ -214,8 +231,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Log into the Enterprise Subordinate CA server.</li>
-      </ul></td>
+                <li><span dir="LTR"><span dir="LTR">And right-click on the certificate request.</span></span></li>
+  </ul></td>
                 
                 <td align="right">
               <table width="682" border="0">
@@ -232,8 +249,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Now insert the removable media that has a copy of the crl and crt file into the Enterprise Subordinate CA server.</span></span><span dir="LTR"></span></li>
-        </ul></td>
+                <li>And select&nbsp;<strong>'Copy'</strong>.<span dir="LTR"></span></li>
+    </ul></td>
                 
                 <td align="right">
               <table width="682" border="0">
@@ -250,7 +267,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select both files.</span></span><span dir="LTR"></span></li>
+                <li><span dir="LTR"><span dir="LTR">The certificate request file can be put anywhere. In this case we will save a copy of the file on the desktop. To do this, we'll right-click on the desktop.</span></span><span dir="LTR"></span></li>
         </ul></td>
                 
                 <td align="right">
@@ -268,7 +285,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Once both files have been selected, right-click</li>
+                <li>And select <strong>'Paste'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -286,7 +303,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>And select <strong>'Copy'</strong>.</li>
+                <li>The certificate request file has now been coppied to the Standalone Root CA server.</li>
         </ul></td>
                 
                 <td align="right">

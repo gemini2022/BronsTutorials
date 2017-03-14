@@ -51,11 +51,21 @@ function Certificates() {
                     new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[3].child[1].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copy Certificate Request From Sub CA To Root CA", "Certificates/TwoTierPkiHierarchy/CopyCertificateRequestFromSubCaToRootCa");
 
+                    //Submit Certificate Request
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[1].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Submit Certificate Request", "Certificates/TwoTierPkiHierarchy/SubmitCertificateRequest");
 
+                    //Issue Certificate
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[1].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Issue Certificate", "Certificates/TwoTierPkiHierarchy/IssueCertificate");
 
+                    //Export Certificate
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[1].child[13], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Export Certificate", "Certificates/TwoTierPkiHierarchy/ExportCertificate");
 
-
-
+                    //Copy Certificate From Root CA To Sub CA
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[1].child[14], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copy Certificate From Root CA To Sub CA", "Certificates/TwoTierPkiHierarchy/CopyCertificateFromRootCaToSubCa");
 
 
 
