@@ -67,9 +67,13 @@ function Certificates() {
                     new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[3].child[1].child[14], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copy Certificate From Root CA To Sub CA", "Certificates/TwoTierPkiHierarchy/CopyCertificateFromRootCaToSubCa");
 
+                    //Install Certificate
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[1].child[15], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Install Certificate", "Certificates/TwoTierPkiHierarchy/InstallCertificate");
 
-
-
+                    //Start Certificate Service
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[1].child[16], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Start Certificate Service", "Certificates/TwoTierPkiHierarchy/StartCertificateService");
 
 
 
