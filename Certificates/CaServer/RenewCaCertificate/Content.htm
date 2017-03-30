@@ -1,0 +1,166 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>Every certificate has a validity period. After the end of the validity period, the certificate is no longer considered an acceptable or usable credential. The Certificates snap-in enables you to renew a certificate issued from a certification authority before or after the end of its validity period by using the Certificate Renewal Wizard. You can either renew the certificate with the same key set that you used before, or you can renew a certificate with a new key set. This decision can be based on a number of factors, including the lifetime of the certificate, the length of the existing or future key, the value of the data protected by the key pair, and the possibility that a private key has been obtained by a malicious user. To learn how to renew a certificate, proceed with the following steps...</p></td>
+                
+                
+          </tr>
+        </table>
+    
+    	
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+</ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
+    </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Then&nbsp;<strong>'Certification Authority'</strong>...</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../SettingUpTwoTierPkiHierarchy/SetDomainNamespaceForOfflineRootCa/11.jpg" width="252" height="406"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Once in Certification Authority, right-click the root node for the CA</span>, which in this case is&nbsp;<strong>'RootCA'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../SettingUpTwoTierPkiHierarchy/SetDomainNamespaceForOfflineRootCa/12.jpg" width="360" height="135"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>First, select <strong>'All Tasks'</strong>.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../SettingUpTwoTierPkiHierarchy/SetDomainNamespaceForOfflineRootCa/13.jpg" width="93" height="101"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR"><span dir="LTR">And then select <strong>'Renew CA Certificate...'</strong>.</span></span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="159" height="135"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR"><span dir="LTR">Before the certificate can be renewed, Active Directory Certificate Services needs to stop running. A dialogue box will appear asking if you want to stop Active Directory Certificate Services now.</span></span></li>
+                <br>
+                <li>Press&nbsp;<strong>'Yes'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="417" height="139"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR"><span dir="LTR">And then finally, before the certificate is renewed, you need to decide</span></span> if you want to generate a new public and private key or renew the certificate with the same key set that you used before. In this case we leave it on the default of <strong>'Yes'</strong>, generate a new public and private key.</li>
+                <br>
+                <li>To renew the certificate, press <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="455" height="405"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

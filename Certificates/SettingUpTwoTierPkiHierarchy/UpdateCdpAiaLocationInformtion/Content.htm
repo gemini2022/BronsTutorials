@@ -1,0 +1,831 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>In this step we'll be updating the CDP and AIA Location information. After the root CA is installed, you must configure the Authority Information Access (AIA) and CRL distribution point (CDP) extensions before the CA issues any certificates. The AIA extension specifies where to find up-to-date certificates for the CA. The CDP extension specifies where to find up-to-date CRLs that are signed by the CA. These extensions apply to all certificates that are issued by that CA. Configuring these extensions ensures that this information is included in each certificate that the CA issues so that it is available to all clients. This ensures that PKI clients experience the least possible number of failures due to unverified certificate chains or certificate revocations, which can result in unsuccessful VPN connections, failed smart card sign-ins, or unverified email signatures. As a CA administrator, you can add, remove, or modify CRL distribution points and the locations for CDP and AIA certificate issuance. Modifying the URL for a CRL distribution point only affects newly issued certificates. Previously issued certificates will continue to reference the original location, which is why you should establish these locations before your CA distributes any certificates. To learn how to configure the AIA and CDP extensions, proceed with the following steps...</p></td>
+                
+                
+          </tr>
+        </table>
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting <strong>'Start'</strong> at the bottom left corner of your  screen.</span></li>
+            </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then go to <strong>'Administrative Tools'</strong>...</span></li>
+                </ul></td>
+                
+                <td align="right">
+                  <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then <strong>'Certification Authority'</strong>...</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetDomainNamespaceForOfflineRootCa/11.jpg" width="252" height="406"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in Certification Authority, right-click the root node for the CA</span>, which in this case is&nbsp;<strong>'RootCA'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetDomainNamespaceForOfflineRootCa/12.jpg" width="360" height="135"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then select <strong>'Properties'</strong>.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="93" height="101"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in the properties of the root CA, select the <strong>'Extensions'</strong> tab.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">In the 'Extensions' tab, select the <strong>'Select extension'</strong> dropdown.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>It is here where you have the option to configure the CDP or the AIA.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In this case, we'll start first with configuring the CDP.</li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">The first distribution point in the list is the local distribution point or local path.</span> The CA uses the local CRL to validate all certificates that are generated before the certificates are issued.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                <li>With the local path selected, deselect the option <strong>'Publish Delta CRLs to this location'</strong>. You should avoid publishing delta CRLs on an offline root CAs. In most cases, you do not revoke many certificates on an offline root CA, for this reason, a delta CRL is not needed.</li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="445" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Next, we need to remove these locations from the list. We will replace these locations with a custom path using a HTTP URL location. This will ensure that  users and applications outside the organization can perform certificate validation.&nbsp;</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Begin removing these locations by first selecting the LDAP location. </li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="446" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then press the <strong>'Remove'</strong> button.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="10.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once the 'Remove' button has been pressed, you'll need to confirm the removal. Press the <strong>'Yes'</strong> button to continue</span>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="317" height="126"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Next, select the HTTP location</span>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="12.jpg" width="446" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">And then press the <strong>'Remove'</strong> button.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="13.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Again, once the 'Remove' button has been pressed, you'll need to confirm the removal. Press the <strong>'Yes'</strong> button to continue.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="317" height="126"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And then finally, select the file address location.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="14.jpg" width="447" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And press <strong>'Remove'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="15.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once again, press the <strong>'Yes' </strong>button to confirm the removal.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="317" height="126"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Now, as we stated earlier, we will replace these locations with a custom path using a HTTP URL location. This will ensure that  users and applications outside the organization can perform certificate validation.&nbsp;</span>To do this, press the <strong>'Add...'</strong> button.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="16.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">And then start by entering  <strong>'http://' </strong>in the 'Location' field</span>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="17.jpg" width="399" height="357"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Followed by the address or the server name where CRL can be accessed. In this case we are using the name of the server that will be our Enterprise CA with IIS installed. However, in a production enviroment, using an outside web address ensures higher availability.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="18.jpg" width="399" height="357"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And finish by entering <strong>'/CertEnroll/&lt;CaName&gt;&lt;CRLNameSuffix&gt;&lt;DeltaCRLAllowed&gt;.crl'</strong>.</li>
+                  <br>
+                  <li>Press<strong> 'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="19.jpg" width="399" height="357"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once the HTTP location has been created, select the <strong>'Include in the CDP extension of issued certificates'</strong> option. This means that this CDP will be used in all certificates.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="20.jpg" width="447" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>The CDP extension is now complete. We now have to configure the AIA extension. To do this, select the <strong>'Select extension' </strong>dropdown.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="21.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And select the option <strong>'Authority Information Access (AIA)</strong>.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="22.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Like with the CDP extension, we will remove these unneeded locations.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="23.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Like before, begin removing these locations by first selecting the LDAP location.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="24.jpg" width="446" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then press the&nbsp;<strong>'Remove'</strong>&nbsp;button.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="25.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Again, once the 'Remove' button has been pressed, you'll need to confirm the removal. Press the&nbsp;<strong>'Yes'</strong>&nbsp;button to continue</span>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="317" height="126"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Next, select the HTTP location.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="26.jpg" width="446" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">And then press the&nbsp;<strong>'Remove'</strong>&nbsp;button.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="27.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Press <strong>'Yes'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="317" height="126"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And then finally, select the file address location.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="28.jpg" width="446" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And press&nbsp;<strong>'Remove'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="29.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And press <strong>'Yes'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="317" height="126"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Now, press the <strong>'Add...'</strong> button to add the HTTP location for the AIA extension.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="30.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">And then start by entering&nbsp;<strong>'http://'&nbsp;</strong>in the 'Location' field</span>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="31.jpg" width="399" height="357"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Followed by the address or the server name where CRL can be accessed. Again, in this case we are using the name of the server that will be our Enterprise CA with IIS installed. But, it is best to us an outside web address to ensure higher availability.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="32.jpg" width="399" height="357"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And finish by entering&nbsp;<strong>'/CertEnroll/&lt;ServerDNSName&gt;_&lt;CAName&gt;&lt;CertificateName&gt;.crt'</strong>.</li>
+                  <br>
+                  <li>Press<strong>&nbsp;'OK'</strong>.</li>
+          </ul> </td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="33.jpg" width="399" height="357"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once the HTTP location has been created, select the <strong>'Include in the AIA extension of issued certificates'</strong> option. This means that this AIA will be used in all certificates.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="34.jpg" width="447" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>The AIA extension is now complete.</li>
+                  <br>
+                  <li>Press <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="35.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And then finally, press <strong>'Yes'</strong> to restart Certificate Services.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="36.jpg" width="408" height="145"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

@@ -13,7 +13,7 @@ function ActiveDirectory() {
             
                     //Adding Active Directory Domain Services
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[0].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Adding Active Directory Domain Services", "ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices");
+                        new Link(tutorialList.child[0].child[0].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Adding Active Directory Domain Services Role", "ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices");
 
                     //Creating a New Domain
                     new HierarchicalUnit(tutorialList.child[0].child[0].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);

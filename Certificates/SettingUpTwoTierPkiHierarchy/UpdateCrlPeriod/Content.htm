@@ -1,0 +1,763 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>In this step we'll be updating the CRL Period. The CRL Period<strong>&nbsp;</strong>establishes the validity period for the base CRL. CRL stand for 'certificate revocation list'. The certificate revocation list is a list of certificates that have been revoked. The CRL Period essentially defines how long the certificate revocation list is valid for. By default, the CRL Period is set to 1 Week. Once the CRL has expired, the root CA server will need to republish the CRL to sub-CA server again. In this step, we are going to increase this value to eleminate the need to republish the CRL every week. To learn how to configure CRL Period, proceed with the following steps...</p></td>
+                
+                
+          </tr>
+        </table>
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">If the CRL Period was configured in the CAPolicy.inf before the CA installation, then there is no need to continue with this step. If however the CRL Period was NOT configured in the CAPolicy.inf before the CA installation, then proceed with the following steps...</span></li>
+          </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="0.jpg" width="365" height="195"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+            </ul></td>
+                
+                <td align="right">
+                  <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then&nbsp;<strong>'Certification Authority'</strong>...</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetDomainNamespaceForOfflineRootCa/11.jpg" width="252" height="406"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in Certification Authority, expand the root node for the CA</span>, which in this case is&nbsp;<strong>'RootCA'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="418" height="135"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then right-click <strong>'Revoked Certificates'</strong>.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="360" height="176"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">And select <strong>'Properties'</strong>.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="93" height="101"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once in the properties of the Revoked Certificates, we need to update two settings. The first setting is the <strong>CRLPeriodUnits</strong>, which is defined here in this input field.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="404" height="461"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In this case, we will change the CRLPeriodUnits to <strong>'20'</strong>.</li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="404" height="461"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">The next setting we need to update is the <strong>CRLPeriod</strong></span>. To do this, select the dropdown.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="404" height="461"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                <li>Here you can see there is five options to choose from, &quot;Hours&quot;, &quot;Days&quot;, &quot;Weeks&quot;, &quot;Months&quot; and &quot;Years&quot;. In this case we will select the option <strong>'Years'</strong>.</li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="404" height="461"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Next, Leave the <strong>'Publish Delta CRLs'</strong> option NOT selected. We don't want to publish any delta CRLs.</li>
+                  <br>
+                  <li>This completes this step. However, there is a couple other methods in which the CRL Period can be updated. One other way is through the registry.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="404" height="461"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">To update the CRL Period through the registry, begin  by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then type&nbsp;<strong>'regedit'&nbsp;</strong>in the search field.</span></li>
+    </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetValidityPeriodForRootCaIssuedCertificates/1.jpg" width="405" height="456"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Now click on&nbsp;<strong>'regedit'</strong>. This will open the 'Registry Editor'.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetValidityPeriodForRootCaIssuedCertificates/2.jpg" width="405" height="456"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once the 'Registry Editor' is open, expand&nbsp;<strong>'HKEY_LOCAL_MACHINE'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetValidityPeriodForRootCaIssuedCertificates/3.jpg" width="804" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then expand&nbsp;<strong>'SYSTEM'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetValidityPeriodForRootCaIssuedCertificates/4.jpg" width="785" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then&nbsp;<strong>'CurrentControlSet'</strong>.</span></li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetValidityPeriodForRootCaIssuedCertificates/5.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Expand&nbsp;<strong>'services'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetValidityPeriodForRootCaIssuedCertificates/6.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Frome here, you may need to scroll down a bit.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetValidityPeriodForRootCaIssuedCertificates/7.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Scroll down until you find&nbsp;<strong>'CertSvc'</strong>, then expand it.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetValidityPeriodForRootCaIssuedCertificates/8.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And then finally, expand&nbsp;<strong>'Configuration'</strong>.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetValidityPeriodForRootCaIssuedCertificates/9.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR"><span dir="LTR">Once 'Configuration has been expanded, select the key that represents the name of your root CA. In this case, the name of the root CA is&nbsp;<strong>'RootCA'</strong>.</span></span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetValidityPeriodForRootCaIssuedCertificates/10.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once the root CA key has been selected, in the window to the right, make your way down to the middle of the list.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../SetValidityPeriodForRootCaIssuedCertificates/11.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">The value that we are looking for is CRL Period. This value is broken up into two parts, 'CRLPeriod' and 'CRLPeriodUnits'.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>First we will update the 'CRLPeriod'. To do this, double-click on <strong>'CRLPeriod'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="10.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>By default, this value is set to 'Weeks'.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="384" height="162"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In this case, we want to change the value to <strong>'Years'</strong>.</li>
+                  <br>
+                  <li>Press <strong>'OK'</strong> when finished.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="12.jpg" width="384" height="162"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Now we want to update the 'CRLPeriodUnits'. To do this, double-click on <strong>'CRLPeriodUnits'</strong>.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="13.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>First, select the option <strong>'Decimal'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="14.jpg" width="335" height="192"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then enter in the value in the&nbsp;<strong>'Value data:'</strong>&nbsp;field. In this case, the value we will enter is&nbsp;<strong>'20'</strong>.</li>
+                  <br>
+                  <li>Press&nbsp;<strong>'OK'</strong>.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="15.jpg" width="335" height="192"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">The CRL Period is now updated. However, there is one more way in which these values can be configured and that is by command line.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="16.jpg" width="769" height="452"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>To update the CRL Period by command line, begin  by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then open the&nbsp;<strong>'Command Prompt'</strong>.</span></li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/ADPrep/1.jpg" width="405" height="456"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once in the command prompt, begin by entering in the command <strong>'certutil -setreg ca\'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="17.jpg" width="657" height="345"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Followed by <strong>'CRLPeriod'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="18.jpg" width="657" height="345"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then enter in the CRLPeriod value, which in this case we will enter in <strong>'Years'</strong></li>
+                  <br>
+                  <li>When finished, press&nbsp;<strong>'Enter'</strong>.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="19.jpg" width="657" height="345"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Next, enter  in the command <strong>'certutil -setreg ca\' </strong>again.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="20.jpg" width="657" height="345"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>But this time enter in <strong>'CRLPeriodUnits'</strong>.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="21.jpg" width="657" height="345"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Followed by the CRLPeriodUnits value, which in this case we will enter <strong>'20'</strong>.</span></li>
+                  <br>
+                  <li>When finished, press&nbsp;<strong>'Enter'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="22.jpg" width="657" height="345"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>The CRLPeriod is now updated.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="23.jpg" width="657" height="345"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+       
+    </body>
+</html>
