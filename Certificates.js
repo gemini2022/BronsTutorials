@@ -53,43 +53,43 @@ function Certificates() {
 
                             //General Tab
                             new HierarchicalUnit(tutorialList.child[0].child[3].child[2].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "DHCP/DhcpServer/GeneralTab");
+                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "Certificates/CaServer/CaServerProperties/GeneralTab");
 
                             //Policy Module Tab
                             new HierarchicalUnit(tutorialList.child[0].child[3].child[2].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Policy Module Tab", "DHCP/DhcpServer/PolicyModuleTab");
+                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Policy Module Tab", "Certificates/CaServer/CaServerProperties/PolicyModuleTab");
 
                             //Exit Module Tab
                             new HierarchicalUnit(tutorialList.child[0].child[3].child[2].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Exit Module Tab", "DHCP/DhcpServer/ExitModuleTab");
+                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Exit Module Tab", "Certificates/CaServer/CaServerProperties/ExitModuleTab");
 
                             //Enrollment Agents Tab
                             new HierarchicalUnit(tutorialList.child[0].child[3].child[2].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Enrollment Agents Tab", "DHCP/DhcpServer/EnrollmentAgentsTab");
+                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Enrollment Agents Tab", "Certificates/CaServer/CaServerProperties/EnrollmentAgentsTab");
 
                             //Auditing Tab
                             new HierarchicalUnit(tutorialList.child[0].child[3].child[2].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Auditing Tab", "DHCP/DhcpServer/AuditingTab");
+                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Auditing Tab", "Certificates/CaServer/CaServerProperties/AuditingTab");
 
                             //Recovery Agents Tab
                             new HierarchicalUnit(tutorialList.child[0].child[3].child[2].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Recovery Agents Tab", "DHCP/DhcpServer/RecoveryAgentsTab");
+                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Recovery Agents Tab", "Certificates/CaServer/CaServerProperties/RecoveryAgentsTab");
 
                             //Security Tab
                             new HierarchicalUnit(tutorialList.child[0].child[3].child[2].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Security Tab", "DHCP/DhcpServer/SecurityTab");
+                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Security Tab", "Certificates/CaServer/CaServerProperties/SecurityTab");
 
                             //Extensions Tab
                             new HierarchicalUnit(tutorialList.child[0].child[3].child[2].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Extensions Tab", "DHCP/DhcpServer/ExtensionsTab");
+                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Extensions Tab", "Certificates/CaServer/CaServerProperties/ExtensionsTab");
 
                             //Storage Tab
                             new HierarchicalUnit(tutorialList.child[0].child[3].child[2].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Storage Tab", "DHCP/DhcpServer/StorageTab");
+                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Storage Tab", "Certificates/CaServer/CaServerProperties/StorageTab");
 
                             //Certificate Managers Tab
                             new HierarchicalUnit(tutorialList.child[0].child[3].child[2].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Certificate Managers Tab", "DHCP/DhcpServer/CertificateManagersTab");
+                                new Link(tutorialList.child[0].child[3].child[2].child[7].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Certificate Managers Tab", "Certificates/CaServer/CaServerProperties/CertificateManagersTab");
 
             //Revoked Certificates
             new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
