@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to get to the CA Server properties, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>To learn about the General tab, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -19,8 +19,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
-</ul></td>
+                <li><span dir="LTR">This first section at the top displays the name of the CA.</span></li></ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -37,7 +36,24 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
+                <li><span dir="LTR">Here in this section will be a list of all the certificates that this CA has generated. For example, when a certificate is renewed, that new certificate will be added here in this list.</span></li></ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="1b.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">You can view any certificate in this list by selecting the certificate and then pressing the <strong>'View Certificate'</strong> button.</span></li>
     </ul></td>
                 
                 <td align="right">
@@ -55,8 +71,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Then&nbsp;<strong>'Certification Authority'</strong>...</span></li>
-        </ul></td>
+                <li><span dir="LTR">By pressing the 'View Certificate' button on the previous form, a new form will appear displaying additional information about that certificate. For example, you can see here what this certificate is intended for.</span> In this case this certificate is indended for all puposes. If the 'EnhancedKeyUsageExtension' was defined in the CAPolicy.inf, that information would be displayed here.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -73,7 +89,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Once in Certification Authority, right-click the root node for the CA</span>, which in this case is&nbsp;<strong>'RootCA'</strong>.</li>
+                <li><span dir="LTR">You can see here what CA this cerficate was issued to and what CA this certificate  was issued by.</span> In this case, this certificate was issued to and by the same CA. This referred to as a self signed certificate.</li>
         </ul></td>
                 
                 <td align="right">
@@ -91,7 +107,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
+                <li>And then here you can see information about the validity period of this certificate.</li>
   </ul></td>
                 
                 <td align="right">
@@ -109,8 +125,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
-  </ul></td>
+                <li>If the 'PolicyStatementExtension' was defined in the CAPolicy.inf, then you can view those details by pressing the <strong>'Issuer Statement'</strong> button here.</li>
+</ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -127,8 +143,10 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
-  </ul></td>
+                <li>The legal policy statement you defined in the CAPolicy.inf will be displayed here. Pressing the <strong>'More Info'</strong> button will take you to the URL location defined in the CAPolicy.inf.</li>
+                <br>
+                <li>Press <strong>'Close'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -145,7 +163,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
+                <li>If we now select the <strong>'Details' </strong> tab.</li>
   </ul></td>
                 
                 <td align="right">
@@ -163,7 +181,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
+                <li>In this section, we can view a more extensive list of information about the certificate.</li>
   </ul></td>
                 
                 <td align="right">
@@ -181,7 +199,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
+                <li>Also on this tab, you have the option of exporting this certificate. This can be done by first clicking on the <strong>'Copy to File...'</strong> button.</li>
   </ul></td>
                 
                 <td align="right">
@@ -199,8 +217,10 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
-  </ul></td>
+                <li>Once the 'Copy to File..' button has been clicked, the 'Certificate Export Wizard' will appear.</li>
+                <br>
+                <li>Press&nbsp;<strong>'Next &gt;'</strong>.</li>
+</ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -217,8 +237,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
-  </ul></td>
+                <li>If you are exporting certificates for import onto a computer running Windows, PKCS&nbsp;#7 format is the preferred export format. This format preserves the chain of certification authorities (CAs), or the certification path, of any certificate that includes countersignatures associated with signatures. If you are exporting certificates for import onto a computer running another operating system, it is possible that the PKCS&nbsp;#7 format is supported. If it is not supported, the DER-encoded binary format or the Base64-encoded format is provided for interoperability. In this case, we will be importing the certificate onto a computer running Windows, therefore we will select the&nbsp;<strong>'Cryptographic Message Syntax - PKCS #7 Certificate (.P7B)'</strong>&nbsp;option.</li>
+</ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -235,8 +255,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
-  </ul></td>
+                <li>Also, be sure to select the&nbsp;<strong>'Include all certificates in the certification path if possible'</strong>&nbsp;option as well.</li>
+</ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -253,8 +273,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
-  </ul></td>
+                <li>Press&nbsp;<strong>'Next &gt;'</strong>.</li>
+</ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -271,8 +291,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
-  </ul></td>
+                <li>On this screen, we will choose the location where the certificate will be exported. To do this, begin by pressing&nbsp;<strong>'Browse...'</strong>.</li>
+</ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -289,8 +309,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
-  </ul></td>
+                <li>The certificate can be exported to any  location, in this case, we'll save it to the desktop. To do this, select&nbsp;<strong>'Desktop'</strong>.</li>
+</ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -307,8 +327,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
-  </ul></td>
+                <li>Then give the certificate a name. In this case, we will name it&nbsp;<strong>'SubCert'</strong>.</li>
+</ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -325,8 +345,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
-  </ul></td>
+                <li>Then press&nbsp;<strong>'Save'</strong>.</li>
+</ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -343,8 +363,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
-  </ul></td>
+                <li>Once the location and the name of the certificate has been defined, press&nbsp;<strong>'Next &gt;'</strong>.</li>
+</ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -361,8 +381,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
-  </ul></td>
+                <li>And finally, press&nbsp;<strong>'Finish'&nbsp;</strong>to export the certificate..</li>
+</ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -379,8 +399,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
-  </ul></td>
+                <li>Once the certificate has been successfully exported, press&nbsp;<strong>'OK'</strong>.</li>
+</ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -397,8 +417,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
-  </ul></td>
+                <li>Now, back to the certificate. If we select the <strong>'Certification Path'</strong> tab.</li></ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -415,7 +434,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
+                <li>You can view the certificate hierarchy here. In this case, there is only one certificate, the root CA.</li>
   </ul></td>
                 
                 <td align="right">
@@ -433,8 +452,10 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Then select&nbsp;<strong>'Properties'</strong>.</li>
-  </ul></td>
+                <li>If there were more than just one cerficate in the hierarchy, you could select that certificate and view it's details here.</li>
+                <br>
+                <li>Press <strong>'OK'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
