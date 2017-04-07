@@ -143,73 +143,101 @@ function Certificates() {
             new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                 new ExpandCollapse(tutorialList.child[0].child[3].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Certificate Templates (MMC)", root);
 
+            //Smart Card Certificate Enrollment
+            new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                new ExpandCollapse(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Smart Card Certificate Enrollment", root);
+            
+                    //Duplicate Smart Card Template
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[11].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Duplicate Smart Card Template", "Certificates/SmartCardCertificateEnrollment/DuplicateSmartCardTemplate");
+
+                    //Publish Smart Card Template
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[11].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Publish Smart Card Template", "Certificates/SmartCardCertificateEnrollment/PublishSmartCardTemplate");
+
+                    //Configure Enrollment Agent Permissions
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[11].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Configure Enrollment Agent Permissions", "Certificates/SmartCardCertificateEnrollment/ConfigureEnrollmentAgentPermissions");
+
+                    //Publish Enrollment Agent Template
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[11].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Publish Enrollment Agent Template", "Certificates/SmartCardCertificateEnrollment/PublishEnrollmentAgentTemplate");
+
+                    //Request Enrollment Agent Certificate
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[11].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Request Enrollment Agent Certificate", "Certificates/SmartCardCertificateEnrollment/RequestEnrollmentAgentCertificate");
+
+                    //Create Smart Card Certificate For User
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[11].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Create Smart Card Certificate For User", "Certificates/SmartCardCertificateEnrollment/CreateSmartCardCertificateForUser");
+
             //Setting Up a Two Tier PKI Hierarchy
             new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                new ExpandCollapse(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Setting Up a Two Tier PKI Hierarchy", root);
+                new ExpandCollapse(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Setting Up a Two Tier PKI Hierarchy", root);
             
                     //CAPolicy.inf
-                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[11].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "CAPolicy.inf", "Certificates/SettingUpTwoTierPkiHierarchy/CaPolicy");
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[12].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "CAPolicy.inf", "Certificates/SettingUpTwoTierPkiHierarchy/CaPolicy");
 
                     //Offline Standalone Root CA Installation
-                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[11].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Offline Standalone Root CA Installation", "Certificates/SettingUpTwoTierPkiHierarchy/OfflineStandaloneRootCaInstallation");
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[12].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Offline Standalone Root CA Installation", "Certificates/SettingUpTwoTierPkiHierarchy/OfflineStandaloneRootCaInstallation");
 
                     //Set Domain Namespace For Offline Root CA
-                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[11].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Set Domain Namespace For Offline Root CA", "Certificates/SettingUpTwoTierPkiHierarchy/SetDomainNamespaceForOfflineRootCa");
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[12].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Set Domain Namespace For Offline Root CA", "Certificates/SettingUpTwoTierPkiHierarchy/SetDomainNamespaceForOfflineRootCa");
 
                     //Set Validity Period For Root CA's Issued Certificates
-                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[11].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Set Validity Period For Root CA's Issued Certificates", "Certificates/SettingUpTwoTierPkiHierarchy/SetValidityPeriodForRootCaIssuedCertificates");
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[12].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Set Validity Period For Root CA's Issued Certificates", "Certificates/SettingUpTwoTierPkiHierarchy/SetValidityPeriodForRootCaIssuedCertificates");
 
                     //Update CDP And AIA Location Informtion
-                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[11].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Update CDP And AIA Location Informtion", "Certificates/SettingUpTwoTierPkiHierarchy/UpdateCdpAiaLocationInformtion");
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[12].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Update CDP And AIA Location Informtion", "Certificates/SettingUpTwoTierPkiHierarchy/UpdateCdpAiaLocationInformtion");
 
                     //Update CRL Period
-                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[11].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Update CRL Period", "Certificates/SettingUpTwoTierPkiHierarchy/UpdateCrlPeriod");
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[12].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Update CRL Period", "Certificates/SettingUpTwoTierPkiHierarchy/UpdateCrlPeriod");
 
                     //Publish CRL
-                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[11].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Publish CRL", "Certificates/SettingUpTwoTierPkiHierarchy/PublishCrl");
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[12].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Publish CRL", "Certificates/SettingUpTwoTierPkiHierarchy/PublishCrl");
 
                     //Enterprise Subordinate CA Installation
-                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[11].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Enterprise Subordinate CA Installation", "Certificates/SettingUpTwoTierPkiHierarchy/EnterpriseSubordinateCaInstallation");
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[12].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Enterprise Subordinate CA Installation", "Certificates/SettingUpTwoTierPkiHierarchy/EnterpriseSubordinateCaInstallation");
 
                     //Copy CRL & CRT File From Root CA To Sub CA
-                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[11].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copy CRL & CRT File From Root CA To Sub CA", "Certificates/SettingUpTwoTierPkiHierarchy/CopyCrlCrtFileFromRootCaToSubCa");
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[12].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copy CRL & CRT File From Root CA To Sub CA", "Certificates/SettingUpTwoTierPkiHierarchy/CopyCrlCrtFileFromRootCaToSubCa");
 
                     //Copy Certificate Request From Sub CA To Root CA
-                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[11].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copy Certificate Request From Sub CA To Root CA", "Certificates/SettingUpTwoTierPkiHierarchy/CopyCertificateRequestFromSubCaToRootCa");
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[12].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copy Certificate Request From Sub CA To Root CA", "Certificates/SettingUpTwoTierPkiHierarchy/CopyCertificateRequestFromSubCaToRootCa");
 
                     //Submit Certificate Request
-                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[11].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Submit Certificate Request", "Certificates/SettingUpTwoTierPkiHierarchy/SubmitCertificateRequest");
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[12].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Submit Certificate Request", "Certificates/SettingUpTwoTierPkiHierarchy/SubmitCertificateRequest");
 
                     //Issue Certificate
-                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[11].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Issue Certificate", "Certificates/SettingUpTwoTierPkiHierarchy/IssueCertificate");
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[12].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Issue Certificate", "Certificates/SettingUpTwoTierPkiHierarchy/IssueCertificate");
 
                     //Export Certificate
-                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[11].child[13], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Export Certificate", "Certificates/SettingUpTwoTierPkiHierarchy/ExportCertificate");
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[12].child[13], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Export Certificate", "Certificates/SettingUpTwoTierPkiHierarchy/ExportCertificate");
 
                     //Copy Certificate From Root CA To Sub CA
-                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[11].child[14], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copy Certificate From Root CA To Sub CA", "Certificates/SettingUpTwoTierPkiHierarchy/CopyCertificateFromRootCaToSubCa");
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[12].child[14], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Copy Certificate From Root CA To Sub CA", "Certificates/SettingUpTwoTierPkiHierarchy/CopyCertificateFromRootCaToSubCa");
 
                     //Install Certificate
-                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[11].child[15], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Install Certificate", "Certificates/SettingUpTwoTierPkiHierarchy/InstallCertificate");
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[12].child[15], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Install Certificate", "Certificates/SettingUpTwoTierPkiHierarchy/InstallCertificate");
 
                     //Start Certificate Service
-                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[3].child[11].child[16], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Start Certificate Service", "Certificates/SettingUpTwoTierPkiHierarchy/StartCertificateService");
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[12].child[16], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Start Certificate Service", "Certificates/SettingUpTwoTierPkiHierarchy/StartCertificateService");
 
 
 

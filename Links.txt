@@ -1,0 +1,33 @@
+http://guidestomicrosoft.com/2015/06/30/configure-two-tier-pki-hierarchy/
+
+http://blog.msallal.com/2015/01/deploying-enterprise-pki-on-windows.html
+http://blog.msallal.com/2015/01/deploying-enterprise-pki-on-windows_24.html
+
+http://myitworld.azurewebsites.net/2016/01/18/installing-two-tier-pki-hierarchy-windows-server-2016-part1/
+http://myitworld.azurewebsites.net/2016/01/21/installing-two-tier-pki-hierarchy-windows-server-2016-part2/
+http://myitworld.azurewebsites.net/2016/01/25/installing-two-tier-pki-hierarchy-windows-server-2016-part3/
+
+https://www.youtube.com/watch?v=kYUSRUERiCk
+
+Certificate Templates (MMC)
+	Duplicate Template
+	Template Properties
+		General
+		Reqeust Handling
+		Cryptography
+		Subject Name
+		Server
+		Issuance Requirements
+		Superseded Templates
+		Extensions
+		Security	
+
+
+
+
+https://technet.microsoft.com/en-us/library/cc754553(v=ws.11).aspx	
+
+
+
+
+http://secadmins.com/index.php/enroll-for-a-smart-card-certificate-on-behalf-of-other-users/		
