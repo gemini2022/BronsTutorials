@@ -6,26 +6,94 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>A domain user cannot enroll for a Smart Card Logon (authentication) or Smart Card User (authentication plus e-mail) certificate unless a system administrator has granted the user access rights to the Certificate Template stored in the Active DirectoryTM service. This is done this way because enrollment for a smart card certificate must be a controlled procedure in the same manner that employee badges are controlled for identification and physical access purposes. The recommended method for enrolling users for smart card-based certificates and keys is through the enroll-on-behalf-of station that is integrated with Certificate Services. When an Enterprise Certification Authority (CA) is installed, the installation includes the enroll-on-behalf-of station. This station allows an administrator to act on behalf of a specific user to request and install a Smart Card Logon or Smart Card User certificate onto the user's smart card. To set up smart card certificate enrollment, you must first create a new certificate template by duplicating an existing template and then configuring the appropriate  settings. To learn how to do this, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>A key component of any PKI security plan is ongoing monitoring of the infrastructure and supporting processes. With critical systems such as a CA, it is vital to collect the right information and have appropriate alerting configured and review processes defined so that if there is an issue, it can be properly investigated. CAs must be treated as a high value systems and be monitored closely for suspicious activity. A security logging and monitoring plan for a traditional line of business application will typically include watching specific logs for indicators of suspicious activity. While this is a vital part of PKI logging and monitoring, there are more aspects to consider. If operating offline CAs, also monitor the physical access to the offline CAs, and create a process for reviewing logical access to those systems. You must also monitor and review physical access for all online systems, including RAs and CAs. To learn how to do this, proceed with the following steps...</p></td>
                 
                 
           </tr>
         </table>
     
-    	
+    	<hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Before you can start logging events to the security log, you must enable the 'Audit object access' settings in Group policy.</li></ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
         
         <hr>
         
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+                <li><span dir="LTR">To do this, begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Then go to&nbsp;<strong>'Administrative Tools'</strong>...</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+            <li>Then select&nbsp;<strong>'Group Policy Management'</strong>...</li></ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../../ActiveDirectory/GroupPolicy/CreatingGroupPolicies/1.jpg" width="286" height="546"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Once in Group Policy Management, expand the forest node.</span></li>
 </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                            <td align="center"><img src="../../../Autoenrollment/GroupPolicy/ConfigureGroupPolicy/1.jpg" width="461" height="120"></td>
                         </tr>
                   </table>
                 </td>
@@ -37,31 +105,13 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
-    </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-              <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Then&nbsp;<strong>'Certification Authority'</strong>...</span></li>
+                <li>Then expand&nbsp;<strong>'Domains'</strong>.</li>
         </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="../../SettingUpTwoTierPkiHierarchy/SetDomainNamespaceForOfflineRootCa/11.jpg" width="252" height="406"></td>
+                            <td align="center"><img src="../../../Autoenrollment/GroupPolicy/ConfigureGroupPolicy/2.jpg" width="441" height="175"></td>
                         </tr>
                   </table>
                 </td>
@@ -73,13 +123,31 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Once in Certification Authority, expand the root node for the CA</span>, which in this case is&nbsp;<strong>'EnterpirseCA'</strong>.</li>
+                <li>Then expand your domain, which in this case is&nbsp;<strong>'bronstutorials.local'</strong>.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../Autoenrollment/GroupPolicy/ConfigureGroupPolicy/3.jpg" width="423" height="192"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>And then expand <strong>'Domain Conrollers'</strong>.</li>
         </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="../../Autoenrollment/GroupPolicy/CreateDuplicateTemplate/6.jpg" width="419" height="135"></td>
+                            <td align="center"><img src="2.jpg" width="404" height="272"></td>
                         </tr>
                   </table>
                 </td>
@@ -91,87 +159,13 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Then right-click&nbsp;<strong>'Certificate Templates'</strong>.</span></span></li>
-  </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="../../Autoenrollment/GroupPolicy/CreateDuplicateTemplate/7.jpg" width="360" height="192"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-              <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select&nbsp;<strong>'Manage'</strong>.</span></span></li>
-    </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="../../Autoenrollment/GroupPolicy/CreateDuplicateTemplate/8.jpg" width="82" height="101"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-              <td width="100%" align="left" valign="top"><ul>
-                <li>The next step is to choose the template you wish to duplicate. In this case, the certificate template we will duplicate is the&nbsp;<strong>'Smartcard User'</strong>&nbsp;template. To duplicate this template, right-click it.</li>
-  </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="1.jpg" width="876" height="670"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-              <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select&nbsp;<strong>'Duplicate Template'</strong>.</span></span></li>
-  </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="../../Autoenrollment/GroupPolicy/CreateDuplicateTemplate/10.jpg" width="135" height="101"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-              <td width="100%" align="left" valign="top"><ul>
-                <li>Next, select the template version that is appropriate for your deployment. In this case, we will select&nbsp;<strong>'Windows Server 2003 Enterprise'</strong> because Windows Server 2008 Enterprise uses CNG (the new cryptographic subsystem) which does not support the typical smart card.</li>
-                <br>
-                <li>Press <strong>'OK'</strong>.</li>
+                <li>Once 'Domain Conrollers' has been expanded, right-click on <strong>'Default Domain Conrollers Policy'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="2.jpg" width="396" height="243"></td>
+                            <td align="center"><img src="3.jpg" width="403" height="288"></td>
                         </tr>
                   </table>
                 </td>
@@ -183,103 +177,13 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Once you press 'OK' on the previous dialogue box, the properties of the new template will appear. On the 'General' tab, you first have the option to rename the template display name, or keep the default setting.</li>
-    </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="3.jpg" width="404" height="522"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-              <td width="100%" align="left" valign="top"><ul>
-                <li>In this case, we will rename the template&nbsp;<strong>'Smart Card User Template'</strong>.</li>
-    </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="4.jpg" width="404" height="522"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-              <td width="100%" align="left" valign="top"><ul>
-                <li>More options on this tab can be configured, such as the 'Validity Period' and the 'Renewal Period', but for this demonstration we will leave everything else with the default settings.</li>
-    </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="5.jpg" width="404" height="522"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-              <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Next, select the <strong>'Reqeust Handling'</strong> tab.</span></span></li>
-        </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="6.jpg" width="404" height="522"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-              <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Once on the 'Request Handling' tab, the first thing we need to do is change this template's purpose. To do this, select the <strong>'Purpose'</strong> dropdown.</span></span></li>
-        </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="7.jpg" width="404" height="522"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-              <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And choose the option <strong>'Signature and smartcard logon'</strong>.</span></span></li>
+                <li>And select <strong>'Edit...'</strong>. This will open the 'Group Policy Management Editor'.</li>
             </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="8.jpg" width="404" height="522"></td>
+                            <td align="center"><img src="../../../../ActiveDirectory/GroupPolicy/CreatingGroupPolicies/15.jpg" width="157" height="186"></td>
                         </tr>
                   </table>
                 </td>
@@ -291,30 +195,13 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Now, select the <strong>'CSPs...'</strong> button at the bottom of the form.</span></span></li>
-        </ul></td>
-                
-                <td align="right">
-              <table width="404" border="0">
-                        <tr>
-                            <td align="center"><img src="9.jpg" width="404" height="522"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-              <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Here, we need to select the CSP that will be used for the smart cards. To do this, first select the option <strong>'Request must use one of the following CSPs'</strong>.</span></span></li>
+                <li>Once in the 'Group Policy Management Editor', expand <strong>'Policies' </strong> under <strong>'Computer Configuration'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="10.jpg" width="429" height="335"></td>
+                            <td align="center"><img src="4.jpg" width="734" height="568"></td>
                         </tr>
                   </table>
                 </td>
@@ -326,13 +213,12 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Then select the CSP that meets your needs. In this case we will select the option <strong>'Microsoft Base Smart Card Crypto Provider'</strong>.</span></span></li>
-        </ul></td>
+                <li><span dir="LTR">Then expand <strong>'Windows Settings'</strong>.</span></li></ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="11.jpg" width="427" height="335"></td>
+                            <td align="center"><img src="5.jpg" width="715" height="568"></td>
                         </tr>
                   </table>
                 </td>
@@ -344,13 +230,13 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Once a selection has been made, press <strong>'OK'</strong>.</span></span></li>
-        </ul></td>
+                <li>Expand <strong>'Security Settings'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="12.jpg" width="384" height="335"></td>
+                            <td align="center"><img src="6.jpg" width="700" height="568"></td>
                         </tr>
                   </table>
                 </td>
@@ -362,13 +248,13 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Next, we need to configure some options on the <strong>'Issuance Requirements'</strong> tab.</span></span></li>
-        </ul></td>
+                <li>And then <strong>'Advanced Audit Policy Configuration'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="13.jpg" width="404" height="535"></td>
+                            <td align="center"><img src="7.jpg" width="700" height="568"></td>
                         </tr>
                   </table>
                 </td>
@@ -380,13 +266,13 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Once on the 'Issuance Requirements' tab, the first thing we need to do is select the option <strong>'This number of authorized signatures'</strong>.</span></span></li>
-        </ul></td>
+                <li>And then finally, expand <strong>'Audit Policies'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="14.jpg" width="447" height="522"></td>
+                            <td align="center"><img src="8.jpg" width="700" height="568"></td>
                         </tr>
                   </table>
                 </td>
@@ -398,13 +284,13 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And leave it on the default of <strong>'1'</strong>.</span></span></li>
-        </ul></td>
+                <li>Once 'Audit Policies' has been expanded, select <strong>'Object Access'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="15.jpg" width="404" height="522"></td>
+                            <td align="center"><img src="9.jpg" width="700" height="568"></td>
                         </tr>
                   </table>
                 </td>
@@ -416,13 +302,13 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Next, make sure this field is left on the default option of <strong>'Application policy'</strong>.</li>
-        </ul></td>
+                <li>The settings we want to configure is <strong>'Audit Certification Services'</strong>. To do this, double-click on it. This will open its properties.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="16.jpg" width="404" height="522"></td>
+                            <td align="center"><img src="10.jpg" width="700" height="568"></td>
                         </tr>
                   </table>
                 </td>
@@ -434,13 +320,12 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Then we need to choose the purpose of the application policy. To do this, select the <strong>'Application Policy'</strong> dropdown.</span></span></li>
-        </ul></td>
+                <li>Once in the properties of the 'Audit Certification Services', the first thing we need to do is enable the option <strong>'Configure the following audit events'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="17.jpg" width="404" height="522"></td>
+                            <td align="center"><img src="11.jpg" width="478" height="538"></td>
                         </tr>
                   </table>
                 </td>
@@ -452,13 +337,13 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select the option <strong>'Certificate Request Agent'</strong>.</span></span></li>
-        </ul></td>
+                <li>Then select the options <strong>'Success'</strong>...</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="18.jpg" width="404" height="643"></td>
+                            <td align="center"><img src="12.jpg" width="454" height="538"></td>
                         </tr>
                   </table>
                 </td>
@@ -470,13 +355,12 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Now, we need to make sure that the user or group</span></span> we want to designate as enrollment agent has read and enroll permissions assigned on this template. To do this, first select the <strong>'Security'</strong> tab.</li>
-        </ul></td>
+                <li>And <strong>'Failure'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="19.jpg" width="404" height="522"></td>
+                            <td align="center"><img src="13.jpg" width="455" height="538"></td>
                         </tr>
                   </table>
                 </td>
@@ -488,13 +372,29 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">In this case, we don't just want to designate a single user as an enrollment agent, but rather an entire   group of users. However, the group we want to designate is not in the list, so we need to add it. To do this, press the <strong>'Add...'</strong> button.</span></span></li>
-        </ul></td>
+                <li>Press <strong>'OK'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="20.jpg" width="404" height="522"></td>
+                            <td align="center"><img src="14.jpg" width="440" height="538"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Now Certification Services is ready for auditing.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="15.jpg" width="700" height="568"></td>
                         </tr>
                   </table>
                 </td>
@@ -506,16 +406,13 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Then type in the group, which in this case is <strong>'help desk'</strong>.</span></span></li>
-                <br>
-                <li>Press <strong>'OK'</strong>.</li>
-              </ul>
-            <p>&nbsp;</p></td>
+                <li>Now back at the Auditing tab, we have serveral options in which we can choose to audit. The first option, <strong>'Back up and restore the CA database', </strong>controls logging of events triggered when the CA database is issued backup or restore commands.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="21.jpg" width="464" height="247"></td>
+                            <td align="center"><img src="16.jpg" width="404" height="530"></td>
                         </tr>
                   </table>
                 </td>
@@ -527,13 +424,13 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Now that the group we want to designate as enrollment agent is in the list, we need to make sure this group has both 'Read' and 'Enroll' permissions. The group already has 'Read', but needs 'Enroll'. To assign the group 'Enroll' permissions, select the <strong>'Enroll'</strong> option under the 'Allow' column.</span></span></li>
-        </ul></td>
+                <li>The next option <strong>'Change CA configuration'</strong>, controls logging of events related to the changing of properties and configuration of the CA through the CA snap-in. Example events logged are changing CRL validity periods, changing policy or exit module configuration, or updating configured CDP/AIA extensions.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="22.jpg" width="404" height="522"></td>
+                            <td align="center"><img src="17.jpg" width="404" height="530"></td>
                         </tr>
                   </table>
                 </td>
@@ -545,12 +442,84 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Then press <strong>'OK'</strong>.</span></span></li></ul></td>
+                <li>This next option, <strong>'Change CA security settings'</strong>, controls logging of events triggered by modification of the CA security settings done through the CA snap-in. Example events include enabling/disabling role separation, changing the audit filter, or changing the access control list for the CA.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="23.jpg" width="404" height="522"></td>
+                            <td align="center"><img src="18.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>This option, <strong>'Issue and manage certificate requests'</strong>, controls logging of events related to the issuance of certificates. This includes logging when a request is received, or set to pending, denied, and issued. In high volume issuance environments this can generate a large number of alerts, but it is a recommendation to enable it where possible because it provides a strong audit trail of all issuance events.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="19.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>And this option, <strong>'Revoke certificates and publish CRLs'</strong>, controls auditing of events related to revocation and publishing of CRLs.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="20.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>This option, <strong>'Store and retrieve archived keys'</strong>, controls auditing of events related to the CA archiving keys or recovering previously archived keys. This includes when a key is imported into the CA database and archived.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="21.jpg" width="404" height="530"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>And then finally this option, <strong>'Start and stop Active Directory Certificate Services'</strong>, controls creation of audit events whenever AD CS is started and stopped. A similar event is also logged to the application log, although enabling of this event writes an event to the security log. If enabled, a cryptographic hash of the CA database is taken on startup and shutdown of the CA service. When the database becomes large, this may begin to impact service availability, as the RPC interface for the CA is not available while the hash is being computed. The start and stop times of the service may be very long depending on the size of the database.</li></ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="22.jpg" width="404" height="530"></td>
                         </tr>
                   </table>
                 </td>

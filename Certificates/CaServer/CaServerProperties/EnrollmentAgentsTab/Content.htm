@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>Exit modules receive notifications from the server engine when operations such as the issuance of a certificate occur. An exit module is implemented as a dynamic-link library (DLL). A typical operation for an exit module is to publish a completed certificate in a specified location (the default enterprise certification authority exit module, for instance, publishes user certificates and certificate revocation lists (CRLs) to the Active Directory). An exit module can use the ICertServerExit interface to communicate with Certificate Services. Certificate Services communicates with an exit module by means of direct COM calls or, if the module does not support direct COM calls, by means of Automation. An exit module may view existing certificate properties and extensions, and it may also view request attributes and properties. An exit module cannot, however, modify any properties. Certificate Services provides a default exit module, but you can also create custom exit modules to meet special needs. However, before writing a custom exit module, consider using the default exit module. Moreover, for an enterprise certification authority, the default exit module should always be used, even though you can add additional, custom exit modules.To learn about the Exit Module tab, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>A domain user cannot enroll for a Smart Card Logon (authentication) or Smart Card User (authentication plus e-mail) certificate unless a system administrator has granted the user access rights to the Certificate Template stored in the Active DirectoryTM service. This is done this way because enrollment for a smart card certificate must be a controlled procedure in the same manner that employee badges are controlled for identification and physical access purposes. The recommended method for enrolling users for smart card-based certificates and keys is through the enroll-on-behalf-of station that is integrated with Certificate Services. When an Enterprise Certification Authority (CA) is installed, the installation includes the enroll-on-behalf-of station. This station allows an administrator to act on behalf of a specific user to request and install a Smart Card Logon or Smart Card User certificate onto the user's smart card. The Enrollment Agents tab allows administrators to restrict enrollment agents from whom they can enroll on behalf of. To learn how this works, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -17,12 +17,12 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>This first section displays all the policy modules that are currently active. Unlike policy modules, exit modules can have more than one exit module active at a time. Therefore, this section displays all the exit modules that are currently active.</li></ul></td>
+                <li>First, begin by selecting the option <strong>'Restrict enrollment agents'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="1.jpg" width="404" height="530"></td>
+                            <td align="center"><img src="1.jpg" width="447" height="530"></td>
                         </tr>
                   </table>
                 </td>
@@ -34,7 +34,10 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>If you want to remove any exit modules from the list, you can do this by pressing the <strong>'Remove'</strong> button.</li></ul></td>
+                <li>Once the option  'Restrict enrollment agents' has been selected, a message will appear telling you that restrictions on delegated enrollment agents can only be enforced on Windows Server 2008 CAs and later.</li>
+                <br>
+                <li>Press <strong>'OK'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -51,7 +54,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Removing the exit module only deactivates</span> it. If you want to activiate an exit module then you can add it to the list by selecting the <strong>'Add...' </strong>button.</li>
+                <li><span dir="LTR">The first step is to define what enrollment agents we want to restrict. Now, the default setting is restricting all enrollment agents</span>. In this case, we only want to restrict a certain group of designated enrollment agents. To do this, we first need to add the group of enrollment agents we want to restrict. We can do this by first pressing the <strong>'Add...' </strong>button.</li>
             </ul></td>
                 
                 <td align="right">
@@ -69,7 +72,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Pressing the 'Add...' button will display a list of all the available exit modules you can add to the list of active exit modules. In this case there is only one exit module available</span> to choose from.</li>
+                <li><span dir="LTR">Then enter in the group of enrollment agents we want to restrict. In this case, we want to restrict the <strong>'help desk'</strong> group.</span></li>
                 <br>
                 <li>Press <strong>'OK'</strong>.</li>
             </ul></td>
@@ -89,7 +92,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">As you can see, the exit module has been added back to the list.</span></li>
+                <li><span dir="LTR">Now that the 'Help Desk' group has been added, we can now remove the group we don't want, which in this case is 'Everyone'. To do this, select the<strong> 'Everyone'</strong> group.</span></li>
     </ul></td>
                 
                 <td align="right">
@@ -107,7 +110,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">You can view the properties of the selected exit module by pressing the <strong>'Properties...'</strong> button.</span></li>
+                <li><span dir="LTR">Then press the <strong>'Remove'</strong> button.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -125,10 +128,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>By default, this option is selected for the default standalone exit module. If you do not want to publish certificates or CRLs to the file system, clear the check box associated with this option. By default, the check box for this option is cleared for the default enterprise exit module. If you want to enable certificates to be published to the file system, select the check box associated with this option.</li>
-                <br>
-                <li>Press <strong>'OK'</strong>.</li>
-            </ul></td>
+                <li>The next step is to define what certificate templates the enrollment agents can enroll on behalf of. The default setting is all certificate templates, but we want to limit what certificate templates the enrollment agents can enroll for the other users. To do this, we first need to add the certificate template(s) that the enrollment agents can use. We can do this by first pressing the <strong>'Add...' </strong>button.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -145,10 +146,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>By default, this option is selected for the default standalone exit module. If you do not want to publish certificates or CRLs to the file system, clear the check box associated with this option. By default, the check box for this option is cleared for the default enterprise exit module. If you want to enable certificates to be published to the file system, select the check box associated with this option.</li>
-                <br>
-                <li>Press <strong>'OK'</strong>.</li>
-            </ul></td>
+                <li>Then select the certificate template. In this case, we are going to select <strong>'Smartcard Logon'</strong>.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -165,9 +164,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>By default, this option is selected for the default standalone exit module. If you do not want to publish certificates or CRLs to the file system, clear the check box associated with this option. By default, the check box for this option is cleared for the default enterprise exit module. If you want to enable certificates to be published to the file system, select the check box associated with this option.</li>
-                <br>
-                <li>Press <strong>'OK'</strong>.</li>
+                <li>Once the certificate template is selected, press <strong>'OK'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -185,9 +182,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>By default, this option is selected for the default standalone exit module. If you do not want to publish certificates or CRLs to the file system, clear the check box associated with this option. By default, the check box for this option is cleared for the default enterprise exit module. If you want to enable certificates to be published to the file system, select the check box associated with this option.</li>
-                <br>
-                <li>Press <strong>'OK'</strong>.</li>
+                <li>Now that the certificate template has been added, we can now remove the &lt;All&gt; certificate templates option. To do this, select it.</li>
             </ul></td>
                 
                 <td align="right">
@@ -205,9 +200,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>By default, this option is selected for the default standalone exit module. If you do not want to publish certificates or CRLs to the file system, clear the check box associated with this option. By default, the check box for this option is cleared for the default enterprise exit module. If you want to enable certificates to be published to the file system, select the check box associated with this option.</li>
-                <br>
-                <li>Press <strong>'OK'</strong>.</li>
+                <li>And press the <strong>'Remove'</strong> button.</li>
             </ul></td>
                 
                 <td align="right">
@@ -225,10 +218,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>By default, this option is selected for the default standalone exit module. If you do not want to publish certificates or CRLs to the file system, clear the check box associated with this option. By default, the check box for this option is cleared for the default enterprise exit module. If you want to enable certificates to be published to the file system, select the check box associated with this option.</li>
-                <br>
-                <li>Press <strong>'OK'</strong>.</li>
-            </ul></td>
+                <li><span dir="LTR">This last step is to define what users the enrollment agents can enroll on behalf of. Now, the default setting is enrolling for all users</span>. In this case, we only want the enrollment agents to be able to enroll for only a certain group of users. To do this, we first need to add these group of users . We can do this by first pressing the <strong>'Add...' </strong>button.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -245,7 +236,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>By default, this option is selected for the default standalone exit module. If you do not want to publish certificates or CRLs to the file system, clear the check box associated with this option. By default, the check box for this option is cleared for the default enterprise exit module. If you want to enable certificates to be published to the file system, select the check box associated with this option.</li>
+                <li>Then enter in the group of users, which in this case is the <strong>'sales'</strong> group.</li>
                 <br>
                 <li>Press <strong>'OK'</strong>.</li>
             </ul></td>
@@ -265,10 +256,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>By default, this option is selected for the default standalone exit module. If you do not want to publish certificates or CRLs to the file system, clear the check box associated with this option. By default, the check box for this option is cleared for the default enterprise exit module. If you want to enable certificates to be published to the file system, select the check box associated with this option.</li>
-                <br>
-                <li>Press <strong>'OK'</strong>.</li>
-            </ul></td>
+                <li>Now that the 'Sales' group has been added, we can now remove the group we don't want, which in this case is 'Everyone'. To do this, select the<strong> 'Everyone'</strong> group.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -285,9 +274,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>By default, this option is selected for the default standalone exit module. If you do not want to publish certificates or CRLs to the file system, clear the check box associated with this option. By default, the check box for this option is cleared for the default enterprise exit module. If you want to enable certificates to be published to the file system, select the check box associated with this option.</li>
-                <br>
-                <li>Press <strong>'OK'</strong>.</li>
+                <li>Then press the <strong>'Remove'</strong> button.</li>
             </ul></td>
                 
                 <td align="right">
@@ -305,9 +292,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>By default, this option is selected for the default standalone exit module. If you do not want to publish certificates or CRLs to the file system, clear the check box associated with this option. By default, the check box for this option is cleared for the default enterprise exit module. If you want to enable certificates to be published to the file system, select the check box associated with this option.</li>
-                <br>
-                <li>Press <strong>'OK'</strong>.</li>
+                <li>For this example we are defining what group of users the enrollment agents are allowed to enroll on behalf of. However, you also have the option of defining what users the enrollment agents <strong>Cannot</strong> enroll on behalf of. We can do this by simply pressing the <strong>'Deny'</strong> button.</li>
             </ul></td>
                 
                 <td align="right">
@@ -325,9 +310,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>By default, this option is selected for the default standalone exit module. If you do not want to publish certificates or CRLs to the file system, clear the check box associated with this option. By default, the check box for this option is cleared for the default enterprise exit module. If you want to enable certificates to be published to the file system, select the check box associated with this option.</li>
-                <br>
-                <li>Press <strong>'OK'</strong>.</li>
+                <li>So now you can see that the enrollment agents that belong to the 'Help Desk' group are denied the ability to enroll a Smartcard Logon certificate template on behalf of the 'Sales' group.</li>
             </ul></td>
                 
                 <td align="right">
@@ -345,10 +328,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>By default, this option is selected for the default standalone exit module. If you do not want to publish certificates or CRLs to the file system, clear the check box associated with this option. By default, the check box for this option is cleared for the default enterprise exit module. If you want to enable certificates to be published to the file system, select the check box associated with this option.</li>
-                <br>
-                <li>Press <strong>'OK'</strong>.</li>
-            </ul></td>
+                <li>But for this situation, we do want the  enrollment agents that belong to the 'Help Desk' group  the ability to enroll a Smartcard Logon certificate template on behalf of the 'Sales' group. Therefore, we will press the <strong>'Allow'</strong> button.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -365,10 +346,10 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>By default, this option is selected for the default standalone exit module. If you do not want to publish certificates or CRLs to the file system, clear the check box associated with this option. By default, the check box for this option is cleared for the default enterprise exit module. If you want to enable certificates to be published to the file system, select the check box associated with this option.</li>
+                <li>Now the  enrollment agents that belong to the 'Help Desk' group  have the ability to enroll a Smartcard Logon certificate template on behalf of the 'Sales' group.</li>
                 <br>
                 <li>Press <strong>'OK'</strong>.</li>
-            </ul></td>
+          </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
