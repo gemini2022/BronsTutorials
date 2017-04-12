@@ -167,6 +167,9 @@ function Certificates() {
                     new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[3].child[11].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Enable Key Archival", "Certificates/KeyArchivalAndRecovery/EnableKeyArchival");
 
+                    //Configure Certificate Template for Key Archival
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[11].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Configure Certificate Template for Key Archival", "Certificates/KeyArchivalAndRecovery/ConfigureCertificateTemplateForKeyArchival");
 
 
 

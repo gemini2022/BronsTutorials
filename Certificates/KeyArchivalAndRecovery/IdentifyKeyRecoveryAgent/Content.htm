@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>In order for smart card certificates to be issued, a user or a group needs to obtain an enrollment agent certificate. In this next step, we need to first configure  an 'Enrollment Agent' template so that an enrollment agent can be indentified. To learn how to do this, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>A key recovery agent is a person who is authorized to recover a certificate on behalf of an end user. Because the role of key recovery agents can involve sensitive data, only highly trusted individuals should be assigned to this role. To identify a key recovery agent, you must configure the Key Recovery Agent certificate template to allow the person assigned to this role to enroll for a key recovery agent certificate. To learn how to do this, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -109,7 +109,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select&nbsp;<strong>'Manage'</strong>.</span></span></li>
+                <li><span dir="LTR"><span dir="LTR">And select&nbsp;<strong>'Manage'</strong>.</span></span> This will open the 'Certificate Templates Console'.</li>
     </ul></td>
                 
                 <td align="right">
@@ -127,8 +127,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>In this next step, instead of duplicating a template, we can just edit an existing one. The template we need to edit is the <strong>'Enrollment Agent'</strong> template. To do this, right-click it.</li>
-  </ul></td>
+                <li>Once in the 'Certificate Templates Console', right-click <strong>'Key Recovery Agent'</strong>.</li>
+</ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -163,13 +163,13 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Once in the properties of the 'Enrollment Agent' template, select the <strong>'Security'</strong> tab.</span></span></li>
+                <li><span dir="LTR"><span dir="LTR">Once in the properties of the 'Key Recovery Agent' template, select the <strong>'Security'</strong> tab.</span></span></li>
         </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="2.jpg" width="404" height="522"></td>
+                            <td align="center"><img src="2.jpg" width="404" height="536"></td>
                         </tr>
                   </table>
                 </td>
@@ -181,7 +181,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Now, we need to make sure that the 'Help Desk' group </span></span> has read and enroll permissions assigned on this template as well. But again, this group isn't in the list, so we need to add it. To do this, press the&nbsp;<strong>'Add...'</strong>&nbsp;button.</li>
+                <li><span dir="LTR"><span dir="LTR">The user we want to designate as a 'Key Recovery Agent' is not in the list</span></span>. Therfore, we need to add this user. To do this, press the&nbsp;<strong>'Add...'</strong>&nbsp;button.</li>
   </ul></td>
                 
                 <td align="right">
@@ -199,7 +199,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Then type in the group, which again in this case is&nbsp;<strong>'help desk'</strong>.</span></span></li>
+                <li><span dir="LTR"><span dir="LTR">Then type in the user, which in this case is&nbsp;<strong>'bob smith'</strong>.</span></span></li>
                 <br>
                 <li>Press&nbsp;<strong>'OK'</strong>.</li>
     </ul></td>
@@ -219,7 +219,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Like before, the group already has 'Read', but needs 'Enroll'. To assign the group 'Enroll' permissions, select the&nbsp;<strong>'Enroll'</strong>&nbsp;option under the 'Allow' column.</li>
+                <li>This user already has 'Read', but needs 'Enroll'. To assign this user 'Enroll' permissions, select the&nbsp;<strong>'Enroll'</strong>&nbsp;option under the 'Allow' column.</li>
       </ul></td>
                 
                 <td align="right">
