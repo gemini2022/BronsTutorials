@@ -171,7 +171,13 @@ function Certificates() {
                     new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[3].child[11].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Configure Certificate Template for Key Archival", "Certificates/KeyArchivalAndRecovery/ConfigureCertificateTemplateForKeyArchival");
 
+                    //Publish Key Archival Enabled Certificate Template
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[11].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Publish Key Archival Enabled Certificate Template", "Certificates/KeyArchivalAndRecovery/PublishKeyArchivalEnabledCertificateTemplate");
 
+                    //Retrieve Archived Key
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[11].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Retrieve Archived Key", "Certificates/KeyArchivalAndRecovery/RetrieveArchivedKey");
 
             //Smart Card Certificate Enrollment
             new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
