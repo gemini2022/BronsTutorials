@@ -145,7 +145,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Properties'</strong>.</span></span></li>
+                <li><span dir="LTR"><span dir="LTR">And select <strong>'Properties'</strong>.</span></span> In this case, there is no need to duplicate this certificate because all the options that require configuring are editable.</li>
       </ul></td>
                 
                 <td align="right">
@@ -181,7 +181,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">The user we want to designate as a 'Key Recovery Agent' is not in the list</span></span>. Therfore, we need to add this user. To do this, press the&nbsp;<strong>'Add...'</strong>&nbsp;button.</li>
+                <li><span dir="LTR"><span dir="LTR">The user we want to designate as a 'Key Recovery Agent' is not in the list</span></span>. Therfore, we need to add this user to the list so we can give him the appropriate permissions for certificate enrollment. To do this, press the&nbsp;<strong>'Add...'</strong>&nbsp;button.</li>
   </ul></td>
                 
                 <td align="right">
@@ -237,13 +237,49 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Then press&nbsp;<strong>'OK'</strong>.</span></span></li>
+                <li><span dir="LTR"><span dir="LTR">Now that the appropriate permissions have been assigned to our designated 'Key Recovery Agent', we next have to make some adjustments on how this certificate will be issued. To do this, select the <strong>'Issuance Requirements'</strong> tab.</span></span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="404" height="537"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR"><span dir="LTR">Once on the 'Issuance Requirements' tab, uncheck the option <strong>'CA certificate manager approval'</strong>. By default, this option is selected, but by deselecting it, it will allow our designated 'Key Recovery Agent' to receive the Key Recovery Agent certificate without the need for CA certificate manager approval.</span></span></li>
     </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="6.jpg" width="404" height="522"></td>
+                            <td align="center"><img src="7.jpg" width="445" height="522"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR"><span dir="LTR">That's it! Press&nbsp;<strong>'OK'</strong>.</span></span></li>
+    </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="404" height="522"></td>
                         </tr>
                   </table>
                 </td>

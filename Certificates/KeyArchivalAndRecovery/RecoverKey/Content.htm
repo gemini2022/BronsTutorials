@@ -1,0 +1,220 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>This procedure can be completed only by an individual that has been issued a key recovery certificate To learn how to do this, proceed with the following steps...</p></td>
+                
+                
+          </tr>
+        </table>
+    
+    	
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Begin first by logging into a user that was designated as the 'Key Recovery Agent'. Then select&nbsp;<strong>'Start'</strong>&nbsp;or the&nbsp;<strong>'Start Orb'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+</ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/ComputerAccounts/JoiningComputersToTheDomain/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Then type&nbsp;<strong>'cmd'&nbsp;</strong>in the search field.</span></li>
+</ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/ComputerAccounts/OfflineDomainJoin/9.jpg" width="411" height="476"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Now click on&nbsp;<strong>'cmd'</strong>.</span></li>
+    </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/ComputerAccounts/OfflineDomainJoin/10.jpg" width="411" height="476"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Once in the command prompt, run the command&nbsp;<strong>'certutil'</strong>.</li>
+    </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="833" height="403"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Followed by&nbsp;<strong>'-recoverkey'</strong>.</li>
+  </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="833" height="403"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Next, we  have to specify the path and name of the file that contains the encrypted copy of the archived key we created in the previous step using the Certutil.exe &ndash;getkey command. In this case, we saved the file in a shared location on the network, <strong>'\\dc1\certfiles'</strong>.</li>
+</ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="833" height="403"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>And then, we  named the file&nbsp;<strong>'\JaneDoeArchivedKey'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="833" height="403"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR"><span dir="LTR">And then finally, we need to provide a name</span></span> of the file that the decrypted private key will be saved in. In this case, we will name this file <strong>'JaneDoeRecoveredKey.pfx'</strong>.</li>
+                <br>
+                <li>Press <strong>'Enter'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="833" height="403"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>The copy of the private key stored in the .pfx file is clear text, therefore this file must be protected by a password. Enter in a password and press <strong>'Enter'</strong>.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="833" height="403"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR"><span dir="LTR">Then confirm the password.</span></span></li>
+                <br>
+                <li>Press <strong>'Enter'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="833" height="403"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>The file has now been created and saved to  <strong>'C:\Users\bsmith'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="833" height="403"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

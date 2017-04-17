@@ -19,3 +19,12 @@
 [0408/131454.602:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
 [0408/131454.602:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
 [0408/131454.602:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[0415/111526.368:ERROR:exception_snapshot_win.cc(87)] thread ID 3948 not found in process
+[0415/111526.368:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0415/111526.846:ERROR:exception_snapshot_win.cc(87)] thread ID 3968 not found in process
+[0415/111526.846:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0416/152658.009:ERROR:process_info.cc(625)] range at 0xfffde000, size 0x230 fully unreadable
+[0416/152658.023:ERROR:process_info.cc(625)] range at 0xfffdd000, size 0xf84 fully unreadable
+[0416/152658.023:ERROR:process_info.cc(625)] range at 0xfffda000, size 0xf84 fully unreadable
+[0416/152658.023:ERROR:process_info.cc(625)] range at 0xfffaf000, size 0xf84 fully unreadable
+[0416/152658.023:ERROR:process_info.cc(625)] range at 0xfffac000, size 0xf84 fully unreadable

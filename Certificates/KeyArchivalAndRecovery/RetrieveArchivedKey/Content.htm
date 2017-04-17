@@ -216,8 +216,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Now, if we take a look at our issued certificates, the issued certificate we are interested in is the EFS certificate we created earlier with key archival enabled.</li>
-  </ul></td>
+                <li>Now, if we take a look at our issued certificates, the issued certificate we are interested in is the EFS certificate we created earlier with key archival enabled. Now for this example, a user name Jane Doe was issued this certificate, but later lost this certificate due to a catastrophic situation with her computer.</li>
+</ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -234,7 +234,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Because we added the 'Archived Key' column, we can now confirm that this certificate is actually key archive enabled. To do this, we need to first scroll to the far right of the screen.</li>
+                <li>First, because we added the 'Archived Key' column, we can now confirm that this certificate is actually key archive enabled. To do this, we need to first scroll to the far right of the screen.</li>
   </ul></td>
                 
                 <td align="right">
@@ -252,8 +252,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Once we scroll to the far right of the screen, we can then see that the certificate is actually key archived enabled.</li>
-  </ul></td>
+                <li>Once we scroll to the far right of the screen, we can then see that the certificate is actually key archived enabled. Jane Doe is in luck. Because this certificate is key archived enabled, Bob smith, the person we designated as 'Key Recovery Agent' can now recover her lost certificate.</li>
+</ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -270,7 +270,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>Now that we have confirmed that the key for the EFS certificate can be recovered, we can begin the process of doing just that, recovering the key. To do this, <span dir="LTR">begin  by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+                <li>To begin the process of recovering the key, we need to first <span dir="LTR">begin  by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
           </ul></td>
                 
                 <td align="right">
@@ -312,7 +312,7 @@
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="../../SettingUpTwoTierPkiHierarchy/SetDomainNamespaceForOfflineRootCa/1.jpg" width="815" height="393"></td>
+                            <td align="center"><img src="10.jpg" width="842" height="348"></td>
                         </tr>
                   </table>
                 </td>
@@ -330,7 +330,7 @@
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="10.jpg" width="815" height="393"></td>
+                            <td align="center"><img src="11.jpg" width="842" height="348"></td>
                         </tr>
                   </table>
                 </td>
@@ -357,7 +357,7 @@
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="11.jpg" width="815" height="393"></td>
+                            <td align="center"><img src="12.jpg" width="842" height="348"></td>
                         </tr>
                   </table>
                 </td>
@@ -369,13 +369,13 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>We next have to specify the path and name of the file that the retrieved certificate and private key are saved in. If only the name is specified, the file will be saved in the current directory. For this example, we will provide the location of the file, which will be in this case, on the <strong>'C'</strong> drive.</li>
+                <li>We next have to specify the path and name of the file that the retrieved certificate and private key are saved in. If only the name is specified, the file will be saved in the current directory. But, for this example, we will provide the location of the file, which will be in this case a shared location on the network, <strong>'\\dc1\certfiles'</strong>. We are saving this file to a shared location on the network so that it can be easily accessable for the 'Key Recovery Agent'. The 'Key Recovery Agent' will need this file to perform the key recovery process.</li>
 </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="12.jpg" width="815" height="393"></td>
+                            <td align="center"><img src="13.jpg" width="842" height="348"></td>
                         </tr>
                   </table>
                 </td>
@@ -387,7 +387,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>And then, we will name the file <strong>'JaneDoeArchivedKey'</strong>.</li>
+                <li>And then, we will name the file <strong>'\JaneDoeArchivedKey'</strong>.</li>
                 <br>
                 <li>Press <strong>'Enter'</strong>.</li>
             </ul></td>
@@ -395,7 +395,7 @@
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="13.jpg" width="815" height="393"></td>
+                            <td align="center"><img src="14.jpg" width="842" height="348"></td>
                         </tr>
                   </table>
                 </td>
@@ -413,7 +413,7 @@
                 <td align="right">
               <table width="404" border="0">
                         <tr>
-                            <td align="center"><img src="14.jpg" width="815" height="393"></td>
+                            <td align="center"><img src="15.jpg" width="842" height="348"></td>
                         </tr>
                   </table>
                 </td>
