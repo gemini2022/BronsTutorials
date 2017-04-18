@@ -179,6 +179,10 @@ function Certificates() {
                     new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[3].child[11].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Recover Key", "Certificates/KeyArchivalAndRecovery/RecoverKey");
 
+                    //Import Certificate
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[11], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[11].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Import Certificate", "Certificates/KeyArchivalAndRecovery/ImportCertificate");
+
             //Smart Card Certificate Enrollment
             new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                 new ExpandCollapse(tutorialList.child[0].child[3].child[12], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Smart Card Certificate Enrollment", root);
