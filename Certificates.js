@@ -95,6 +95,26 @@ function Certificates() {
             new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                 new ExpandCollapse(tutorialList.child[0].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Revoked Certificates", root);
 
+                    //Publish Certificate Revocation List
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Publish Certificate Revocation List", "Certificates/RevokedCertificates/PublishCertificateRevocationList");
+
+                    //Unrevoke Certificate
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Unrevoke Certificate", "Certificates/RevokedCertificates/UnrevokeCertificate");
+
+                    //Revoked Certificates Properties
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new ExpandCollapseLink(tutorialList.child[0].child[3].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Revoked Certificates Properties", root, "Certificates/RevokedCertificates/RevokedCertificatesProperties");
+
+                            //CRL Publishing Parameters Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[3].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[3].child[3].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "CRL Publishing Parameters Tab", "Certificates/RevokedCertificates/RevokedCertificatesProperties/CrlPublishingParametersTab");
+
+                            //View CRLs Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[3].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[3].child[3].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "View CRLs Tab", "Certificates/RevokedCertificates/RevokedCertificatesProperties/ViewCrlsTab");
+
             //Issued Certificates
             new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                 new ExpandCollapse(tutorialList.child[0].child[3].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Issued Certificates", root);
