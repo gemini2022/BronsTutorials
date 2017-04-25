@@ -119,13 +119,33 @@ function Certificates() {
             new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                 new ExpandCollapse(tutorialList.child[0].child[3].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Issued Certificates", root);
 
+                    //View Certificate
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "View Certificate", "Certificates/IssuedCertificates/ViewCertificate");
+
+                    //Revoke Certificate
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[4].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Revoke Certificate", "Certificates/IssuedCertificates/RevokeCertificate");
+
             //Pending Requests
             new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                 new ExpandCollapse(tutorialList.child[0].child[3].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Pending Requests", root);
 
+                    //Issue Certificate
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[5].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Issue Certificate", "Certificates/PendingRequests/IssueCertificate");
+
+                    //Deny Certificate
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[5].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Deny Certificate", "Certificates/PendingRequests/DenyCertificate");
+
             //Failed Requests
             new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                 new ExpandCollapse(tutorialList.child[0].child[3].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Failed Requests", root);
+
+                    //Issue Certificate
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Issue Certificate", "Certificates/FailedRequests/IssueCertificate");
 
             //Certificate Templates
             new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
