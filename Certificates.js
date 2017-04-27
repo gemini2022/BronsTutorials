@@ -151,6 +151,58 @@ function Certificates() {
             new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                 new ExpandCollapse(tutorialList.child[0].child[3].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Certificate Templates", root);
 
+                    //Default Certificate Templates
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Default Certificate Templates", "Certificates/CertificateTemplates/DefaultCertificateTemplates");
+
+                    //Preconfigured Certificate Templates
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[7].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Preconfigured Certificate Templates", "Certificates/CertificateTemplates/PreconfiguredCertificateTemplates");
+
+                    //Duplicate Template
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new ExpandCollapseLink(tutorialList.child[0].child[3].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Duplicate Template", root, "Certificates/CertificateTemplates/DuplicateTemplate");
+
+                            //General Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[3].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[3].child[7].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "Certificates/CertificateTemplates/DuplicateTemplate/GeneralTab");
+
+                            //Request Handling Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[3].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[3].child[7].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Request Handling Tab", "Certificates/CertificateTemplates/DuplicateTemplate/RequestHandlingTab");
+
+                            //Cryptography Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[3].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[3].child[7].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Cryptography Tab", "Certificates/CertificateTemplates/DuplicateTemplate/CryptographyTab");
+
+                            //Subject Name Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[3].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[3].child[7].child[3].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Subject Name Tab", "Certificates/CertificateTemplates/DuplicateTemplate/SubjectNameTab");
+
+                            //Server Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[3].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[3].child[7].child[3].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Tab", "Certificates/CertificateTemplates/DuplicateTemplate/ServerTab");
+
+                            //Issuance Requirements Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[3].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[3].child[7].child[3].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Issuance Requirements Tab", "Certificates/CertificateTemplates/DuplicateTemplate/IssuanceRequirementsTab");
+
+                            //Superseded Templates Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[3].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[3].child[7].child[3].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Superseded Templates Tab", "Certificates/CertificateTemplates/DuplicateTemplate/SupersededTemplatesTab");
+
+                            //Extensions Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[3].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[3].child[7].child[3].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Extensions Tab", "Certificates/CertificateTemplates/DuplicateTemplate/ExtensionsTab");
+
+                            //Security Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[3].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[3].child[7].child[3].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Security Tab", "Certificates/CertificateTemplates/DuplicateTemplate/SecurityTab");
+
+                    //New Certificate Template to Issue
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[7].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Certificate Template to Issue", "Certificates/CertificateTemplates/NewCertificateTemplateToIssue");
+
             //Requests
             new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                 new ExpandCollapse(tutorialList.child[0].child[3].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Requests", root);
