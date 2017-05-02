@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p> To learn how to duplicate a certificate, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>The&nbsp;Security&nbsp;tab,  allows you to define the discretionary access control list (DACL) for a specific certificate template. The permissions that you assign to the certificate template define which security principals can read, modify, enroll, or autoenroll for a specific certificate template.</p></td>
                 
                 
           </tr>
@@ -19,7 +19,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+                <li>This allows a security principal to modify all attributes of a certificate template, including the permissions for the certificate template.</li>
 </ul></td>
                 
                 <td align="right">
@@ -37,8 +37,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
-    </ul></td>
+                <li>This allows a security principal to see the certificate template when enrolling for certificates. It is required for a security principal to enroll or autoenroll a certificate; it is required by the certificate server to find the certificate templates in AD&nbsp;DS.</li>
+  </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -55,8 +55,9 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Then&nbsp;<strong>'Certification Authority'</strong>...</span></li>
-        </ul></td>
+                <li>This allows a security principal to modify the attributes of a certificate template, including the permissions assigned to the certificate template.<br>
+                </li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -73,8 +74,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Once in Certification Authority, expand the root node for the CA</span>, which in this case is&nbsp;<strong>'EnterpriseCA'</strong>.</li>
-        </ul></td>
+                <li>This allows a security principal to enroll for a certificate based on the certificate template. To enroll for a certificate, the security principal must also have Read permission for the certificate template.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -91,8 +92,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Then right-click <strong>'Certificate Templates'</strong>.</span></span></li>
-        </ul></td>
+                <li>This allows a security principal to receive a certificate through the autoenrollment process. Autoenrollment permissions require that the user has both Read and Enroll permissions in addition to the Autoenroll permission.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">

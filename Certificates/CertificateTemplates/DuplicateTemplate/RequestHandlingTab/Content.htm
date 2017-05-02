@@ -6,20 +6,36 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p> To learn how to duplicate a certificate, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>The options on the&nbsp;Request Handling&nbsp;tab differ depending on whether you have duplicated a template to a version 2 certificate template in Windows Server&nbsp;2003 or a version 3 template in Windows&nbsp;Vista&reg; or Windows Server&nbsp;2008.</p></td>
                 
                 
           </tr>
         </table>
     
-    	
+    	<hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>The certificate purpose defines the intended primary use of the certificate.</li>
+</ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="0.jpg" width="404" height="522"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
         
         <hr>
         
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+                <li>If we select the dropdown.</li>
 </ul></td>
                 
                 <td align="right">
@@ -37,8 +53,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
-    </ul></td>
+                <li>The certificate purpose can be one of four settings. The frist purpose setting is <strong>'Encryption'</strong>, which means that this certificate will contain cryptographic keys for encryption and decryption.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -55,8 +71,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Then&nbsp;<strong>'Certification Authority'</strong>...</span></li>
-        </ul></td>
+                <li>If the <strong>'Signature'</strong> setting is selected, then this certificate will contain cryptographic keys for signing data only.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -73,8 +89,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Once in Certification Authority, expand the root node for the CA</span>, which in this case is&nbsp;<strong>'EnterpriseCA'</strong>.</li>
-        </ul></td>
+                <li>But, if the <strong>'Signature and encryption'</strong> setting is selected, then this certificate will include all primary uses of a certificate's cryptographic key, including encryption of data, decryption of data, initial logon, or digitally signing data.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -91,8 +107,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Then right-click <strong>'Certificate Templates'</strong>.</span></span></li>
-        </ul></td>
+                <li>And then finally, if the <strong>'Signature and smart card logon'</strong> setting is selected, then this certificate will allow for initial logon with a smart card, and to digitally sign data; it cannot be used for data encryption.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -109,8 +125,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Manage'</strong>.</span></span></li>
-        </ul></td>
+                <li>If a certificate is renewed due to expiration or revocation, the previously issued certificate is removed from the subject's certificate store. By default, the certificate is archived.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -127,8 +143,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>As you can see, in the window to the right, a list  of preconfigured certificate templates. The next step is to choose the template you wish to duplicate. In this case, the certificate template we will duplicate is the <strong>'User'</strong> template. To duplicate this template, right-click it.                </li>
-        </ul></td>
+                <li>When the subject requests the certificate, a list of supported symmetric algorithms can be supplied by the subject. This option allows the issuing CA to include those algorithms in the certificate, even if they are not recognized or supported by that server. The algorithms are used by applications such as secure e-mail.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -145,8 +161,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
-        </ul></td>
+                <li>If the issuing enterprise CA is configured for key archival, the subject's private key will be archived.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -163,8 +179,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
-        </ul></td>
+                <li>This option allows the administrator to choose the Advanced Encryption Standard (AES) algorithm to encrypt private keys while they are transferred to the CA for key archival. If this option is selected, the client computer will use AES256 symmetric encryption (along with the CA's exchange certificate for asymmetric encryption) to send the private key to the CA for archival. If this option is not selected, the symmetric algorithm used is Triple Data Encryption Standard (3DES). Because key archival is intended for encryption keys (not signing keys), this option is enabled only when&nbsp;<strong>Encryption</strong>&nbsp;is selected in the&nbsp;<strong>Purpose</strong>&nbsp;box. This option is only available for version 3 templates.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -181,8 +197,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
-        </ul></td>
+                <li>This specifies the minimum size, in bits, of the key that will be generated for this certificate. For version 3 templates, this<strong></strong>&nbsp;option has been enhanced and moved to the new&nbsp;<strong>Cryptography</strong>&nbsp;tab.</li>
+  </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -199,8 +215,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
-        </ul></td>
+                <li>When this option is specified, the subject's private key can be exported for backup or transfer.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -217,8 +233,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
-        </ul></td>
+                <li>This option allows autoenrollment without any user interaction and is the default setting for both computer and user certificates. This option must not be enabled for computer certificates.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -235,8 +251,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
-        </ul></td>
+                <li>Although useful when testing initial autoenrollment deployments, typically, this option is disabled. By disabling this option, users do not have to provide any input for the installation of a certificate based on the certificate template.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -253,8 +269,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
-        </ul></td>
+                <li>This option enables the user to set a strong private key protection password on the user's private key when the key is generated and requires the user to use it whenever the certificate and private key are used. This option must not be enabled for computer certificates or smart card user certificates.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -271,8 +287,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
-        </ul></td>
+                <li><span dir="LTR"><span dir="LTR">This <strong>'CSPs..'</strong> button is only available for version 2 templates. In version 3 templates, this option has been removed. If we now select this button.</span></span></li>
+    </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -289,8 +305,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
-        </ul></td>
+                <li>We will be provided with a list of CSPs that will be used to enroll certificates for the given template. Selecting one or more CSPs configures the certificate to work only with those CSPs. If you do not select a specific CSP, the certificate enrollment will work with any installed CSP but will use the first CSP in the list. The CSP must be installed on the client computer for the CSP to be used during enrollment. If a specific CSP is chosen and not available on a client computer, enrollment will fail.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">

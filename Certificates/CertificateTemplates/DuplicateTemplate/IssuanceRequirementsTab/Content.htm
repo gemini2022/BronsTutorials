@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p> To learn how to duplicate a certificate, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>The&nbsp;Issuance Requirements&nbsp;tab allows certificates with a higher assurance level to be placed in a pending state until the certificate is reviewed before issuance. This allows for multiple signers of a Common Messaging Calls (CMC) request to exist.</p></td>
                 
                 
           </tr>
@@ -19,7 +19,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+                <li>When the option&nbsp;'<strong>CA certificate manager approval'</strong>&nbsp;is selected, the certificate is placed into a pending state, rather than being issued immediately. In its pending state, the certificate request can be reviewed by certificate managers, ensuring a higher level of assurance for the issued certificate. All certificates are placed into the pending container for a certificate manager to issue or deny. Any defined certificate manager can issue or deny a certificate request of this type.</li>
 </ul></td>
                 
                 <td align="right">
@@ -37,8 +37,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
-    </ul></td>
+                <li>This setting requires the CMC certificate request to be digitally signed by one or more authorized parties before it can be issued.</li>
+  </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -55,8 +55,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Then&nbsp;<strong>'Certification Authority'</strong>...</span></li>
-        </ul></td>
+                <li>This option is only enabled when the number of authorized signatures value is set. This option defines which specific application policy, issuance policy, or both are required in the signing certificate. This is how the CA determines whether the signature is appropriate for authorizing the issuance of the subject's certificate.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -73,8 +73,26 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Once in Certification Authority, expand the root node for the CA</span>, which in this case is&nbsp;<strong>'EnterpriseCA'</strong>.</li>
-        </ul></td>
+                <li>If we select the dropdown.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="3b.jpg" width="404" height="522"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>This first option, <strong>'Application policy'</strong>, specifies the application policy that must be included in the signing certificate used to sign the certificate request. It is enabled when&nbsp;'Policy type required in signature'&nbsp;is set to either&nbsp;<strong>'Application policy'</strong>&nbsp;or&nbsp;<strong>'Both application and issuance policy'</strong>.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -91,8 +109,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Then right-click <strong>'Certificate Templates'</strong>.</span></span></li>
-        </ul></td>
+                <li>This option specifies the issuance policy that must be included in the signing certificate used to sign the certificate request. This option is enabled when&nbsp;'Policy type required in signature'&nbsp;is set to either&nbsp;<strong>'Issuance policy'</strong>&nbsp;or&nbsp;<strong>'Both application and issuance policy'</strong>.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -109,7 +127,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Manage'</strong>.</span></span></li>
+                <li><span dir="LTR"><span dir="LTR">For this example, we will select the option <strong>'Both application and issuance policy'</strong>.</span></span></li>
         </ul></td>
                 
                 <td align="right">
@@ -127,7 +145,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>As you can see, in the window to the right, a list  of preconfigured certificate templates. The next step is to choose the template you wish to duplicate. In this case, the certificate template we will duplicate is the <strong>'User'</strong> template. To duplicate this template, right-click it.                </li>
+                <li>To choose a purpose, select the dropdown.</li>
         </ul></td>
                 
                 <td align="right">
@@ -145,7 +163,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
+                <li><span dir="LTR"><span dir="LTR">And a dropdown list will display of many purposes you can choose from for this certificate template.</span></span></li>
         </ul></td>
                 
                 <td align="right">
@@ -163,7 +181,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
+                <li><span dir="LTR"><span dir="LTR">To add issuance policies, press the <strong>'Add...'</strong> button.</span></span></li>
         </ul></td>
                 
                 <td align="right">
@@ -181,8 +199,10 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
-        </ul></td>
+                <li>And you can choose from a list of issuance policies.</li>
+                <br>
+                <li>Press <strong>'OK'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -199,8 +219,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
-        </ul></td>
+                <li>In addition, you can also determine whether the same issuance requirements are upheld for certificate renewal.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -217,8 +237,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
-        </ul></td>
+                <li>Or, if the existence of a valid existing certificate of the same template in the certificate store meets the minimum requirements for certificate issuance.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">

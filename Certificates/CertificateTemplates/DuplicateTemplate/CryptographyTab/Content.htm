@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p> To learn how to duplicate a certificate, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Windows Server&nbsp;2008 contains a new&nbsp;Cryptography&nbsp;tab. This tab replaces and extends the&nbsp;CSP Selection&nbsp;dialog box accessible by clicking the&nbsp;CSPs&nbsp;button on the&nbsp;Request Handling&nbsp;tab of a version 2 template.</p></td>
                 
                 
           </tr>
@@ -19,7 +19,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+                <li>This option introduces the ability to select an advanced algorithm for encryption, signing, or both (depending on the template's purpose). By default, Windows offers the following algorithms: DSA, ECDH_P256, ECDH_P384, ECDH_P521, ECDSA_P256, ECDSA_P384, ECDSA_P521, and RSA.</li>
 </ul></td>
                 
                 <td align="right">
@@ -37,8 +37,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
-    </ul></td>
+                <li>This option introduces the ability to specify a minimum required size for the keys used with the chosen algorithm. The default is the minimum key length supported on the system for the chosen algorithm. However, the administrator can enter any number.</li>
+  </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -55,8 +55,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Then&nbsp;<strong>'Certification Authority'</strong>...</span></li>
-        </ul></td>
+                <li>Version 2 templates offered a list of CryptoAPI CSPs; version 3 templates offer a dynamically populated list of Cryptography Next Generation (CNG) providers. This list is populated with all providers available on the system that meet the criteria specified by the following configuration options:&nbsp;<strong>Algorithm name</strong>&nbsp;and&nbsp;<strong>Minimum key size</strong>&nbsp;on the&nbsp;<strong>Cryptography</strong>&nbsp;tab, and&nbsp;<strong>Purpose</strong>&nbsp;and&nbsp;<strong>Allow private key to be exported</strong>&nbsp;on the&nbsp;<strong>Request Handling</strong>&nbsp;tab.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -73,8 +73,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Once in Certification Authority, expand the root node for the CA</span>, which in this case is&nbsp;<strong>'EnterpriseCA'</strong>.</li>
-        </ul></td>
+                <li><span dir="LTR">Selecting this option allows for the option to choose which dynamically populated Cryptography Next Generation (CNG) provider you wish to use.</span></li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -91,8 +91,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Then right-click <strong>'Certificate Templates'</strong>.</span></span></li>
-        </ul></td>
+                <li>This option introduces the ability to choose an advanced hash algorithm. By default, the following algorithms are available: MD2, MD4, MD5, SHA1, SHA256, SHA384, and SHA512.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -109,8 +109,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Manage'</strong>.</span></span></li>
-        </ul></td>
+                <li>When the RSA algorithm is selected, this check box allows the administrator to specify that certificate requests created for this template include a discrete signature in Public Key Cryptography Standards (PKCS) #1 version 2.1 format. Activating this option for any algorithm will force a client computer that uses the certificate autoenrollment functionality or that enrolls a certificate by using the Certificates snap-in to generate a certificate request that includes a discrete signature.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">

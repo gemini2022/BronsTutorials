@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p> To learn how to duplicate a certificate, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>The&nbsp;Extensions&nbsp;tab allows you to define specific application policies, issuance policies, certificate subject types, and key usage attributes for a certificate template. The following sections provide specific information about each form of extension defined in a certificate template.</p></td>
                 
                 
           </tr>
@@ -19,7 +19,9 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+                <li>
+                  <p>Application policies enable you to decide which certificates can be used for certain purposes. You can issue certificates widely without being concerned that they are misused for an unintended purpose. Application policies are settings that inform a target that the subject holds a certificate that can be used to perform a specific task. They are represented in a certificate by an object identifier that is defined for a given application. This object identifier is included in the issued certificate. When a subject presents its certificate, it can be examined by the relying party to verify the application policy and determine if it can perform the requested action.</p>
+</li>
 </ul></td>
                 
                 <td align="right">
@@ -37,8 +39,10 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
-    </ul></td>
+                <li>
+                  <p>Certification authorities (CAs) must have a certificate before they can issue certificates. They use the private key associated with this certificate to digitally sign issued certificates. When a CA obtains a certificate from another CA, the parent CA may want to control whether that certificate can be used to issue certificates to other certificate servers. This is a basic constraint. Basic constraints are used to ensure that a certificate is only used in certain applications. An example is the path length that can be specified as a basic constraint.                </p>
+                </li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -55,8 +59,30 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Then&nbsp;<strong>'Certification Authority'</strong>...</span></li>
-        </ul></td>
+                <li>
+                  <p>The certificate template information, also referred to as the Certificate subject type, defines the purpose of a certificate template. Six subject types are recognized:</p>
+                  <ul>
+                    <li>Key recovery agent<br>
+                      <br>
+                    </li>
+                    <li>Directory e-mail replication<br>
+                      <br>
+                    </li>
+                    <li>Cross-certified CA<br>
+                      <br>
+                    </li>
+                    <li>CA<br>
+                      <br>
+                    </li>
+                    <li>Computer<br>
+                      <br>
+                    </li>
+                    <li>User</li>
+                  </ul>
+                </li>
+                <br>
+                <li>The certificate template information extension cannot be edited. If you require a specific subject type to be applied to a certificate, you should duplicate a certificate template that includes the required subject type. Some of the internal flags that are defined for specific subject types limit the display of the certificate template to computers or users. Choosing to duplicate an incorrect certificate template will prevent the certificate template from being displayed to the desired enrollment audience. For example, a computer certificate template cannot be enrolled for use by a user account. </li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -73,8 +99,16 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Once in Certification Authority, expand the root node for the CA</span>, which in this case is&nbsp;<strong>'EnterpriseCA'</strong>.</li>
-        </ul></td>
+                <li>Issuance policies define the level of assurance for an issued certificate. A CA processes each certificate request by a defined set of rules. The CA may issue some certificates with no proof of identification and require subjects of another type to submit proof. This provides different levels of assurance for different certificates. These levels of assurance are represented in certificates as issuance policies.</li>
+                <br>
+                <li>An issuance policy is a group of administrative rules that are implemented when issuing certificates. They are represented in a certificate by an object identifier that is defined at the CA. This object identifier is included in the issued certificate. When a subject presents its certificate, it can be examined by the target to verify the issuance policy and determine if that level of issuance policy is sufficient to perform the requested action.</li>
+                <br>
+                <li>An issuance policy describes the conditions under which a certificate is issued. This provides a level of assurance that the subject's certificate request was verified in a specific way.</li>
+                <br>
+                <li>One or more issuance policies may be selected for a certificate template. Because these issuance policies are simply text labels with an associated object identifier, no options are associated with them. The only special issuance policy is&nbsp;<strong>All issuance policies</strong>, which indicates that this policy includes all others. This is normally reserved for certificates held by CAs.</li>
+                <br>
+                <li>Issuance policies are often used when configuring qualified subordination (cross-certification) between PKI hierarchies to ensure that certificates recognized by another organization's PKI meet issuance requirements required by your organization. </li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -91,8 +125,35 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Then right-click <strong>'Certificate Templates'</strong>.</span></span></li>
-        </ul></td>
+                <li>
+                  <p>A certificate enables the subject to perform a specific task. To help control the usage of a certificate outside its intended purpose, restrictions are automatically placed on certificates. Key usage is a restriction method and determines what a certificate can be used for. This allows the administrator to issue certificates that can only be used for specific tasks or certificates that can be used for a broad range of functions. If no key usage is specified, the certificate can be used for any purpose.</p>
+                </li>
+                <li>
+                  <p>For signatures, key usage can be limited to one or more of the following purposes:</p>
+                  <ul>
+                    <li>Digital signature<br>
+                      <br>
+                    </li>
+                    <li>Signature is a proof of origin (nonrepudiation)<br>
+                      <br>
+                    </li>
+                    <li>Certificate signing<br>
+                      <br>
+                    </li>
+                    <li>CRL signing<br>
+                      <br>
+                    </li>
+                  </ul>
+                </li>
+                <li>For encryption key usage, the following options are available:
+                  <ul>
+                    <li>Key exchange without key encryption<br>
+                      <br>
+                    </li>
+                    <li>Key exchange only with key encryption</li>
+                  </ul>
+                </li>
+          </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">

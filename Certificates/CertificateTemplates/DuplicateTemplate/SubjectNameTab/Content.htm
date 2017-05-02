@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p> To learn how to duplicate a certificate, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>When establishing a certificate template, the subject name must be defined. This is included in the issued certificate template and must uniquely identify the subject. The subject name can either be built automatically during the certificate request by using the authentication name of the subject, or explicitly defined by the subject and included in the certificate request.</p></td>
                 
                 
           </tr>
@@ -19,7 +19,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+                <li><span dir="LTR">If we start by selecting the option <strong>'Supply in the request'</strong>.</span></li>
 </ul></td>
                 
                 <td align="right">
@@ -37,8 +37,11 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
-    </ul></td>
+                <li><span dir="LTR">We immediately get a dialogue box warning us that this option may create a security risk and is not recommended.</span> This is because with this option, it allows a client to submit a certificate request using any subject name and does not require approval by a certificate manager.</li>
+                <br>
+                <li>Press <strong>'OK'</strong>.</li>
+              </ul>
+            <p>&nbsp;</p></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -55,7 +58,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Then&nbsp;<strong>'Certification Authority'</strong>...</span></li>
+                <li><span dir="LTR">The safer approach is using the option <strong>'Build from this Active Directory information'</strong>.</span> This option will populate the subject name by using Active Directory information.</li>
         </ul></td>
                 
                 <td align="right">
@@ -73,8 +76,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Once in Certification Authority, expand the root node for the CA</span>, which in this case is&nbsp;<strong>'EnterpriseCA'</strong>.</li>
-        </ul></td>
+                <li>A number of options can be included with the subject name, as well as specific configuration settings for the subject name when the subject name is built from Active Directory information during the certificate request process.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -91,8 +94,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">Then right-click <strong>'Certificate Templates'</strong>.</span></span></li>
-        </ul></td>
+                <li>With the first option, <strong>'Common name'</strong>, the CA creates the subject name from the common name (CN) of the requester obtained from AD&nbsp;DS. These should be unique within a domain but do not have to be unique within an enterprise.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -109,8 +112,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Manage'</strong>.</span></span></li>
-        </ul></td>
+                <li><span dir="LTR"><span dir="LTR">With the second option, <strong>'Fully distinguished name'</strong>, the CA creates the subject name from the fully distinguished name obtained from AD&nbsp;DS. This ensures that the name is unique within an enterprise.</span></span></li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -127,8 +130,7 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li>As you can see, in the window to the right, a list  of preconfigured certificate templates. The next step is to choose the template you wish to duplicate. In this case, the certificate template we will duplicate is the <strong>'User'</strong> template. To duplicate this template, right-click it.                </li>
-        </ul></td>
+              <li>And then finally, with this last option, <strong>'None'</strong>, the CA does not enforce any name format for this field.</li></ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -145,8 +147,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
-        </ul></td>
+                <li>In addition, you can choose to include the e-mail name in the subject name. This information is populated from the E-mail attribute of an account and is included with either the common name or fully distinguished name as part of the subject name.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -163,8 +165,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
-        </ul></td>
+                <li>In addition to the subject name, you can also choose the name formats to include in the alternate subject name attributes of issued certificates.&nbsp;If the option <strong>'E-mail name'</strong> is selected, and if the E-mail name field is populated in the Active Directory user object, that e-mail name will be used for user accounts.</li>
+    </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -181,8 +183,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
-        </ul></td>
+                <li>The fully qualified domain name (FQDN) of the subject that requested the certificate is used for computer accounts.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -199,8 +201,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
-        </ul></td>
+                <li>This is part of the Active Directory user object and will be used for user accounts.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -217,8 +219,8 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
-        </ul></td>
+                <li>This is part of the Active Directory computer object and will be used for computer accounts.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">

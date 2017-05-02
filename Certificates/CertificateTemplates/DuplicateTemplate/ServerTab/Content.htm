@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p> To learn how to duplicate a certificate, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>High-volume certificate issuance scenarios such as Network Access Protection (NAP) deployments with Internet Protocol security (IPsec) enforcement create unique public key infrastructure (PKI) needs. To address these needs, there are a couple of options that can be used to configure certificate templates for use by high-volume certification authorities (CAs).</p></td>
                 
                 
           </tr>
@@ -19,7 +19,9 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+                <li>
+                  <p>Certificates issued in high-volume scenarios typically expire within hours of being issued, and the issuing CA processes a high volume of certificate requests. By default, a record of each request and issued certificate is stored in the CA database. A high volume of requests increases the CA database growth rate and administration cost. The&nbsp;<strong>'Do not store certificates and requests in the CA database'</strong>&nbsp;option configures the template so that the CA processes certificate requests without adding records to the CA database.</p>
+</li>
 </ul></td>
                 
                 <td align="right">
@@ -37,8 +39,10 @@
         <table width="100%" border="0">
             <tr>
               <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
-    </ul></td>
+                <li>
+                  <p>Revocation of certificates by some high-volume CAs is not beneficial because the certificates typically expire within hours of being issued. The&nbsp;<strong>'Do not include revocation information in issued certificates'</strong>&nbsp;option configures the template so that the CA excludes revocation information from issued certificates. This prevents checking revocation status during certificate validation and reduces validation time.</p>
+</li>
+  </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
