@@ -207,6 +207,10 @@ function Certificates() {
             new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                 new ExpandCollapse(tutorialList.child[0].child[3].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Requests", root);
 
+                    //Web Enrollment (Standalone)
+                    new HierarchicalUnit(tutorialList.child[0].child[3].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[3].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Web Enrollment (Standalone)", "Certificates/Requests/WebEnrollment(Standalone)");
+
             //Autoenrollment
             new HierarchicalUnit(tutorialList.child[0].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                 new ExpandCollapse(tutorialList.child[0].child[3].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Autoenrollment", root);

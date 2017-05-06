@@ -1,0 +1,574 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>To learn how to unrevoke a certificate, proceed with the following steps...</p></td>
+                
+                
+          </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+            </ul></td>
+                
+                <td align="right">
+                  <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then&nbsp;<strong>'Certification Authority'</strong>...</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="286" height="586"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in Certification Authority, expand the root node for the CA</span>, which in this case is&nbsp;<strong>'RootCA'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="504" height="191"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select <strong>'Revoked Certificates'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="732" height="467"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once 'Server Certificates' has been double clicked, in the center window, you will see the root CA certificate that's been added to the Web server. Along with this root CA certificate, we also need</span> a certificate that the Web server can use for SSL.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="732" height="234"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">In  the window to the far right of the screen, there are a few options in which we can obtain a certificate for SSL. In a real production enviroment, you would most likely obtain an SSL certificates from a trusted commercial certificate authority organization or </span>SSL provider like Verisign or Digicert. However, for this demonstration, we will create our own certificate for our SSL configuration. In this case, we will create a self-signed certificate. Self-signed certificates are certificates created on your computer. They're useful in environments where it's not important for an end user to trust your server, such as a test environment. Using a self-signed certificate will work for our purpose, but as you will see later, the browser will send a warning message to the user that the website may not be trustworthy. To create a self-signed certificate, click on <strong>'Create Self-Signed Certificate...'</strong>.</li>
+</ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="249" height="377"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then <strong>'Unrevoke Certificate'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="581" height="443"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Once you select 'Unrevoke Certificate', you may receive a message telling you that the unrevoke command failed. This will be because the certificate you are trying to revoke wasn't revoked with the reason  'Certificate Hold'.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="732" height="234"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="540" height="203"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="504" height="220"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="10.jpg" width="250" height="559"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="488" height="227"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="11b.jpg" width="488" height="227"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="12.jpg" width="406" height="220"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="13.jpg" width="406" height="220"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="14.jpg" width="406" height="220"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="15.jpg" width="406" height="220"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="16.jpg" width="406" height="220"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="17.jpg" width="488" height="227"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="18.jpg" width="250" height="128"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="19.jpg" width="644" height="630"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="20.jpg" width="644" height="630"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="20b.jpg" width="644" height="630"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="21.jpg" width="644" height="630"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="22.jpg" width="644" height="630"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="23.jpg" width="644" height="630"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="24.jpg" width="518" height="281"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="25.jpg" width="644" height="630"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="26.jpg" width="644" height="630"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>What this means is, before you revoke a certificate, you must provide a reason as to why you are revoking the certificate. If you choose the reason <strong>'Certificate Hold'</strong>, then and only then can a certificate become unrevoked.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="27.jpg" width="644" height="630"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+       
+    </body>
+</html>
