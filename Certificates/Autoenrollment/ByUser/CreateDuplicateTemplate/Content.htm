@@ -1,0 +1,345 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>To set up certificate autoenrollment, you must first create a new certificate template by duplicating an existing template and then giving the appropriate users, machines, or groups the Autoenroll permission. To learn how to do this, proceed with the following steps...</p></td>
+                
+                
+          </tr>
+        </table>
+    
+    	
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+</ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Then go to&nbsp;<strong>'Administrative Tools'</strong>...</span></li>
+    </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Then&nbsp;<strong>'Certification Authority'</strong>...</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../SettingUpTwoTierPkiHierarchy/SetDomainNamespaceForOfflineRootCa/11.jpg" width="252" height="406"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Once in Certification Authority, expand the root node for the CA</span>, which in this case is&nbsp;<strong>'EnterpriseCA'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/CreateDuplicateTemplate/6.jpg" width="419" height="135"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR"><span dir="LTR">Then right-click <strong>'Certificate Templates'</strong>.</span></span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/CreateDuplicateTemplate/7.jpg" width="360" height="192"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR"><span dir="LTR">And select <strong>'Manage'</strong>.</span></span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/CreateDuplicateTemplate/8.jpg" width="82" height="101"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>As you can see, in the window to the right, a list  of preconfigured certificate templates. The next step is to choose the template you wish to duplicate. In this case, the certificate template we will duplicate is the <strong>'User'</strong> template. To duplicate this template, right-click it.                </li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/CreateDuplicateTemplate/9.jpg" width="876" height="670"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR"><span dir="LTR">And select <strong>'Duplicate Template'</strong>.</span></span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/CreateDuplicateTemplate/10.jpg" width="135" height="101"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Next, select the template version that is appropriate for your deployment. In this case, we will select <strong>'Windows Server 2008 Enterprise'</strong>. This option will give us additional options that can be configured.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/CreateDuplicateTemplate/11.jpg" width="441" height="243"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR"><span dir="LTR">Press <strong>'OK'</strong>.</span></span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/CreateDuplicateTemplate/12.jpg" width="396" height="243"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Once you press 'OK' on the previous dialogue box, the properties of the new template will appear. On the 'General' tab, you first have the option to rename the template display name, or keep the default setting.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/CreateDuplicateTemplate/13.jpg" width="404" height="522"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>In this case, we will rename the template <strong>'User v2'</strong>.</li>
+  </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/CreateDuplicateTemplate/14.jpg" width="404" height="522"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>More options can be configured, but for this demonstration we will leave everything else with the default settings. </li>
+                <br>
+                <li>Select the <strong>'Security'</strong> tab.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/CreateDuplicateTemplate/15.jpg" width="404" height="522"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>How a client obtains a certificate is primarily controlled by the security properties of the certificate template. In this case, the client must be granted Read, Enroll, and Autoenroll permissions.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/CreateDuplicateTemplate/16.jpg" width="404" height="522"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Ideally you would most likely assign Autoenroll permissions to a group, but for this example we will assign Autoenroll permissions to a user. To do this, first press the <strong>'Add...'</strong> button.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/CreateDuplicateTemplate/17.jpg" width="404" height="522"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Then  enter in the user you want to give Autoenroll permissions to. In this case we will enter <strong>'john p. doe'</strong>.</li>
+                <br>
+            <li>Once finished, press <strong>'OK'</strong>.</li></ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/CreateDuplicateTemplate/18.jpg" width="464" height="247"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Now add both Enroll and Autoenroll to the selected user.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/CreateDuplicateTemplate/19.jpg" width="404" height="522"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>That's it! Press <strong>'OK'</strong> when finished.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/CreateDuplicateTemplate/20.jpg" width="404" height="522"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+       
+    </body>
+</html>

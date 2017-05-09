@@ -1,0 +1,576 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>The last and final step is to configure Group Policy for autoenrollment. To learn how to do this, proceed with the following steps...</p></td>
+                
+                
+          </tr>
+        </table>
+    
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+</ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then go to&nbsp;<strong>'Administrative Tools'</strong>...</li>
+        </ul></td>
+                
+                <td align="right">
+                  <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then select&nbsp;<strong>'Group Policy Management'</strong>...</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../../ActiveDirectory/GroupPolicy/CreatingGroupPolicies/1.jpg" width="286" height="546"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in Group Policy Management, expand the forest node.</span></li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/1.jpg" width="461" height="120"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then expand <strong>'Domains'</strong>.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/2.jpg" width="441" height="175"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Then expand your domain, which in this case is <strong>'bronstutorials.local'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/3.jpg" width="423" height="192"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>In order for autoenrollment to work, a GPO has to be configured for autoenrollment and then assigned to an OU. For this example, we will create a new GPO and link it to our <strong>'Sales'</strong> OU. To do this, right-click the OU.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/4.jpg" width="403" height="289"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul type="disc">
+                <li>And select <strong>'Create a GPO in this domain, and link it here...'</strong>.</li>
+    </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/5.jpg" width="270" height="238"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>First, we need to give our new GPO a name.</li>
+  </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/6.jpg" width="390" height="173"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>In this case, we will rename the GPO to <strong>'Certificate Autoenrollment'</strong>.</li>
+                <br>
+                <li>Then press <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/7.jpg" width="390" height="173"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR"><span dir="LTR">We now have to configure our new GPO for autoenrollment. To do this, first expand the OU where the GPO was linked, in this case the <strong>'Sales'</strong> OU.</span></span></li>
+  </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/8.jpg" width="404" height="289"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Then right-click the new GPO.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/9.jpg" width="403" height="303"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">And select <strong>'Edit...'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../../ActiveDirectory/GroupPolicy/CreatingGroupPolicies/15.jpg" width="157" height="186"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">For this example, we are configuring autoenrollment for users. However, if we were also configuring autoenrollment for computers, then we would first expand <strong>'Policies'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/11.jpg" width="734" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR"><span dir="LTR">Then expand <strong>'Windows Settings'</strong>.</span></span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/12.jpg" width="714" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Expand<strong> 'Security Settings'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/13.jpg" width="699" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>And then select <strong>'Public Key Policies'</strong>.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/14.jpg" width="699" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR"><span dir="LTR">The setting for configuring autoenrollment for computers can be found here.</span></span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/15.jpg" width="699" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>But for this example, we are only configuring autoenrollment for users, so we will collapse  <strong>'Computer Configuration</strong>'.</li></ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/16.jpg" width="753" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR"><span dir="LTR">And then expand <strong>'Policies'</strong> under <strong>'User Configuration'</strong>.</span></span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/17.jpg" width="733" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Then expand <strong>'Windows Settings'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/18.jpg" width="714" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Then <strong>'Security Settings'</strong>.</li>
+  </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/19.jpg" width="699" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>And then select <strong>'Publick Key Policies'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/20.jpg" width="699" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>The setting we want to configure is <strong>'Certificate Services Client - Auto-Enrollment'</strong>. To do this, right-click it.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/21.jpg" width="699" height="572"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>And select <strong>'Properties'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/22.jpg" width="103" height="49"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Once in the properties of the autoenrollment setting, the first thing we need to do is enable it. To do this, first select the dropdown.</li></ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/23.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>And select the option, <strong>'Enabled'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/24.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>We now need to select this first option. This  option allows us to enable autoenrollment for certificate renewal, issuance of pending certificate requests, and the automatic removal of revoked certificates from a user's certificate store.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/25.jpg" width="445" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Then select this next option. This option enables autoenrollment for issuance of certificates that supersede issued certificates.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/26.jpg" width="445" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>And then finally this last option allows users to be notified when a certain percentage of the certificate's liftime remains.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/27.jpg" width="445" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>In this case we will leave the percentage at the default of <strong>'10'</strong> %.</li>
+                <br>
+                <li>Press <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="403" border="0">
+                        <tr>
+                            <td align="center"><img src="../../GroupPolicy/ConfigureGroupPolicy/28.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+       
+    </body>
+</html>
