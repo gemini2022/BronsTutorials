@@ -398,25 +398,4 @@ function Certificates() {
                     //Start Certificate Service
                     new HierarchicalUnit(tutorialList.child[0].child[3].child[13], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[3].child[13].child[15], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Start Certificate Service", "Certificates/SettingUpTwoTierPkiHierarchy/StartCertificateService");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

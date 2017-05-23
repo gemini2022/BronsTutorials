@@ -30,4 +30,21 @@ https://technet.microsoft.com/en-us/library/cc754553(v=ws.11).aspx
 
 
 
-http://secadmins.com/index.php/enroll-for-a-smart-card-certificate-on-behalf-of-other-users/		
+http://secadmins.com/index.php/enroll-for-a-smart-card-certificate-on-behalf-of-other-users/	
+
+
+
+https://www.youtube.com/watch?v=AnOHAMkTQVA&t=190s	
+
+
+
+The SSL VPN client needs to be able to download the CRL to confirm that the server certificate on the VPN server has not been revoked. You must either publish the CRL on a server that is accessible on the Internet or configure the client to not require CRL checking.. Because it exposes a private server name to the Internet, you can do the following as an alternative solution.
+
+Disable CRL Checking on VPN Client
+
+Start Registry Editor (Regedit.exe).
+Locate and then click the following key in the registry:
+HKEY_LOCAL_MACHINE–>System->CurrentControlSet->Services->Sstpsvc->Parameters
+On the Edit menu, point to New , click DWORD (32-bit) Value, and then add the following registry value:
+Value Name: NoCertRevocationCheck
+Value Data: 1
