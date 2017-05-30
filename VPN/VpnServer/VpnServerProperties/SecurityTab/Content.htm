@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to get to the VPN Server properties, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>To learn about the Security tab, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -36,8 +36,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">If we select the dropdown.</span></li>
-        </ul>                  <br></td>
+                  <li><span dir="LTR">If we select the dropdown, we can view the list of available authentication providers</span>.</li>
+      </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="404" border="0">
@@ -54,8 +54,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>With this option, the server uses either a local account database, or a domain account database to authenticate remote access or demand-dial connection credentials. Domain account databases can be either an Active Directory database or a Windows&nbsp;NT 4.0 domain account database. The server logs connection authentication information in log files that are configured in the properties of the Remote Access Logging folder.</li>
-              </ul></td>
+                  <li>With this authentication provider, <strong>'Windows Authentication'</strong>, the server uses either a local account database, or a domain account database to authenticate remote access or demand-dial connection credentials. Domain account databases can be either an Active Directory database or a Windows&nbsp;NT 4.0 domain account database. The server logs connection authentication information in log files that are configured in the properties of the Remote Access Logging folder.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="404" border="0">
@@ -72,8 +72,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Or with this option, the remote access server uses a Remote Authentication Dial-In User Service (RADIUS) server to authenticate remote access or demand-dial connection credentials.</li>
-              </ul></td>
+                  <li>Or with this authentication provider, <strong>'RADIUS Authentication'</strong>, the remote access server uses a Remote Authentication Dial-In User Service (RADIUS) server to authenticate remote access or demand-dial connection credentials.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -90,7 +90,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-              <li><span dir="LTR">If the 'Radius Authentication' option is selected, we then can configure what RADIUS servers will be used by selecting the <strong>'Configure...' </strong>button.</span></li></ul></td>
+              <li><span dir="LTR">If the 'Radius Authentication' option is selected, we can then  configure what RADIUS servers will be used for authentication. To do this, click on the <strong>'Configure...' </strong>button.</span></li></ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -145,8 +145,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then select <strong>'Properties'</strong>.</span></li>
-                </ul></td>
+                  <li>This first authentication protocol is <strong>'Extensible authentication protocol (EAP)'</strong>, and it is one of the most secured authentication protocols used today that takes advantage of TLS (Transport Layer Security). Can be implemented on a Windwos Server that is part of an Active Directory Infrastructure. EAP-TLS can be used by VPN clients authenticating using either smart-cards or certificates. This technology offers a secure authentication protocol because each client must store a valid X.509 certificate. This means that besides the client&rsquo;s password, an attacker must get access to the private key of the certificate in order to infiltrate the network. If your company decides to store certificates within smart-cards, you increase network security even further because smart-cards can be compromised only by physical theft. Within the corporate network you would need to deploy a Certificate Authority to issue digitally signed certificates for VPN clients.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -163,8 +163,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then select <strong>'Properties'</strong>.</span></li>
-                </ul></td>
+                  <li>This authentication protocol, <strong>'Microsoft encrypted authentication version 2 (MS-CHAP v2)' </strong>is enabled by default on Windows Server Editions.&nbsp;MS-CHAP v2<strong>&nbsp;</strong>offers a two-way&nbsp;authentication mechanism which verifies the identity of the VPN server and the VPN client. Both parties authenticate with each other by using two different&nbsp;&nbsp;cryptographic keys. MS-CHAP v2 uses a unique session identifier and user credentials to generate encryption keys unlike EAP-TLS which takes advantage of digital certificates.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -181,8 +181,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then select <strong>'Properties'</strong>.</span></li>
-                </ul></td>
+                  <li>Next, <strong>'Encrypted authentication (CHAP)' </strong>is an older authentication protocol that uses MD5 hash algorithms to send the authentication requests. The VPN Server sends a challenge to the VPN client which in turn responds with an MD5 hash result that is composed of the challenge and the user&rsquo;s password. The VPN Server calculates the user&rsquo;s hash locally and compares the result with the hash received from the VPN client. If these two hashes match, then the user is granted network access. You should use this authentication mechanism if&nbsp;EAP-TLS is not supported within your network.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -199,8 +199,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then select <strong>'Properties'</strong>.</span></li>
-                </ul></td>
+                  <li>This next authentication protocol <strong>'Unencrypted password (PAP)'</strong>, is a simple authentication protocol that is not widely used since it uses basic authentication mechanisms and is susceptible to external attacks. PAP uses plain-text passwords that are sent to the server for authentication.  You should not use this protocol for VPN authentication.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -217,8 +217,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then select <strong>'Properties'</strong>.</span></li>
-                </ul></td>
+                  <li>And then the last authentication protocol is <strong>'IKEv2'</strong>. Its primary advantage is that it tolerates interruptions in the underlying network connection. For example, if the connection is temporarily lost, or if a user moves a client computer from one network to another, IKEv2 automatically restores the VPN after the network connection is reestablished &mdash; all without intervention on the part of the user. This feature is referred to as VPN Reconnect or Agile VPN.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">
@@ -235,8 +235,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then select <strong>'Properties'</strong>.</span></li>
-                </ul></td>
+                  <li>This option allows remote access clients to connect to the remote access servers with no authentication.</li>
+                  <br>
+                  <li>Press <strong>'OK'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="404" border="0">

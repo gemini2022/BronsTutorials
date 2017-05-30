@@ -11,13 +11,17 @@ function VPN() {
             new HierarchicalUnit(tutorialList.child[0].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                 new ExpandCollapse(tutorialList.child[0].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Installing VPN", root);
 
+                    //Server Configuration
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[4].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Configuration", "VPN/InstallingVpn/ServerConfiguration");
+
                     //Adding Network Policy and Access Services Role
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[4].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Adding Network Policy and Access Services Role", "VPN/InstallingVpn/AddingNetworkPolicyAndAccessServicesRole");
+                        new Link(tutorialList.child[0].child[4].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Adding Network Policy and Access Services Role", "VPN/InstallingVpn/AddingNetworkPolicyAndAccessServicesRole");
 
                     //Configure and Enable Routing and Remote Access
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[4].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Configure and Enable Routing and Remote Access", "VPN/InstallingVpn/ConfigureAndEnableRoutingAndRemoteAccess");
+                        new Link(tutorialList.child[0].child[4].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Configure and Enable Routing and Remote Access", "VPN/InstallingVpn/ConfigureAndEnableRoutingAndRemoteAccess");
 
             //VPN Server
             new HierarchicalUnit(tutorialList.child[0].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);

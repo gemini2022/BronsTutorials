@@ -1,0 +1,396 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>In this tutorial we are going to configure this server as both a VPN and NAT server. But, before we do this, let's first take a look on how we have our network adapters configured on this server.</p></td>
+                
+                
+          </tr>
+        </table>
+        
+        
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;the network icon&nbsp;at the bottom right corner of your screen.</span></li>
+        </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="336" height="228"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then select <strong>'Open Network and Sharing Center'</strong>. This will open the 'Network and Sharing Center' screen.</span></li>
+                </ul></td>
+                
+                <td align="right">
+                  <table width="400" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="336" height="228"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in 'Network and Sharing Center', select the option <strong>'Change adapter settings'</strong>, which will bring you to the 'Network Connections' screen.</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="642" height="554"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in 'Network Connections', notice that there are two network adapters present on this server.</span></li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="623" height="250"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>The first network adapter defines the outside or public side of the network</li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="4b.jpg" width="623" height="250"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And the second network adapter defines the local or private side of the network.</li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="4c.jpg" width="623" height="250"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">If we right-click on the first network adapter labeled <strong>'Public Dynamic IP'</strong>.</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="623" height="250"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">And then select <strong>'Properties'</strong>.</span></li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="154" height="174"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then double-click on <strong>'Internet Protocol Version 4 (TCP/IPv4)'</strong>.</span></li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="367" height="461"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul type="disc">
+                <li><span dir="LTR">You can see that the IP settings for this network interface is being assigned dynamically. No manual configuration has been set.</span> These dynamically assigned settings are being assigned by our ISP. This interface is what will allow our VPN clients to have access to the internet. To have a better look at the settings that are being assigned to us, press <strong>'OK' </strong>or <strong>'Cancel'</strong> to close this dialogue box.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Then press <strong>'OK' </strong>or <strong>'Cancel'</strong> to close our 'Public Dynamic IP' properties dialogue box.</li></ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="367" height="461"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+              <li>Then right-click again on  the network adapter labeled <strong>'Public Dynamic IP'</strong>.</li></ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="10.jpg" width="623" height="250"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+              <li><span dir="LTR"><span dir="LTR">But this time, select the option <strong>'Status'</strong>.</span></span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="154" height="174"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Then select the <strong>'Details...' </strong> button.</span></li></ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="12.jpg" width="367" height="443"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Here you can see there is a good amount of connection detail information for this network interface. In particular, take note of the information about the IP address, subnet mask, default gateway, DHCP server and its DNS servers. These network connection properties are the public side of the network and have been assigned dynamically by the ISP.</li>
+                <br>
+                <li>Press <strong>'Close'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="13.jpg" width="366" height="431"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Press <strong>'Close'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="14.jpg" width="367" height="443"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>Now, lets take a look at the configuration details of the other network adapter that's labeled  <strong>'Local Static IP'</strong>. To do this, right-click it.</li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="15.jpg" width="623" height="250"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>And select <strong>'Properties'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="154" height="174"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li>And then from here, double-click on <strong>'Internet Protocol Version 4 (TCP/IPv4)'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="16.jpg" width="367" height="461"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Now you can see here that the IP settings for this network interface has been statically assigned. The IP address and the subnet mask given is for this network adapter is for the private side of the network.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="17.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+              <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">However, also t</span>ake note of not only what has been assigned, but also take note of what has not been assigned. The default gateway and the DNS server information has been left blank. This information is being handled <span dir="LTR"></span>by our other network adapter that is installed on this server, the public interface.</li>
+                <br>
+                <li>Press <strong>'OK'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="336" border="0">
+                        <tr>
+                            <td align="center"><img src="18.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+       
+    </body>
+</html>

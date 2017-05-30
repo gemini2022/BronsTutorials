@@ -48,3 +48,16 @@ HKEY_LOCAL_MACHINE–>System->CurrentControlSet->Services->Sstpsvc->Parameters
 On the Edit menu, point to New , click DWORD (32-bit) Value, and then add the following registry value:
 Value Name: NoCertRevocationCheck
 Value Data: 1
+
+
+
+
+
+
+
+
+
+
+
+
+If the static IP address pool consists of ranges of IP addresses that are for a separate subnet, then you need to either enable an IP routing protocol on the remote access server computer or add static IP routes consisting of the {IP Address, Mask} of each range to the routers of the intranet. If the routes are not added, then remote access clients cannot receive traffic from resources on the intranet.
