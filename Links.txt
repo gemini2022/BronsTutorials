@@ -53,6 +53,12 @@ Value Data: 1
 
 
 
+https://support.microsoft.com/en-us/help/926179/how-to-configure-an-l2tp-ipsec-server-behind-a-nat-t-device-in-windows-vista-and-in-windows-server-2008
+
+
+
+
+
 
 
 

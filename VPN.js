@@ -67,6 +67,46 @@ function VPN() {
                             new HierarchicalUnit(tutorialList.child[0].child[4].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                 new Link(tutorialList.child[0].child[4].child[2].child[3].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Logging Tab", "VPN/VpnServer/VpnServerProperties/LoggingTab");
 
+            //Network Interfaces
+            new HierarchicalUnit(tutorialList.child[0].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                new ExpandCollapse(tutorialList.child[0].child[4].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Network Interfaces", root);
+
+                    //Network Interfaces Details
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[4].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Network Interfaces Details", "VPN/NetworkInterfaces/NetworkInterfacesDetails");
+
+                    //New Demand Dial Interface
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[4].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Demand Dial Interface", "VPN/NetworkInterfaces/NewDemandDialInterface");
+
+            //Remote Access Clients
+            new HierarchicalUnit(tutorialList.child[0].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                new ExpandCollapse(tutorialList.child[0].child[4].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remote Access Clients", root);
+
+                    //Remote Access Clients Details
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[4].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remote Access Clients Details", "VPN/RemoteAccessClients/RemoteAccessClientsDetails");
+
+            //Ports
+            new HierarchicalUnit(tutorialList.child[0].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                new ExpandCollapse(tutorialList.child[0].child[4].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Ports", root);
+
+                    //Ports Details
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[4].child[5].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Ports Details", "VPN/Ports/PortsDetails");
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
