@@ -95,19 +95,32 @@ function VPN() {
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new Link(tutorialList.child[0].child[4].child[5].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Ports Details", "VPN/Ports/PortsDetails");
 
+                    //Ports Properties
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[5].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Ports Properties", root, "VPN/Ports/PortsProperties");
 
+                        //Device Tab
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[5].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[5].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Device Tab", root, "VPN/Ports/PortsProperties/DeviceTab");
 
+                            //IKEv2
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[5].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[5].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IKEv2", "VPN/Ports/PortsProperties/DeviceTab/IKEv2");
 
+                            //L2TP
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[5].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[5].child[2].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "L2TP", "VPN/Ports/PortsProperties/DeviceTab/L2TP");
 
+                            //PPPoE
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[5].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[5].child[2].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "PPPoE", "VPN/Ports/PortsProperties/DeviceTab/PPPOE");
 
+                            //PPTP
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[5].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[5].child[2].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "PPTP", "VPN/Ports/PortsProperties/DeviceTab/PPTP");
 
-
-
-
-
-
-
-
-
+                            //SSTP
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[5].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[5].child[2].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "SSTP", "VPN/Ports/PortsProperties/DeviceTab/SSTP");
 
 }
