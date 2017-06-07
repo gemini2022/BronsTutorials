@@ -67,3 +67,15 @@ https://support.microsoft.com/en-us/help/926179/how-to-configure-an-l2tp-ipsec-s
 
 
 If the static IP address pool consists of ranges of IP addresses that are for a separate subnet, then you need to either enable an IP routing protocol on the remote access server computer or add static IP routes consisting of the {IP Address, Mask} of each range to the routers of the intranet. If the routes are not added, then remote access clients cannot receive traffic from resources on the intranet.
+
+
+
+
+
+
+
+
+
+
+
+The value that you specify in Network connection method is used to automatically configure the Policy Type condition. If you keep the default value of Unspecified, the network policy that you create is evaluated by NPS for all network connection types through any kind of network access server. If you specify a network connection method, NPS evaluates the network policy only if the connection request originates from the type of network access server that you specify. For example, if you specify Terminal Services Gateway, NPS evaluates the network policy only for connection requests that originate from Terminal Services Gateway (TS Gateway).
