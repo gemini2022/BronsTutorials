@@ -123,4 +123,44 @@ function VPN() {
                             new HierarchicalUnit(tutorialList.child[0].child[4].child[5].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                 new Link(tutorialList.child[0].child[4].child[5].child[2].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "SSTP", "VPN/Ports/PortsProperties/DeviceTab/SSTP");
 
+            //Remote Access Logging & Policies
+            new HierarchicalUnit(tutorialList.child[0].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                new ExpandCollapse(tutorialList.child[0].child[4].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remote Access Logging & Policies", root);
+
+                    //Launch NPS
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Launch NPS", root, "VPN/RemoteAccessLoggingAndPolicies/LaunchNPS");
+
+                        //Network Policies
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[6].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Network Policies", root, "VPN/RemoteAccessLoggingAndPolicies/LaunchNPS/NetworkPolicies");
+
+                            //New Network Policy
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[6].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[6].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Network Policy", "VPN/RemoteAccessLoggingAndPolicies/LaunchNPS/NetworkPolicies/NewNetworkPolicy");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
