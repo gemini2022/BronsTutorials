@@ -131,16 +131,41 @@ function VPN() {
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new ExpandCollapseLink(tutorialList.child[0].child[4].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Launch NPS", root, "VPN/RemoteAccessLoggingAndPolicies/LaunchNPS");
 
+                        //NPS (Local)
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[6].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "NPS (Local)", "VPN/RemoteAccessLoggingAndPolicies/LaunchNPS/NPS");
+
+                        //Accounting
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[6].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Accounting", root, "VPN/RemoteAccessLoggingAndPolicies/LaunchNPS/Accounting");
+
+                            //Configure Accounting
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[6].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[6].child[1].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Configure Accounting", "VPN/RemoteAccessLoggingAndPolicies/LaunchNPS/Accounting/ConfigureAccounting");
+
+                            //Change Log File Properties
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[6].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[6].child[1].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Change Log File Properties", "VPN/RemoteAccessLoggingAndPolicies/LaunchNPS/Accounting/ChangeLogFileProperties");
+
+                            //Change SQL Server Logging Properties
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[6].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[6].child[1].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Change SQL Server Logging Properties", "VPN/RemoteAccessLoggingAndPolicies/LaunchNPS/Accounting/ChangeSqlServerLoggingProperties");
+
                         //Network Policies
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[6].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Network Policies", root, "VPN/RemoteAccessLoggingAndPolicies/LaunchNPS/NetworkPolicies");
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[6].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Network Policies", root, "VPN/RemoteAccessLoggingAndPolicies/LaunchNPS/NetworkPolicies");
 
                             //New Network Policy
-                            new HierarchicalUnit(tutorialList.child[0].child[4].child[6].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[4].child[6].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Network Policy", "VPN/RemoteAccessLoggingAndPolicies/LaunchNPS/NetworkPolicies/NewNetworkPolicy");
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[6].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[6].child[1].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Network Policy", "VPN/RemoteAccessLoggingAndPolicies/LaunchNPS/NetworkPolicies/NewNetworkPolicy");
 
-
-
+                        //IP Filters
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[6].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IP Filters", root, "VPN/RemoteAccessLoggingAndPolicies/LaunchNPS/IPFilters");
+                        
+                            //New IP Filters Template
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[6].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[6].child[1].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New IP Filters Template", "VPN/RemoteAccessLoggingAndPolicies/LaunchNPS/IPFilters/NewIpFiltersTemplate");
 
 
 
