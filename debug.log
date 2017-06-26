@@ -40,3 +40,15 @@
 [0522/132049.714:ERROR:process_reader_win.cc(233)] ReadMemory at 0x7feef582968 of 12 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
 [0522/132049.714:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
 [0522/132049.714:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0620/122818.204:ERROR:scoped_process_suspend.cc(30)] NtSuspendProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[0620/122818.255:ERROR:process_info.cc(116)] ReadProcessMemory bool __cdecl crashpad::`anonymous-namespace'::ReadStruct<struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits64>>(void *,unsigned __int64,struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits64> *): Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0620/122818.255:ERROR:process_info.cc(559)] ReadProcessData failed
+[0620/122818.255:ERROR:process_reader_win.cc(233)] ReadMemory at 0x7feef132968 of 12 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0620/122818.255:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
+[0620/122818.255:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0625/120025.684:ERROR:process_info.cc(116)] ReadProcessMemory bool __cdecl crashpad::`anonymous-namespace'::ReadStruct<struct crashpad::process_types::RTL_USER_PROCESS_PARAMETERS<struct crashpad::process_types::internal::Traits64>>(void *,unsigned __int64,struct crashpad::process_types::RTL_USER_PROCESS_PARAMETERS<struct crashpad::process_types::internal::Traits64> *): Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0625/120025.699:ERROR:process_info.cc(559)] ReadProcessData failed
+[0625/120025.699:ERROR:process_reader_win.cc(233)] ReadMemory at 0x7feeee42968 of 12 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0625/120025.699:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
+[0625/120025.699:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0625/120025.699:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)

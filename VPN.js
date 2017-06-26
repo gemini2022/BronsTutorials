@@ -167,21 +167,61 @@ function VPN() {
                             new HierarchicalUnit(tutorialList.child[0].child[4].child[6].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                 new Link(tutorialList.child[0].child[4].child[6].child[1].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New IP Filters Template", "VPN/RemoteAccessLoggingAndPolicies/LaunchNPS/IPFilters/NewIpFiltersTemplate");
 
+            //IPv4
+            new HierarchicalUnit(tutorialList.child[0].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                new ExpandCollapse(tutorialList.child[0].child[4].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IPv4", root);
 
+                    //General
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General", root, "VPN/IPv4/General");
 
+                        //New Interface
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[7].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Interface", root, "VPN/IPv4/General/NewInterface");
 
+                            //General Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[7].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "VPN/IPv4/General/NewInterface/GeneralTab");
 
+                            //Multicast Boundaries Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[7].child[1].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Multicast Boundaries Tab", "VPN/IPv4/General/NewInterface/MulticastBoundariesTab");
 
+                            //Multicast Heartbeat Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[7].child[1].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Multicast Heartbeat Tab", "VPN/IPv4/General/NewInterface/MulticastHeartbeatTab");
 
+                        //New Routing Protocol
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[7].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Routing Protocol", "VPN/IPv4/General/NewRoutingProtocol");
 
+                        //Show TCP/IP Information
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[7].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Show TCP/IP Information", "VPN/IPv4/General/ShowTcpipInformation");
 
+                        //Show Multicast Forwarding Table
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[7].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Show Multicast Forwarding Table", "VPN/IPv4/General/ShowMulticastForwardingTable");
 
+                        //Show Multicast Statistics
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[7].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Show Multicast Statistics", "VPN/IPv4/General/ShowMulticastStatistics");
 
+                        //General Properties
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[7].child[1].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Properties", root, "VPN/IPv4/General/GeneralProperties");
 
+                            //Logging Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[1].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[7].child[1].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Logging Tab", "VPN/IPv4/General/GeneralProperties/LoggingTab");
 
+                            //Preference Levels Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[1].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[7].child[1].child[6].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Preference Levels Tab", "VPN/IPv4/General/GeneralProperties/PreferenceLevelsTab");
 
-
-
+                            //Multicast Scopes Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[1].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[7].child[1].child[6].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Multicast Scopes Tab", "VPN/IPv4/General/GeneralProperties/MulticastScopesTab");
 
 
 
