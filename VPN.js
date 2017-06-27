@@ -223,9 +223,15 @@ function VPN() {
                             new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[1].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                 new Link(tutorialList.child[0].child[4].child[7].child[1].child[6].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Multicast Scopes Tab", "VPN/IPv4/General/GeneralProperties/MulticastScopesTab");
 
+                    //Static Routes
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[7].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Static Routes", root, "VPN/IPv4/StaticRoutes");
 
+                        //New Static Route
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[7].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Static Route", "VPN/IPv4/StaticRoutes/NewStaticRoute");
 
-
-
-
+                        //Show IP Routing Table
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[7].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Show IP Routing Table", "VPN/IPv4/StaticRoutes/ShowIpRoutingTable");
 }
