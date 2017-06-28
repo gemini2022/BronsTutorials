@@ -234,4 +234,26 @@ function VPN() {
                         //Show IP Routing Table
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                             new Link(tutorialList.child[0].child[4].child[7].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Show IP Routing Table", "VPN/IPv4/StaticRoutes/ShowIpRoutingTable");
+
+                    //DHCP Relay Agent
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DHCP Relay Agent", root, "VPN/IPv4/DhcpRelayAgent");
+
+                        //New Interface
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[7].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Interface", "VPN/IPv4/DhcpRelayAgent/NewInterface");
+
+                        //DHCP Relay Agent Properties
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[7].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DHCP Relay Agent Properties", root, "VPN/IPv4/DhcpRelayAgent/DhcpRelayAgentProperties");
+
+                            //General Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[7].child[3].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "VPN/IPv4/DhcpRelayAgent/DhcpRelayAgentProperties/GeneralTab");
+
+
+
+
+
+
 }
