@@ -251,9 +251,25 @@ function VPN() {
                             new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                 new Link(tutorialList.child[0].child[4].child[7].child[3].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "VPN/IPv4/DhcpRelayAgent/DhcpRelayAgentProperties/GeneralTab");
 
+                    //IGMP
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[7].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IGMP", root, "VPN/IPv4/IGMP");
 
+                        //New Interface
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[7].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Interface", "VPN/IPv4/IGMP/NewInterface");
 
+                        //Show Group Table
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[7].child[4].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Show Group Table", "VPN/IPv4/IGMP/ShowGroupTable");
 
+                        //IGMP Properties
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[7].child[4].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IGMP Properties", root, "VPN/IPv4/IGMP/IgmpProperties");
+
+                            //General Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[4].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[7].child[4].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "VPN/IPv4/IGMP/IgmpProperties/GeneralTab");
 
 
 }
