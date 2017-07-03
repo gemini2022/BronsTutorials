@@ -271,5 +271,62 @@ function VPN() {
                             new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[4].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                 new Link(tutorialList.child[0].child[4].child[7].child[4].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "VPN/IPv4/IGMP/IgmpProperties/GeneralTab");
 
+                    //NAT
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[7].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "NAT", root, "VPN/IPv4/NAT");
+
+                        //New Interface
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[7].child[5].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Interface", root, "VPN/IPv4/NAT/NewInterface");
+
+                            //NAT Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[5].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[7].child[5].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "NAT Tab", "VPN/IPv4/NAT/NewInterface/NatTab");
+
+                            //Address Pool Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[5].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[7].child[5].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Address Pool Tab", "VPN/IPv4/NAT/NewInterface/AddressPoolTab");
+
+                            //Services and Ports Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[5].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[7].child[5].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Services and Ports Tab", "VPN/IPv4/NAT/NewInterface/ServicesAndPortsTab");
+
+                        //Show DHCP Allocator Information
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[7].child[5].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Show DHCP Allocator Information", "VPN/IPv4/NAT/ShowDhcpAllocatorInformation");
+
+                        //Show DNS Proxy Information
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[7].child[5].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Show DNS Proxy Information", "VPN/IPv4/NAT/ShowDnsProxyInformation");
+
+                        //NAT Properties
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[7].child[5].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "NAT Properties", root, "VPN/IPv4/NAT/NatProperties");
+
+                            //General Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[5].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[7].child[5].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "VPN/IPv4/NAT/NatProperties/GeneralTab");
+
+                            //Translation Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[5].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[7].child[5].child[4].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Translation Tab", "VPN/IPv4/NAT/NatProperties/TranslationTab");
+
+                            //Address Assignment Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[5].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[7].child[5].child[4].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Address Assignment Tab", "VPN/IPv4/NAT/NatProperties/AddressAssignmentTab");
+
+                            //Name Resolution Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[5].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[7].child[5].child[4].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Name Resolution Tab", "VPN/IPv4/NAT/NatProperties/NameResolutionTab");
+
+
+
+
+
+
+
+
+
+
 
 }
