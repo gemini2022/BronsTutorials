@@ -1,0 +1,233 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>To learn about the Advanced tab, proceed with the following steps...</p></td>
+                
+                
+          </tr>
+        </table>
+        
+        
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>This first setting, <strong>'Periodic announcement interval'</strong>, specifies the number of seconds between periodic RIP announcements. You can also click the arrows to select a new setting. The default value is 30 seconds. You can set this value from 15 seconds through 86,400 seconds (24 hours). This option is valid only if you have selected&nbsp;'Periodic update mode'&nbsp;as the&nbsp;'Operation mode<strong>'</strong>&nbsp;on the&nbsp;General&nbsp;tab.</li>
+  </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>This next setting, <strong>'Time before routes expire'</strong>, specifies the lifetime (in seconds) of a route that is learned through RIP. You can also click the arrows to select a new setting. The default value is 180 seconds. You can set this value from 15 seconds through 259,200 seconds (72 hours). If a route is not updated with another RIP announcement within the time set, the route expires and is marked as an invalid route. This option is valid only if you have selected&nbsp;'Periodic update mode'&nbsp;as the&nbsp;'Operation mode'&nbsp;on the&nbsp;General&nbsp;tab.</li>
+          </ul></td>
+                
+                <td align="right">
+                  <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="404" height="448"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>This setting, <strong>'Time before route is removed'</strong>, specifies the amount of time (in seconds) after which a RIP-learned route that has expired is removed from the routing table. You can also click the arrows to select a new setting. The default value is 120 seconds. You can set this value from 15 seconds through 259,200 seconds (72 hours). This option is valid only if you have selected&nbsp;'Periodic update mode'&nbsp;as the&nbsp;'Operation mode'&nbsp;on the&nbsp;General tab.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="404" height="448"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>This option, <strong>'Enable split-horizon processing'</strong>, specifies whether routes learned on a network are not announced in RIP announcements sent on that network. If this check box is not selected, routes learned on a network are announced on the same network. By default, split horizon is enabled.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>This option, <strong>'Enable poison-reverse processing'</strong>, specifies whether routes learned on a network are announced with a metric of 16 (unreachable) in RIP announcements sent on that network. By default, poison reverse is enabled. The poison-reverse option is available only after split horizon is enabled.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>This next option, <strong>'Enable triggered updates'</strong>, specifies whether new routes and metric changes trigger an immediate update that includes only the changes. This is called a triggered update. The maximum time between triggered updates depends on the value of&nbsp;'Minimum seconds between triggered updates', which you set on the&nbsp;General&nbsp;tab in the&nbsp;RIP&nbsp;dialog box.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>Next, this setting <strong>'Send clean-up updates when stopping'</strong>, specifies whether, if RIP is stopping on this interface, RIP sends an announcement with all routes that are marked with a metric of 15. This enables neighboring routers to immediately update their routing tables to indicate that the routes available through the router that is stopping are no longer reachable. If this check box is selected, when the router is stopped, the router advertises all of the routes that it makes available as being unreachable on all of its interfaces. By default, this check box is enabled.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>This next option, <strong>'Process host routes in received announcements'</strong>, specifies whether host routes in received RIP announcements are accepted. By default, host routes are ignored.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>This option <strong>'Include host routes in sent announcements'</strong>, specifies whether host routes are included in RIP announcements. By default, host routes are not included.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>This next option, <strong>'Process default routes in received announcements'</strong>, specifies whether default routes in received RIP announcements are accepted. By default, default routes are ignored.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="10.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>This option <strong>'Include default routes in sent announcements'</strong>, specifies whether default routes are included in RIP announcements. By default, default routes are not included.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And then finally, this last option <strong>'Disable subnet summarization'</strong>, specifies that subnet routes are not summarized in the form of the class-based network ID when announced on a network that is not a subnet of the class-based network ID. By default, subnet summarization is disabled. This option is only available if the&nbsp;'Outgoing packet protocol'&nbsp;on the&nbsp;General&nbsp;tab is set to either&nbsp;'RIP version 2 broadcast or RIP version 2 multicast'.</li>
+              </ul></td>
+                
+                <td align="right">
+              <table width="404" border="0">
+                        <tr>
+                            <td align="center"><img src="12.jpg" width="404" height="448"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

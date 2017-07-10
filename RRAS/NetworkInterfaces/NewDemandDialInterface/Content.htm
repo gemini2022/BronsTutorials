@@ -1,0 +1,753 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>Demand-dial interfaces connect routers on either public or private networks. A demand-dial interface can be either on-demand (activated only when needed) or persistent (always connected) and initiate one-way or two-way connections. Demand-dial routing is not the same as remote access. Remote access connects a single user to a network. Demand-dial routing connects networks together. However, both remote access and demand-dial routing use PPP to negotiate and authenticate the connection and encapsulate data sent on the connection. Because the routing service and remote access coexist on a server running Routing and Remote Access, both routers and remote access clients can call the same phone number. The server running Routing and Remote Access that answers the call must be able to distinguish a remote access client from a router that is calling to create a demand-dial connection. To differentiate a remote access client from a demand-dial router, the user name in the authentication credentials sent by the calling router must exactly match the name of a demand-dial interface on the answering router. Otherwise, the incoming connection is assumed to be a remote access connection. In this tutorial we'll be implementing a demand-dial interface between two remote sites, one site in NY and the other site in LA. To learn how to do this, proceed with the following steps...</p></td>
+                
+                
+          </tr>
+        </table>
+        
+        
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+        </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then go to <strong>'Administrative Tools'</strong>...</span></li>
+                </ul></td>
+                
+                <td align="right">
+                  <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then <strong>'Routing and Remote Access'</strong>...</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../../InstallingRRAS/ConfigureAndEnableRoutingAndRemoteAccess/1.jpg" width="252" height="426"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+              <li><span dir="LTR">Once in Routing and Remote Acces, expand the server node</span>, which in this case is&nbsp;<strong>'RRASSERVER (local)'</strong>.</li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../NetworkInterfacesDetails/1.jpg" width="418" height="131"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then right-click  <strong>'Network Interfaces'</strong>.</span></li>
+                </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="../NetworkInterfacesDetails/2.jpg" width="360" height="226"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">And select the option <strong>'New Demand-dial Interface...'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="187" height="75"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once you select the option 'New Demand-dial Interface..', a demand-dial interface wizard will appear. To begin the wizard, press <strong>'Next &gt;'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">On this screen of the wizard, you have the option to enter in your own name for this demand-dial interface or keep the default name</span>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">For this example, we will enter in a name for this interface. A common practice is to name interfaces after the network or router to which they connect. In this case, our demand-dial interface will be connecting to the LA site, therefore we will name this demand-dial interface <strong>'LA Site'</strong>.</span></li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">On this next screen, you have to decide which type of demand-dial interface you want create. In this case, we do&nbsp;<strong>NOT</strong> want to&nbsp;select the option,&nbsp;'Connect using PPP over Ethernet (PPPoE)', because PPPoE is used to link to the local ISP</span>. Instead, leave the default option selected <strong>'Connect using virtual private networking (Routing and Remote Access)'</strong>.</li>
+                <br>
+                <li>Press <strong>'Next &gt;'</strong>.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">because we chose on the previous screen the option to connect using a virtual private network, we now have to choose on this screen which type of Routing and Remote Access connection we want to create.</span> In this case, we will select the option <strong>'Layer 2 Tunneling Protocol (L2TP)'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="6.jpg" width="522" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Press <strong>'Next &gt;'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="7.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">On this screen of the wizard, you are ask to enter in the name or IP address of the router you are connecting to.</span></li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="8.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">The router that we want this interface to connect to is the public router of the LA site.</span> Therefore, in this case we will enter in the LA site's public IP address of <strong>'134.201.250.151'</strong>.</li>
+                  <br>
+                  <li>Press <strong>'Next &gt;'</strong>.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="9.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">Next, on this screen, keep the option 'Route IP packets on this interface' selected. </span> This specifies whether IP routing, the forwarding of IP packets from one routing interface to another, is enabled on this interface. You must enable IP routing in order for LAN and demand-dial routing to occur.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="10.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                <li><span dir="LTR">But also, we need to select the option <strong>'Add a user account so a remote router can dial in'</strong>. This allows you to create a new user account that is used by the calling router. When this option is selected, a user account with the same name as the demand-dial interfaces is created in the security accounts database.</span></li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="10b.jpg" width="507" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Press<strong> 'Next &gt;'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="11.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">On this next screen, in order for this demand-dial connection to be activated, a static route to the remote network must be created.</span> To do this, begin by pressing the <strong>'Add'</strong> button.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="12.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">After pressing the 'Add' button, a dialogue box will appear. From here is where we will create the static route.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="13.jpg" width="380" height="257"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">First, enter in the IP address of the network this static route will be routing to. In this case, the IP address of the remote network is <strong>'192.168.100.0'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="14.jpg" width="380" height="257"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then enter in the network mask.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="15.jpg" width="380" height="257"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And then finally, enter in the metric. The metric is an integer value ranging from 1 to 9,999 that represents the cost of the route. This cost is used in calculating the fastest, most reliable, and/or least expensive route. For this tutorial we will only be adding  one static route to this interface, so it doesn't matter what value we enter here. Therefore, in this case we will just enter in a value of <strong>'1'</strong>.</li>
+                  <br>
+                  <li>Press <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="16.jpg" width="380" height="257"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Now that our static route has been created, we can move on... </span></li>
+                  <br>
+                  <li><span dir="LTR">Press <strong>'Next &gt;'</strong>.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="17.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">On this next screen, we need to provide the password that the LA site will use when</span> it dials in to this site (NY Site).</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="18.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">First, enter in the password.</span> This password is the same password that is configured on the remote router. In other words, the remote router's dial-out password needs to match this router's dial-in password. Essentially, what you type here is what will be used to confirm whether or not the router dialing in is a demand-dial router.</li>
+          </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="19.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then confirm the password.</span></li>
+                  <br>
+                  <li><span dir="LTR">Press <strong>'Next &gt;'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="20.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Now on this screen, we need to provide a user name and password for when this site (NY Site) dials in to the remote site (LA Site).</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="21.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">In this case, we will give this interface the user name  <strong>'NY Site'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="22.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>The domain name goes here. Typically, both sites belong to the same domain, so this field is optional.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="22b.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">And then, type in a password.</span> Now, without trying to make this more confusing then this may already be, this password does <strong>NOT</strong> need to be the same as the password you just entered in for this interface's dial-in password. You can make this password what ever you wish, as long as this password matches the dial-in password of the remote router. In fact, all the information that you provide for the dial-out credentials on this screen must match all the dial-in credentials configured on the remote router.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="23.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">And confirm the password.</span></li>
+                  <br>
+                  <li><span dir="LTR">Press <strong>'Next &gt;'</strong>.</span></li>
+    </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="24.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">And then finally, press <strong>'Finish'</strong> to complete the 'Demand-Dial Interface Wizard'.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="25.jpg" width="503" height="387"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once you complete the 'Demand-Dial Interface Wizard', a new network interface will be created.</span></li>
+      </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="26.jpg" width="729" height="209"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Since we will be using L2TP/IPsec for this demand-dial Routing and Remote Access, we will need to configure a preshared</span> key for our Routing and Remote Access authentication. To do this, right-click the demand-dial interface that we just created.</li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="26b.jpg" width="729" height="237"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">And select <strong>'Properties'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="27.jpg" width="179" height="290"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once in the properties of our demand-dial interface, select the <strong>'Security'</strong> tab.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="28.jpg" width="367" height="458"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then select <strong>'Advanced Settings'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="29.jpg" width="367" height="443"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">From here, we need to select the option <strong>'Use preshared key for authentication'</strong>.</span></li>
+        </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="30.jpg" width="435" height="279"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then type in the preshared key that corresponds to the preshared key on the Routing and Remote Access server that you will be connecting to. In this case, this interface will be connecting to</span> the Routing and Remote Access server at the LA site, which has a preshared key configured as <strong>'LAPresharedKey'</strong>.</li>
+                  <br>
+                  <li>Once the preshared key has been entered, press <strong>'OK'</strong>.</li>
+                </ul>
+                  <p>&nbsp;</p></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="31.jpg" width="395" height="279"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">The demand-dial interface configuration is now complete, well at least it is for this</span> site anyway. Everything that was just configured here will also have to be  configured on the remote site as well. Once both sites have been configured, then a demand-dial connection can be made.</li>
+                  <br>
+                  <li>Press <strong>'OK'</strong>.</li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="32.jpg" width="367" height="443"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+       
+    </body>
+</html>
