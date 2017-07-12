@@ -371,12 +371,45 @@ function RRAS() {
                             new HierarchicalUnit(tutorialList.child[0].child[4].child[7].child[6].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                 new Link(tutorialList.child[0].child[4].child[7].child[6].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Security Tab", "RRAS/IPv4/RIP/RipProperties/SecurityTab");
 
+            //IPv6
+            new HierarchicalUnit(tutorialList.child[0].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                new ExpandCollapse(tutorialList.child[0].child[4].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IPv6", root);
 
+                    //General
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General", root, "RRAS/IPv6/General");
 
+                        //New Interface
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[8].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Interface", root, "RRAS/IPv6/General/NewInterface");
 
+                            //General Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[8].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[8].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "RRAS/IPv6/General/NewInterface/GeneralTab");
 
+                        //New Routing Protocol
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[8].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Routing Protocol", "RRAS/IPv6/General/NewRoutingProtocol");
 
+                        //Show TCP/IP Information
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[8].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Show TCP/IP Information", "RRAS/IPv6/General/ShowTcpipInformation");
 
+                        //Show Multicast Forwarding Table
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[8].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Show Multicast Forwarding Table", "RRAS/IPv6/General/ShowMulticastForwardingTable");
+
+                        //Show Multicast Statistics
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[8].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Show Multicast Statistics", "RRAS/IPv6/General/ShowMulticastStatistics");
+
+                        //General Properties
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[8].child[1].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Properties", root, "RRAS/IPv6/General/GeneralProperties");
+
+                            //Logging Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[8].child[1].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[8].child[1].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Logging Tab", "RRAS/IPv6/General/GeneralProperties/LoggingTab");
 
 
 
