@@ -411,11 +411,41 @@ function RRAS() {
                             new HierarchicalUnit(tutorialList.child[0].child[4].child[8].child[1].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                 new Link(tutorialList.child[0].child[4].child[8].child[1].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Logging Tab", "RRAS/IPv6/General/GeneralProperties/LoggingTab");
 
+                    //Static Routes
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[8].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Static Routes", root, "RRAS/IPv6/StaticRoutes");
 
+                        //New Static Route
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[8].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[8].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Static Route", "RRAS/IPv6/StaticRoutes/NewStaticRoute");
 
+                        //Show IP Routing Table
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[8].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[8].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Show IP Routing Table", "RRAS/IPv6/StaticRoutes/ShowIpRoutingTable");
 
+                    //DHCPv6 Relay Agent
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[8].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DHCPv6 Relay Agent", root, "RRAS/IPv6/DHCPv6RelayAgent");
 
+                        //New Interface
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[8].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[8].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Interface", root, "RRAS/IPv6/DHCPv6RelayAgent/NewInterface");
 
+                            //General Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[8].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[8].child[3].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "RRAS/IPv6/DHCPv6RelayAgent/NewInterface/GeneralTab");
+
+                        //DHCPv6 Relay Agent Properties
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[8].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[8].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DHCPv6 Relay Agent Properties", root, "RRAS/IPv6/DHCPv6RelayAgent/Dhcpv6RelayAgentProperties");
+
+                            //General Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[8].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[8].child[3].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "RRAS/IPv6/DHCPv6RelayAgent/Dhcpv6RelayAgentProperties/GeneralTab");
+
+                            //Server Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[8].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[8].child[3].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Tab", "RRAS/IPv6/DHCPv6RelayAgent/Dhcpv6RelayAgentProperties/ServerTab");
 
 
 }
