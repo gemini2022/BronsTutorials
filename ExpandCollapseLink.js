@@ -52,7 +52,13 @@ ExpandCollapseLink.prototype.Build = function () {
     this.container.height = 20;
     new Container(this.container, [0, 0, 0, 0, 0, 0, 0, 0, 9, 11], true, true, true);
     new Shape(triangleRight, this.container.child[0], [0, 1, 0, 0, 1, 0, 0, 0, 0, 0], new Rgba("#536bfe"));
-    new Link(this.container, [0, 0, 0, 0, 0, 0, 13, 0, 0, 0], this.lbl, this.url);
+
+    if (this.url == null) {
+        new Label(this.container, [0, 0, 0, 0, 0, 0, 13, 0, 0, 0], new Rgba("#536bfe"), this.lbl, new Font(FontFamily.Arial, 12), Alignment.Left, LabelBaseline.Middle);
+    } else {
+
+        new Link(this.container, [0, 0, 0, 0, 0, 0, 13, 0, 0, 0], this.lbl, this.url);
+    }
 }
 
 
