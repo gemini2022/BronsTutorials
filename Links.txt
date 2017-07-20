@@ -1,3 +1,7 @@
+
+
+
+
 http://guidestomicrosoft.com/2015/06/30/configure-two-tier-pki-hierarchy/
 
 http://blog.msallal.com/2015/01/deploying-enterprise-pki-on-windows.html
@@ -79,3 +83,7 @@ If the static IP address pool consists of ranges of IP addresses that are for a 
 
 
 The value that you specify in Network connection method is used to automatically configure the Policy Type condition. If you keep the default value of Unspecified, the network policy that you create is evaluated by NPS for all network connection types through any kind of network access server. If you specify a network connection method, NPS evaluates the network policy only if the connection request originates from the type of network access server that you specify. For example, if you specify Terminal Services Gateway, NPS evaluates the network policy only for connection requests that originate from Terminal Services Gateway (TS Gateway).
+
+
+
+https://technet.microsoft.com/en-us/library/cc731352(v=ws.10).aspx

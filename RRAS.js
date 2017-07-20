@@ -467,13 +467,9 @@ function RRAS() {
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new ExpandCollapseLink(tutorialList.child[0].child[4].child[9].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "PPTP", root, null);
 
-                        //Server Configuration
-                        new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[9].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Configuration", "RRAS/VPN/PPTP/ServerConfiguration");
-
                         //Client Configuration
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[9].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Configuration", "RRAS/VPN/PPTP/ClientConfiguration");
+                            new Link(tutorialList.child[0].child[4].child[9].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Configuration", "RRAS/VPN/PPTP/ClientConfiguration");
 
                     //SSTP
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
