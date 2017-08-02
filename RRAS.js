@@ -475,17 +475,25 @@ function RRAS() {
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new ExpandCollapseLink(tutorialList.child[0].child[4].child[9].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "SSTP", root, null); 
 
+                        //Server Certificate CA Setup
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[9].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Certificate CA Setup", "RRAS/VPN/SSTP/ServerCertificateCaSetup");
+
                         //Server Certificate Installation
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[9].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Certificate Installation", "RRAS/VPN/SSTP/ServerCertificateInstallation");
+                            new Link(tutorialList.child[0].child[4].child[9].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Certificate Installation", "RRAS/VPN/SSTP/ServerCertificateInstallation");
 
                         //Server Configuration
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[9].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Configuration", "RRAS/VPN/SSTP/ServerConfiguration");
+                            new Link(tutorialList.child[0].child[4].child[9].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Configuration", "RRAS/VPN/SSTP/ServerConfiguration");
 
                         //Client Configuration
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[9].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Configuration", "RRAS/VPN/SSTP/ClientConfiguration");
+                            new Link(tutorialList.child[0].child[4].child[9].child[3].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Configuration", "RRAS/VPN/SSTP/ClientConfiguration");
+
+                        //Disable CRL Checking on Client
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[9].child[3].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Disable CRL Checking on Client", "RRAS/VPN/SSTP/DisableCrlCheckingOnClient");
 
                     //L2TP
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
@@ -493,27 +501,35 @@ function RRAS() {
 
                         //Server Configuration (Preshared Key)
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[9].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Configuration (Preshared Key)", "RRAS/VPN/L2TP/ServerConfiguration");
+                            new Link(tutorialList.child[0].child[4].child[9].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Configuration (Preshared Key)", "RRAS/VPN/L2TP/ServerConfiguration (PresharedKey)");
 
                         //Client Configuration (Preshared Key)
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[9].child[4].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Configuration (Preshared Key)", "RRAS/VPN/L2TP/ClientConfiguration");
+                            new Link(tutorialList.child[0].child[4].child[9].child[4].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Configuration (Preshared Key)", "RRAS/VPN/L2TP/ClientConfiguration (PresharedKey)");
 
-                        //Server Certificate Installation
+                        //Server Certificate CA Setup (Certificates)
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[9].child[4].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Certificate Installation", "RRAS/VPN/L2TP/ServerCertificateInstallation");
+                            new Link(tutorialList.child[0].child[4].child[9].child[4].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Certificate CA Setup (Certificates)", "RRAS/VPN/L2TP/ServerCertificateCaSetup (Certificates)");
 
-                        //Server Configuration
+                        //Server Certificate Installation (Certificates)
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[9].child[4].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Configuration", "RRAS/VPN/L2TP/ServerConfiguration");
+                            new Link(tutorialList.child[0].child[4].child[9].child[4].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Certificate Installation (Certificates)", "RRAS/VPN/L2TP/ServerCertificateInstallation (Certificates)");
 
-                        //Client Certificate Installation
+                        //Server Configuration (Certificates)
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[9].child[4].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Certificate Installation", "RRAS/VPN/L2TP/ClientCertificateInstallation");
+                            new Link(tutorialList.child[0].child[4].child[9].child[4].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Configuration (Certificates)", "RRAS/VPN/L2TP/ServerConfiguration (Certificates)");
 
-                        //Client Configuration
+                        //Client Certificate CA Setup (Certificates)
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[9].child[4].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Configuration", "RRAS/VPN/L2TP/ClientConfiguration");
+                            new Link(tutorialList.child[0].child[4].child[9].child[4].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Certificate CA Setup (Certificates)", "RRAS/VPN/L2TP/ClientCertificateCaSetup (Certificates)");
+
+                        //Client Certificate Installation (Certificates)
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[9].child[4].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Certificate Installation (Certificates)", "RRAS/VPN/L2TP/ClientCertificateInstallation (Certificates)");
+
+                        //Client Configuration (Certificates)
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[9].child[4].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Configuration (Certificates)", "RRAS/VPN/L2TP/ClientConfiguration (Certificates)");
 
 
 

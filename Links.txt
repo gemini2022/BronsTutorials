@@ -87,3 +87,9 @@ The value that you specify in Network connection method is used to automatically
 
 
 https://technet.microsoft.com/en-us/library/cc731352(v=ws.10).aspx
+
+
+
+
+
+http://www.sysadminshowto.com/sstp-windows-vpn-client-error-the-revocation-function-was-unable-to-check-revocation/

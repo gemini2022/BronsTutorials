@@ -6,461 +6,10 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>A certificate infrastructure is a requirement for VPN connections based on  Secure Socket Tunneling Protocol (SSTP). Certificates provide stronger authentication security than password-based authentication does. To learn how to install a certificate on a VPN server, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>To learn how to install a certificate on a VPN server, proceed with the following steps...</p></td>
                 
                 
           </tr>
-        </table>
-        
-        
-    	<hr>
-    
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Before we do any configuring or installation on the VPN server,  first  log into the server that's running the Certification Authority service and then go to&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
-        </ul>                  <br></td>
-                
-                <td align="right">
-                    <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="../../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/1.jpg" width="278" height="128"></td>
-                        </tr>
-                  </table>
-              </td>
-          </tr>
-        </table>
-        
-        <hr> 
-   
-		<table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then  go to <strong>'Administrative Tools'</strong>...</span></li>
-                </ul></td>
-                
-                <td align="right">
-                  <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="../../../../ActiveDirectory/InstallingActiveDirectory/AddingActiveDirectoryDomainServices/2.jpg" width="405" height="456"></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr> 
-		
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then <strong>'Certification Authority'</strong>...</span></li>
-                </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="../../../../Certificates/SettingUpTwoTierPkiHierarchy/SetDomainNamespaceForOfflineRootCa/11.jpg" width="252" height="406"></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr> 
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-            <li><span dir="LTR">Once in Certification Authority, expand the root node for the CA</span>, which in this case is&nbsp;<strong>'EnterpirseCA'</strong>.</li></ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="../../../../Certificates/Autoenrollment/GroupPolicy/CreateDuplicateTemplate/6.jpg" width="419" height="135"></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"><span dir="LTR">Then right-click&nbsp;<strong>'Certificate Templates'</strong>.</span></span></li>
-            </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="../../../../Certificates/Autoenrollment/GroupPolicy/CreateDuplicateTemplate/7.jpg" width="360" height="192"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"><span dir="LTR">And select&nbsp;<strong>'Manage'</strong>.</span></span></li>
-        </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="../../../../Certificates/Autoenrollment/GroupPolicy/CreateDuplicateTemplate/8.jpg" width="82" height="101"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-       
-       <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li>Now, we need to find the appropriate certificate that we will use for the VPN server. The certificate you install on the VPN server must have either the Server Authentication or All-Purpose enhanced key usage (EKU) property. This  certificate is used by the VPN client to authenticate the VPN server when the session is established. In this case, we will choose the certificate <strong>'RAS and IAS Server'</strong>, which has the Server Authentication property. Once this certificate is located, right-click it.</li>
-            </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="1.jpg" width="876" height="670"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And select <strong>'Properties'</strong>.</span></li>
-            </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="../../../../Certificates/SmartCardCertificateEnrollment/IdentifyEnrollmentAgent/2.jpg" width="135" height="101"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once in the properties of the 'RAS and IAS Server' certificate, select the <strong>'Security'</strong> tab.</span></li>
-            </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="2.jpg" width="404" height="539"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">It is here where we need to make sure that our VPN server is eligible</span> to enroll for this certificate. By default, this certificate already contains a group  called <strong>'RAS and IAS Servers'</strong>. Our VPN server is already a member of this group, therefore as long as this group is eligible to enroll for this certificate, then enrolling for this certificate should be succesful.</li>
-            </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="3a.jpg" width="404" height="522"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">To make sure that this group is eligible for enrollment</span>, select it.</li>
-            </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="3b.jpg" width="439" height="522"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And make sure that the permission for <strong>'Enroll'</strong> is set to <strong>'Allow'</strong>, which in this case it is.</span></li>
-            </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="4.jpg" width="404" height="522"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li>Next, select the <strong>'Subject Name'</strong> tab.</li>
-            </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="5.jpg" width="404" height="539"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Instead of having the subject name of the certificate built from Active Directory.</span></li>
-            </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="6.jpg" width="404" height="522"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Select the option <strong>'Supply in the request'</strong>. This will allow when enrolling for the certificate to manually provide the subject name of the certificate. Doing this will demonstrate what the subject name needs to be and why.</span></li>
-            </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="7.jpg" width="443" height="522"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the option 'Supply in the request' is selected, we immediately get a dialogue box warning us that this option may create a security risk and is not recommended.</span>&nbsp;This is because with this option, it allows a client to submit a certificate request using any subject name and does not require approval by a certificate manager.</li>
-                  <br>
-                  <li>Press&nbsp;<strong>'OK'</strong>.</li>
-        </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="../../../../Certificates/CertificateTemplates/DuplicateTemplate/SubjectNameTab/2.jpg" width="414" height="178"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li>Press&nbsp;<strong>'OK'</strong> to commit to the changes.</li>
-          </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="8.jpg" width="404" height="522"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then close the 'Certificate Templates Console'.</span></li>
-            </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="9.jpg" width="876" height="670"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Now that the certificate is configured, we need to </span>issue the certificate so it can be used. To do this, right-click <strong>'Certificate Templates'</strong>.</li>
-            </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="../../../../Certificates/Autoenrollment/GroupPolicy/CreateDuplicateTemplate/7.jpg" width="360" height="192"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then select <strong>'New'</strong>.</span></li>
-            </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="../../../../Certificates/Autoenrollment/GroupPolicy/PublishDuplicateTemplate/1.jpg" width="82" height="101"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then <strong>'Certificate Template to Issue'</strong>.</span></li>
-            </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="../../../../Certificates/Autoenrollment/GroupPolicy/PublishDuplicateTemplate/2.jpg" width="183" height="23"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"><span dir="LTR">After selecting the option 'Certificate Template to Issue', a list of the preconfigured certificate templates will appear. Among this list, is the certificate template</span></span>&nbsp;we edited earlier&nbsp;<strong>'RAS and IAS Server'</strong>. In this case, to get to it, we need to scroll down the list.</li>
-        </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="../../../../Certificates/Autoenrollment/GroupPolicy/PublishDuplicateTemplate/3.jpg" width="587" height="366"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li>Once the template is located, select it.</li>
-        </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="10.jpg" width="587" height="366"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR"><span dir="LTR">Then press&nbsp;<strong>'OK'</strong>.</span></span></li>
-        </ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="11.jpg" width="587" height="366"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        
-        <table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-              <li>And now you can see our certificate template&nbsp;<strong>'RAS and IAS Server'</strong>&nbsp;is in the list and ready to use.</li></ul></td>
-                
-                <td align="right">
-              <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="12.jpg" width="521" height="301"></td>
-                        </tr>
-                  </table>
-                </td>
-            </tr>
         </table>
         
         <hr>
@@ -492,7 +41,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="14.jpg" width="405" height="456"></td>
+                            <td align="center"><img src="1.jpg" width="405" height="456"></td>
                         </tr>
                   </table>
                 </td>
@@ -510,7 +59,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="15.jpg" width="405" height="456"></td>
+                            <td align="center"><img src="2.jpg" width="405" height="456"></td>
                         </tr>
                   </table>
                 </td>
@@ -528,7 +77,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="16.jpg" width="363" height="147"></td>
+                            <td align="center"><img src="3.jpg" width="363" height="147"></td>
                         </tr>
                   </table>
                 </td>
@@ -546,7 +95,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="17.jpg" width="248" height="220"></td>
+                            <td align="center"><img src="4.jpg" width="248" height="220"></td>
                         </tr>
                   </table>
                 </td>
@@ -564,7 +113,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="18.jpg" width="678" height="470"></td>
+                            <td align="center"><img src="5.jpg" width="678" height="470"></td>
                         </tr>
                   </table>
                 </td>
@@ -582,7 +131,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="19.jpg" width="678" height="470"></td>
+                            <td align="center"><img src="6.jpg" width="678" height="470"></td>
                         </tr>
                   </table>
                 </td>
@@ -600,7 +149,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="20.jpg" width="563" height="381"></td>
+                            <td align="center"><img src="7.jpg" width="563" height="381"></td>
                         </tr>
                   </table>
                 </td>
@@ -618,7 +167,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="21.jpg" width="524" height="381"></td>
+                            <td align="center"><img src="8.jpg" width="524" height="381"></td>
                         </tr>
                   </table>
                 </td>
@@ -630,7 +179,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then we need to specify which computer this snap-in will manage, this computer or another computer. In this case, we want manage this computer so we will leave the default option selected <strong>'Local computer'</strong>.</span></li>
+                  <li><span dir="LTR">Then we need to specify which computer this snap-in will manage. Will this snap-in manage this computer, or will it manage another computer on the network? In this case, we want to manage this computer, so we will leave the default option selected <strong>'Local computer'</strong>.</span></li>
                   <br>
                   <li>Press <strong>'Finish'</strong>.</li>
             </ul></td>
@@ -638,7 +187,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="22.jpg" width="524" height="381"></td>
+                            <td align="center"><img src="9.jpg" width="524" height="381"></td>
                         </tr>
                   </table>
                 </td>
@@ -656,7 +205,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="23.jpg" width="678" height="470"></td>
+                            <td align="center"><img src="10.jpg" width="678" height="470"></td>
                         </tr>
                   </table>
                 </td>
@@ -674,7 +223,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="24.jpg" width="417" height="147"></td>
+                            <td align="center"><img src="11.jpg" width="417" height="147"></td>
                         </tr>
                   </table>
                 </td>
@@ -692,7 +241,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="25.jpg" width="363" height="293"></td>
+                            <td align="center"><img src="12.jpg" width="363" height="293"></td>
                         </tr>
                   </table>
                 </td>
@@ -710,7 +259,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="26.jpg" width="157" height="127"></td>
+                            <td align="center"><img src="13.jpg" width="157" height="127"></td>
                         </tr>
                   </table>
                 </td>
@@ -728,7 +277,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="27.jpg" width="172" height="92"></td>
+                            <td align="center"><img src="14.jpg" width="172" height="92"></td>
                         </tr>
                   </table>
                 </td>
@@ -746,7 +295,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="28.jpg" width="640" height="448"></td>
+                            <td align="center"><img src="15.jpg" width="640" height="448"></td>
                         </tr>
                   </table>
                 </td>
@@ -764,7 +313,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="29.jpg" width="640" height="448"></td>
+                            <td align="center"><img src="16.jpg" width="640" height="448"></td>
                         </tr>
                   </table>
                 </td>
@@ -781,7 +330,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="30.jpg" width="640" height="448"></td>
+                            <td align="center"><img src="17.jpg" width="640" height="448"></td>
                         </tr>
                   </table>
                 </td>
@@ -799,7 +348,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="31.jpg" width="640" height="448"></td>
+                            <td align="center"><img src="18.jpg" width="640" height="448"></td>
                         </tr>
                   </table>
                 </td>
@@ -817,7 +366,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="32.jpg" width="640" height="448"></td>
+                            <td align="center"><img src="19.jpg" width="640" height="448"></td>
                         </tr>
                   </table>
                 </td>
@@ -835,7 +384,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="33.jpg" width="640" height="448"></td>
+                            <td align="center"><img src="20.jpg" width="640" height="448"></td>
                         </tr>
                   </table>
                 </td>
@@ -853,7 +402,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="34.jpg" width="506" height="501"></td>
+                            <td align="center"><img src="21.jpg" width="506" height="501"></td>
                         </tr>
                   </table>
                 </td>
@@ -871,7 +420,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="35.jpg" width="506" height="501"></td>
+                            <td align="center"><img src="22.jpg" width="506" height="501"></td>
                         </tr>
                   </table>
                 </td>
@@ -889,7 +438,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="36.jpg" width="506" height="501"></td>
+                            <td align="center"><img src="23.jpg" width="506" height="501"></td>
                         </tr>
                   </table>
                 </td>
@@ -901,13 +450,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">The common name identifies the host name associated with the certificate</span>. So in this case, we would enter in the value of <strong>'rrasserver.bronstutorials.com'</strong>. However, if we had configured the RAS and IAS Server certificate template to build from Active Directory, then the common name would have been automatically configured as 'rrasserver.bronstutorials.local'. This is because '.local' is the internal DNS namespace used within this orgainization. But because this VPN server will have a publicly resolvable host name of 'rrasserver.bronstutorials.com', then 'rrasserver.bronstutorials.com' is what we will use for the common name.</li>
+                  <li><span dir="LTR">The common name identifies the host name associated with the certificate</span>. So in this case, we would enter in the value of <strong>'rrasserver.bronstutorials.com'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="37.jpg" width="506" height="501"></td>
+                            <td align="center"><img src="24.jpg" width="506" height="501"></td>
                         </tr>
                   </table>
                 </td>
@@ -925,7 +474,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="38.jpg" width="506" height="501"></td>
+                            <td align="center"><img src="25.jpg" width="506" height="501"></td>
                         </tr>
                   </table>
                 </td>
@@ -945,7 +494,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="39.jpg" width="506" height="501"></td>
+                            <td align="center"><img src="26.jpg" width="506" height="501"></td>
                         </tr>
                   </table>
                 </td>
@@ -963,7 +512,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="40.jpg" width="640" height="448"></td>
+                            <td align="center"><img src="27.jpg" width="640" height="448"></td>
                         </tr>
                   </table>
                 </td>
@@ -981,7 +530,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="41.jpg" width="640" height="448"></td>
+                            <td align="center"><img src="28.jpg" width="640" height="448"></td>
                         </tr>
                   </table>
                 </td>
@@ -999,7 +548,7 @@
                 <td align="right">
               <table width="405" border="0">
                         <tr>
-                            <td align="center"><img src="42.jpg" width="640" height="448"></td>
+                            <td align="center"><img src="29.jpg" width="640" height="448"></td>
                         </tr>
                   </table>
                 </td>
