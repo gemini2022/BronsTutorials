@@ -531,7 +531,29 @@ function RRAS() {
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                             new Link(tutorialList.child[0].child[4].child[9].child[4].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Configuration (Certificates)", "RRAS/VPN/L2TP/ClientConfiguration (Certificates)");
 
+                    //IKEv2
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[9].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IKEv2", root, null); 
 
+                        //Server Certificate CA Setup
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[9].child[5].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Certificate CA Setup", "RRAS/VPN/IKEv2/ServerCertificateCaSetup");
+
+                        //Server Certificate Installation
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[9].child[5].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Server Certificate Installation", "RRAS/VPN/IKEv2/ServerCertificateInstallation");
+
+                        //Client Certificate CA Setup
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[9].child[5].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Certificate CA Setup", "RRAS/VPN/IKEv2/ClientCertificateCaSetup");
+
+                        //Client Certificate Installation
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[9].child[5].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Certificate Installation", "RRAS/VPN/IKEv2/ClientCertificateInstallation");
+
+                        //Client Configuration
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[9].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new Link(tutorialList.child[0].child[4].child[9].child[5].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Configuration", "RRAS/VPN/IKEv2/ClientConfiguration");
 
 
 
