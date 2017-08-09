@@ -1,6 +1,7 @@
 Link = function (parent, transform, lbl, url) {
     this.parent = parent;
     this.lbl = lbl;
+    this.url = url;
     this.transform = transform;
     this.clicked;
     var _this = this;
@@ -22,28 +23,33 @@ Link = function (parent, transform, lbl, url) {
 
 
     this.container.OnMouseUp = function () {
-        if (!_this.clicked) {
-            _this.clicked = true;
 
-            if (selectedLink != null) {
-                selectedLink.clicked = false;
-                selectedLink.container.child[0].height = 1;
-                selectedLink.container.child[0].y = 12;
-                selectedLink.container.child[0].child[0].color.rgb = "#3350fe";
-                selectedLink.container.child[1].color.rgb = "#3350fe";
-                selectedLink.container.child[1].transform = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-                selectedLink.container.container.style.cursor = "hand";
+        if (_this.url != null) {
+
+            if (!_this.clicked) {
+                _this.clicked = true;
+
+                if (selectedLink != null) {
+                    selectedLink.clicked = false;
+                    selectedLink.container.child[0].height = 1;
+                    selectedLink.container.child[0].y = 12;
+                    selectedLink.container.child[0].child[0].color.rgb = "#3350fe";
+                    selectedLink.container.child[1].color.rgb = "#3350fe";
+                    selectedLink.container.child[1].transform = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+                    selectedLink.container.container.style.cursor = "hand";
+                }
+
+                selectedLink = _this;
+                titleIFrame.iframe.src = url + "/Title.htm";
+                viewWindowIFrame.iframe.src = url + "/Content.htm";
+                this.child[0].height = 17;
+                this.child[0].y = 0;
+                this.child[0].child[0].color.rgb = "#6379ff";
+                this.child[1].color.rgb = "#ffffff";
+                this.child[1].transform = [0, 0, 0, 0, 0, 0, 0, 3, 0, 0];
+                this.container.style.cursor = "default";
             }
 
-            selectedLink = _this;
-            titleIFrame.iframe.src = url + "/Title.htm";
-            viewWindowIFrame.iframe.src = url + "/Content.htm";
-            this.child[0].height = 17;
-            this.child[0].y = 0;
-            this.child[0].child[0].color.rgb = "#6379ff";
-            this.child[1].color.rgb = "#ffffff";
-            this.child[1].transform = [0, 0, 0, 0, 0, 0, 0, 3, 0, 0];
-            this.container.style.cursor = "default";
         }
     }
 
@@ -75,12 +81,16 @@ Link.prototype = {
 Link.prototype.Build = function () {
     this.container = new Container(this.parent, this.transform, true, true, false, true, true);
     this.container.height = 20;
-    this.container.container.style.cursor = "hand";
+    
 
 
     new Container(this.container, [0, 1, 0, 0, 0, 0, 0, 12, 0, 1]);
-    new Shape(rectangle, this.container.child[0], [0, 1, 0, 0, 1, 0, 0, 0, 0, 0], new Rgba("#3350fe"));
 
+    if (this.url != null) {
+        new Shape(rectangle, this.container.child[0], [0, 1, 0, 0, 1, 0, 0, 0, 0, 0], new Rgba("#3350fe"));
+        this.container.container.style.cursor = "hand";
+
+    }
 
 
     new Label(this.container, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], new Rgba("#3350fe"), this.lbl, new Font(FontFamily.Arial, 12), Alignment.Left, LabelBaseline.Middle);

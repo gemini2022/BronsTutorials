@@ -93,3 +93,16 @@ https://technet.microsoft.com/en-us/library/cc731352(v=ws.10).aspx
 
 
 http://www.sysadminshowto.com/sstp-windows-vpn-client-error-the-revocation-function-was-unable-to-check-revocation/
+
+
+
+
+
+
+
+
+
+https://blogs.technet.microsoft.com/networking/2012/05/30/creating-a-secure-802-1x-wireless-infrastructure-using-microsoft-windows/
+
+
+https://documentation.meraki.com/MR/Encryption_and_Authentication/Enabling_WPA2-Enterprise_in_Windows_Vista_and_Windows_7
