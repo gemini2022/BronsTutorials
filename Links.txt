@@ -106,3 +106,22 @@ https://blogs.technet.microsoft.com/networking/2012/05/30/creating-a-secure-802-
 
 
 https://documentation.meraki.com/MR/Encryption_and_Authentication/Enabling_WPA2-Enterprise_in_Windows_Vista_and_Windows_7
+
+
+
+
+http://www.dlink.com/al/sq/products/dwa-556-xtreme-n-pci-express-desktop-adapter
+
+
+
+
+
+https://documentation.meraki.com/MR/Encryption_and_Authentication/Bypassing_Server_Certificate_Validation_for_Troubleshooting
+
+
+
+https://technet.microsoft.com/en-us/library/hh945104(v=ws.11).aspx
+
+
+
+http://wifiblog.com/eap-peap-certificate-requirements/
