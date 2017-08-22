@@ -573,39 +573,43 @@ function RRAS() {
 
                         //DHCP
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Dynamic Host Configuration Protocol", root, null);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DHCP", root, null);
 
                             //NAP Server Configuration
                             new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "NAP Server Configuration", "RRAS/NetworkPolicyServer/NAP/DHCP/NapServerConfiguration");
+                                new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "NAP Server Configuration", "RRAS/NetworkPolicyServer/NPS (Local)/NetworkAccessProtection/DHCP/NapServerConfiguration");
+
+                            //System Health Validator Settings
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "System Health Validator Settings", "RRAS/NetworkPolicyServer/NPS (Local)/NetworkAccessProtection/DHCP/SystemHealthValidatorSettings");
 
                             //DHCP Server Configuration
                             new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DHCP Server Configuration", "RRAS/NetworkPolicyServer/NAP/DHCP/DhcpServerConfiguration");
+                                new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DHCP Server Configuration", "RRAS/NetworkPolicyServer/NAP/DHCP/DhcpServerConfiguration");
 
                             //Client Configuration (Group Policy)
                             new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Configuration (Group Policy)", "RRAS/NetworkPolicyServer/NAP/DHCP/NAPClientConfiguration (Group Policy)");
+                                new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Configuration (Group Policy)", "RRAS/NetworkPolicyServer/NAP/DHCP/NAPClientConfiguration (Group Policy)");
 
                         //IPsec with Health Registration Authority (HRA)
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IPsec With Health Registration Authority", null);
+                            new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IPsec", null);
 
                         //IEEE 802.1X (Wired)
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IEEE 802.1X (Wired)", null);
+                            new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "802.1X (Wired)", null);
 
                         //IEEE 802.1X (Wireless)
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IEEE 802.1X (Wireless)", null);
+                            new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "802.1X (Wireless)", null);
 
                         //Virtual Private Network (VPN)
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Virtual Private Network", null);
+                            new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "VPN", null);
 
                         //Remote Desktop Gateway (RD Gateway)
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remote Desktop Gateway", null);
+                            new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remote Desktop", null);
 
                     //RADIUS server (VPN)
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
