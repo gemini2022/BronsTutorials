@@ -583,13 +583,17 @@ function RRAS() {
                             new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                 new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "System Health Validator Settings", "RRAS/NetworkPolicyServer/NPS (Local)/NetworkAccessProtection/DHCP/SystemHealthValidatorSettings");
 
+                            //DHCP NAP Configuration
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DHCP NAP Configuration", "RRAS/NetworkPolicyServer/NPS (Local)/NetworkAccessProtection/DHCP/DhcpNapConfiguration");
+
                             //DHCP Server Configuration
                             new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DHCP Server Configuration", "RRAS/NetworkPolicyServer/NAP/DHCP/DhcpServerConfiguration");
+                                new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "DHCP Server Configuration", "RRAS/NetworkPolicyServer/NPS (Local)/NetworkAccessProtection/DHCP/DhcpServerConfiguration");
 
                             //Client Configuration (Group Policy)
                             new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Configuration (Group Policy)", "RRAS/NetworkPolicyServer/NAP/DHCP/NAPClientConfiguration (Group Policy)");
+                                new Link(tutorialList.child[0].child[4].child[10].child[2].child[1].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Client Configuration (Group Policy)", "RRAS/NetworkPolicyServer/NPS (Local)/NetworkAccessProtection/DHCP/ClientConfiguration (GroupPolicy)");
 
                         //IPsec with Health Registration Authority (HRA)
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
