@@ -563,21 +563,6 @@ function RRAS() {
                 new HierarchicalUnit(tutorialList.child[0].child[4].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                     new Link(tutorialList.child[0].child[4].child[10].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Installing NPS", "RRAS/NetworkPolicyServer/InstallingNPS");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 //Network Access Protection
                 new HierarchicalUnit(tutorialList.child[0].child[4].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                     new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Network Access Protection", root, null);
@@ -674,67 +659,41 @@ function RRAS() {
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                         new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[4].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "RADIUS (Wired)", root, null);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 //NPS (Local)
                 new HierarchicalUnit(tutorialList.child[0].child[4].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                    new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "NPS (Local)", root, "RRAS/NetworkPolicyServer/NPS/ImportConfiguration");
+                    new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "NPS (Local)", root, null);
 
                     //Import Configuration
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[4].child[10].child[5].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Import Configuration", "RRAS/NetworkPolicyServer/NPS/ImportConfiguration");
+                        new Link(tutorialList.child[0].child[4].child[10].child[5].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Import Configuration", "RRAS/NetworkPolicyServer/NPS (Local)/ImportConfiguration");
 
                     //Export Configuration
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[4].child[10].child[5].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Export Configuration", "RRAS/NetworkPolicyServer/NPS/ExportConfiguration");
+                        new Link(tutorialList.child[0].child[4].child[10].child[5].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Export Configuration", "RRAS/NetworkPolicyServer/NPS (Local)/ExportConfiguration");
 
                     //Start NPS Service
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[4].child[10].child[5].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Start NPS Service", "RRAS/NetworkPolicyServer/NPS/StartNpsService");
+                        new Link(tutorialList.child[0].child[4].child[10].child[5].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Start NPS Service", "RRAS/NetworkPolicyServer/NPS (Local)/StartNpsService");
 
                     //Stop NPS Service
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[4].child[10].child[5].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Stop NPS Service", "RRAS/NetworkPolicyServer/NPS/StopNpsService");
+                        new Link(tutorialList.child[0].child[4].child[10].child[5].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Stop NPS Service", "RRAS/NetworkPolicyServer/NPS (Local)/StopNpsService");
 
                     //Register Server In Active Directory
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new Link(tutorialList.child[0].child[4].child[10].child[5].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Register Server In Active Directory", "RRAS/NetworkPolicyServer/NPS/RegisterServerInActiveDirectory");
+                        new Link(tutorialList.child[0].child[4].child[10].child[5].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Register Server In Active Directory", "RRAS/NetworkPolicyServer/NPS (Local)/RegisterServerInActiveDirectory");
 
                     //NPS Properties
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[5].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "NPS Properties", root, "RRAS/NetworkPolicyServer/NPS/NpsProperties");
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[5].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "NPS Properties", root, "RRAS/NetworkPolicyServer/NPS (Local)/NpsProperties");
 
                         //General Tab
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[5].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[10].child[5].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "RRAS/NetworkPolicyServer/NPS/NpsProperties/GeneralTab");
+                            new Link(tutorialList.child[0].child[4].child[10].child[5].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "RRAS/NetworkPolicyServer/NPS (Local)/NpsProperties/GeneralTab");
 
                         //Ports Tab
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[5].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[10].child[5].child[6].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Ports Tab", "RRAS/NetworkPolicyServer/NPS/NpsProperties/PortsTab");
+                            new Link(tutorialList.child[0].child[4].child[10].child[5].child[6].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Ports Tab", "RRAS/NetworkPolicyServer/NPS (Local)/NpsProperties/PortsTab");
 
                 //RADIUS Clients and Servers
                 new HierarchicalUnit(tutorialList.child[0].child[4].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
@@ -939,12 +898,4 @@ function RRAS() {
                         //New
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                             new Link(tutorialList.child[0].child[4].child[10].child[10].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New", "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
-
-
-
-
-
-
-
-
 }
