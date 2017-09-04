@@ -561,7 +561,11 @@ function RRAS() {
 
                 //Installing NPS
                 new HierarchicalUnit(tutorialList.child[0].child[4].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                    new Link(tutorialList.child[0].child[4].child[10].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Installing NPS", "RRAS/NetworkPolicyServer/InstallingNPS");
+                    new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Installing NPS", root, null);
+
+                    //Adding Network Policy Server Role
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[4].child[10].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Adding Network Policy Server Role", "RRAS/NetworkPolicyServer/InstallingNPS/AddingNetworkPolicyServerRole");
 
                 //Network Access Protection
                 new HierarchicalUnit(tutorialList.child[0].child[4].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
@@ -697,27 +701,27 @@ function RRAS() {
 
                 //RADIUS Clients and Servers
                 new HierarchicalUnit(tutorialList.child[0].child[4].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                    new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "RADIUS Clients and Servers", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                    new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "RADIUS Clients and Servers", root, null);
 
                     //RADIUS Clients
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "RADIUS Clients", root, "RRAS/NetworkPolicyServer/NAP");
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "RADIUS Clients", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers/RadiusClients");
 
-                        //New
+                        //New RADIUS Client
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[10].child[6].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New", "RRAS/NetworkPolicyServer/NAP/DHCP/NapServerConfiguration");
+                            new Link(tutorialList.child[0].child[4].child[10].child[6].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New RADIUS Client", "RRAS/NetworkPolicyServer/RadiusClientsAndServers/RadiusClients/NewRadiusClient");
 
                     //Remote RADIUS Server Groups
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[6].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remote RADIUS Server Groups", root, "RRAS/NetworkPolicyServer/NAP");
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[6].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remote RADIUS Server Groups", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers/RemoteRadiusServerGroups");
 
-                        //New
+                        //New Remote RADIUS Server Group
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[6].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[10].child[6].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New", "RRAS/NetworkPolicyServer/NAP/DHCP/NapServerConfiguration");
+                            new Link(tutorialList.child[0].child[4].child[10].child[6].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Remote RADIUS Server Group", "RRAS/NetworkPolicyServer/RadiusClientsAndServers/RemoteRadiusServerGroups/NewRemoteRadiusServerGroup");
 
                 //Policies
                 new HierarchicalUnit(tutorialList.child[0].child[4].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                    new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Policies", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                    new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Policies", root, null);
 
                     //Connection Request Policies
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
@@ -781,7 +785,7 @@ function RRAS() {
 
                 //Network Access Protection
                 new HierarchicalUnit(tutorialList.child[0].child[4].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                    new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Network Access Protection", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                    new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Network Access Protection", root, null);
 
                     //System Health Validators
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
@@ -829,11 +833,11 @@ function RRAS() {
 
                 //Accounting
                 new HierarchicalUnit(tutorialList.child[0].child[4].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                    new Link(tutorialList.child[0].child[4].child[10].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Accounting", "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                    new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Accounting", root, null);
 
                 //Templates Management
                 new HierarchicalUnit(tutorialList.child[0].child[4].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                    new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Templates Management", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                    new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Templates Management", root, null);
 
                     //Shared Secrets
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
