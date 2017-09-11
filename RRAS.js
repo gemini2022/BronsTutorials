@@ -725,63 +725,71 @@ function RRAS() {
 
                     //Connection Request Policies
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Connection Request Policies", root, "RRAS/NetworkPolicyServer/NAP");
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Connection Request Policies", root, "RRAS/NetworkPolicyServer/Policies/ConnectionRequestPolicies");
 
-                        //New
+                        //New Connection Request Policy
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[7].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New", root, "RRAS/NetworkPolicyServer/NAP/DHCP/NapServerConfiguration");
+                            new Link(tutorialList.child[0].child[4].child[10].child[7].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Connection Request Policy", "RRAS/NetworkPolicyServer/Policies/ConnectionRequestPolicies/NewConnectionRequestPolicy");
 
-                            //Properties
-                            new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[7].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Properties", root, "RRAS/NetworkPolicyServer/NAP/DHCP/NapServerConfiguration");
+                        //Connection Request Policy Properties
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[7].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Connection Request Policy Properties", root, "RRAS/NetworkPolicyServer/Policies/ConnectionRequestPolicies/ConnectionRequestPolicyProperties");
 
-                                //Overview Tab
-                                new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                    new Link(tutorialList.child[0].child[4].child[10].child[7].child[1].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Overview Tab", "RRAS/NetworkPolicyServer/NAP/DHCP/NapServerConfiguration");
+                            //Overview Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[10].child[7].child[1].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Overview Tab", "RRAS/NetworkPolicyServer/Policies/ConnectionRequestPolicies/ConnectionRequestPolicyProperties/OverviewTab");
 
-                                //Conditions Tab
-                                new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                    new Link(tutorialList.child[0].child[4].child[10].child[7].child[1].child[1].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Conditions Tab", "RRAS/NetworkPolicyServer/NAP/DHCP/NapServerConfiguration");
+                            //Conditions Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[10].child[7].child[1].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Conditions Tab", "RRAS/NetworkPolicyServer/Policies/ConnectionRequestPolicies/ConnectionRequestPolicyProperties/ConditionsTab");
 
-                                //Settings Tab
-                                new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                    new Link(tutorialList.child[0].child[4].child[10].child[7].child[1].child[1].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Settings Tab", "RRAS/NetworkPolicyServer/NAP/DHCP/NapServerConfiguration");
+                            //Settings Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[10].child[7].child[1].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Settings Tab", "RRAS/NetworkPolicyServer/Policies/ConnectionRequestPolicies/ConnectionRequestPolicyProperties/SettingsTab");
 
                     //Network Policies
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[7].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Network Policies", root, "RRAS/NetworkPolicyServer/NAP");
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[7].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Network Policies", root, "RRAS/NetworkPolicyServer/Policies/NetworkPolicies");
 
-                        //New
+                        //New Network Policy
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[7].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New", root, "RRAS/NetworkPolicyServer/NAP/DHCP/NapServerConfiguration");
+                            new Link(tutorialList.child[0].child[4].child[10].child[7].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Network Policy", "RRAS/NetworkPolicyServer/Policies/NetworkPolicies/NewNetworkPolicy");
 
-                            //Properties
-                            new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[7].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Properties", root, "RRAS/NetworkPolicyServer/NAP/DHCP/NapServerConfiguration");
+                        //Network Policy Properties
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[7].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Network Policy Properties", root, "RRAS/NetworkPolicyServer/Policies/NetworkPolicies/NetworkPolicyProperties");
 
-                                //Overview Tab
-                                new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                    new Link(tutorialList.child[0].child[4].child[10].child[7].child[2].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Overview Tab", "RRAS/NetworkPolicyServer/NAP/DHCP/NapServerConfiguration");
+                            //Overview Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[10].child[7].child[2].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Overview Tab", "RRAS/NetworkPolicyServer/Policies/NetworkPolicies/NetworkPolicyProperties/OverviewTab");
 
-                                //Conditions Tab
-                                new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                    new Link(tutorialList.child[0].child[4].child[10].child[7].child[2].child[1].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Conditions Tab", "RRAS/NetworkPolicyServer/NAP/DHCP/NapServerConfiguration");
+                            //Conditions Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[10].child[7].child[2].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Conditions Tab", "RRAS/NetworkPolicyServer/Policies/NetworkPolicies/NetworkPolicyProperties/ConditionsTab");
 
-                                //Constraints Tab
-                                new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                    new Link(tutorialList.child[0].child[4].child[10].child[7].child[2].child[1].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Constraints Tab", "RRAS/NetworkPolicyServer/NAP/DHCP/NapServerConfiguration");
+                            //Constraints Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[10].child[7].child[2].child[2].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Constraints Tab", "RRAS/NetworkPolicyServer/Policies/NetworkPolicies/NetworkPolicyProperties/ConstraintsTab");
 
-                                //Settings Tab
-                                new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                    new Link(tutorialList.child[0].child[4].child[10].child[7].child[2].child[1].child[1].child[4   ], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Settings Tab", "RRAS/NetworkPolicyServer/NAP/DHCP/NapServerConfiguration");
+                            //Settings Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[10].child[7].child[2].child[2].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Settings Tab", "RRAS/NetworkPolicyServer/Policies/NetworkPolicies/NetworkPolicyProperties/SettingsTab");
 
                     //Health Policies
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Health Policies", root, "RRAS/NetworkPolicyServer/NAP");
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Health Policies", root, "RRAS/NetworkPolicyServer/Policies/HealthPolicies");
 
-                        //New
+                        //New Health Policy
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[10].child[7].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New", "RRAS/NetworkPolicyServer/NAP/DHCP/NapServerConfiguration");
+                            new Link(tutorialList.child[0].child[4].child[10].child[7].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Health Policy", "RRAS/NetworkPolicyServer/Policies/HealthPolicies/NewHealthPolicy");
+
+                        //Health Policy Properties
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[7].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Health Policy Properties", root, "RRAS/NetworkPolicyServer/Policies/HealthPolicies/HealthPolicyProperties");
+
+                            //Settings Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[7].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[10].child[7].child[3].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Settings Tab", "RRAS/NetworkPolicyServer/Policies/HealthPolicies/HealthPolicyProperties/SettingsTab");
 
                 //Network Access Protection
                 new HierarchicalUnit(tutorialList.child[0].child[4].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
