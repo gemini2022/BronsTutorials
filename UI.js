@@ -40,7 +40,7 @@ new Fieldset(container, [0, 0, 0, 0, 1, 0, 11, 11, 380, 11], "");
 
 
 //Title IFrame
-titleIFrame = new IFrame(container, [0, 1, 0, 0, 0, 0, 398, -5, 18, 100], "");titleIFrame.iframe.scrolling = "no";
+titleIFrame = new IFrame(container, [0, 1, 0, 0, 0, 0, 398, -5, 18, 105], "");titleIFrame.iframe.scrolling = "no";
 
 //Bron's Tutorials.com Label
 new Label(container, [0, 0, 0, 0, 0, 0, 400, 18, 0, 0], new Gradient(GradientStyle.Linear, [new GradientColor(new Rgba("#ffffff"), 0.3), new GradientColor(new Rgba("#a2a2a2"), 1)], -90, 0.5, 0.5, 0.5), "Bron'sTutorials.com", new Font(FontFamily.Impact, 27), Alignment.Left, LabelBaseline.Middle, new Stroke(4, null, new Gradient(GradientStyle.Linear, [new GradientColor(new Rgba("#2960fe"), 0.5), new GradientColor(new Rgba("#4b4b4b"), 1)], -90, 0.5, 0.5, 0.5)));

@@ -797,51 +797,63 @@ function RRAS() {
 
                     //System Health Validators
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "System Health Validators", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "System Health Validators", root, null);
 
                         //Windows Security Health Validator
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[8].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Windows Security Health Validator", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[8].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Windows Security Health Validator", root, null);
 
                             //Settings
                             new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[8].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[8].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Settings", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                                new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[8].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Settings", root, "RRAS/NetworkPolicyServer/NetworkAccessProtection2/SystemHealthValidators/WindowsSecurityHealthValidator/Settings");
 
                                 //New
                                 new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[8].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                    new Link(tutorialList.child[0].child[4].child[10].child[8].child[1].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New", "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                                new Link(tutorialList.child[0].child[4].child[10].child[8].child[1].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Configuration", "RRAS/NetworkPolicyServer/NetworkAccessProtection2/SystemHealthValidators/WindowsSecurityHealthValidator/Settings/NewConfiguration");
 
                             //Error Codes
                             new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[8].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[8].child[1].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Error Codes", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                                new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[8].child[1].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Error Codes", root, "RRAS/NetworkPolicyServer/NetworkAccessProtection2/SystemHealthValidators/WindowsSecurityHealthValidator/ErrorCodes");
 
                                 //Error Codes Properties
                                 new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[8].child[1].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                    new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[8].child[1].child[1].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Error Codes Properties", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                                    new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[8].child[1].child[1].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Error Codes Properties", root, "RRAS/NetworkPolicyServer/NetworkAccessProtection2/SystemHealthValidators/WindowsSecurityHealthValidator/ErrorCodes/ErrorCodesProperties");
 
                                     //Settings Tab
                                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[8].child[1].child[1].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                        new Link(tutorialList.child[0].child[4].child[10].child[8].child[1].child[1].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Settings Tab", "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                                        new Link(tutorialList.child[0].child[4].child[10].child[8].child[1].child[1].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Settings Tab", "RRAS/NetworkPolicyServer/NetworkAccessProtection2/SystemHealthValidators/WindowsSecurityHealthValidator/ErrorCodes/ErrorCodesProperties/SettingsTab");
 
                     //Remediation Server Groups
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[8].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remediation Server Groups", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[8].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remediation Server Groups", root, "RRAS/NetworkPolicyServer/NetworkAccessProtection2/RemediationServerGroups");
 
-                        //New
+                        //New Remediation Server Group
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[8].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[8].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                            new Link(tutorialList.child[0].child[4].child[10].child[8].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Remediation Server Group", "RRAS/NetworkPolicyServer/NetworkAccessProtection2/RemediationServerGroups/NewRemediationServerGroup");
 
-                            //Properties
-                            new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[8].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[8].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Properties", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                        //Remediation Server Group Properties
+                        new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[8].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[8].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remediation Server Group Properties", root, "RRAS/NetworkPolicyServer/NetworkAccessProtection2/RemediationServerGroups/RemediationServerGroupProperties");
 
-                                //General Tab
-                                new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[8].child[2].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                    new Link(tutorialList.child[0].child[4].child[10].child[8].child[2].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                            //General Tab
+                            new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[8].child[2].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new Link(tutorialList.child[0].child[4].child[10].child[8].child[2].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "RRAS/NetworkPolicyServer/NetworkAccessProtection2/RemediationServerGroups/RemediationServerGroupProperties/GeneralTab");
 
                 //Accounting
                 new HierarchicalUnit(tutorialList.child[0].child[4].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                     new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Accounting", root, null);
+
+                    //Configure Accounting
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[4].child[10].child[9].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Configure Accounting", "RRAS/NetworkPolicyServer/Accounting/ConfigureAccounting");
+
+                    //Change Log File Properties
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[4].child[10].child[9].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Change Log File Properties", "RRAS/NetworkPolicyServer/Accounting/ChangeLogFileProperties");
+
+                    //Change SQL Server Logging Properties
+                    new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[9], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                        new Link(tutorialList.child[0].child[4].child[10].child[9].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Change SQL Server Logging Properties", "RRAS/NetworkPolicyServer/Accounting/ChangeSqlServerLoggingProperties");
 
                 //Templates Management
                 new HierarchicalUnit(tutorialList.child[0].child[4].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
