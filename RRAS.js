@@ -861,65 +861,49 @@ function RRAS() {
 
                     //Shared Secrets
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[10].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Shared Secrets", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[10].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Shared Secrets", root, "RRAS/NetworkPolicyServer/TemplatesManagement/SharedSecrets");
 
                         //New
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[10].child[10].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New", "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                            new Link(tutorialList.child[0].child[4].child[10].child[10].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Shared Secret", "RRAS/NetworkPolicyServer/TemplatesManagement/SharedSecrets/NewSharedSecret");
 
                     //RADIUS Clients
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[10].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "RADIUS Clients", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[10].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "RADIUS Clients", root, "RRAS/NetworkPolicyServer/TemplatesManagement/RadiusClients");
 
                         //New
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[10].child[10].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New", "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                            new Link(tutorialList.child[0].child[4].child[10].child[10].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New RADIUS Client", "RRAS/NetworkPolicyServer/TemplatesManagement/RadiusClients/NewRadiusClient");
 
                     //Remote RADIUS servers
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[10].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remote RADIUS servers", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[10].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remote RADIUS servers", root, "RRAS/NetworkPolicyServer/TemplatesManagement/RemoteRadiusServers");
 
                         //New
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[10].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
-
-                            //Properties
-                            new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[10].child[3].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Properties", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
-
-                                //Address Tab
-                                new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10].child[3].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                    new Link(tutorialList.child[0].child[4].child[10].child[10].child[3].child[1].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Address Tab", "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
-
-                                //Authentication/Accounting Tab
-                                new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10].child[3].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                    new Link(tutorialList.child[0].child[4].child[10].child[10].child[3].child[1].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Authentication/Accounting Tab", "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
-
-                                //Load Balancing Tab
-                                new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10].child[3].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                    new Link(tutorialList.child[0].child[4].child[10].child[10].child[3].child[1].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Load Balancing Tab", "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                            new Link(tutorialList.child[0].child[4].child[10].child[10].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Remote RADIUS server", "RRAS/NetworkPolicyServer/TemplatesManagement/RemoteRadiusServers/NewRemoteRadiusServer");
 
                     //IP Filters
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[10].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IP Filters", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[10].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "IP Filters", root, "RRAS/NetworkPolicyServer/TemplatesManagement/IpFilters");
 
                         //New
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[10].child[10].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New", "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                            new Link(tutorialList.child[0].child[4].child[10].child[10].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New IP Filter", "RRAS/NetworkPolicyServer/TemplatesManagement/IpFilters/NewIpFilter");
 
                     //Health Policies
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[10].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Health Policies", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[10].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Health Policies", root, "RRAS/NetworkPolicyServer/TemplatesManagement/HealthPolicies");
 
                         //New
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[10].child[10].child[5].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New", "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                            new Link(tutorialList.child[0].child[4].child[10].child[10].child[5].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Health Policy", "RRAS/NetworkPolicyServer/TemplatesManagement/HealthPolicies/NewHealthPolicy");
 
                     //Remediation Server Groups
                     new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[10].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remediation Server Groups", root, "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                        new ExpandCollapseLink(tutorialList.child[0].child[4].child[10].child[10].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remediation Server Groups", root, "RRAS/NetworkPolicyServer/TemplatesManagement/RemediationServerGroups");
 
                         //New
                         new HierarchicalUnit(tutorialList.child[0].child[4].child[10].child[10].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                            new Link(tutorialList.child[0].child[4].child[10].child[10].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New", "RRAS/NetworkPolicyServer/RadiusClientsAndServers");
+                            new Link(tutorialList.child[0].child[4].child[10].child[10].child[6].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Remediation Server Group", "RRAS/NetworkPolicyServer/TemplatesManagement/RemediationServerGroups/NewRemediationServerGroup");
 }
