@@ -186,53 +186,65 @@ function Exchange() {
                                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                                 new Link(tutorialList.child[0].child[5].child[2].child[4].child[2].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Network", "Exchange/OrganizationConfiguration/Mailbox/DatabaseAvailabilityGroups/NewDatabaseAvailabilityGroup/Network");
 
-                            //Sharing Policies
+                            //Managed Folder Mailbox Policies
                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Sharing Policies", root, "Exchange/OrganizationConfiguration/Mailbox/SharingPolicies");
+                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Managed Folder Mailbox Policies", root, "Exchange/OrganizationConfiguration/Mailbox/ManagedFolderMailboxPolicies");
 
-                                    //New Sharing Policy
+                                    //New Managed Folder Mailbox Policy
                                     new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Sharing Policy", root, "Exchange/OrganizationConfiguration/Mailbox/SharingPolicies/NewSharingPolicy");
+                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Managed Folder Mailbox Policy", root, "Exchange/OrganizationConfiguration/Mailbox/ManagedFolderMailboxPolicies/NewManagedFolderMailboxPolicy");
+
+                                            //Remove Managed Folder Mailbox Policy
+                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remove", "Exchange/OrganizationConfiguration/Mailbox/ManagedFolderMailboxPolicies/NewManagedFolderMailboxPolicy/RemoveManagedFolderMailboxPolicy");
+
+                                            //Managed Folder Mailbox Policy Properties
+                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Properties", root, "Exchange/OrganizationConfiguration/Mailbox/ManagedFolderMailboxPolicies/NewManagedFolderMailboxPolicy/ManagedFolderMailboxPolicyProperties");
+
+                                                    //General Tab
+                                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                        new Link(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "Exchange/OrganizationConfiguration/Mailbox/ManagedFolderMailboxPolicies/NewManagedFolderMailboxPolicy/ManagedFolderMailboxPolicyProperties/GeneralTab");
+
+                            //Offline Address Book
+                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Offline Address Book", root, "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook");
+
+                                    //New Offline Address Book
+                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Offline Address Book", root, "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook");
+
+                                            //Update
+                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Update", "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook/Update");
 
                                             //Set as Default
-                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Set as Default", "Exchange/OrganizationConfiguration/Mailbox/SharingPolicies/NewSharingPolicy/SetAsDefault");
-
-                                            //Remove Sharing Policy
-                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remove", "Exchange/OrganizationConfiguration/Mailbox/SharingPolicies/NewSharingPolicy/RemoveSharingPolicy");
-
-                                            //Sharing Policy Properties
-                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Properties", root, "Exchange/OrganizationConfiguration/Mailbox/SharingPolicies/NewSharingPolicy/SharingPolicyProperties");
-
-                                                //General Tab
-                                                new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                    new Link(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "Exchange/OrganizationConfiguration/Mailbox/SharingPolicies/NewSharingPolicy/SharingPolicyProperties/GeneralTab");
-
-                                                //Mailboxes Tab
-                                                new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                    new Link(tutorialList.child[0].child[5].child[2].child[4].child[3].child[1].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Mailboxes Tab", "Exchange/OrganizationConfiguration/Mailbox/SharingPolicies/NewSharingPolicy/SharingPolicyProperties/MailboxesTab");
-
-                            //Address Lists
-                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Address Lists", root, "Exchange/OrganizationConfiguration/Mailbox/AddressLists");
-
-                                    //New Address List
-                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Address List", root, "Exchange/OrganizationConfiguration/Mailbox/AddressLists/NewAddressList");
-
-                                            //Apply
                                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Apply", "Exchange/OrganizationConfiguration/Mailbox/AddressLists/NewAddressList/Apply");
+                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Set as Default", "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook/SetAsDefault");
 
-                                            //Remove Address List
+                                            //Move
                                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remove", "Exchange/OrganizationConfiguration/Mailbox/AddressLists/NewAddressList/RemoveAddressList");
+                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Move", "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook/Move");
 
-                                            //Edit
+                                            //Remove Offline Address Book
                                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Edit", "Exchange/OrganizationConfiguration/Mailbox/AddressLists/NewAddressList/Edit");
+                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remove", "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook/RemoveOfflineAddressBook");
+
+                                            //Offline Address Book Properties
+                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Properties", root, "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook/OfflineAddressBookProperties");
+
+                                                    //General Tab
+                                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                        new Link(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1].child[5].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook/OfflineAddressBookProperties/GeneralTab");
+
+                                                    //Address Lists Tab
+                                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                        new Link(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1].child[5].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Address Lists Tab", "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook/OfflineAddressBookProperties/AddressListsTab");
+
+                                                    //Distribution Tab
+                                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                        new Link(tutorialList.child[0].child[5].child[2].child[4].child[4].child[1].child[5].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Distribution Tab", "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook/OfflineAddressBookProperties/DistributionTab");
 
                             //Managed Default Folders
                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
@@ -314,65 +326,53 @@ function Exchange() {
                                                 new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[6].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                                     new Link(tutorialList.child[0].child[5].child[2].child[4].child[6].child[1].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "Exchange/OrganizationConfiguration/Mailbox/ManagedCustomFolders/NewManagedCustomFolder/ManagedCustomFolderProperties/GeneralTab");
 
-                            //Managed Folder Mailbox Policies
+                            //Sharing Policies
                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Managed Folder Mailbox Policies", root, "Exchange/OrganizationConfiguration/Mailbox/ManagedFolderMailboxPolicies");
+                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Sharing Policies", root, "Exchange/OrganizationConfiguration/Mailbox/SharingPolicies");
 
-                                    //New Managed Folder Mailbox Policy
+                                    //New Sharing Policy
                                     new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Managed Folder Mailbox Policy", root, "Exchange/OrganizationConfiguration/Mailbox/ManagedFolderMailboxPolicies/NewManagedFolderMailboxPolicy");
-
-                                            //Remove Managed Folder Mailbox Policy
-                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remove", "Exchange/OrganizationConfiguration/Mailbox/ManagedFolderMailboxPolicies/NewManagedFolderMailboxPolicy/RemoveManagedFolderMailboxPolicy");
-
-                                            //Managed Folder Mailbox Policy Properties
-                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Properties", root, "Exchange/OrganizationConfiguration/Mailbox/ManagedFolderMailboxPolicies/NewManagedFolderMailboxPolicy/ManagedFolderMailboxPolicyProperties");
-
-                                                    //General Tab
-                                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                        new Link(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "Exchange/OrganizationConfiguration/Mailbox/ManagedFolderMailboxPolicies/NewManagedFolderMailboxPolicy/ManagedFolderMailboxPolicyProperties/GeneralTab");
-
-                            //Offline Address Book
-                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Offline Address Book", root, "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook");
-
-                                    //New Offline Address Book
-                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Offline Address Book", root, "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook");
-
-                                            //Update
-                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Update", "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook/Update");
+                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Sharing Policy", root, "Exchange/OrganizationConfiguration/Mailbox/SharingPolicies/NewSharingPolicy");
 
                                             //Set as Default
+                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Set as Default", "Exchange/OrganizationConfiguration/Mailbox/SharingPolicies/NewSharingPolicy/SetAsDefault");
+
+                                            //Remove Sharing Policy
+                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remove", "Exchange/OrganizationConfiguration/Mailbox/SharingPolicies/NewSharingPolicy/RemoveSharingPolicy");
+
+                                            //Sharing Policy Properties
+                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Properties", root, "Exchange/OrganizationConfiguration/Mailbox/SharingPolicies/NewSharingPolicy/SharingPolicyProperties");
+
+                                                //General Tab
+                                                new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                    new Link(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "Exchange/OrganizationConfiguration/Mailbox/SharingPolicies/NewSharingPolicy/SharingPolicyProperties/GeneralTab");
+
+                                                //Mailboxes Tab
+                                                new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                    new Link(tutorialList.child[0].child[5].child[2].child[4].child[7].child[1].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Mailboxes Tab", "Exchange/OrganizationConfiguration/Mailbox/SharingPolicies/NewSharingPolicy/SharingPolicyProperties/MailboxesTab");
+
+                            //Address Lists
+                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Address Lists", root, "Exchange/OrganizationConfiguration/Mailbox/AddressLists");
+
+                                    //New Address List
+                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Address List", root, "Exchange/OrganizationConfiguration/Mailbox/AddressLists/NewAddressList");
+
+                                            //Apply
                                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Set as Default", "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook/SetAsDefault");
+                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Apply", "Exchange/OrganizationConfiguration/Mailbox/AddressLists/NewAddressList/Apply");
 
-                                            //Move
+                                            //Remove Address List
                                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Move", "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook/Move");
+                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remove", "Exchange/OrganizationConfiguration/Mailbox/AddressLists/NewAddressList/RemoveAddressList");
 
-                                            //Remove Offline Address Book
+                                            //Edit
                                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remove", "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook/RemoveOfflineAddressBook");
-
-                                            //Offline Address Book Properties
-                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Properties", root, "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook/OfflineAddressBookProperties");
-
-                                                    //General Tab
-                                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                        new Link(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1].child[5].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook/OfflineAddressBookProperties/GeneralTab");
-
-                                                    //Address Lists Tab
-                                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                        new Link(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1].child[5].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Address Lists Tab", "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook/OfflineAddressBookProperties/AddressListsTab");
-
-                                                    //Distribution Tab
-                                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1].child[5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                        new Link(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1].child[5].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Distribution Tab", "Exchange/OrganizationConfiguration/Mailbox/OfflineAddressBook/NewOfflineAddressBook/OfflineAddressBookProperties/DistributionTab");
+                                                new Link(tutorialList.child[0].child[5].child[2].child[4].child[8].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Edit", "Exchange/OrganizationConfiguration/Mailbox/AddressLists/NewAddressList/Edit");
 
                     //Client Access
                     new HierarchicalUnit(tutorialList.child[0].child[5].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
