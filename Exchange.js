@@ -506,41 +506,29 @@ function Exchange() {
                                                     new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6].child[2].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                                         new Link(tutorialList.child[0].child[5].child[2].child[6].child[2].child[1].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "Exchange/OrganizationConfiguration/HubTransport/AcceptedDomains/NewAcceptedDomain/NewAcceptedDomainProperties/GeneralTab");
 
-                            //E-mail Address Policies
+                            //Edge Subscriptions
                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[6].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "E-mail Address Policies", root, "Exchange/OrganizationConfiguration/HubTransport/EmailAddressPolicies");
+                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[6].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Edge Subscriptions", root, "Exchange/OrganizationConfiguration/HubTransport/EdgeSubscriptions");
 
-                                    //New E-mail Address Policy
+                                    //New Edge Subscription
                                     new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[6].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New E-mail Address Policy", root, "Exchange/OrganizationConfiguration/HubTransport/EmailAddressPolicies/NewEmailAddressPolicy");
+                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[6].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Edge Subscription", root, "Exchange/OrganizationConfiguration/HubTransport/EdgeSubscriptions/NewEdgeSubscription");
 
-                                            //Apply
-                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[2].child[6].child[3].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Apply", "Exchange/OrganizationConfiguration/HubTransport/EmailAddressPolicies/NewEmailAddressPolicy/Apply");
-
-                                            //Edit
-                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[2].child[6].child[3].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Edit", "Exchange/OrganizationConfiguration/HubTransport/EmailAddressPolicies/NewEmailAddressPolicy/Edit");
-
-                            //Transport Rules
+                            //Global Settings
                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[6].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Transport Rules", root, "Exchange/OrganizationConfiguration/HubTransport/TransportRules");
+                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[6].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Global Settings", root, "Exchange/OrganizationConfiguration/HubTransport/GlobalSettings");
 
-                                    //New Transport Rule
+                                    //Transport Settings Properties
                                     new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[6].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Transport Rule", root, "Exchange/OrganizationConfiguration/HubTransport/TransportRules/NewTransportRule");
+                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[6].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Transport Settings Properties", root, "Exchange/OrganizationConfiguration/HubTransport/GlobalSettings/TransportSettingsProperties");
 
-                                            //Disable
+                                            //General Tab
                                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[2].child[6].child[4].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Disable", "Exchange/OrganizationConfiguration/HubTransport/TransportRules/NewTransportRule/DisableRule");
+                                                new Link(tutorialList.child[0].child[5].child[2].child[6].child[4].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "Exchange/OrganizationConfiguration/HubTransport/GlobalSettings/TransportSettingsProperties/GeneralTab");
 
-                                            //Remove
+                                            //Message Delivery Tab
                                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[2].child[6].child[4].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remove", "Exchange/OrganizationConfiguration/HubTransport/TransportRules/NewTransportRule/RemoveRule");
-
-                                            //Edit
-                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6].child[4].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[2].child[6].child[4].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Edit", "Exchange/OrganizationConfiguration/HubTransport/TransportRules/NewTransportRule/EditRule");
+                                                new Link(tutorialList.child[0].child[5].child[2].child[6].child[4].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Message Delivery Tab", "Exchange/OrganizationConfiguration/HubTransport/GlobalSettings/TransportSettingsProperties/MessageDeliveryTab");
 
                             //Journal Rules
                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
@@ -602,29 +590,47 @@ function Exchange() {
                                                     new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6].child[6].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                                         new Link(tutorialList.child[0].child[5].child[2].child[6].child[6].child[1].child[3].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Source Server Tab", "Exchange/OrganizationConfiguration/HubTransport/SendConnectors/NewSendConnector/SendConnectorProperties/SourceServerTab");
 
-                            //Edge Subscriptions
-                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[6].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Edge Subscriptions", root, "Exchange/OrganizationConfiguration/HubTransport/EdgeSubscriptions");
+                            
 
-                                    //New Edge Subscription
+                            //E-mail Address Policies
+                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[6].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "E-mail Address Policies", root, "Exchange/OrganizationConfiguration/HubTransport/EmailAddressPolicies");
+
+                                    //New E-mail Address Policy
                                     new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[6].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Edge Subscription", root, "Exchange/OrganizationConfiguration/HubTransport/EdgeSubscriptions/NewEdgeSubscription");
+                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[6].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New E-mail Address Policy", root, "Exchange/OrganizationConfiguration/HubTransport/EmailAddressPolicies/NewEmailAddressPolicy");
 
-                            //Global Settings
+                                            //Apply
+                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                new Link(tutorialList.child[0].child[5].child[2].child[6].child[7].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Apply", "Exchange/OrganizationConfiguration/HubTransport/EmailAddressPolicies/NewEmailAddressPolicy/Apply");
+
+                                            //Remove
+                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                new Link(tutorialList.child[0].child[5].child[2].child[6].child[7].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remove", "Exchange/OrganizationConfiguration/HubTransport/EmailAddressPolicies/NewEmailAddressPolicy/Remove");
+
+                                            //Edit
+                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                new Link(tutorialList.child[0].child[5].child[2].child[6].child[7].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Edit", "Exchange/OrganizationConfiguration/HubTransport/EmailAddressPolicies/NewEmailAddressPolicy/Edit");
+
+                            //Transport Rules
                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[6].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Global Settings", root, "Exchange/OrganizationConfiguration/HubTransport/GlobalSettings");
+                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[6].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Transport Rules", root, "Exchange/OrganizationConfiguration/HubTransport/TransportRules");
 
-                                    //Transport Settings Properties
+                                    //New Transport Rule
                                     new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6].child[8], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[6].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Transport Settings Properties", root, "Exchange/OrganizationConfiguration/HubTransport/GlobalSettings/TransportSettingsProperties");
+                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[2].child[6].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "New Transport Rule", root, "Exchange/OrganizationConfiguration/HubTransport/TransportRules/NewTransportRule");
 
-                                            //General Tab
+                                            //Disable
                                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[2].child[6].child[8].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "Exchange/OrganizationConfiguration/HubTransport/GlobalSettings/TransportSettingsProperties/GeneralTab");
+                                                new Link(tutorialList.child[0].child[5].child[2].child[6].child[8].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Disable", "Exchange/OrganizationConfiguration/HubTransport/TransportRules/NewTransportRule/DisableRule");
 
-                                            //Message Delivery Tab
+                                            //Remove
                                             new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[2].child[6].child[8].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Message Delivery Tab", "Exchange/OrganizationConfiguration/HubTransport/GlobalSettings/TransportSettingsProperties/MessageDeliveryTab");
+                                                new Link(tutorialList.child[0].child[5].child[2].child[6].child[8].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remove", "Exchange/OrganizationConfiguration/HubTransport/TransportRules/NewTransportRule/RemoveRule");
+
+                                            //Edit
+                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[2].child[6].child[8].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                new Link(tutorialList.child[0].child[5].child[2].child[6].child[8].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Edit", "Exchange/OrganizationConfiguration/HubTransport/TransportRules/NewTransportRule/EditRule");
 
                     //Unified Messaging
                     new HierarchicalUnit(tutorialList.child[0].child[5].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
