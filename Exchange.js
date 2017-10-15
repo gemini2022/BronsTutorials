@@ -1140,37 +1140,33 @@ function Exchange() {
                             new HierarchicalUnit(tutorialList.child[0].child[5].child[3].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                 new ExpandCollapseLink(tutorialList.child[0].child[5].child[3].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Receive Connectors", root, "Exchange/ServerConfiguration/HubTransport/ReceiveConnectors");
 
-                                    //Receive Connector
+                                    //Disable
                                     new HierarchicalUnit(tutorialList.child[0].child[5].child[3].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[3].child[7].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Receive Connector", root, "Exchange/ServerConfiguration/HubTransport/ReceiveConnectors/ReceiveConnector");
+                                        new Link(tutorialList.child[0].child[5].child[3].child[7].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Disable", "Exchange/ServerConfiguration/HubTransport/ReceiveConnectors/Disable");
 
-                                            //Disable
-                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[3].child[7].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[3].child[7].child[3].child[1].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Disable", "Exchange/ServerConfiguration/HubTransport/ReceiveConnectors/ReceiveConnector/Disable");
+                                    //Remove
+                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[3].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                        new Link(tutorialList.child[0].child[5].child[3].child[7].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remove", "Exchange/ServerConfiguration/HubTransport/ReceiveConnectors/RemoveReceiveConnector");
 
-                                            //Remove
-                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[3].child[7].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new Link(tutorialList.child[0].child[5].child[3].child[7].child[3].child[1].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Remove", "Exchange/ServerConfiguration/HubTransport/ReceiveConnectors/ReceiveConnector/RemoveReceiveConnector");
+                                    //Properties
+                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[3].child[7].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                        new ExpandCollapseLink(tutorialList.child[0].child[5].child[3].child[7].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Properties", root, "Exchange/ServerConfiguration/HubTransport/ReceiveConnectors/ReceiveConnectorProperties");
 
-                                            //Properties
-                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[3].child[7].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[3].child[7].child[3].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Properties", root, "Exchange/ServerConfiguration/HubTransport/ReceiveConnectors/ReceiveConnector/ReceiveConnectorProperties");
+                                            //General Tab
+                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[3].child[7].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                new Link(tutorialList.child[0].child[5].child[3].child[7].child[3].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "Exchange/ServerConfiguration/HubTransport/ReceiveConnectors/ReceiveConnectorProperties/GeneralTab");
 
-                                                    //General Tab
-                                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[3].child[7].child[3].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                        new Link(tutorialList.child[0].child[5].child[3].child[7].child[3].child[1].child[3].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "General Tab", "Exchange/ServerConfiguration/HubTransport/ReceiveConnectors/ReceiveConnector/ReceiveConnectorProperties/GeneralTab");
+                                            //Network Tab
+                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[3].child[7].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                new Link(tutorialList.child[0].child[5].child[3].child[7].child[3].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Network Tab", "Exchange/ServerConfiguration/HubTransport/ReceiveConnectors/ReceiveConnectorProperties/NetworkTab");
 
-                                                    //Network Tab
-                                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[3].child[7].child[3].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                        new Link(tutorialList.child[0].child[5].child[3].child[7].child[3].child[1].child[3].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Network Tab", "Exchange/ServerConfiguration/HubTransport/ReceiveConnectors/ReceiveConnector/ReceiveConnectorProperties/NetworkTab");
+                                            //Authentication Tab
+                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[3].child[7].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                new Link(tutorialList.child[0].child[5].child[3].child[7].child[3].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Authentication Tab", "Exchange/ServerConfiguration/HubTransport/ReceiveConnectors/ReceiveConnectorProperties/AuthenticationTab");
 
-                                                    //Authentication Tab
-                                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[3].child[7].child[3].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                        new Link(tutorialList.child[0].child[5].child[3].child[7].child[3].child[1].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Authentication Tab", "Exchange/ServerConfiguration/HubTransport/ReceiveConnectors/ReceiveConnector/ReceiveConnectorProperties/AuthenticationTab");
-
-                                                    //Permission Groups Tab
-                                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[3].child[7].child[3].child[1].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                                        new Link(tutorialList.child[0].child[5].child[3].child[7].child[3].child[1].child[3].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Permission Groups Tab", "Exchange/ServerConfiguration/HubTransport/ReceiveConnectors/ReceiveConnector/ReceiveConnectorProperties/PermissionGroupsTab");
+                                            //Permission Groups Tab
+                                            new HierarchicalUnit(tutorialList.child[0].child[5].child[3].child[7].child[3].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                                                new Link(tutorialList.child[0].child[5].child[3].child[7].child[3].child[3].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Permission Groups Tab", "Exchange/ServerConfiguration/HubTransport/ReceiveConnectors/ReceiveConnectorProperties/PermissionGroupsTab");
 
                     //Unified Messaging
                     new HierarchicalUnit(tutorialList.child[0].child[5].child[3], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
