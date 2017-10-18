@@ -1516,13 +1516,15 @@ function Exchange() {
                             new HierarchicalUnit(tutorialList.child[0].child[5].child[4].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
                                 new Link(tutorialList.child[0].child[5].child[4].child[7].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Connect to Server", "Exchange/RecipientConfiguration/DisconnectedMailbox/ConnectToServer");
 
-                            //Disconnected Mailbox
+                            //Connect
                             new HierarchicalUnit(tutorialList.child[0].child[5].child[4].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                new ExpandCollapseLink(tutorialList.child[0].child[5].child[4].child[7].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Disconnected Mailbox", root, "Exchange/RecipientConfiguration/DisconnectedMailbox/DisconnectedMailbox");
+                                new Link(tutorialList.child[0].child[5].child[4].child[7].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Connect Mailbox", "Exchange/RecipientConfiguration/DisconnectedMailbox/ConnectMailbox");
 
-                                    //Connect
-                                    new HierarchicalUnit(tutorialList.child[0].child[5].child[4].child[7].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
-                                        new Link(tutorialList.child[0].child[5].child[4].child[7].child[2].child[1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Connect", "Exchange/RecipientConfiguration/DisconnectedMailbox/DisconnectedMailbox/Connect");
+                            ////Disconnected Mailbox
+                            //new HierarchicalUnit(tutorialList.child[0].child[5].child[4].child[7], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
+                            //    new ExpandCollapseLink(tutorialList.child[0].child[5].child[4].child[7].child[2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "Disconnected Mailbox", root, "Exchange/RecipientConfiguration/DisconnectedMailbox/DisconnectedMailbox");
+
+                                    
 
                     //Move Request
                     new HierarchicalUnit(tutorialList.child[0].child[5].child[4], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], root);
