@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to create a new Database Availability Group network, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>A DAG network is a collection of one or more subnets used for either replication traffic or MAPI traffic. Each DAG contains a maximum of one MAPI network and zero or more replication networks. In a single network adapter configuration, the network is used for both MAPI and replication traffic. Although a single network adapter and path is supported, we recommend that each DAG have a minimum of two DAG networks. In a two-network configuration, one network is typically dedicated for replication traffic, and the other network is used primarily for MAPI traffic. You can also add network adapters to each DAG member and configure additional DAG networks as replication networks. To learn how to create a new Database Availability Group network, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -54,8 +54,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>First, we need to provide a unique name for the DAG network (a name that doesn't conflict with the name of any other DAG network). The limit is 128 characters.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -72,7 +72,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">In this case, we will name our database availability group network <strong>'Dag1 Network'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -90,8 +90,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Next, we can provide an optional description for the DAG network. The limit is 256 characters.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -108,8 +108,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Click&nbsp;<strong>'Add'</strong>&nbsp;to add each network subnet to the DAG network. Subnets should be entered using a format of IP address/bitmask (for example, 192.168.1.0/24 for IPv4 subnets; 2001:DB8:0:C000::/54 for IPv6 subnets). If you add a subnet that's currently associated with another DAG network, the subnet will be removed from the other DAG network and associated with the network being created.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -126,7 +126,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">After the 'Add' button is pressed, the network subnet is to be entered here.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -144,7 +144,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">In this case, we will enter <strong>'192.168.0.100'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -162,7 +162,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Then press <strong>'OK'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -180,7 +180,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">You can see here that one network subnet has been added to the DAG network</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -198,8 +198,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Select this check box to enable the DAG network for use by replication. When a DAG network is enabled for replication, MAPI (Messaging Application Program Interface) traffic is restricted on that network. Clear this check box to prevent replication from using the DAG network and to enable MAPI traffic on that network. MAPI  is a Microsoft Windows program interface that enables you to send&nbsp; email from within a Windows application and attach a document to the e-mail.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -216,7 +216,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Click <strong>'New' </strong>to create the new database availability group network</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -234,8 +234,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">In this case the wizard could not be completed. Having only one server in the network is not enough to complete this setup successfully.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">

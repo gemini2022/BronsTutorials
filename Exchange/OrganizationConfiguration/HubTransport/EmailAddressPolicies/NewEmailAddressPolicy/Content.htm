@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to create a new E-mail Address Policy, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Recipients (which include users, resources, contacts, and groups) are any mail-enabled object in Active Directory to which Microsoft Exchange can deliver or route messages. For a recipient to send or receive email messages, the recipient must have an email address. Email address policies generate the primary and secondary email addresses for your recipients so they can receive and send email. By default, Exchange contains an email address policy for every mail-enabled user. This default policy specifies the recipient's alias as the local part of the email address and uses the default accepted domain. The local part of an email address is the name that appears before the at sign (@). However, you can change how your recipients' email addresses will display. For example, you can specify that the addresses display as&nbsp;<em>firstname</em>.<em>lastname</em>@contoso.com. Furthermore, if you want to specify additional email addresses for all recipients or just a subset, you can modify the default policy or create additional policies. For example, the user mailbox for David Hamilton can receive email messages addressed to hdavid@mail.contoso.com and hamilton.david@mail.contoso.com. To learn how to create a new E-mail Address Policy, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -36,8 +36,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this text box to create the display name for the new e-mail address policy. The name can contain as many as 64 characters but cannot include wildcard characters.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,7 +54,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case we will name the new email address policy <strong>'Email AddressPolicy'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -72,8 +72,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Next, we need to select an organizational unit where the recipients we want the e-mail address policy to affect reside. To do this, begin by first clicking <strong>'Browse'</strong> to open the&nbsp;'Select Organizational Unit'&nbsp;dialog box.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,8 +90,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the&nbsp;'Select Organizational Unit'&nbsp;dialog box is open, we need to </span>select an organizational unit where the recipients we want the e-mail address policy to affect reside.</li>
+    </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -108,7 +108,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case we will select the root OU.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -126,7 +126,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'OK'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -144,8 +144,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Next, we need to select the type of recipients that will be affected by this policy. This first option specifies that all recipient types will be affected.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -162,8 +162,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Or we have the option of selecting specific types of recipients.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -180,8 +180,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box if you want your e-mail address policy to apply to users with Exchange mailboxes. Users with Exchange mailboxes are those that have a user domain account and a mailbox in the Exchange organization.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -198,8 +198,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box if you want your e-mail address policy to apply to users with external e-mail addresses. Users with external e-mail accounts have user domain accounts in Active Directory, but use e-mail accounts that are external to the organization. This enables them to be included in the global address list (GAL) and added to distribution lists.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -216,8 +216,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box if you want your e-mail address policy to apply to Exchange resource mailboxes. Resources mailboxes allow you to administer company resources through a mailbox, such as a conference room or company vehicle.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -234,8 +234,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box if you want your e-mail address policy to apply to contacts with external e-mail addresses. Contacts with external e-mail accounts do not have user domain accounts in Active Directory, but the external e-mail address is available in the GAL.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -252,8 +252,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>And then finally, select this check box if you want your e-mail address policy to apply to security groups or distribution groups that have been mail-enabled. Mail-enabled groups are similar to distribution groups. E-mail messages that are sent to a mail-enabled group account will be delivered to several recipients.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -270,8 +270,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">In this case, we will select the option&nbsp;<strong>'All recipient types'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -288,8 +288,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Click&nbsp;<strong>'Next &gt;'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -306,8 +306,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Next, we have the option of selecting conditions for our policy. However, if we don't want to set any conditions, we can simply not select any of the check boxes. The first condition that can be set is&nbsp;<strong>'Recipient is in a State or Province'</strong>. Select this check box if you want the e-mail address policy to include only recipients from specific states or provinces. This information is contained on the&nbsp;Address and Phone&nbsp;tab in the recipient's properties.</li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -325,8 +325,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>The next condition is&nbsp;<strong>'Recipient is in a Department'</strong>. Select this check box if you want the e-mail address policy to include only recipients in specific departments. This information is contained on the&nbsp;Organization&nbsp;tab in the recipient's properties.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -343,8 +343,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>The next condition is&nbsp;<strong>'Recipient is in a Company'</strong>. Select this check box if you want the e-mail address policy to include only recipients in specific companies. This information is contained on the&nbsp;Organization&nbsp;tab in the recipient's properties.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -361,8 +361,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>And then finally, there are 15 custom attributes for each recipient. There is a separate condition for each custom attribute. If you want the e-mail address policy to include only recipients that have a specific value set for a specific custom attribute, select the check box that corresponds to that custom attribute.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -379,8 +379,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">In this case, we will select the condition&nbsp;<strong>'Recipient is in a State or Province'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -397,8 +397,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+              <li><span dir="LTR">After a condition is selected, we then need to click the underlined term to create your condition. By default, the underlined term for new conditions will read&nbsp;<strong>'specified'</strong>. After you edit the condition, the underlined term will change to the value that you specified.</span></li></ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -415,8 +414,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Once the underlined term is clicked, a dialog box appears in which you can specify the values for the condition.&nbsp;To begin, we first need to enter a value in the text box.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -433,8 +432,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">In this case, we will enter the value,&nbsp;<strong>'NY'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -451,8 +450,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once a value is entered, click&nbsp;<strong>'Add'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -469,8 +468,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">After clicking 'Add', the value will appear here. You can add more than one value, but you cannot enter duplicate values.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -487,8 +486,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Click&nbsp;<strong>'OK'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -505,8 +504,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">You can see now that instead of the underlined term reading 'specified', the underline term now reads the new value that</span>&nbsp;we just entered.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -523,8 +522,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Click&nbsp;<strong>'Next &gt;'</strong>&nbsp;to continue.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -541,8 +540,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Next, we need to specify an e-mail address for our e-mail address policy.</span> To do this, begin by first clicking <strong>'Add'</strong> to open the 'SMTP E-mail Address' dialog box.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -559,8 +558,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Once the 'SMTP E-mail Address' dialog box is open, we then have the option of selecting the option <strong>'E-mail address local part'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -577,8 +576,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>If selected, we then can choose the corresponding options to configure how the local part of the SMTP e-mail address will appear. The local part of an e-mail address is the name that appears before the at sign (@). If you clear the check box, the local part uses the recipient's alias.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -595,7 +594,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, we will leave the the default option selected, <strong>'Use alias'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -613,8 +612,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Next, with this option <strong>'Select the accepted domain for the e-mail address'</strong>, we can select the e-mail address domain to which this e-mail address policy applies.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -631,7 +630,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Once this option is selected, click <strong>'Browse'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -649,8 +648,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Then select the domain</span> to which this e-mail address policy applies.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -667,7 +666,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, we will canel out of this option.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -685,8 +684,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>And instead, select the option <strong>'Specify the custom fully qualified domain name (FQDN) for the e-mail address'</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -703,8 +702,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Once this option is selected, then type the FQDN for the domain part of the e-mail address that appears after the at sign (@). This FQDN must match an accepted domain.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -721,7 +720,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'OK'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -739,8 +738,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">After pressing <strong>'OK' </strong> on the </span> 'SMTP E-mail Address' dialog box, the email address you defined will be displayed here.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -757,7 +756,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'Next &gt;' </strong>to move on.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -775,8 +774,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>On this screen of the wizard, we need to specify when the e-mail address policy should be applied. <span dir="LTR">This first option,&nbsp;<strong>'Do not apply'</strong>, means that after the policy is created</span>, the policy will not be applied to the mailboxes until the policy is applied manually at a later time.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -793,8 +792,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Select this option to apply the e-mail address policy as soon as the e-mail address policy is created.</span></li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -811,8 +810,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this option to specify a time when to apply the new e-mail address policy.</li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -829,8 +828,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Then select the dropdown.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -847,8 +846,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Once the dropdown is selected, a calendar will appear where you can set the date when the new e-mail address policy will be applied.</li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -865,8 +864,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Then you can set the time when the new e-mail address policy will be applied.</span></li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -883,8 +882,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">In this case, we will select the option&nbsp;<strong>'Immediately'</strong>, so that the new e-mail address policy will be applied as soon as the policy is created.</span></li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -901,8 +900,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Not only do you have the option to define when the new e-mail address policy will be applied, but you can also define how long the e-mail address policy will be applied for. To do this, select the option&nbsp;<strong>'Cancel tasks that are still running after (hours)'</strong>.</li>
+        </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -919,8 +918,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Then enter in how long the e-mail policy will run for. The default is 8 hours.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -937,8 +936,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Click&nbsp;<strong>'Next &gt;'</strong>&nbsp;to move on.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -955,8 +954,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>On this screen, review the&nbsp;'Configuration Summary' and verify that the information you entered&nbsp;is correct. If you are not satisfied with any of the information, you may go back and make any changes necessary.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -973,8 +972,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>If the information in the&nbsp;'Configuration Summary'&nbsp;is correct, press&nbsp;<strong>'New'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -991,8 +990,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And then finally, on this last screen, you have the option of reviewing</span>&nbsp;the associated shell command that was performed by this wizard.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -1009,8 +1008,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Press&nbsp;<strong>'Finish'</strong>&nbsp;to complete the wizard.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

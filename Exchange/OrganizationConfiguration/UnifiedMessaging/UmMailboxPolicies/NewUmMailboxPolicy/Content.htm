@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to create a new UM Mailbox Policy, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>You can create a UM mailbox policy to apply a common set of UM policy settings, such as PIN policy settings or dialing restrictions, to a collection of UM-enabled mailboxes. UM mailbox policies link a UM-enabled user with a UM dial plan and apply a common set of policies or security settings to a collection of UM-enabled mailboxes. UM mailbox policies are useful for applying and standardizing UM configuration settings for UM-enabled users. By default, when a UM dial plan is created, a UM mailbox policy is also created. However, there are other times that you may have to create additional UM mailbox policies or modify existing UM mailbox policies after you deploy Unified Messaging in your Microsoft Exchange Server  organization. To learn how to create a new UM Mailbox Policy, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -36,8 +36,9 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this text box to specify a unique name for the UM mailbox policy. This is a display name that appears in the EMC. If you must change the display name of the UM mailbox policy after it's been created, you must first delete the existing UM mailbox policy, and then create another UM mailbox policy that has the appropriate name. To delete the UM mailbox policy, there must not be any UM-enabled users who are associated with the UM mailbox policy.<br>
+                  The UM mailbox policy name is required, but it is used for display purposes only. Because your organization may use multiple UM mailbox policies, we recommend that you use meaningful names for your UM mailbox policies. The maximum length of a UM mailbox policy name is 64 characters, and it can include spaces. However, it cannot include any of the following characters: " / \ [ ] : ; | = , + * ? &lt; &gt;.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,7 +55,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, the name we will enter for our new UM Mailbox Policy will be <strong>'UmMailboxPolicy'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -72,8 +73,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Next, we need to select the UM dial plan that will be associated with the UM mailbox policy. You must associate a UM mailbox policy with at least one UM dial plan. A single UM mailbox policy must be associated with at least one UM dial plan. However, you can also associate multiple UM mailbox policies with a single dial plan. To select a dial plan that will be associated with the UM mailbox policy, begin by first clicking&nbsp;<strong>'Browse'</strong>&nbsp;to open the&nbsp;'Select Dial Plan'&nbsp;dialog box.</li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,8 +91,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the&nbsp;'Select Dial Plan'&nbsp;dialog box is open, select the UM Dial Plan you want to use for this UM mailbox policy</span>. In this case there is only one UM Dial Plan, which is already selected by default.</li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -108,8 +109,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Click&nbsp;<strong>'OK'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -126,8 +127,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Click&nbsp;<strong>'New'</strong>&nbsp;to create the new UM mailbox policy.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -144,8 +145,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">On this last screen, you have the option of reviewing</span>&nbsp;the associated shell command that was performed by this wizard.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -162,8 +163,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Press&nbsp;<strong>'Finish'</strong>&nbsp;to complete the wizard.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

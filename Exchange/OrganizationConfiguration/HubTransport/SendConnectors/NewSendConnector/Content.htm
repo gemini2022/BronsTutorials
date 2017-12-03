@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to create a new Send Connector, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Send connectors create a logical connection to remote e-mail systems and are responsible for outbound transmission of e-mail messages. If you use the EdgeSync process, it will configure the Send connectors required for mail flow to the Internet and to the Edge Transport servers in your Microsoft Exchange Server  organization. If your organization requires a Send connector with specific configuration options, or if you don't use the EdgeSync process, you must manually configure Send connectors. To learn how to create a new Send Connector, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -36,8 +36,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>In the&nbsp;<strong>'Name'</strong>&nbsp;field, type a meaningful name for this connector. Specify a name for the Send connector that helps you distinguish this Send connector from other Send connectors in your configuration.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,7 +54,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, the name we will enter for this send connector will be <strong>'SendConnector'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -72,8 +72,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Next, we need to select the usage type for the connector. To do this, begin first by selecting the dropdown.</span></li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,8 +90,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Then choose one of four options. The first </span> option, <strong>'Custom'</strong>, creates a customized connector to connect with systems that aren't servers running Exchange.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -108,8 +108,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">The next option <strong>'Internal'</strong>, sends e-mail to servers in your Exchange organization. This connector is configured to route e-mail to your internal Exchange servers as smart hosts.</span></li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -126,8 +126,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Next, the option <strong>'Internet'</strong> sends e-mail to the Internet. This connector is configured to use Domain Name System (DNS) MX records to route e-mail.</span></li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -144,8 +144,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And then finally, the option <strong>'Partner'</strong></span> sends e-mail to partner domains. This connector is configured to only allow connections to servers that authenticate with Transport Layer Security (TLS) certificates for SMTP domains included in the list of domain-secured domains. You can add domains to this list by using the&nbsp;<em>TLSSendDomainSecureList</em>&nbsp;parameter in the&nbsp;Set-TransportConfig&nbsp;command.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -162,7 +162,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, we will select the option <strong>'Internet'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -180,7 +180,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'Next'</strong> to continue.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -198,8 +198,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Next, we need to specify an address space to which the Send connector sends mail. To do this, begin by first clicking <strong>'Add'</strong> or the drop-down arrow located next to&nbsp;<strong>Add</strong>. If you click&nbsp;<strong>Add</strong>, the address space type is SMTP. If you click the drop-down arrow located next to&nbsp;<strong>'Add'</strong>, you can select&nbsp;<strong>'SMTP Address Space'</strong>&nbsp;or&nbsp;<strong>'Custom Address Space'</strong>. In this case, we will click <strong>'Add'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -216,8 +216,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>This field describes the address space that you enter in the&nbsp;'Address'&nbsp;field. If you clicked&nbsp;'Add', this field is set to SMTP and is unavailable.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -234,7 +234,25 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li>Next, we need to specify the address space for the Send connector. If you entered&nbsp;SMTP&nbsp;or&nbsp;X400&nbsp;in the&nbsp;'Type'&nbsp;field, Exchange verifies the syntax of the address space that you enter. Exchange can't verify any other types of addresses; therefore, you need to make sure that you specify any custom addresses using the correct syntax. If you're entering an SMTP address, you can include the wildcard character (*) in the address space as defined in RFC&nbsp;1035. For example,&nbsp;*,&nbsp;*.com,&nbsp;and&nbsp;*.contoso.com&nbsp;are permitted, but&nbsp;*contoso.com&nbsp;isn't permitted.</li>
+              </ul></td>
+                
+                <td align="right">
+                  <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="12b.jpg" width="427" height="249"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">In this case, we will enter the wildcard character <strong>'*'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -252,8 +270,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>This option is only available when you're specifying an SMTP address space. Select this option if you also want to use this connector to route mail to all subdomains of the specified address space. If you entered an address space that contains the wildcard character, this option is automatically selected.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -270,8 +288,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use the address space cost to set the selection priority when more than one Send connector is configured for the same address space. During routing resolution, when the connector selection is made, the least cost routing path to the destination address space is selected. The valid input range is from 1 through 100.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -288,7 +306,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'OK'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -306,7 +324,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Once the address space has been added, it will be displayed here.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -324,8 +342,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>By default, all Send connectors that you create can be used by all the Hub Transport servers in your Exchange organization. However, you can limit the scope of any Send connector so that it can be used only by other Hub Transport servers that exist in the same Active Directory site. To limit the scope of this Send connector, select&nbsp;<strong>'Scoped send connector'</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -342,7 +360,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li>Click <strong>'Next &gt;'</strong>.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -360,8 +378,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>This option is available only if you selected a usage type of&nbsp;<strong>Custom</strong>,&nbsp;<strong>Partner</strong>, or&nbsp;<strong>Internet</strong>&nbsp;in step 3. When you select this option, the Send connector uses DNS to resolve the IP address of the remote SMTP servers and route mail.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -378,8 +396,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>This option is available only if you selected a usage type of&nbsp;<strong>Custom</strong>,&nbsp;<strong>Internal</strong>, or&nbsp;<strong>Internet</strong>&nbsp;in step 3. Select this option to route all outbound mail to specific smart hosts instead of using DNS to resolve the IP addresses of remote SMTP servers.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -396,8 +414,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box if you want to use a specific list of external DNS servers instead of the DNS servers configured on the network adapters of the source servers configured for this Send connector.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -414,7 +432,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'Next'</strong> to move on.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -432,8 +450,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>The&nbsp;<strong>Source Server</strong>&nbsp;page only appears on Hub Transport servers. By default, the Hub Transport server that you are currently working on is listed as a source server. To add a source server, click&nbsp;<strong>Add</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -450,7 +468,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -468,8 +486,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>On this screen, review the&nbsp;'Configuration Summary' and verify that the information you entered&nbsp;is correct. If you are not satisfied with any of the information, you may go back and make any changes necessary.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -486,8 +504,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>If the information in the&nbsp;'Configuration Summary'&nbsp;is correct, press&nbsp;<strong>'New'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -504,8 +522,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And then finally, on this last screen, you have the option of reviewing</span>&nbsp;the associated shell command that was performed by this wizard.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -522,7 +540,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Press&nbsp;<strong>'Finish'</strong>&nbsp;to complete the wizard.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -530,7 +548,7 @@
                         <tr>
                             <td align="center"><img src="29.jpg" width="637" height="556"></td>
                         </tr>
-                    </table>
+                  </table>
                 </td>
             </tr>
         </table>

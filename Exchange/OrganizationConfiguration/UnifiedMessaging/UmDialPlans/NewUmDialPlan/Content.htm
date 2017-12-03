@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to create a new UM Dial Plan, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>A UM dial plan is created by using an organization-wide scope. This dial plan contains configuration information related to your telephony network. It also establishes a link from the telephone extension number of a Microsoft Exchange Server 2010 recipient in Active Directory to a UM-enabled mailbox. When you create a UM dial plan, you can configure the number of digits in the extension numbers, the Uniform Resource Identifier (URI) type, and the Voice over IP (VoIP) security setting. Every time that you create a UM dial plan, a UM mailbox policy is also created. The UM mailbox policy is named &lt;<em>DialPlanName</em>&gt; Default Policy. To learn how to create a new UM Dial Plan, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -36,8 +36,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Begin by typing the name of the dial plan. A UM dial plan name is required and must be unique. However, it's used only for display in the EMC and the Shell. If you have to change the display name of the dial plan after it's been created, you must first delete the existing UM dial plan and then create another dial plan that has the appropriate name. If your organization uses multiple UM dial plans, we recommend that you use meaningful names for your UM dial plans. The maximum length of a UM dial plan name is 64 characters.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,7 +54,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, the name that we will enter for the new dial plan will be <strong>'UmDialPlan'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -72,8 +72,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Enter the number of digits for the dial plan. The number of digits for extension numbers is based on the telephony dial plan created on a Private Branch eXchange (PBX). For example, if a user associated with a telephony dial plan dials a four-digit extension to call another user in the same telephony dial plan, you select 4 as the number of digits in the extension.&nbsp; This is a required field that has a value range from 1 through 20. The typical extension length is from 3 through 7. If your existing telephony environment includes extension numbers, you must specify a number of digits that matches the number of digits in those extensions. When you create a Session Initiation Protocol (SIP) or an E.164 dial plan and associate a UM-enabled user with the dial plan, you must still input an extension number to be used by the user. This number is used by Outlook Voice Access users when they access their Exchange  mailbox.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,8 +90,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this drop-down list to select the URI type for the UM dial plan. A URI is a string of characters that identifies or names a resource. The main purpose of this identification is to enable VoIP devices to communicate with other devices over a network using specific protocols.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -108,8 +108,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>This is the most common URI type. The calling and called party information from the IP gateway or IP PBX will be listed in one of the following formats: Tel:512345 or 512345@&lt;<em>IP address</em>&gt;. This is the default URI type for dial plans.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -126,8 +126,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>E.164 is an international numbering plan for public telephone systems in which each assigned number contains a country/region code, a national destination code, and a subscriber number. The calling and called party information sent from the IP gateway is listed in the following format: Tel:+14255550123.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -144,8 +144,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this URI type if you need a SIP URI dial plan when an IP PBX supports SIP routing or if you're integrating Microsoft Office Communications Server 2007 and Exchange Unified Messaging. The calling and called party information from the IP gateway or IP PBX will be listed as a SIP address in the following format: sip:&lt;<em>username</em>&gt;@&lt;<em>domain</em>&nbsp;or&nbsp;<em>IP address</em>&gt;:Port.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -162,7 +162,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, we will select the option <strong>'Telephone Extension'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -180,8 +180,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this drop-down list to select the VoIP security setting for the UM dial plan. By default, when you create a UM dial plan, it communicates in unsecured mode. A Unified Messaging server can operate in any mode configured on a dial plan because the Unified Messaging server is configured to listen on TCP port 5060 for unsecured requests and on TCP port 5061 for secured requests at the same time.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -198,8 +198,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>With this option<strong></strong>, only the SIP signaling traffic is encrypted, and the RTP media channels still use TCP, which isn't encrypted. Mutual Transport Layer Security (TLS) is used to encrypt the SIP signaling traffic.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -216,8 +216,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>By default, when you create a UM dial plan, it communicates in unsecured mode, and the Unified Messaging servers associated with the UM dial plan send and receive data from IP gateways, IP PBXs, and other Exchange  computers using no encryption. In unsecured mode, both the Realtime Transport Protocol (RTP) media channel and SIP signaling information aren't encrypted.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -234,8 +234,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>With this option<strong></strong>, both the SIP signaling traffic and the RTP media channels are encrypted. An encrypted signaling media channel that uses Secure Realtime Transport Protocol (SRTP) also uses mutual TLS to encrypt the VoIP data.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -252,7 +252,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, we will select the option <strong>'Unsecured'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -270,8 +270,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this field to type the country/region code number used for outgoing calls. This number will precede the telephone number dialed. This field accepts from 1 through 4 digits. For example, in the United States, the country/region code is 1. In the United Kingdom, it's 44.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -288,7 +288,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li>Click <strong>'Next &gt;'</strong> to continue.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -306,8 +306,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">On this last screen, you have the option of reviewing</span>&nbsp;the associated shell command that was performed by this wizard.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -324,8 +324,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Press&nbsp;<strong>'Finish'</strong>&nbsp;to complete the wizard.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

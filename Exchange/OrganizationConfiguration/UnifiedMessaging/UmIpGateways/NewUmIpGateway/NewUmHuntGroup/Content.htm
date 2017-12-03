@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to create a new UM Hunt Group, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>When you create a UM hunt group, a UM Hunt Group object is created in the Active Directory directory service and is a logical representation of an existing Private Branch eXchange (PBX) or IP PBX hunt group. A UM hunt group acts as a connection or link between a UM IP gateway and a dial plan. After you create a UM hunt group, you can't change any of the settings that you defined. If you want to change the UM hunt group settings, you must delete the hunt group and then create another hunt group that has the appropriate settings. To learn how to create a new UM Hunt Group, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -36,8 +36,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>This display-only field shows the name of the UM IP gateway that will be associated with the UM hunt group.</p>
+</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -48,13 +50,33 @@
                 </td>
             </tr>
         </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>
+                    <p>Use this text box to create the display name for the UM hunt group. A UM hunt group name is required and must be unique, but it's used only for display purposes in the EMC and the Shell. If you have to change the display name of the hunt group after it has been created, you must first delete the existing hunt group and then create another hunt group that has the appropriate name. If your organization uses multiple hunt groups, we recommend that you use meaningful names for your hunt groups. The maximum length of a UM hunt group name is 64&nbsp;characters, and it can include spaces. However, it can't include any of the following characters: " / \ [ ] : ; | = , + * ? &lt; &gt;.</p>
+</li>
+            </ul></td>
+                
+                <td align="right">
+                  <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="2b.jpg" width="637" height="556"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
        
         <hr> 
    
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, we will name our UM Hunt Group <strong>'UmHuntGroup'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -72,8 +94,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Next, we need  to select the dial plan that will be associated with the UM hunt group. Associating a hunt group with a dial plan is required. A UM hunt group can be associated with only one UM IP gateway and one UM dial plan. To select a dial plan that will be associated with the UM hunt group, begin by first clicking <strong>'Browse'</strong> to open the&nbsp;'Select Dial Plan'&nbsp;dialog box.</li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,8 +112,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the&nbsp;'Select Dial Plan'&nbsp;dialog box is open, select the UM Dial Plan you want to use for this UM Hunt Group</span>. In this case there is only one UM Dial Plan, which is already selected by default.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -108,7 +130,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li>Click <strong>'OK'</strong>.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -126,8 +148,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this text box to specify a string that uniquely identifies the pilot identifier or pilot ID configured on the PBX or IP PBX. An extension number or a Session Initiated Protocol (SIP) Uniform Resource Identifier (URI) can be used in this field. Alphanumeric characters are accepted in this field. For legacy PBXs, a numeric value is used as a pilot identifier. However, some IP PBXs can use SIP URIs. In this case, we will enter <strong>'12345'</strong>.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -144,7 +168,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'New'</strong> to create the new UM Hunt Group.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -162,8 +186,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">On this last screen, you have the option of reviewing</span>&nbsp;the associated shell command that was performed by this wizard.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -180,8 +204,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Press&nbsp;<strong>'Finish'</strong>&nbsp;to complete the wizard.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

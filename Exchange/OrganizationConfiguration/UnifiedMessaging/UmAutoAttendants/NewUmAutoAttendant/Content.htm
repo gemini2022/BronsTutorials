@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to create a new UM Auto Attendant, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>After you create a Unified Messaging UM auto attendant, incoming calls to an external telephone number that a human operator would ordinarily answer are answered by the auto attendant. Unlike for other Unified Messaging objects, such as UM dial plans and UM IP gateways, you aren't required to create UM auto attendants. However, auto attendants help internal and external callers locate users or departments that exist in an organization and transfer calls to them. To learn how to create a new UM Auto Attendant, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -36,8 +36,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this text box to create the display name for the UM auto attendant. A UM auto attendant name is required and must be unique. However, it's used only for display purposes in the EMC and the Shell.&nbsp; If you have to change the display name of the auto attendant after it's created, you must first delete the existing UM auto attendant and then create another auto attendant that has the appropriate name. If your organization uses multiple UM auto attendants, we recommend that you use meaningful names for your UM auto attendants. The maximum length of a UM auto attendant name is 64 characters, and it can include spaces.&nbsp; Although you can include spaces in the name of a new UM auto attendant, the name cannot include spaces if you integrate Unified Messaging with Office Communications Server 2007 R2 or Microsoft Lync Server. Therefore, if you created an auto attendant that has spaces in the display name, and if you are integrating with Office Communications Server 2007 R2 or Microsoft Lync Server, you must first delete that auto attendant and then create another by using a display name that does not include spaces.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,7 +54,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, the name that we will enter for the new UM auto attendant</span> will be <strong>'UmAutoAttendant'</strong>.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -72,8 +72,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Next, we need to select the UM dial plan that will be associated with the UM auto attendant. Selecting and associating a UM dial plan with the auto attendant is required. A UM auto attendant can be associated with only one UM dial plan. To select a dial plan that will be associated with the UM auto attendant, begin by first clicking&nbsp;<strong>'Browse'</strong>&nbsp;to open the&nbsp;'Select Dial Plan'&nbsp;dialog box.</li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,8 +90,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the&nbsp;'Select Dial Plan'&nbsp;dialog box is open, select the UM Dial Plan you want to use for this UM auto attendant</span>. In this case there is only one UM Dial Plan, which is already selected by default.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -108,8 +108,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Click&nbsp;<strong>'OK'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -126,8 +126,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this field to enter the extension numbers or pilot numbers that callers will use to reach the auto attendant. Type an extension number or pilot identifier in the box. In this case we will enter <strong>'55000'</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -144,8 +144,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the extension number or pilot identifier has been entered, click <strong>'Add'</strong>.</span></li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -162,8 +162,9 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Once 'Add' has been clicked, the extension number or pilot identifier you entered will be displayed here. The number of digits in the extension number or pilot identifier that you provide doesn't have to match the number of digits for an extension number configured on the associated UM dial plan. This is because direct calls are allowed to UM auto attendants. The number of extension numbers or pilot identifiers entered is unlimited. However, you may create the new auto attendant without an extension number listed. An extension number or pilot identifier isn't required.<br>
+                  </li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -180,8 +181,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this option to enable the auto attendant to answer incoming calls when you complete the New UM Auto Attendant wizard. By default, a new auto attendant is created as disabled.&nbsp; If you decide to create the UM auto attendant as disabled, you can use the EMC action pane or the Shell to enable the auto attendant after you finish the wizard.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -198,8 +199,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box to speech-enable the UM auto attendant. By speech-enabling the auto attendant, callers can respond to the system or custom prompts used by the UM auto attendant using touchtone or voice inputs. By default, the auto attendant won't be speech-enabled when it's created. For callers to use a speech-enabled auto attendant, you must install the appropriate Unified Messaging language pack that contains Automatic Speech Recognition (ASR) support and configure the properties of the auto attendant to use this language.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -216,7 +217,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'New'</strong> to create the UM auto attendant.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -234,8 +235,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">On this last screen, you have the option of reviewing</span>&nbsp;the associated shell command that was performed by this wizard.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -252,8 +253,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Press&nbsp;<strong>'Finish'</strong>&nbsp;to complete the wizard.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

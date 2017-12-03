@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to create new Managed Content Settings for a Managed Default Folder, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Managed content settings are used to define message retention settings and retention action for managed folders. Message lifespan is controlled by either controlling content&nbsp;retention&nbsp;and removing content that is no longer needed, or by automatically&nbsp;journaling&nbsp;(copying) important content to a separate storage location outside the mailbox. This can be any location that has a SMTP e-mail address, including another Exchange mailbox. When the item is journaled, a label is applied to it that indicates how the user classified the item. To learn how to create new Managed Content Settings for a Managed Default Folder, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -54,8 +54,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>First, use this box to enter a name for the new managed content settings.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -72,7 +72,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">In this case, we will name the new managed content settings <strong>'ManagedContentSettings'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -90,8 +90,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Next, we need to  select the type of message for which we want to create managed content settings for. To do this, first select the dropdown</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -108,8 +108,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Then select the type of message for which you want to create managed content settings for</span>. If you select&nbsp;<strong>All Items</strong>, the managed content settings that you create will apply to all the items in the managed folder (except for message types for which you have created separate content settings).</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -126,7 +126,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">In this case, we will select <strong>'All Mailbox Content'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -144,8 +144,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Next, we have the option of setting how long messages live within user's mailbox. To do this, first select the&nbsp;<strong>'Length of retention period (days)'</strong>&nbsp;check box.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -162,8 +162,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Then, once  the&nbsp;'Length of retention period (days)'&nbsp;check box is selected, in the field to the right, we need to enter the number of days after which the message is to expire.</span></li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -180,7 +180,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">In this case, we will enter <strong>'60'</strong> days.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -198,7 +198,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Next, we need to define when the retention period starts. To do this, first select the dropdown.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -216,8 +216,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Then we need to select one of two options. The first option is <strong>'When delivered, end date for calendar and recurring tasks'</strong>. With this option, the retention period for mail starts when it is delivered. The retention period for calendar items and recurring tasks starts at their end date.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -234,8 +234,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And with the  second option, <strong>'When item is moved to the folder'</strong></span>, the expiration countdown does not start until the items are transferred to another folder, such as when items are moved from the Inbox to a&nbsp;<strong>review before final deletion</strong>&nbsp;folder.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -252,8 +252,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">In this case, we will select the option <strong>'When delivered, end date for calendar and recurring tasks'</strong>.</span></li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -270,8 +270,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Next, we need to define the action that will take place when the retention period</span> ends. To do this, first select the dropdown.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -288,8 +288,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Then choose one of five options in the list. With this first option, <strong>'Move to the Deleted Items folder'</strong>, messages are automatically moved to the Deleted Items folder.</span></li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -306,8 +306,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">This next option <strong>'Move to a managed custom folder'</strong>, messages are automatically moved to the managed custom folder that you specify in the&nbsp;<strong>'Move to the following managed custom folder'</strong>&nbsp;box.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -324,8 +324,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Next, the option <strong>'Delete and allow recovery'</strong>, messages are deleted but may be recovered by using&nbsp;<strong>Recover Deleted Items</strong>&nbsp;in Microsoft&nbsp;Office Outlook. Note that messages can be recovered only for as long as messages are configured to remain in a recoverable state.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -342,8 +342,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">With the option <strong>'Permanently delete'</strong>, messages are permanently deleted and not recoverable by the user.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -360,8 +360,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And then finally, <strong>'Mark as past retention Limit'</strong>, messages are displayed in a shaded, strikethrough font in Outlook, but no other action is taken. This expiration action is used to prompt the user to take some kind of action.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -378,7 +378,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">In this case, we will select the option <strong>'Move to a Managed Custom Folder'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -396,8 +396,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Since we selected  the option <strong>'Move to a Managed Custom Folder</strong></span><strong>'</strong>, we now have to define what that managed custom folder is. To do this, first click the <strong>'Browse'</strong> button.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -414,8 +414,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>In this case, there is only one managed custom folder that has been created and by default is already selected.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -432,8 +432,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Press&nbsp;<strong>'OK'.</strong></span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -450,7 +450,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Press <strong>'Next &gt;' </strong>to move on.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -468,8 +468,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>On this screen, we have the option to automatically forward a copy of the item of the message type that was specified on previous screen to another location or user. To do this, first select the option <strong>'Forward copies to'</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -486,7 +486,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Then click <strong>'Browse'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -504,8 +504,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>In this case, the administrator is the only user we can forward messages to and by default is already selected.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -522,7 +522,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Press <strong>'OK'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -540,8 +540,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Here we have the option of typing a label to be applied to a journaled message.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -558,7 +558,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Next, we need to choose the format of the copied messages</span> that will be attached to the journal report.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -576,8 +576,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">There are two options to choose from, the first option is <strong>'Outlook Message Format (*.msg)'</strong>. With this option, Messages are attached in the .msg file format that is commonly used by Outlook.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -594,8 +594,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And the second option is <strong>'Exchange MAPI Message Format (TNEF)'</strong>. With this option</span> Messages are attached in the format (Transport Neutral Encapsulation Format) that is most commonly used by Exchange 2007.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -612,8 +612,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">In this case, we will choose the second option, <strong>'Exchange MAPI Message Format (TNEF)'</strong>.</span></li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -630,7 +630,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -648,8 +648,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>On this screen, review the&nbsp;'Configuration Summary' and verify that the information you entered&nbsp;is correct. If you are not satisfied with any of the information, you may go back and make any changes necessary.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -666,8 +666,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>If the information in the&nbsp;'Configuration Summary'&nbsp;is correct, press&nbsp;<strong>'New'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -684,8 +684,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And then finally, on this last screen, you have the option of reviewing</span>&nbsp;the associated shell command that was performed by this wizard.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -702,8 +702,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Press&nbsp;<strong>'Finish'</strong>&nbsp;to complete the wizard.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">

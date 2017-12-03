@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to add a mailbox database copy, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>When you add a copy of a mailbox database, continuous replication is automatically enabled between the existing database and the database copy. Database copies are automatically assigned an identity in the format of &lt;DatabaseName&gt;\&lt;HostMailboxServerName&gt;. For example, a copy of a database named DB1 that's hosted on a server named MBX3 would be named DB1\MBX3. To learn how to add a mailbox database copy, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -72,8 +72,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>This read-only field displays the name of the database for which you are going to make a copy.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -90,8 +90,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Next, click&nbsp;<strong>'Browse'</strong>&nbsp;to open the&nbsp;'Select Mailbox Server'&nbsp;dialog box. This dialog box will be used to select the Mailbox server that will host the copy of the mailbox database.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -108,7 +108,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">In this case, there are no other mailbox servers available to store a copy of the mailbox database on, but if there were, they would be listed here.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -126,7 +126,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Because no selection can be made, we will just press <strong>'Cancel'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -144,8 +144,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>This next field is used  to specify the activation preference number for the database copy. The activation preference number is used as part of Active Manager's best copy selection process and to redistribute active mailbox databases throughout the DAG when using the RedistributeActiveDatabases.ps1 script. The value for the activation preference is a number equal to or greater than 1, where 1 is at the top of the preference order. The position number cannot be larger than the number of copies of the mailbox database.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -162,7 +162,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">This field displays all the servers that already have a copy of the mailbox database.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -180,8 +180,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Finally, click&nbsp;<strong>'Add'</strong>&nbsp;to add the copy of the mailbox database.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">

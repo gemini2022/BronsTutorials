@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to create a new Address List, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>An address list is a collection of recipient and other Active Directory objects. Each address list can contain one or more types of objects (for example, users, contacts, groups, public folders, and room and equipment resources). You can use address lists to organize recipients and resources, making it easier to find the recipients and resources you want. Address lists are updated dynamically. Therefore, when new recipients are added to your organization, they're automatically added to the appropriate address lists. An Exchange organization can contain thousands of recipients. If you compile all your recipients in the default address lists, those lists could become quite large. To prevent this, you can create custom address lists to help users in your organization find what they are looking for more easily. For example, consider a company that has two large divisions and one Exchange organization. One division, named Fourth Coffee, imports and sells coffee beans. The other division, Contoso, Ltd, underwrites insurance policies. For most day-to-day activities, the employees at Fourth Coffee don't communicate with the employees at Contoso, Ltd. Therefore, to make it easier for employees to find recipients who exist only in their division, you can create two new custom address lists&mdash;one for Fourth Coffee and one for Contoso, Ltd. When searching for recipients in their division, these custom address lists allow employees to select only the address list that's specific to their division. However, if an employee is unsure about the division in which the recipient exists, the employee can search within the GAL, which contains all recipients in both divisions. You can also create subcategories of address lists called hierarchical address lists. For example, you can create an address list that contains all recipients in Manchester and another that contains all recipients in Stuttgart. To learn how to create a new Address List, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -36,8 +36,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this box to type the name for the new address list. The name can contain as many as 64 characters, including wildcard characters, but can't contain the backslash character (<strong>\</strong>).</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,7 +54,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, we will call the new address list <strong>'AddressList'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -72,8 +72,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this box to type the for the new address list. This is the name that's displayed to users when they view the address list from a client such as Outlook. Although this field is automatically populated with the same name you type in the&nbsp;<strong>Name</strong>&nbsp;box, you can modify it.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,8 +90,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>We next have<strong></strong>&nbsp;to select the path to the container for the address list. To do this, begin first by selecting <strong>'Browse'</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -108,8 +108,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Once the 'Browse' button is clicked, the <strong>'Select Address List' </strong> dialog box will appear. To add the address list as a child to an existing address list, click the existing address list you want. To create a new parent address list, click&nbsp;<strong>All Address Lists</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -126,7 +126,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, we will select <strong>'All Address Lists'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -144,7 +144,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">After a container is selected, click <strong>'OK'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -162,7 +162,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Press <strong>'Next &gt;' </strong>to move on.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -180,8 +180,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>We next need  to specify the OU from which to select the recipients. To do this, begin by clicking <strong>'Browse'</strong>.</li>
+        </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -198,8 +198,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the <strong>'Browse'</strong> button is clicked, the <strong>'Select Organizational Unit'</strong> dialog box will appear. It is here where </span>we specify the OU from which to select the recipients.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -216,7 +216,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case we will select the root OU.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -234,7 +234,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Then click <strong>'OK'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -252,8 +252,9 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Next, we need to select the type of recipients we want to include when dynamically creating our address list. However, with this first option, <strong>'None'</strong>, we have the option of not using any recipient types in the query to create the list.</li>
+                  </ul>
+          <p>&nbsp;</p></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -270,7 +271,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Or we can use all recipient types.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -288,7 +289,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Or we have the option of selecting specific types of recipients.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -306,8 +307,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box if you want the address list to apply to users that have Exchange mailboxes. Users that have Exchange mailboxes are those that have a user domain account and a mailbox in the Exchange organization.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -324,8 +325,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box if you want the address list to apply to users that have external e-mail addresses. Users that have external e-mail accounts have user domain accounts in Active Directory, but use e-mail accounts that are external to the organization. This enables them to be included in the GAL and added to distribution lists.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -342,8 +343,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box if you want the address list to apply to Exchange resource mailboxes. Resource mailboxes allow you to administer company resources through a mailbox, such as a conference room or company vehicle.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -360,8 +361,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box if you want the address list to apply to contacts that have external e-mail addresses. Contacts that have external e-mail accounts don't have user domain accounts in Active Directory, but the external e-mail address is available in the GAL.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -378,8 +379,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box if you want the address list to apply to security groups or distribution groups that have been mail-enabled. Mail-enabled groups are similar to distribution groups. E-mail messages that are sent to a mail-enabled group account will be delivered to several recipients.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -396,7 +397,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, we will select the option <strong>'All recipient types'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -414,7 +415,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -432,8 +433,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Next, we have the option of selecting conditions for our address list. However, if we don't want to set any conditions for the list, we can simply not select any of the check boxes. The first condition that can be set is <strong>'Recipient is in a State or Province'</strong>. Select this check box if you want the address list to include only recipients from specific states or provinces. This information is contained on the&nbsp;Address and Phone&nbsp;tab in the recipient's properties.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -450,8 +451,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>The next condition is <strong>'Recipient is in a Department'</strong>. Select this check box if you want the address list to include only recipients in specific departments. This information is contained on the&nbsp;Organization&nbsp;tab in the recipient's properties.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -468,8 +469,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">The next condition is <strong>'Recipient is in a Company'</strong>. Select this check box if you want the address list to include only recipients in specific companies. This information is contained on the&nbsp;Organization&nbsp;tab in the recipient's properties.</span></li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -486,8 +487,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>And then finally, there are 15 custom attributes for each recipient. There is a separate condition for each custom attribute. If you want the address list to include only recipients that have a specific value set for a specific custom attribute, select the check box that corresponds to that custom attribute.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -504,8 +505,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">In this case, we will select the condition <strong>'Recipient is in a State or Province'</strong>.</span></li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -522,8 +523,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">After a condition is selected, we then need to click the underlined term to create your condition. By default, the underlined term for new conditions will read&nbsp;<strong>'specified'</strong>. After you edit the condition, the underlined term will change to the value that you specified.</span></li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -540,8 +541,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Once the underlined term is clicked, a dialog box appears in which you can specify the values for the condition.&nbsp;To begin, we first need to enter a value in the text box.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -558,7 +559,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, we will enter the value, <strong>'NY'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -576,8 +577,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once a value is entered, click <strong>'Add'</strong>.</span></li></ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -594,8 +594,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">After clicking 'Add', the value will appear here. You can add more than one value, but you cannot enter duplicate values.</span></li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -612,7 +612,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'OK'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -630,7 +630,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">You can see now that instead of the underlined term reading 'specified', the underline term now reads the new value that</span> we just entered.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -648,7 +648,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong> to continue.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -666,8 +666,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Next, we need to specify when the address list should be applied. This first option, <strong>'Do not apply'</strong>, means that after the address list is created</span>, the address list will not be applied until the list is applied manually at a later time.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -684,8 +684,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Select this option to apply the address list as soon as it is created.</span></li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -702,8 +702,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this option to specify a time to apply the new address list.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -720,7 +720,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li>Then select the dropdown.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -738,7 +738,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li>Once the dropdown is selected, a calendar will appear where you can set the date when the new address list will be applied.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -756,7 +756,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Then you can set the time when the new address list will be applied.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -774,7 +774,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, we will select the option <strong>'Immediately'</strong>, so that the new address list will be applied as soon as the list is created.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -792,8 +792,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Not only do you have the option to define when the new address list will be applied, but you can also define how long the address list will be applied for. To do this, select the option <strong>'Cancel tasks that are still running after (hours)'</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -810,8 +810,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Then enter in how long the address list will run. The default is 8 hours.</span></li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -828,7 +828,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong> to move on.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -846,8 +846,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>On this screen, review the&nbsp;'Configuration Summary' and verify that the information you entered&nbsp;is correct. If you are not satisfied with any of the information, you may go back and make any changes necessary.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -864,8 +864,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>If the information in the&nbsp;'Configuration Summary'&nbsp;is correct, press&nbsp;<strong>'New'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -882,8 +882,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And then finally, on this last screen, you have the option of reviewing</span>&nbsp;the associated shell command that was performed by this wizard.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -900,8 +900,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Press&nbsp;<strong>'Finish'</strong>&nbsp;to complete the wizard.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

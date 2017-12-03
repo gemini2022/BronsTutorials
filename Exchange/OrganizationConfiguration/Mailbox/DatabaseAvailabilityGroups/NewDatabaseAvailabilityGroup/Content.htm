@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to create a new Database Availability Group, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>A database availability group (DAG) is a set of up to 16 Microsoft Exchange Mailbox servers that provide automatic database-level recovery from a database, server, or network failure. Mailbox servers in a DAG monitor each other for failures. When a Mailbox server is added to a DAG, it works with the other servers in the DAG to provide automatic, database-level recovery from database, server, and network failures. Optionally, you can also specify a witness server and witness directory. If you do specify a witness server, we recommend that you use a Hub Transport server. This allows an Exchange administrator to be aware of the availability of the witness. To learn how to create a new Database Availability Group, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -36,8 +36,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this box to type a valid and unique name for the DAG of up to 15 characters. The name is equivalent to a computer name, and a corresponding Cluster Name Object (CNO) will be created in Active Directory with the name of the DAG. The name of the DAG isn't used by end users or administrators. It is used only by the system for internal communication and to secure the DAG.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,7 +54,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, we will name the new database availability group <strong>'DAG1'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -72,8 +72,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box and use the corresponding text box to specify a witness server for the DAG. A witness server helps member servers of a DAG determine with certainty that a member has in fact gone down. A witness server serves as the referee between DAG members whenever a server ceases to give off a heartbeat and hence appears to have gone down. Thus, when the second server fails to receive a heartbeat from the first server, it checks with the File Share Witness to verify whether the first server has really gone down. Only after the File Share Witness confirms that the first server has gone down will the second server make its database the active copy. This prevents an issue known as the &ldquo;split-brain syndrome&rdquo;, wherein two servers will be simultaneously providing the same services to end users.                  </li>
+                  <br>
+                  <li>If you don't select this check box, the system will attempt to automatically select a Hub Transport server that doesn't have the Mailbox server role installed to be used as the witness server.</li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,8 +92,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>If you specify a witness server, you must use either a host name or a fully-qualified domain name (FQDN). Using an IP address or a wildcard name isn't supported. In addition, the witness server cannot be a member of the DAG.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -108,7 +110,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case the witness server will be <strong>'MX1.bronstutorials.local'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -126,8 +128,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box and use the corresponding text box to type the path to a directory that will be used to store witness data. If the directory doesn't exist, the system will create it for you on the witness server. If you don't select this check box, the default directory will be created on the witness server.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -138,31 +140,13 @@
                 </td>
             </tr>
         </table>
-        
+       
         <hr> 
    
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
-                
-                <td align="right">
-                  <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="8.jpg" width="637" height="556"></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr> 
-   
-		<table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, we will set the path of the directory to <strong>'C:\DAG1'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -180,7 +164,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li>Click <strong>'New' </strong>to create the new database availability group.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -198,8 +182,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">On this last screen, you have the option of reviewing</span>&nbsp;the associated shell command that was performed by this wizard.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -216,8 +200,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Press&nbsp;<strong>'Finish'</strong>&nbsp;to complete the wizard.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
