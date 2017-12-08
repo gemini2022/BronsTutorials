@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn  how to create a new Dynamic Distribution Group, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Dynamic distribution groups are mail-enabled Active Directory group objects that are created to expedite the mass sending of e-mail messages and other information within an Exchange organization. Unlike regular distribution groups that contain a defined set of members, the membership list for dynamic distribution groups is calculated each time a message is sent to the group, based on the filters and conditions that you define. When an e-mail message is sent to a dynamic distribution group, it is delivered to all recipients in the organization that match the criteria defined for that group. To learn  how to create a new Dynamic Distribution Group, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -36,8 +36,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box to select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the&nbsp;<strong>Users</strong>&nbsp;container in the Active Directory domain that contains the computer on which the Exchange Management Console is running. If the recipient scope is set to a specific domain, the&nbsp;<strong>Users</strong>&nbsp;container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,8 +54,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>To select a different OU, click&nbsp;<strong>'Browse'</strong>&nbsp;to open the&nbsp;'Select Organizational Unit'&nbsp;dialog box.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -72,8 +72,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Once the 'Select Organizational Unit'&nbsp;dialog box is open, you will see all OUs in the forest that are within the specified scope.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,8 +90,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">In this case, we will select the<strong>&nbsp;'Users'</strong>&nbsp;OU.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -108,8 +108,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And then click&nbsp;<strong>'OK'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -126,8 +126,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this box to type the name for the dynamic distribution group. The name cannot exceed 64 characters. In this case we will enter the name <strong>'DynamicDistributionGroup'</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -144,8 +144,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this box to type the alias of the dynamic distribution group. The alias cannot exceed 64 characters and must be unique in the forest. In this case, we will enter <strong>'DynamicDistributionGroup' </strong>for the alias.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -162,7 +162,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -180,8 +180,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Next, we need to define the recipient filter for the new dynamic distribution group. First, we have the option to specify the OU from which to select the recipients. A dynamic distribution group contains all recipients that are in the specified OU and any other OUs under it.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -198,8 +198,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Next, we need to select the type of recipients that will be part of the dynamic distribution group. This first option specifies that all recipient types will be part of the group.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -216,8 +216,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Or we have the option of selecting specific types of recipients.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -234,8 +234,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box if you want to include users that have mailboxes. Users that have Exchange mailboxes are those that have a user domain account and a mailbox in the Exchange organization.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -252,8 +252,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box if you want to include users that have external e-mail addresses. Users that have external e-mail accounts have user domain accounts in Active Directory, but use e-mail accounts that are external to the organization. This enables them to be included in the global address list (GAL) and added to distribution lists.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -270,8 +270,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box if you want to include Exchange resource mailboxes. Resource mailboxes allow you to administer company resources through a mailbox, such as a conference room or company vehicle.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -288,8 +288,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box if you want to include contacts that have external e-mail addresses. Contacts that have external e-mail accounts do not have user domain accounts in Active Directory, but the external e-mail address is available in the GAL.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -306,8 +306,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box if you want to include security groups or distribution groups that have been mail-enabled. Mail-enabled groups are similar to distribution groups. E-mail messages that are sent to a mail-enabled group account will be delivered to several recipients.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -324,8 +324,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">In this case, we will select the option&nbsp;<strong>'All recipient types'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -342,8 +342,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Click&nbsp;<strong>'Next &gt;'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -360,8 +360,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Next, we have the option of selecting conditions for the dynamic distribution group. However, if we don't want to set any conditions, we can simply not select any of the check boxes. The first condition that can be set is&nbsp;<strong>'Recipient is in a State or Province'</strong>. Select this check box if you want the dynamic distribution group to include only recipients from specific states or provinces. This information is contained on the&nbsp;Address and Phone&nbsp;tab in the recipient's properties.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -378,8 +378,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>The next condition is&nbsp;<strong>'Recipient is in a Department'</strong>. Select this check box if you want the dynamic distribution group to include only recipients in specific departments. This information is contained on the&nbsp;Organization&nbsp;tab in the recipient's properties.</li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -396,8 +396,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>The next condition is&nbsp;<strong>'Recipient is in a Company'</strong>. Select this check box if you want the dynamic distribution group to include only recipients in specific companies. This information is contained on the&nbsp;Organization&nbsp;tab in the recipient's properties.</li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -414,8 +414,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>And then finally, there are 15 custom attributes for each recipient. There is a separate condition for each custom attribute. If you want the dynamic distribution group to include only recipients that have a specific value set for a specific custom attribute, select the check box that corresponds to that custom attribute.</li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -432,8 +432,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">In this case, we will select the condition&nbsp;<strong>'Recipient is in a State or Province'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -450,8 +450,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">After a condition is selected, we then need to click the underlined term to create your condition. By default, the underlined term for new conditions will read&nbsp;<strong>'specified'</strong>. After you edit the condition, the underlined term will change to the value that you specified.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -468,8 +468,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Once the underlined term is clicked, a dialog box appears in which you can specify the values for the condition.&nbsp;To begin, we first need to enter a value in the text box.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -486,8 +486,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">In this case, we will enter the value,&nbsp;<strong>'NY'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -504,8 +504,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once a value is entered, click&nbsp;<strong>'Add'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -522,8 +522,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">After clicking 'Add', the value will appear here. You can add more than one value, but you cannot enter duplicate values.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -540,8 +540,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Click&nbsp;<strong>'OK'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -558,8 +558,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">You can see now that instead of the underlined term reading 'specified', the underline term now reads the new value that</span>&nbsp;we just entered.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -576,8 +576,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Click&nbsp;<strong>'Next &gt;'</strong>&nbsp;to continue.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -594,8 +594,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>On this screen, review the&nbsp;'Configuration Summary' and verify that the information you entered&nbsp;is correct. If you are not satisfied with any of the information, you may go back and make any changes necessary.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -612,8 +612,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>If the information in the&nbsp;'Configuration Summary'&nbsp;is correct, press&nbsp;<strong>'New'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -630,8 +630,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And then finally, on this last screen, you have the option of reviewing</span>&nbsp;the associated shell command that was performed by this wizard.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -648,8 +648,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Press&nbsp;<strong>'Finish'</strong>&nbsp;to complete the wizard.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to enable Outlook Anywhere, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use the Enable Outlook Anywhere wizard on the Exchange Server Client Access server to allow users to connect to their Exchange mailbox from the Internet. Outlook Anywhere eliminates the need for users in remote offices or mobile users to use a virtual private network (VPN) to connect to their Exchange servers. To learn how to enable Outlook Anywhere, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -54,8 +54,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Begin by typing the external host name or URL for your organization here.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -72,7 +72,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case we will enter <strong>'mail.bronstutorials.com'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -90,8 +90,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Next, we need to select an available external authentication method. The first option <strong>'Basic authentication'</strong>, sends the user name and password in clear text. It also requires that users enter domain, user name, and password every time that they connect to the Exchange server.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -108,8 +108,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">The next option <strong>'NTLM authentication'</strong>, user's credentials are never sent over the network. Instead, the client computer and the server exchange hashed values of the user's credentials. NTLM can also use the current Windows operating system logon information. Even though it's more secure, NTLM may not work with firewalls that examine and modify traffic. You can use an advanced firewall server such as Microsoft Internet Security and Acceleration (ISA) Server  together with NTLM authentication for Outlook Anywhere.</span></li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -126,8 +126,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box if you'll be using a separate server to handle Secure Sockets Layer (SSL) encryption and decryption. When you use SSL offloading, the firewall in front of the Client Access server ends the SSL session and then establishes a new non-SSL session to the Exchange server. Don't use this option unless you're sure that you have an SSL accelerator that can handle SSL offloading. If you don't have an SSL accelerator that can handle SSL offloading, and you select this option, Outlook Anywhere won't function correctly.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -144,7 +144,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'Enable'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -162,8 +162,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">On this last screen, you have the option of reviewing</span>&nbsp;the associated shell command that was performed by this wizard.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -180,8 +180,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Press&nbsp;<strong>'Finish'</strong>&nbsp;to complete the wizard.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

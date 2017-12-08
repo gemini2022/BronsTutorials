@@ -55,8 +55,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>First, we need to specify the mailbox type for the mailbox we're connecting. The first mailbox type is <strong>'User Mailbox'</strong>. Select this option to connect the mailbox as a mailbox owned by a user to send and receive e-mail messages. User mailboxes can't be used for resource scheduling. The Active Directory account that is associated with user mailboxes must reside in the same forest as the Exchange server. To use an account in a trusted forest, select&nbsp;Linked Mailbox.</li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -73,8 +73,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>The next mailbox type is&nbsp;<strong>'Room Mailbox'</strong>. This mailbox type is used as a location resource for scheduling meetings (room mailbox) or a shared resource (equipment mailbox) that isn't location specific. Room and equipment mailboxes can be included in meeting requests as resources and can be configured to automatically process incoming requests.</li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -91,8 +91,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Next is&nbsp;<strong>'Equipment Mailbox'</strong>.&nbsp;</span>This mailbox type is used as a resource for scheduling meetings. Equipment mailboxes can be included in meeting requests as resources and can be configured to automatically process incoming requests. As a best practice, create mailboxes for shared meeting equipment, such as projectors or audio equipment, which can be moved to different meeting rooms. If you create a new user account for the equipment mailbox in Active Directory, it will be disabled. If you plan to associate the equipment mailbox with an existing account, you must select a disabled account.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -109,8 +109,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And then finally, the last mailbox type is&nbsp;<strong>'Linked Mailbox'</strong>.&nbsp;</span>This mailbox type is a user mailbox that's accessed by a user in a separate, trusted forest. To store the mailbox information, you must select a user account in the forest in which the Exchange server resides. Linked mailboxes might be required for organizations that choose to deploy Exchange in a resource forest. Using the resource forest scenario, you can centralize Exchange in a single forest, while allowing access to the Exchange organization with user accounts in one or more trusted forests. </li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -127,8 +127,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Click&nbsp;<strong>'Next &gt;'</strong>.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -145,8 +145,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Next, select this option  to have Exchange locate a matching user object in Active Directory.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -163,8 +165,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Once this option is selected, we next need to select a matching user. To do this, begin by first clicking&nbsp;<strong>'Browse'</strong>&nbsp;to open the&nbsp;'Select User'&nbsp;dialog box.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -181,8 +185,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p> If Exchange locates a matching user, it will appear in this dialog box. In this case there is only one matching user, which is already selected by default. </p>
+                  </li>
+        </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -199,7 +205,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'OK'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -217,8 +223,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this option  if you want to connect the mailbox to a user other than the matching user.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -235,8 +241,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Once this option is selected, we next need to select an available user in Active Directory. To do this, begin first by clicking <strong>'Browse' </strong>to open the 'Select User' dialog box.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -253,8 +259,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the&nbsp;'Select User'&nbsp;dialog box is open, we then need to select a user in the list. </span>This list contains only users that don't have an associated mailbox.</li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -271,7 +277,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li>In this case, we will not choose any of the users in the list. Click <strong>'Cancel'</strong>.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -289,7 +295,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Instead, we will select the option <strong>'Matching user'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -307,8 +313,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>And then we  need to select a matching user. To do this, begin by first clicking&nbsp;<strong>'Browse'</strong>&nbsp;to open the&nbsp;'Select User'&nbsp;dialog box.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -325,8 +331,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Now that  the&nbsp;'Select User'&nbsp;dialog box is open, we'll use the user that </span> is already selected by default.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -343,7 +349,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'OK'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -361,8 +367,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Next, use this box to type an alias for the mailbox.</span> In this case, we'll enter <strong>'disconnectedmailbox' </strong>for the alias.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -379,8 +385,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box to assign a manage folder mailbox policy to the mailbox.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -397,8 +403,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Then click&nbsp;<strong>'Browse'</strong>&nbsp;to select a policy from a list of available  policies.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -415,7 +421,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, there are no managed folder mailbox policies available.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -433,7 +439,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Therefore, we will cancel out of this dialog box.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -451,8 +457,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And deselect the </span>option to assign a manage folder mailbox policy to the mailbox.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -469,8 +475,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box to assign a Microsoft Exchange ActiveSync policy to the mailbox.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -487,8 +493,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Then click&nbsp;<strong>'Browse'</strong>&nbsp;to select a policy from a list of available Exchange ActiveSync policies.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -505,8 +511,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">In this case there is one Exchange ActiveSync policy available.</span></li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -523,8 +529,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">However, we will not </span>assign a Microsoft Exchange ActiveSync policy to the mailbox, so we will cancel out of this dialog box.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -541,8 +547,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And then deselect the </span>option to assign a Microsoft Exchange ActiveSync policy to the mailbox.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -559,7 +565,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -577,8 +583,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>On this screen, review the&nbsp;'Configuration Summary' and verify that the information you entered&nbsp;is correct. If you are not satisfied with any of the information, you may go back and make any changes necessary.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -595,8 +601,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>If the information in the&nbsp;'Configuration Summary'&nbsp;is correct, press&nbsp;<strong>'Connect'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -613,8 +619,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And then finally, on this last screen, you have the option of reviewing</span>&nbsp;the associated shell command that was performed by this wizard.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -631,8 +637,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Press&nbsp;<strong>'Finish'</strong>&nbsp;to complete the wizard.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

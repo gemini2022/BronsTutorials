@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn  how to enable Unified Messaging for a mailbox, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>When you enable a user for Unified Messaging (UM), a default set of UM properties are applied to the user, and the user will be able to use the Unified Messaging features. When you enable a user for Unified Messaging, you have the option to add a Session Initiation Protocol (SIP) or E.164 address for the user. However, the user must still have an extension number configured. You can configure the extension number automatically or manually using the Enable Unified Messaging wizard. An extension number is required for each UM-enabled user associated with a telephone extension, SIP Uniform Resource Identifier (URI), or E.164 dial plan. The extension number must be the correct number of digits, as specified in the UM dial plan for the UM mailbox policy. If the user is associated with an E.164 dial plan, you can manually configure an E.164 address for a user using the Enable Unified Messaging wizard. If you associate a user to a SIP URI or E.164 dial plan, you must manually enter an extension number and the SIP or E.164 address for the user. To learn  how to enable Unified Messaging for a mailbox, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -54,8 +54,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">First, we need to select  the UM mailbox policy that we want</span> to use with this mailbox. To do this, begin first by selecting <strong>'Browse'</strong> to open the&nbsp;'Select UM Mailbox Policy'&nbsp;dialog box.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -72,8 +72,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the&nbsp;'Select UM Mailbox Policy'&nbsp;dialog box is open, select the policy you want to use</span>. In this case there is only one UM Mailbox Policy, which is already selected by default.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -90,7 +90,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Click <strong>'OK'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -108,8 +108,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>When Unified Messaging (UM) users connect to the voice mail system by telephone, they use Outlook Voice Access to navigate the menu system. Before users can access the voice mail system, the system prompts them to enter their PIN. As the administrator, you can configure PIN settings and requirements and perform PIN management tasks. After a user has been enabled for voice mail and a PIN has been generated, the user's PIN is stored encrypted in the user's mailbox. With this first option, you can have the PIN automatically generated.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -126,8 +126,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Or select this option to manually specify a PIN that a recipient will use to access the Unified Messaging system. The PIN must comply with the PIN policy settings configured on the UM mailbox policy associated with this recipient. For example, if the UM mailbox policy is configured to accept only PINs that contain seven or more digits, the PIN you enter in this text box must be at least seven digits.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -144,7 +144,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Once this option is selected, we then need to enter the PIN here.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -162,7 +162,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">The PIN will be displayed in secure text format.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -180,8 +180,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Select this check box to force the user to reset a Unified Messaging PIN when the user accesses the Unified Messaging system from a telephone.&nbsp; It's a security best practice to force UM-enabled users to change their PIN at their first logon to help protect against unauthorized access to their data and Inbox.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -198,7 +198,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -216,8 +216,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>If you have configured an extension number for the user in the&nbsp;<strong>Business</strong>&nbsp;field on the&nbsp;<strong>Address and Phone</strong>&nbsp;tab in the user's properties, the extension number will be generated automatically.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -234,8 +234,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>If you have not configured an extension number for the user, then you'll have to enter the extension number for the user in the&nbsp;<strong>'Manually entered mailbox extension'</strong>&nbsp;box. This extension number is used when a user uses Outlook Voice Access to access his or her Exchange mailbox.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -252,7 +252,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">In this case, the mailbox extension that we will enter will be <strong>'12345'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -270,8 +270,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>This option will be available if the user whom you are enabling for Unified Messaging is associated with either a SIP URI or E.164 dial plan. For&nbsp;Office Communications Server, the user's SIP address is taken from the&nbsp;<strong>msRTCSIP-PrimaryUserAddress</strong>&nbsp;attribute in the Active&nbsp;Directory Domain Services. If this attribute is not populated, the user's primary SMTP address will be used for the SIP address.&nbsp;By default, this setting is enabled. For example, amy.strande@litware.com.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -288,8 +288,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>This option will be available if the user whom you are enabling for Unified Messaging is associated with either a SIP URI or E.164 dial plan. If you are associating the user with an E.164 dial plan, you must manually enter an E.164 address for the user. The number that is entered must be in the correct E.164 format. For example +14255551234.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -306,7 +306,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -324,8 +324,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>On this screen, review the&nbsp;'Configuration Summary' and verify that the information you entered&nbsp;is correct. If you are not satisfied with any of the information, you may go back and make any changes necessary.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -342,8 +342,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>If the information in the&nbsp;'Configuration Summary'&nbsp;is correct, press&nbsp;<strong>'Enable'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -360,8 +360,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And then finally, on this last screen, you have the option of reviewing</span>&nbsp;the associated shell command that was performed by this wizard.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -378,8 +378,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Press&nbsp;<strong>'Finish'</strong>&nbsp;to complete the wizard.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">

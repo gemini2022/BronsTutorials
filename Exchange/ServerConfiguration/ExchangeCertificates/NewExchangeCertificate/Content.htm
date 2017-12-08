@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to create a new Exchange certificate, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>After you have installed the Client Access server role, you'll need to create a Secure Sockets Layer (SSL) certificate for the various services in your organization. To learn how to create a new Exchange certificate, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -37,8 +37,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>Begin by entering a friendly name for your certificate.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -55,7 +55,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">In this case, we will name our new Exchange certificate <strong>'ExchangeCertificate'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -73,7 +73,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Click <strong>'Next' </strong>to continue.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -91,8 +91,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>Next, if you want to apply the certificate to all subdomains automatically by creating a wildcard certificate, select this option <strong>'Enable wildcard certificate'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -109,8 +109,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>Once the option 'Enable wildcard certificate' is selected, we next need to  enter a root domain.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -127,7 +127,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li>In this case, the root domain we will enter will be <strong>'bronstutorials.local'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -145,8 +145,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                <li><span dir="LTR">In this case we will deselect the option <strong>'Enable Wildcard certificate'</strong>.</span></li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -163,8 +162,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>Since we are deselecting this option, we will then need to select the services and protocols that our certificate will need to support. To do this, begin by clicking <strong>'Next &gt;'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -181,8 +180,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>If you will be using this certificate for Federated Sharing, begin by expanding <strong>'Federated Sharing'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -199,7 +197,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Then select the option <strong>'Public certificate'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -217,7 +215,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Now that federated sharing</span> is enabled, close it.</li>
             </ul></td>
                 
                 <td align="right">
@@ -235,8 +233,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>If you'll be using this certificate for Outlook Web App, then expand <strong>'Client Access server (Outlook Web App)'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -253,7 +251,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">If you want to use Outlook Web App in your intranet, select the option <strong>'Outlook Web App is on the intranet'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -271,8 +269,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Then enter the FQDN of the</span> Outlook Web App server.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -289,8 +287,26 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li>In this case, our Outlook Web App server is <strong>'mx1.bronstutorials.local'</strong>.</li>
             </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="15b.jpg" width="637" height="556"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li>And if you want to use Outlook Web App on the internet, select the option <strong>'Outlook Web App is on the internet'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -307,7 +323,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Then enter the domain name you use to access Outlook Web App.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -325,8 +341,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">In this case, the domain name that is used to access Outlook Web App</span> is <strong>'mail.bronstutorials.com'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -343,8 +359,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Now that  Outlook Web App is configured for this certificate</span>, close it.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -361,8 +377,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>If you'll be using this certificate for Exchange ActiveSync, then expand <strong>'Client Access server (Exchange ActiveSync)'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -379,8 +395,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>Then select the&nbsp;<strong>'Exchange ActiveSync is enabled'</strong>&nbsp;check box, which is already selected by default.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -397,8 +413,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>And then enter the domain name you use to access Exchange ActiveSync.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -415,7 +431,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Which in this case is <strong>'mail.bronstutorials.com'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -433,8 +449,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Now that  Exchange ActiveSync is configured for this certificate</span>, close it.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -451,8 +467,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>If you'll be using this certificate for Exchange Web Services, Outlook Anywhere, or the Autodiscover service, then expand <strong>'Client Access server (Web Services, Outlook Anywhere, and Autodiscover)'</strong>.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -469,7 +485,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Then select the option <strong>'Exchange Web Services is enabled'</strong> if you want to enable Exchange Web Services, which is already enabled by default.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -487,8 +503,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>Or select the option <strong>'Outlook Anywhere is enabled'</strong> if you want to enable Outlook Anywhere, which is also already enabled by default.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -505,7 +521,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Then enter the external host name for your organization. In this case, there is already information entered, but it is not correct. To fix this, select the information in the text box.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -523,7 +539,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Then enter the correct information.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -541,7 +557,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Which in this case is <strong>'mail.bronstutorials.com'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -559,7 +575,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Next, select whether you want Autodiscover</span> to be used on the Intranet.</li>
             </ul></td>
                 
                 <td align="right">
@@ -577,7 +593,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Or Autodiscover to be used on the internet.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -595,7 +611,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Then decide if a long URL will be used.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -613,7 +629,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Or a short URL will be used.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -631,7 +647,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Or if the URL will be in another format.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -649,7 +665,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Then enter the URL. In this case there is already a URL entered, but it is not correct. To fix it, all that needs to be done is to select <strong>'local'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -667,7 +683,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">And then change the 'local' part of the URL.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -685,7 +701,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Which in case we will change it to <strong>'com'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -703,8 +719,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Now that  Web Services, Outlook Anywhere, and Autodiscover has been configured for this certificate</span>, close it.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -721,8 +737,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>If you'll be using this certificate for POP and IMAP, then expand <strong>'Client Access server (POP/IMAP)'</strong>.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -739,7 +755,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Then select this check box if you'll be using POP and IMAP on the Intranet.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -757,8 +773,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>And select this check box if you'll be using POP and IMAP on the Internet.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -775,7 +791,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li>Then  we need to enter the domain name that will be used for POP.</li>
             </ul></td>
                 
                 <td align="right">
@@ -793,8 +809,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">In this case, there is already information entered, but it is not correct. To fix it, </span>select the information in the text box.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -811,8 +827,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>Then enter the correct information.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -829,8 +845,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Which in this case is&nbsp;<strong>'pop.bronstutorials.com'</strong>.</span></li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -847,8 +863,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+              <li>Next, we need to enter the domain name that will be used for IMAP. <span dir="LTR">In this case, there is already information entered, but it is not correct. To fix it,&nbsp;</span>select the information in the text box.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -865,8 +881,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>Then enter the correct information.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -883,8 +899,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Which in this case is&nbsp;<strong>'imap.bronstutorials.com'</strong>.</span></li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -901,8 +917,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Now that we have POP and IMAP configured for this certificate</span>, close it.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -919,8 +935,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>If you'll be using this certificate for Unified Messaging, then expand&nbsp;<strong>'Unified Messaging server'</strong>.</li>
+      </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -937,8 +953,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>Choose whether you'll use a self-signed certificate.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -955,8 +971,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                <li><span dir="LTR">Or a public certificate. You must use a public certificate if you are using Unified Messaging with Office Communications Server.</span></li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -973,8 +988,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>Then enter the fully qualified domain name (FQDN) of your Unified Messaging server. In this case, the information has already been entered by default.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -991,8 +1006,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+              <li><span dir="LTR">Now that Unified Messaging has been configured for this certificate</span>, close it.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1009,8 +1023,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>If you'll be using mutual TLS to help secure Internet mail or if you'll be using a Hub Transport server for POP and IMAP client submission, then expand&nbsp;<strong>'Hub Transport Server'</strong>.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1027,8 +1041,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+            <li><span dir="LTR">Then select this check box if you'll be using mutual TLS to help secure Internet mail. </span></li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1045,8 +1058,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>And enter the fully qualified domain name of your connector. <span dir="LTR">In this case, there is already information entered, but it is not correct. To fix it,&nbsp;</span>select the information in the text box.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1063,8 +1076,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>Then enter the correct information.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1081,8 +1094,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Which in this case is&nbsp;<strong>'mx1.bronstutorials.local'</strong>.</span></li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1099,7 +1112,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li>Then select this check box if you'll be using a Hub Transport server for POP and IMAP client submission.</li>
             </ul></td>
                 
                 <td align="right">
@@ -1117,8 +1130,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>And enter the fully qualified domain name of your connector.&nbsp;<span dir="LTR">In this case, there is already information entered, but it is not correct. To fix it,&nbsp;</span>select the information in the text box.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1135,8 +1148,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>Then enter the correct information.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1153,8 +1166,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Which in this case is&nbsp;<strong>'mx1.bronstutorials.local'</strong>.</span></li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1171,8 +1184,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Now that this has been configured</span>, close it.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1189,8 +1202,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>If you're upgrading from a previous version of Exchange Server and will be operating in a coexistence scenario for a period of time during the upgrade, then expand&nbsp;<strong>'Legacy Exchange Server'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1207,7 +1220,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Then enable the option <strong>'Use legacy domains'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -1225,8 +1238,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>And then enter the legacy domain name, which in this case has already ready been entered by default.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1243,8 +1256,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong> to continue.</span></li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1261,8 +1273,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Next is a list of domains that will be added to the certificate. Here you can click&nbsp;<strong>'Add'</strong>&nbsp;to add another domain or click one of the domains listed and then click&nbsp;<strong>'Edit'</strong>&nbsp;if you need to make changes to that domain..</span></li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1279,8 +1291,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>You also have the option to choose one of the domains to be the common name of the certificate. In this case, we will select the domain,  <strong>'mail.bronstutorials.com'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1297,7 +1309,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Then click the button <strong>'Set as common name'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -1315,8 +1327,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Now this domain </span>will be the common name of the certificate.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1333,7 +1345,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li>Click <strong>'Next &gt;'</strong>.</li>
             </ul></td>
                 
                 <td align="right">
@@ -1351,8 +1363,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>Here we need to enter information about our Exchange organization. We'll need to enter the name of the Organization, the Organization unit, and location information including the Country/region, City/locality, and State/province.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1369,8 +1381,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Next, we need to select a location for the certificate request file. To do this, begin first by selecting <strong>'Browse'</strong>.</span></li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1387,8 +1399,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>Then enter the file name you want to use.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1405,7 +1417,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">In this case, we will enter <strong>'ExchangeCertificate'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -1423,7 +1435,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Then click <strong>'Save'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -1441,7 +1453,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -1459,8 +1471,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+              <li>On this screen, review the&nbsp;'Configuration Summary' and verify that the information you entered&nbsp;is correct. If you are not satisfied with any of the information, you may go back and make any changes necessary.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1477,8 +1488,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>If the information in the&nbsp;'Configuration Summary'&nbsp;is correct, press&nbsp;<strong>'New'</strong>.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1495,8 +1506,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">And then finally, on this last screen, you have the option of reviewing</span>&nbsp;the associated shell command that was performed by this wizard.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -1513,7 +1524,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Read the information on how to prepare the certificate.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -1531,8 +1542,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Then press&nbsp;<strong>'Finish'</strong>&nbsp;to complete the wizard.</span></li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">

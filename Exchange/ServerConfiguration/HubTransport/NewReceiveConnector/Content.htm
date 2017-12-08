@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to create a new Receive Connector, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Receive connectors represent a logical gateway through which all inbound messages are received. Receive connectors are configured on a per-server basis, and they control how that server receives messages from the Internet, e-mail clients, and other messaging servers. By default, the Receive connectors required for internal mail flow are automatically created when the Hub Transport server role is installed. Similarly, when you install the Edge Transport server role, the Receive connector capable of receiving mail from the Internet and from Hub Transport servers is automatically created. However, end-to-end mail flow is possible only after the Edge Transport server has been subscribed to the Active Directory site by using the Edge Subscription process. Other scenarios, such as an Internet-facing Hub Transport server or an Edge Transport server that doesn't use EdgeSync, require manual connector configuration to establish end-to-end mail flow. To learn how to create a new Receive Connector, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -54,8 +54,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Begin by typing a meaningful name for this connector. Specify a name for the Receive connector that helps you distinguish this Receive connector from other Receive connectors in your configuration.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -72,7 +72,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">In this case, we will name this receive connector <strong>'ReceiveConnector'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -90,8 +90,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Next, we need to select the usage type for this connector. The usage type determines the permissions granted to sessions that connect to the Receive connector and the supported authentication mechanisms. To select a usage type for this connector, begin by first selecting the dropdown.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -108,8 +108,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the dropdown is selected, you'll have the option choosing one of five usage types. The first usage type is <strong>'Custom'</strong>. Select this option to create a customized connector that connects with systems that don't include servers running Exchange.</span></li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -126,8 +126,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">The next option is <strong>'Internet'</strong>. Internet Receive connectors receive e-mail from servers on the Internet. This connector is configured to accept connections from anonymous users.</span></li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -144,8 +144,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Next is the option <strong>'Internal'</strong>. Internal Receive connectors are used to receive e-mail from servers within your Exchange organization. This connector is configured to only accept connections from Exchange servers.</span></li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -162,8 +162,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Then we have the option <strong>'Client'</strong>. Client Receive connectors receive e-mail from users of Microsoft Exchange. This connector is configured to only accept client submissions from authenticated Microsoft Exchange users. The&nbsp;<strong>Client</strong>&nbsp;usage type is only available for Receive connectors configured on Hub Transport servers.</span></li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -180,8 +180,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And then finally, we have the option <strong>'Partner'</strong>. Partner Receive connectors are used to receive e-mail from partner domains. This connector is configured to receive mail from domains included in the list of secure receive domains. You can add domains to this list by using the&nbsp;<em>TLSReceiveDomainSecureList</em>parameter in the&nbsp;<strong>Set-TransportConfig</strong>&nbsp;command. Mutually authenticated TLS connections are required for domains that are on this list.</span></li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -198,7 +198,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">In this case, we will select the option <strong>'Custom'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -216,7 +216,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Once a usage type is selected, click <strong>'Next &gt;'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -234,8 +234,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Next, we need to specify the IP addresses and port numbers on which this Receive connector listens for incoming mail. To do this, begin first by clicking <strong>'Add'</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -252,8 +252,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Select this option to use all IP addresses associated with this computer. This is the recommended option.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -270,7 +270,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">But if you want to specify a particular IP address for the receive connector, select this option.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -288,7 +288,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" height="40" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Then enter the IP address you want to use for this receive connector.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -306,7 +306,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">In this case, we will enter <strong>'192.168.1.2'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -324,8 +324,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>This field identifies the TCP port number on which this Receive connector listens for incoming mail. TCP port 25 is the default port used for message transmission between SMTP servers.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -342,7 +342,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Click <strong>'OK'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -360,7 +360,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Once 'OK' is clicked, the IP address will be displayed here.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -378,7 +378,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Then for this example, </span>we will remove the item in the list refering to all available IP addresses. To do this, select <strong>'(All Available IPv4)'</strong>.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -396,7 +396,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Then click the <strong>'Remove'</strong> button.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -414,8 +414,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Here we can type the name advertised in response to the SMTP HELO or EHLO verb. If you leave this field blank, the fully qualified domain name (FQDN) of the Hub Transport server or Edge Transport server is automatically added when the connector is created.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -432,7 +432,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li>Click <strong>'Next &gt;'</strong> to continue.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -450,8 +450,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>We next need to enter the IP&nbsp;address or IP&nbsp;address range of the remote servers from which the connector accepts incoming connections. To do this, begin by first clicking <strong>'Add'</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -468,8 +468,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Next, enter the IP address directly or specify a subnet using the CIDR notation. For example, if you enter 192.168.1.1, the Receive connector accepts messages from that host only, but if you specify 192.168.1.0/24, the Receive connector accepts messages from the entire class C subnet of 192.168.1.0.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -486,7 +486,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">In this case, we will enter <strong>'192.168.1.50'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -504,8 +504,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Click <strong>'OK'</strong>.</span></li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -522,7 +521,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Once the IP address has been added, it will be displayed here.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -540,7 +539,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">In this case, we want this receive connector to only receive mail from only one IP address and not a range of addresses. Therefore, we will remove the range from this list. To do this, select the range.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -558,7 +557,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Then click  <strong>'Remove'</strong></span>.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -576,7 +575,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -594,8 +593,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>On this screen, review the&nbsp;'Configuration Summary' and verify that the information you entered&nbsp;is correct. If you are not satisfied with any of the information, you may go back and make any changes necessary.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -612,8 +611,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>If the information in the&nbsp;'Configuration Summary'&nbsp;is correct, press&nbsp;<strong>'New'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -630,8 +629,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">And then finally, on this last screen, you have the option of reviewing</span>&nbsp;the associated shell command that was performed by this wizard.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -648,8 +647,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Press&nbsp;<strong>'Finish'</strong>&nbsp;to complete the wizard.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">

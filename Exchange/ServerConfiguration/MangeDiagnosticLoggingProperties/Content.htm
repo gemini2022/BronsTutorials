@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn how to manage diagnostic logging properties, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Modifying logging levels may help you troubleshoot issues that may occur in an Exchange Server 2010 environment. The logging level for each Exchange process determines which events are written to the Application event log in Event Viewer. Changing the process logging level for a given process may not yield additional events in the event log. Many variables affect whether a change to the process logging level setting will increase the number of events. These variables include, but are not limited to, the actions being performed by the process and the number of events implemented in the source code for the logging level selected. To learn how to manage diagnostic logging properties, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -107,8 +107,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>Next, we need to select the Exchange service for which we want to change the logging level. In this case, first we'll expand <strong>'MSExchange ActiveSync'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -125,7 +125,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Then we'll select the service <strong>'Configuration'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -143,8 +143,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Once a service is selected, we next need to select a logging level. The first logging level <strong>'Lowest'</strong>, specifies that only critical events, error events, and events with a logging level of zero (0) are logged.</span></li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -161,8 +161,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Next, is the logging level</span> <strong>'Low'</strong>, where events with a logging level of 1 or lower are logged.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -179,8 +179,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">Then we have the logging level <strong>'Medium'</strong>, where events with a logging level of 3 or lower are logged.</span></li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -197,8 +197,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">The next logging level is <strong>'High'</strong>. With this logging level events with a logging level of 5 or lower are logged.</span></li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -215,8 +215,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                <li><span dir="LTR">And then finally, this last logging level <strong>'Expert'</strong>, specifies that events with a logging level of 7 or lower are logged.</span></li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -233,7 +232,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">In this case, we will select the logging level <strong>'Medium'</strong>.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -251,7 +250,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Once a logging level is selected, any node associated with the service that is selected turns red.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -269,8 +268,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li>With this option, <strong>'Reset all services to default logging levels'</strong>, you can return all logging levels back to default.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -287,7 +286,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
+                  <li><span dir="LTR">Click <strong>'Configure'</strong> to configure the logging properties.</span></li>
             </ul></td>
                 
                 <td align="right">
@@ -305,8 +304,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+                  <li><span dir="LTR">On this last screen, you have the option of reviewing</span>&nbsp;the associated shell command that was performed by this wizard.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -323,8 +322,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once you select the 'Ports' node, you will see in the window to the right side of the Routing and Remote Access screen, a layout of details that pertain to all the ports that are  available and which of these ports are currently  being used.</span> These ports represent the protocols that will be used to make a Routing and Remote Access connection.</li>
-            </ul></td>
+              <li><span dir="LTR">Press&nbsp;<strong>'Finish'</strong>&nbsp;to complete the wizard.</span></li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">

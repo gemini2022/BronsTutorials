@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn  how to Manage Send As Permission for a mailbox, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use Send As permissions to configure a mailbox so that users other than the mailbox owner can use that mailbox to send messages. After this permission is granted, any messages that are sent from the mailbox will appear as if they were sent by the mailbox owner. The Send As permission isn't granted until after replication has occurred. Replication times depend on your Exchange and network configuration. To grant the permission immediately, stop and then restart the Microsoft Exchange Information Store service. Also, before you perform this procedure, be aware that you cannot send e-mail messages on behalf of a mailbox if the mailbox is hidden from address lists. When sending a message, Exchange requires that an e-mail address is resolved in the&nbsp;<strong>From</strong>&nbsp;field. In the case where a message is sent on behalf of a mailbox that is hidden from address lists, the SMTP address is interpreted as an address that isn't from your organization (known as a&nbsp;<em>foreign address</em>) and is rejected. To learn  how to Manage Send As Permission for a mailbox, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -54,8 +54,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>First, you will notice that the only user that is allowed to send messages with this mailbox is the owner.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -72,8 +72,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>In this case, we want to grant another user permissions to send messages with this mailbox. To do this, begin first by clicking <strong>'Add'</strong> to open the&nbsp;'Select User or Group'&nbsp;dialog box.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -90,8 +90,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Once the 'Select User or Group'&nbsp;dialog box is open, we  need to then select the users or groups to which we want to grant the Send As permission for. In this case, we will select the Administrator.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -108,7 +108,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Once a user or group is selected, click <strong>'OK'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -126,8 +126,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>After clicking 'OK' on the 'Select User or Group'&nbsp;dialog box, the user or group you selected will be displayed here.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -144,7 +144,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li>Click <strong>'Manage'</strong>.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -162,8 +162,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">On this last screen, you have the option of reviewing</span>&nbsp;the associated shell command that was performed by this wizard.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -180,8 +180,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Press&nbsp;<strong>'Finish'</strong>&nbsp;to complete the wizard.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
