@@ -1,127 +1,129 @@
+Mailbox Database Properties
+	https://technet.microsoft.com/en-us/library/dd297937(v=exchg.141).aspx
 
+Database Copies Properties
+	https://technet.microsoft.com/en-us/library/dd351151(v=exchg.160).aspx
+	https://books.google.com/books?id=ZUSXBAAAQBAJ&pg=PT478&lpg=PT478&dq=mailbox+database+copies+status+tab+seeding&source=bl&ots=7P_9TPK7IS&sig=Vx80NbC4up8iNd4KB2NQKBpXjaE&hl=en&sa=X&ved=0ahUKEwimm82h0P3XAhVMOCYKHYWvDo4Q6AEISDAD#v=onepage&q=mailbox%20database%20copies%20status%20tab%20seeding&f=false
 
+Public Folder Database Properties
+	https://technet.microsoft.com/en-us/library/dd335100(v=exchg.141).aspx
 
+Database Availabilty Groups Properties
+	https://technet.microsoft.com/en-us/library/dd297985(v=exchg.141).aspx
 
-http://guidestomicrosoft.com/2015/06/30/configure-two-tier-pki-hierarchy/
+Managed Folder Mailbox Policies Properties
+	https://technet.microsoft.com/en-us/library/bb629688(v=exchg.80).aspx
 
-http://blog.msallal.com/2015/01/deploying-enterprise-pki-on-windows.html
-http://blog.msallal.com/2015/01/deploying-enterprise-pki-on-windows_24.html
+Offline Address Book Properties
+	https://technet.microsoft.com/en-us/library/bb124719(v=exchg.141).aspx
+	
+Managed Default/Custom Folders Properties
+	?
+	
+Managed Content Settings properties
+	https://technet.microsoft.com/en-us/library/bb124524(v=exchg.80).aspx
+	https://technet.microsoft.com/en-us/library/aa997629(v=exchg.80).aspx
 
-http://myitworld.azurewebsites.net/2016/01/18/installing-two-tier-pki-hierarchy-windows-server-2016-part1/
-http://myitworld.azurewebsites.net/2016/01/21/installing-two-tier-pki-hierarchy-windows-server-2016-part2/
-http://myitworld.azurewebsites.net/2016/01/25/installing-two-tier-pki-hierarchy-windows-server-2016-part3/
+Sharing policy properties
+	https://technet.microsoft.com/en-us/library/dd297987(v=exchg.141).aspx
 
-https://www.youtube.com/watch?v=kYUSRUERiCk
+Outlook Web Mailbox Policy Properties
+	https://technet.microsoft.com/en-us/library/dd351097(v=exchg.141).aspx
 
-Certificate Templates (MMC)
-	Duplicate Template
-	Template Properties
-		General
-		Reqeust Handling
-		Cryptography
-		Subject Name
-		Server
-		Issuance Requirements
-		Superseded Templates
-		Extensions
-		Security	
+Exchange ActiveSync Mailbox Policy Properties
+	https://technet.microsoft.com/en-us/library/bb123994(v=exchg.141).aspx
 
+Remote Domain Properties
+	https://technet.microsoft.com/en-us/library/bb124931(v=exchg.141).aspx
 
+Accepted Domain Properties
+	https://technet.microsoft.com/en-us/library/bb124745(v=exchg.141).aspx
 
+Transport Settings Properties
+	https://technet.microsoft.com/en-us/library/bb676532(v=exchg.141).aspx
 
-https://technet.microsoft.com/en-us/library/cc754553(v=ws.11).aspx	
+Journal Rule Properties
+	https://technet.microsoft.com/en-us/library/bb124246(v=exchg.141).aspx
 
+Send Connector Properties
+	https://technet.microsoft.com/en-us/library/bb629503(v=exchg.141).aspx
 
+UM Dial Plan Properties
+	https://technet.microsoft.com/en-us/library/bb124090(v=exchg.141).aspx
 
+UM IP Gateway Properties
+	https://technet.microsoft.com/en-us/library/aa997283(v=exchg.80).aspx
 
-http://secadmins.com/index.php/enroll-for-a-smart-card-certificate-on-behalf-of-other-users/	
+UM Mailbox Policy Properties
+	https://technet.microsoft.com/en-us/library/aa998829(v=exchg.141).aspx
 
+UM Auto Attendant Properties
+	https://technet.microsoft.com/en-us/library/aa997867(v=exchg.141).aspx
 
+Server Configuration Properties
+	https://technet.microsoft.com/en-us/library/bb123514(v=exchg.141).aspx
+	
+	Messaging Records Management tab
+		https://technet.microsoft.com/en-us/library/aa998273(v=exchg.80).aspx
+	UM Settings Tab
+		https://technet.microsoft.com/en-us/library/aa998815(v=exchg.80).aspx
 
-https://www.youtube.com/watch?v=AnOHAMkTQVA&t=190s	
+Mailbox Server Properties
+	https://technet.microsoft.com/en-us/library/aa998273(v=exchg.141).aspx
 
+Mailbox Database Copies Properties
+	?
 
+Client Access Server Properties
+	https://technet.microsoft.com/en-us/library/bb124503(v=exchg.141).aspx
 
-The SSL VPN client needs to be able to download the CRL to confirm that the server certificate on the VPN server has not been revoked. You must either publish the CRL on a server that is accessible on the Internet or configure the client to not require CRL checking.. Because it exposes a private server name to the Internet, you can do the following as an alternative solution.
+OWA Properties
+	https://technet.microsoft.com/en-us/library/dd298140(v=exchg.141).aspx
 
-Disable CRL Checking on VPN Client
+ECP Properties
+	https://technet.microsoft.com/en-us/library/dd298140(v=exchg.160).aspx	
 
-Start Registry Editor (Regedit.exe).
-Locate and then click the following key in the registry:
-HKEY_LOCAL_MACHINE–>System->CurrentControlSet->Services->Sstpsvc->Parameters
-On the Edit menu, point to New , click DWORD (32-bit) Value, and then add the following registry value:
-Value Name: NoCertRevocationCheck
-Value Data: 1
+OAB Properties
+	https://technet.microsoft.com/en-us/library/bb123710(v=exchg.141).aspx
 
+IMAP4 Properties
+	https://technet.microsoft.com/en-us/library/bb691401(v=exchg.141).aspx
 
+POP3 Properties
+	https://technet.microsoft.com/en-us/library/bb676455(v=exchg.141).aspx
 
+Exchange ActiveSync Properties
+	https://technet.microsoft.com/en-us/library/aa998363(v=exchg.141).aspx
 
+Hub Transport Server Properties
+	https://technet.microsoft.com/en-us/library/bb123514(v=exchg.141).aspx
 
-https://support.microsoft.com/en-us/help/926179/how-to-configure-an-l2tp-ipsec-server-behind-a-nat-t-device-in-windows-vista-and-in-windows-server-2008
+Receive Connector Properties
+	https://technet.microsoft.com/en-us/library/bb690954(v=exchg.141).aspx
 
+UM Server Properties
+	https://technet.microsoft.com/en-us/library/aa998815(v=exchg.141).aspx
 
+Mailbox Properties
+	https://technet.microsoft.com/en-us/library/bb124255(v=exchg.141).aspx
 
+Distribution Group Properties
+	https://technet.microsoft.com/en-us/library/bb125178(v=exchg.141).aspx
 
+Dynamic Distribution Group Properties
+	https://technet.microsoft.com/en-us/library/bb124560(v=exchg.141).aspx
 
+Mail Contact Properties
+	https://technet.microsoft.com/en-us/library/aa997434(v=exchg.141).aspx
 
+Mail User Properties
+	https://technet.microsoft.com/en-us/library/aa996365(v=exchg.141).aspx
 
+Move Request Properties
+	https://technet.microsoft.com/en-us/library/dd876924(v=exchg.141).aspx
 
 
 
 
 
-If the static IP address pool consists of ranges of IP addresses that are for a separate subnet, then you need to either enable an IP routing protocol on the remote access server computer or add static IP routes consisting of the {IP Address, Mask} of each range to the routers of the intranet. If the routes are not added, then remote access clients cannot receive traffic from resources on the intranet.
 
-
-
-
-
-
-
-
-
-
-
-The value that you specify in Network connection method is used to automatically configure the Policy Type condition. If you keep the default value of Unspecified, the network policy that you create is evaluated by NPS for all network connection types through any kind of network access server. If you specify a network connection method, NPS evaluates the network policy only if the connection request originates from the type of network access server that you specify. For example, if you specify Terminal Services Gateway, NPS evaluates the network policy only for connection requests that originate from Terminal Services Gateway (TS Gateway).
-
-
-
-https://technet.microsoft.com/en-us/library/cc731352(v=ws.10).aspx
-
-
-
-
-
-http://www.sysadminshowto.com/sstp-windows-vpn-client-error-the-revocation-function-was-unable-to-check-revocation/
-
-
-
-
-
-
-
-
-
-https://blogs.technet.microsoft.com/networking/2012/05/30/creating-a-secure-802-1x-wireless-infrastructure-using-microsoft-windows/
-
-
-https://documentation.meraki.com/MR/Encryption_and_Authentication/Enabling_WPA2-Enterprise_in_Windows_Vista_and_Windows_7
-
-
-
-
-http://www.dlink.com/al/sq/products/dwa-556-xtreme-n-pci-express-desktop-adapter
-
-
-
-
-
-https://documentation.meraki.com/MR/Encryption_and_Authentication/Bypassing_Server_Certificate_Validation_for_Troubleshooting
-
-
-
-https://technet.microsoft.com/en-us/library/hh945104(v=ws.11).aspx
-
-
-
-http://wifiblog.com/eap-peap-certificate-requirements/
