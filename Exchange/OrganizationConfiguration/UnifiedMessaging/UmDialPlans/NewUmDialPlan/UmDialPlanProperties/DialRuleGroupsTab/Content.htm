@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn about the Dialing Rule Groups tab, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use the&nbsp;Dialing Rule Groups&nbsp;tab on the UM dial plan to specify dialing rule groups for in-country/region and international calls placed by UM-enabled users. Each dialing rule entry defined on the dialing rule group determines the types of calls that users within a specific dialing rule group can make. After you use the&nbsp;<strong>Dialing Rule Groups</strong>&nbsp;tab to configure a dialing rule group, you must configure the UM mailbox policy to use the appropriate dialing rule group. After you configure the UM mailbox to use a dialing rule group, the dialing restrictions configured apply to all UM-enabled users who are associated with the UM mailbox policy. For example, you can configure a dialing rule group that doesn't require users who are associated with the dial plan to dial an outside line access code when they place a call to an in-country/region telephone number. To learn about the Dialing Rule Groups tab, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -18,8 +18,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
-        </ul>                  <br></td>
+                  <li>Use this text box to add, remove, or edit in-country/region dialing rule groups used by UM mailbox policies.</li>
+      </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="405" border="0">
@@ -36,8 +36,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this text box to add, remove, or edit international dialing rule groups used by UM mailbox policies.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,7 +54,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">To add a rule group, begin by clicking <strong>'Add'</strong> to open the <strong>'Dialing Rule Entry'</strong> dialog box.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -72,8 +72,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the </span><strong>'Dialing Rule Entry'</strong> dialog box is open, begin by Using this dropdown to select a name of an existing dialing rule entry. Or, if you want to create a dialing rule entry, type the name of the dialing rule entry. This is the display name for the dialing rule entry that will be displayed in the EMC. This field can contain only text characters. The display name for the dialing rule entry can contain up to 32 characters.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,7 +90,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case we will create a new dialing rule entry called <strong>'Regional Calls'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -108,8 +108,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this text box to define the number mask for the dialing rule entry. A number mask is used to define the telephone number format that a Unified Messaging server uses to determine what outgoing telephone number it will dial for a user. When an outgoing call is made to a number matched by the number mask on the dialing rule entry, the Unified Messaging server substitutes the digits matched into the dialed number. It then uses the digit string from this match to make the outgoing call.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -126,8 +126,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>An example of a valid number mask is 91425xxxxxxx. This field can contain only numbers and the character x.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -144,8 +144,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this text box to define the dialed number for the dialing rule entry. The dialed number is used to determine the actual dial string sent to the IP gateway. This number can be different from the number obtained by Unified Messaging for the outgoing call. However, your PBX can also be configured to omit the area code for local calls and can be configured for private voice numbering plans. Any wildcard characters (x) in the dial string are substituted with the digits from the original number that were matched by the number mask on the dialing rule entry.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -162,8 +162,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>An example of a valid dialed number is 9xxxxxxx. This field can contain only numbers and the character x.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -180,8 +180,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this text box to input a comment or description for the dialing rule entry that you're adding or modifying. By default, this text box is blank.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -198,8 +198,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">In this case we will enter the comment</span> <strong>'In-Country/Region'</strong>.</li></ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -216,7 +215,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'OK'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -234,8 +233,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the <strong>'OK' </strong>button on <span dir="LTR"> the </span><strong>'Dialing Rule Entry'</strong> dialog box has been clicked, the dialing rule will be displayed here.</span></li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

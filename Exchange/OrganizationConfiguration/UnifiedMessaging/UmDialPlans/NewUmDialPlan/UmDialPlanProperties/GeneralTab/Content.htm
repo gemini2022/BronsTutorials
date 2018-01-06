@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn about the General tab, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use the&nbsp;General&nbsp;tab to view specific dial plan settings or enable or disable features for UM-enabled users. To learn how to do this, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -18,8 +18,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
-        </ul>                  <br></td>
+                  <li>This section displays the Unified Messaging servers associated with a dial plan. The Unified Messaging servers listed in this section process incoming calls for users who are associated with the dial plan. Unified Messaging servers can be associated with single or multiple dial plans. You must use the&nbsp;<strong>UM Server Settings</strong>&nbsp;properties tab in the Unified Messaging server's properties to add a Unified Messaging server to a dial plan.</li>
+      </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="405" border="0">
@@ -36,8 +36,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>This section displays the UM IP gateways associated with a dial plan. The UM IP gateways listed in this section process incoming calls for users who are associated with the dial plan. A UM hunt group establishes a link between a UM dial plan and a UM IP gateway and can also be associated with a dial plan by first being associated with a UM IP gateway. You can associate a UM IP gateway with a dial plan when you create a UM hunt group.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,8 +54,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>A Uniform Resource Identifier (URI) is a string of characters that identifies or names a resource. The main purpose of this identification is to enable VoIP devices to communicate with other devices over a network using specific protocols. URIs are defined in schemes that define a specific syntax and format and the protocols for the call. After you create a UM dial plan, you won't be able to change the URI type without deleting the dial plan, and then re-creating the dial plan to include the correct URI type. You can select one of the following URI types for the dial plan:</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -72,8 +72,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>This is the number of digits in the extension numbers for users who are associated with this dial plan. For example, if a user associated with a dial plan dials a 4-digit extension to call another user in the same dial plan, select 4 as the number of digits in the extension. The number of digits for extension numbers is based on the telephony dial plan created on a PBX. This is a required field that has a value range from 1 through 20. The typical extension length is from 3 through 7 digits. If your existing telephony environment includes extension numbers, you must specify a number of digits that matches the number of digits in those extensions when you create the UM dial plan.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,8 +92,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>This field shows the last date and time the dial plan settings were modified.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -108,8 +110,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box to allow fax messages to be received by users who are associated with the dial plan. If you don't select this check box, all users who are associated with the dial plan won't be able to receive fax messages in their Inbox. By default, this setting is enabled.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -126,8 +128,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box to allow users associated with the dial plan through a UM mailbox policy to be able to create and configure call answering rules. When this setting is selected, UM-enabled users can create rules or actions and apply conditions to an incoming call to their phone number. They can transfer the call, have the caller leave a voice mail, or allow the caller to locate them at a different phone number.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -144,8 +146,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this dropdown  to select the VoIP security setting for the UM dial plan.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -162,8 +164,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>When you select&nbsp;<strong>SIP secured</strong>, only the SIP signaling traffic is encrypted, and the RTP media channels still use TCP, which isn't encrypted. Mutual Transport Layer Security (TLS) is used to encrypt the SIP signaling traffic.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -180,8 +182,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>By default, when you create a UM dial plan, it communicates in an unsecured mode, and the Unified Messaging servers associated with the UM dial plan send and receive data from IP gateways, IP PBXs, and other Exchange 2010 computers using no encryption. In unsecured mode, both the Realtime Transport Protocol (RTP) media channel and SIP signaling information aren't encrypted.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -198,8 +200,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>When you select&nbsp;<strong>Secured</strong>, both the SIP signaling traffic and the RTP media channels are encrypted. A secure signaling media channel that uses Secure Realtime Transport Protocol (SRTP) also uses mutual TLS to encrypt the VoIP data. A Unified Messaging server can operate in any mode configured on a dial plan because the Unified Messaging server is configured to listen on TCP port 5060 for unsecured requests and TCP port 5061 for secured requests at the same time.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

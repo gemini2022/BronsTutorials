@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn about the Settings tab, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use the&nbsp;Settings&nbsp;tab to configure dial plan settings for Unified Messaging. When you configure settings on this tab, you can control how internal and external callers locate users in the system, the number of logon failures allowed when internal users try to access their voice mail, and the default language that the dial plan uses. To learn about the Settings tab, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -18,8 +18,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
-        </ul>                  <br></td>
+                  <li>Use this dropdown to select the primary way that callers can locate a user when they dial in to the system. By default,&nbsp;<strong>Last name, First name</strong>&nbsp;is selected. This means that when users are searching for a user in the directory, they will enter the user's last name first and then the first name. When a subscriber or a UM-enabled user uses the subscriber access number to access the Unified Messaging system, they can access the menu that enables them to spell the name or alias to locate a user in the system. The option selected is the default method used by UM-enabled users. You must select one of the supported methods to be able to use the dial-by-name primary method. </li>
+    </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="405" border="0">
@@ -36,8 +36,13 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the dropdown is selected, you can choose from the following options:</span></li>
+                  <ul>
+                    <li><span dir="LTR">Last First</span></li>
+                    <li>First Last</li>
+                    <li>SMTP Address</li>
+                  </ul>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,8 +59,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this dropdown to select the secondary way that callers can locate a user when they dial in to the system. By default,&nbsp;<strong>SMTP address</strong>&nbsp;is selected. This means that when users search for a user in the directory, they will enter the user's e-mail alias or SMTP address. When subscribers or UM-enabled users use the subscriber access number to access the Unified Messaging system, they can access the menu that enables them to spell the name or alias to locate a user in the system. You aren't required to select one of the four methods that are supported. However, if you don't select a secondary method, callers are given only one method to use to spell a user's name in the system.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -72,8 +79,14 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the dropdown is selected, you can choose from the following options:</span></li>
+                  <ul>
+                    <li><span dir="LTR">Last First</span></li>
+                    <li>First Last</li>
+                    <li>SMTP Address</li>
+                    <li>None</li>
+                  </ul>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,8 +103,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this dropdown to select the audio codec that will be used by the dial plan. When a caller places a call to a user who is associated with the dial plan, Unified Messaging uses the audio codec that you select from this list to record voice messages that will be sent to UM-enabled users. By default, the MP3 format is selected. The MP3 format is a common audio file format that's used to greatly reduce the size of the audio file and is most commonly used by personal audio devices or MP3 players. MP3 is a cross-platform type of audio codec and is used for compatibility with many mobile phone and devices and various computer operating systems. WMA is used because it's highly compressed and has high quality format properties. G.711 PCM Linear is a telephone quality audio codec format that's the least compressed and has the lowest quality format. GSM 06.10 is an audio codec format that's used by mobile phone vendors and is the standard for digital mobile phone services. If you're concerned about users' disk quotas, select WMA as the audio codec. Voice files saved in .wma format are approximately half the size of the same voice recording made using one of the other audio codecs. </li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -108,8 +121,14 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the dropdown is selected, you can choose from the following options:</span></li>
+                  <ul>
+                    <li>G711&nbsp;(Pulse Code Modulation (PCM) Linear)</li>
+                    <li>WMA&nbsp;(Windows Media Audio)</li>
+                    <li>GSM&nbsp;(Group System Mobile 06.10)</li>
+                    <li>MP3&nbsp;(default)</li>
+                  </ul>
+      </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -126,8 +145,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this text box to enter the telephone number or an extension number for the dial plan's operator. You can configure this setting to transfer calls to an auto attendant if one is configured, to a human operator, to external telephone numbers, or to extension numbers. When a caller who is using the telephone keypad presses 0, or says "reception" or "operator," or the number of&nbsp;<strong>Input retries</strong>&nbsp;threshold is exceeded, the caller is transferred to the telephone number that you specify in this text box. This telephone number can be a number external to the organization or an internal telephone extension number.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -144,8 +165,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>For example, if the extension number for the receptionist or operator is 81964 and your organization has only one dial plan, enter 81964. By default, this setting is blank. If you don't enter a number in this text box, the ability to transfer calls to the operator is disabled and callers are politely disconnected because there's no one to answer the call. We recommend that you populate this text box with a telephone number that transfers callers to an operator if they can't locate a specific user in the directory.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -162,8 +183,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this text box to enter the number of sequential unsuccessful logon attempts allowed before a caller is disconnected. The value of this setting can be from 1 through 20. Setting this value too low can frustrate users. For most organizations, this value should be set to the default of three attempts.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -180,8 +203,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this text box to enter the maximum number of minutes that an incoming call can be connected to the system without being transferred to a valid extension number before the call is ended. For most organizations, this value should be set to the default of 30 minutes. This setting applies to all kinds of calls. This includes incoming subscriber access calls, voice calls internal to your organization, and voice calls external to your organization. The value of this setting can be from 10 through 120. Setting this value too low can cause incoming calls to be disconnected before they are completed. For example, if your organization receives many large fax messages, you may want to consider increasing this value from the default so that all the pages for fax messages are received.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -198,8 +223,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this text box to enter the maximum number of minutes allowed for each voice recording when a caller leaves a voice mail message. For most organizations, this value should be set to the default of 20 minutes. The value of this setting can be from 1 through 100. Setting this value too low can cause long voice messages to be disconnected before they are completed. Setting this value too high lets users save lengthy voice messages in their Inboxes. This setting is important if you have implemented strict disk quotas for users. This value must be less than the value set for the&nbsp;<strong>Maximum call duration (min)</strong>&nbsp;setting.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -216,8 +243,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this text box to enter the number of seconds of silence that the system allows when a voice message is being recorded before the call is ended. For most organizations, this value should be set to the default of 5 seconds. The value of this setting can be from 2 through 10. Setting this value too low can cause the system to disconnect callers before they are finished leaving their voice messages. Setting this value too high allows lengthy silences in voice messages.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -234,8 +263,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this text box to configure the number of times that callers can enter incorrect data before they are disconnected. For most organizations, this value should be set to the default of three attempts. This is an important setting for speech-enabled UM dial plans. Examples of incorrect data include when a caller requests an extension number that isn't found in the system, the system can't locate the user's extension number to transfer the call, or the caller presses a menu option that isn't valid. The value of this setting can be from 1 through 20. Setting this value too low may prematurely disconnect the caller.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -252,8 +283,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this dropdown to specify the default language used by callers. When a caller places a call to a user who is associated with a dial plan, this is the default language that the voice recorded operator uses. The system prompts that callers hear are also played in the default language. The language that is chosen on the UM dial plan is used to read e-mail, voice mail and calendar items; say the user&rsquo;s name if a personal greeting hasn&rsquo;t been recorded; transcribe a voice message using the Voice Mail Preview feature; enable Automatic Speech Recognition (ASR) to work correctly.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -270,8 +303,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>By default, if you install U.S. English with Exchange 2010, only one language is listed in this list. To have other language options available, you must install the UM language pack for each language you want to include. Adding other languages lets subscribers use a language other than U.S. English. For example, if a subscriber calls in to the Unified Messaging system using the subscriber access number from a desk telephone, the subscriber is greeted with a prerecorded operator's voice in English. Even if the same user selects a different language in Outlook Web App, such as French, the menus are still read in U.S. English. For the user to be able to hear the prerecorded operator menus in French, you must install the appropriate language.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

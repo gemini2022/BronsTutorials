@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn about the Dialing Restrictions tab, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use the&nbsp;Dialing Restrictions&nbsp;tab on the UM dial plan properties to configure dialing rule entries for callers who call in to a subscriber access number configured on a UM dial plan. You can restrict the type of calls placed by callers when an unauthenticated user or an Outlook Voice Access user calls in to a subscriber access number configured on a dial plan by configuring dialing rule groups and dialing restrictions. To learn how to do this, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -18,8 +18,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
-        </ul>                  <br></td>
+                  <li>
+                    <p>Select this check box to let users who call in to a subscriber access number configured on a dial plan place or transfer calls to an extension number associated with a UM-enabled user who is within the same dial plan. By default, this setting is enabled. When you disable this setting, users who call in to the subscriber access number won't be able to place or transfer calls to any users who aren't UM-enabled, to other extension numbers, or to UM-enabled users who are associated with the same dial plan. This is because the&nbsp;<strong>Allow calls to extensions</strong>&nbsp;setting is disabled by default.</p>
+</li>
+      </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="405" border="0">
@@ -36,8 +38,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>When this setting is disabled, users who call in to a subscriber access number on the dial plan can't place calls to users who aren't UM-enabled or to other extension numbers not associated with a UM-enabled user. However, they can place a call or transfer a call to extension numbers associated with UM-enabled users. This is because the&nbsp;<strong>Allow calls to users within the same dial plan</strong>&nbsp;setting is enabled by default. The&nbsp;<strong>Allow calls to extensions</strong>&nbsp;setting is disabled by default. When this setting is enabled, users who call in to a subscriber access number configured on the dial plan can place calls to users who aren't UM-enabled, to other extension numbers not associated with a UM-enabled user, and to UM-enabled users. This is because the&nbsp;<strong>Allow calls to users within the same dial plan</strong>&nbsp;setting is enabled by default. You can enable this setting in an environment where not all users have been UM-enabled. This setting is also useful when you want to allow users who call in to a subscriber access number configured on a dial plan to call extension numbers that aren't associated.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,8 +58,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this section to add or remove allowed in-country/region dialing rule groups. By default, there are no in-country/region dialing rule groups configured on UM dial plans. In-country/region dialing rule groups are used to allow or restrict the telephone numbers within a country or region that any user who has dialed in to the subscriber access number can dial. This helps prevent unnecessary or unauthorized telephone calls and charges. To add in-country/region dialing rule groups, you must first create the appropriate in-country/region dialing rule groups on the dial plan, and then add the appropriate dialing rule entries on the dialing rule groups. After you create the required dialing rule groups on the dial plan, you must then add the dialing rule groups to the list of dialing restrictions on the&nbsp;<strong>Dialing Restrictions</strong>&nbsp;tab on the dial plan. In-country/region dialing rule groups can be used to enable a Unified Messaging server to allow or restrict access to telephone numbers within a country or region. This is applied to all users who have called in to a subscriber access number.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -72,85 +78,15 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this section to add or remove allowed international dialing rule groups. By default, there are no international dialing rule groups configured on UM dial plans. International dialing rule groups are used to allow or restrict the telephone numbers outside a country or region that any user who has dialed in to the subscriber access number can dial. This helps prevent unnecessary or unauthorized telephone calls and charges. To add international dialing rule groups, you must first create the appropriate international dialing rule groups on the dial plan, and then add the appropriate dialing rule entries on the dialing rule groups. After you create the required dialing rule groups on the dial plan, you must then add the dialing rule groups to the list of dialing restrictions on the&nbsp;<strong>Dialing Restrictions</strong>&nbsp;tab on the dial plan. International dialing rule groups can be used to enable a Unified Messaging server to allow or restrict access to telephone numbers outside a country or region. This is applied to all users who have called in to a subscriber access number</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
                         <tr>
                             <td align="center"><img src="4.jpg" width="444" height="515"></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr> 
-   
-		<table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
-                
-                <td align="right">
-                  <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="5.jpg" width="444" height="515"></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr> 
-   
-		<table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
-                
-                <td align="right">
-                  <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="6.jpg" width="506" height="460"></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr> 
-   
-		<table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
-                
-                <td align="right">
-                  <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="7.jpg" width="506" height="460"></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        
-        <hr> 
-   
-		<table width="100%" border="0">
-            <tr>
-                <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
-                
-                <td align="right">
-                  <table width="405" border="0">
-                        <tr>
-                            <td align="center"><img src="8.jpg" width="444" height="515"></td>
                         </tr>
                     </table>
                 </td>
