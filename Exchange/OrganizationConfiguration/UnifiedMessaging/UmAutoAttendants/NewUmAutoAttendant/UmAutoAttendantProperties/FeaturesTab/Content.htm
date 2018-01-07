@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn about the Features tab, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use the&nbsp;Features&nbsp;tab on the auto attendant's&nbsp;<strong>Properties</strong>&nbsp;sheet to define the features available to callers who dial in to the UM auto attendant. For example, you can configure auto attendant features such as the language used when callers call in to the auto attendant and the ability for callers to transfer to an operator's extension number that you define on this property sheet. To learn about the Features tab, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -18,8 +18,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
-        </ul>                  <br></td>
+                  <li>Use this box to enter the name of the business. By default, no business name is entered. If you enter a business name in this box, a prompt with the business name will be played to callers instead of the default greeting.</li>
+      </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="405" border="0">
@@ -36,7 +36,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, the business name we will enter will be <strong>'Bron's Tutorials'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -54,8 +54,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this box to enter the location of the business. By default, there is not a business location entered. If you enter the location of the business in this box, the business location will be played for callers.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -72,7 +72,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, the location that we will enter will be <strong>'New York'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -90,8 +90,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this dropdown to select the language that callers hear when they reach the auto attendant. The default language is determined when you install Microsoft Exchange Server 2010.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -108,8 +108,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>By default, when you install the Unified Messaging server role, U.S. English is used because the auto attendant uses the language setting on the UM dial plan. To have other language options available, you must install the UM language packs for the languages you want to include. Although you can select a language other than the language selected on the UM dial plan associated with the auto attendant, we recommend that the language settings on the dial plan and the auto attendant match. If language settings don't match, when callers call an extension number defined on the dial plan, callers will be presented with prompts in one language, and when they dial an extension number associated with an auto attendant, they will be presented with prompts in a different language. The language selected in this list is used when callers call the extension number defined on the properties for the UM auto attendant. </li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -126,8 +126,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this box to type the extension number used to call an operator. This extension number can also connect the caller to a human operator or a UM-enabled mailbox or can be configured to call an external telephone number. By default, an operator extension isn't included in this box.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -144,7 +144,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">In this case, we will enter <strong>'123'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -162,8 +162,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Select this check box to enable callers to transfer calls to users. By default, this option is enabled, and lets users who are associated with the dial plan transfer calls to users in the same UM dial plan. After you select this check box, you can set the group of users to whom callers can transfer by selecting the appropriate option under the&nbsp;<strong>Callers can contact</strong>&nbsp;section on this page. If you disable this option and disable the&nbsp;<strong>Allow callers to send voice message</strong>&nbsp;option, the options under&nbsp;<strong>Callers can contact</strong>&nbsp;are also disabled.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -180,8 +182,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Select this check box to enable callers to send voice messages to users. By default, this option is enabled, and lets users who are associated with the dial plan send voice messages to users in the same UM dial plan. After you select this check box, you can set the group of users to whom callers can send voice messages by selecting the appropriate option under the&nbsp;<strong>Callers can contact</strong>&nbsp;section on this page. If you disable this option and disable the&nbsp;<strong>Allow caller to transfer to users</strong>&nbsp;option, the options under&nbsp;<strong>Callers can contact</strong>&nbsp;are also disabled. If you disable this option, the auto attendant won't invite callers to send a voice message during a system prompt.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -198,8 +202,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use the following options to determine a grouping of users that callers can contact. By default, the&nbsp;<strong>'Users within dial plan'</strong>&nbsp;option is selected. This option  allows callers who connect to the UM auto attendant to locate and contact users who are in the dial plan associated with the UM auto attendant.</li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -216,8 +220,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this option to allow callers who connect to the UM auto attendant to locate and contact anyone listed in the GAL. This includes all users who are mailbox-enabled.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -234,8 +238,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this option to allow callers who connect to the UM auto attendant to locate and contact users who are in a defined custom address list. This includes all users who are mailbox-enabled.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -252,7 +256,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Then click the <strong>'Browse'</strong> button to open the <strong>'Select Address List'</strong> dialog box.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -270,8 +274,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Then select the address list from the list.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -288,8 +292,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">In this case, we will cancel out of this dialog box.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -306,8 +310,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this dropdown to select the matched name selection method for the UM auto attendant. The matched name method is used when two or more users who have the same name exist in the directory. This is also called a disambiguation field. You can configure this setting on this property sheet, or you can leave the default setting on the auto attendant and configure this setting on the dial plan. By default, the auto attendant is set to inherit from the dial plan. However, by default, the auto attendant is unable to disambiguate between two or more users who have the same name because the default setting for the&nbsp;<strong>Matched name selection method</strong>&nbsp;on the dial plan is set to&nbsp;<strong>None</strong>. Select one of the following methods that provide the caller more information to help the caller select the correct user in the organization:</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -324,8 +330,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">With this first option&nbsp;<strong>'Title'</strong>, the auto attendant includes each user's title when listing matches.</span></li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -342,8 +348,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">With this option&nbsp;<strong>'Department'</strong>, the auto attendant includes each user's department when listing matches.</span></li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -360,8 +366,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>With this option&nbsp;<strong>'Location'</strong>, the auto attendant includes each user's location when listing matches.</li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -378,8 +384,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">With this option, no additional information is given when matches are listed.</span></li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -396,8 +402,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>With this option&nbsp;<strong>'Prompt For Alias'</strong>, the auto attendant prompts the caller for the user's alias.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -414,8 +420,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                <li><span dir="LTR">And then finally with this option&nbsp;<strong>'Inherit From Dial Plan'</strong>, the auto attendant usees the default setting from the dial plan associated with the auto attendant.</span></li></ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -432,8 +437,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Select this check box to enable callers to be transferred to a human operator during business hours using the extension number that you configure in the&nbsp;<strong>Operator extension</strong>&nbsp;box on this property sheet. By default, this option is disabled. It's useful to enable this option so that when a caller is unsuccessful at using the menu prompts or directory search to locate the required person during business hours, the caller can leave a voice message or connect to a human operator. After you enable this option, you can configure the operator extension number on a UM-enabled mailbox that's monitored. The caller can leave a voice message, or a human operator who has the extension number can help the caller.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -450,8 +457,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Select this check box to enable callers to be transferred to a human operator after business hours using the extension number that you configure in the&nbsp;<strong>Operator extension</strong>&nbsp;box on this property sheet. By default, this option is disabled. It's useful to enable this option so that when a caller is unsuccessful at using the menu prompts or directory search to locate the required person after business hours, the caller can leave a voice message or connect to a human operator. After you enable this option, you can configure the operator extension number configured on a UM-enabled mailbox that's monitored. The caller can leave a voice message, or a human operator who has the extension number can help the caller.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

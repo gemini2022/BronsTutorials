@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn about the Dialing Restrictions tab, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use the&nbsp;Dialing Restrictions&nbsp;tab on the UM mailbox policy properties to configure dialing rules for UM-enabled users who are associated with this UM mailbox policy. UM mailbox policies are required to enable users for Unified Messaging. They are useful for applying and standardizing Unified Messaging configuration settings for UM-enabled users. You can create UM mailbox policies to apply a common set of policies or security settings to a collection of UM-enabled mailboxes. You can use these settings to control the extension numbers that can be reached by UM-enabled users who are associated with the UM mailbox policy or to control the telephone numbers that can be dialed by UM-enabled users who are associated with the UM mailbox policy. To learn about the Dialing Restrictions tab, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -18,8 +18,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
-        </ul>                  <br></td>
+                  <li>
+                    <p>Select this check box to allow UM-enabled users who call in to a subscriber access number configured on a dial plan and successfully log on to their mailbox to place calls or transfer to users who have extension numbers associated with another UM-enabled user within the same dial plan. By default, this setting is enabled. When you disable this setting, UM-enabled users who call in to a subscriber access number configured on a dial plan and successfully log on to their mailbox can place calls or transfer calls to users who aren't UM-enabled or to other extension numbers not associated with a UM-enabled user. However, they can't transfer to UM-enabled users who are within the same dial plan. This is because the&nbsp;<strong>Allow calls to extensions</strong>&nbsp;setting is enabled by default.</p>
+</li>
+      </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="405" border="0">
@@ -36,8 +38,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>When this setting is enabled, users who call in to a subscriber access number configured on a dial plan and successfully log on to their mailbox can place calls to users who aren't UM-enabled, to other extension numbers not associated with a UM-enabled user, and to UM-enabled users within the same dial plan. This is because the&nbsp;<strong>Allow calls to users within the same dial plan</strong>&nbsp;setting is enabled by default. When this setting is disabled, users who call in to a subscriber access number configured on a dial plan and successfully log on to their mailbox can't place calls to users who aren't UM-enabled or to other extension numbers not associated with a UM-enabled user. However, they can place calls or transfer calls to extension numbers associated with UM-enabled users. This is because the&nbsp;<strong>Allow calls to users within the same dial plan</strong>&nbsp;setting is enabled by default. The&nbsp;<strong>Allow calls to extensions</strong>&nbsp;setting is enabled by default. You can enable this setting in an environment where not all users have been UM-enabled. This setting is also useful when you want to allow users who call in to a subscriber access number configured on a dial plan to call extension numbers not associated with a UM-enabled user.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,8 +58,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this section to add or remove allowed in-country/region dialing rule groups. By default, there are no in-country/region dialing rule groups configured on UM mailbox policies. In-country/region dialing rule groups are used to allow or restrict the telephone numbers within a country or region that Outlook Voice Access users can dial. This helps prevent unnecessary or unauthorized telephone calls and charges. To add in-country/region dialing rule groups, you must first create the appropriate in-country/region dialing rule groups on the dial plan associated with the UM mailbox policy, and then add the appropriate dialing rule entries on the dialing rule group. After you create the required dialing rule groups on the dial plan, you must then add the dialing rule groups to the list of dialing restrictions on the&nbsp;<strong>Dialing Restrictions</strong>&nbsp;tab on the UM mailbox policy. In-country/region dialing rule groups can be used to enable a Unified Messaging server to allow or restrict access to telephone numbers within a country or region. This is applied to Outlook Voice Access users who have called in to a subscriber access number.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -72,8 +78,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this section to add or remove allowed international dialing rule groups. By default, there are no international dialing rule groups configured on UM mailbox policies. To add international dialing rule groups, you must first create the appropriate international dialing rule groups on the dial plan associated with the UM mailbox policy, and then add the appropriate dialing rule entries on the dialing rule group. After you create the required dialing rule groups, you must add the dialing rule groups to the dialing restrictions on the UM mailbox policy. International dialing rule groups can be used to enable a Unified Messaging server to allow or restrict access to telephone numbers outside a country or region. This is applied to Outlook Voice Access users who have called in to a subscriber access number. International dialing rule groups are used to allow or restrict the telephone numbers outside a country or region that Outlook Voice Access users can dial. This helps prevent unnecessary or unauthorized telephone calls and charges.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,7 +98,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">To add an allowed In-Country/Region Group, begin by clicking <strong>'Add'</strong> to open the <strong>'Select Allowed In-Country/Region Groups'</strong> dialog box.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -108,8 +116,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the&nbsp;<strong>'Select Allowed In-Country/Region Groups'</strong>&nbsp;dialog box is open, select the Allowed In-Country/Region Group you want to use</span>. In this case there is only one Allowed In-Country/Region Group, which is already selected by default.</li>
+      </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -126,8 +134,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Click&nbsp;<strong>'OK'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -144,8 +152,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>After the <strong>'OK' </strong>button is clicked on  the&nbsp;<strong>'Select Allowed In-Country/Region Groups'</strong>&nbsp;dialog box, the Allowed In-Country/Region Group will be displayed here.</li>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

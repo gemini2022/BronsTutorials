@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn about the General tab, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use the&nbsp;General&nbsp;tab to view and configure settings for a UM mailbox policy. For example, you can view the dial plans associated with the UM mailbox policy or disable missed call notifications for users who are associated with a specific UM mailbox policy. When you modify the settings on a UM mailbox policy, the settings are applied to all users who are associated with the UM mailbox policy. UM mailbox policies let you apply a common set of settings to a collection or group of mailboxes. You must create a UM mailbox policy before you can enable users for Unified Messaging. To learn about the General tab, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -18,8 +18,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
-        </ul>                  <br></td>
+                  <li>This unlabeled box at the top of the tab displays the name of the UM mailbox policy. You can modify this name.</li>
+    </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="405" border="0">
@@ -36,8 +36,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Displays the name of the dial plan associated with the UM mailbox policy. This is the name of the dial plan displayed in the Shell. When a new UM mailbox policy is created, it must be associated with a dial plan. After the UM mailbox policy is created and associated with a dial plan, the settings defined on the mailbox policy are applied to the users who are associated with the dial plan. By default, when you create a UM dial plan using the Shell, it will also create a UM mailbox policy. A UM mailbox policy can't be changed after it's associated with a dial plan.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,8 +56,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Displays the date of the last modification or change made to the UM mailbox policy.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -72,8 +74,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this text box to enter the maximum number of minutes that users who are associated with the UM mailbox policy can use when they record their voice mail greeting. You can modify this setting after the UM mailbox policy is created. Only numeric characters are allowed. The valid range for the greeting is from 1 through 10 minutes. The default setting is 5 minutes.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -89,8 +91,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Select this check box to enable or disable missed call notifications for users associated with the UM mailbox policy. A missed call notification is an e-mail message sent to a user's mailbox when the user doesn't answer an incoming call. This is a different e-mail message than the e-mail message that contains the voice mail message left for a user. Typically, when a user misses an incoming call, the user receives two e-mail messages: an e-mail message that contains the voice mail message and a missed call notification message. By default, missed call notifications are enabled when a UM mailbox policy is created.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -107,8 +111,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box to enable or disable Message Waiting Indicator for users associated with the UM mailbox policy. Message Waiting Indicator is a feature found in most legacy voice mail systems. In its most common form, it lights a lamp on the voice mail subscriber&rsquo;s phone to indicate the presence of a new voice mail. Message Waiting Indicator can also be a text message sent to the UM-enabled user's mobile phone. If this option is disabled on the UM IP gateway, this feature isn't available to UM-enabled users associated with the UM mailbox policy. This option isn't available to UM-enabled users who have a mailbox on a Microsoft Exchange 2007 server. The default setting is enabled.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -125,8 +129,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Select this check box to enable or disable inbound faxes for users associated with the UM mailbox policy. By default, when you enable users for Unified Messaging, they can receive faxes. However, there may be situations when users can't receive faxes, because the ability to receive faxes has been disabled on their mailbox. If this option is disabled on the UM dial plan, UM-enabled users associated with the UM mailbox policy won't be able to receive faxes. The default setting is disabled. After you have enabled the&nbsp;<strong>Allow inbound faxes</strong>&nbsp;setting, you will need to specify the URI for the partner fax server. If the Unified Messaging mailbox policy is associated with UM servers that use TCP and TLS, you will need to enter URIs for both TCP and TLS.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -143,8 +149,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box to enable or disable the Voice Mail Preview feature for users associated with the UM mailbox policy. Enabling this setting allows users to receive the text of a voice mail in the message body of an e-mail or text message. If this option is disabled on the UM dial plan, this feature won't be available to UM-enabled users associated with the UM mailbox policy. This option isn't available to UM-enabled users who have a mailbox on an Exchange 2007 Unified Messaging server. The default setting is enabled.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -161,8 +167,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box to enable or disable access to Outlook Voice Access for UM-enabled users who are associated with this UM mailbox policy. Outlook Voice Access is a feature used by UM-enabled users to access their Exchange 2007 or Exchange 2010 mailbox over a phone. By default, this setting is enabled.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -179,8 +185,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box to enable or disable the Play on Phone feature for users associated with the UM mailbox policy. This option is enabled by default and allows users to play their voice mail messages over a phone. The phone can be any phone, including an office or mobile phone. This option isn't available to UM-enabled users who have a mailbox on an Outlook 2007 Unified Messaging server.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -197,8 +203,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box to allow users who are associated with the UM mailbox policy to create call answering rules. If this option is disabled on the UM dial plan, this feature won't be available to UM-enabled users associated with the UM mailbox policy. This option isn't available to UM-enabled users who have a mailbox on an Exchange 2007 Unified Messaging server. The default setting is enabled.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

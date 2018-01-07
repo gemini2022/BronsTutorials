@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn about the General tab, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use the&nbsp;General&nbsp;tab to view display-only information about the UM auto attendant and to perform management tasks on a UM auto attendant. To learn how to do this, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -18,8 +18,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
-        </ul>                  <br></td>
+                  <li>This box shows whether the UM auto attendant is enabled or disabled. To enable or disable the auto attendant, close the&nbsp;<strong>General</strong>&nbsp;tab and use the action pane commands to enable or disable the auto attendant.</li>
+      </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="405" border="0">
@@ -36,8 +36,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>This box displays the UM dial plan associated with the auto attendant. After you create an auto attendant, the dial plan associated with the auto attendant can't be changed. If you need to associate an auto attendant with a different dial plan, you must delete the dial plan and then associate the auto attendant with the correct dial plan after you re-create it.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,8 +54,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>This box shows the last date and time the auto attendant settings were modified.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -72,8 +72,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this box to enter the extension numbers or pilot numbers that, when it's called, leads callers to the auto attendant. By default, no extension numbers are configured when you create an auto attendant. The number of digits in the extension number or pilot numbers you provide must match the number of digits for an extension number configured on the UM dial plan associated with the UM auto attendant. You can also add a Session Initiation Protocol (SIP) address to this box. A SIP address is used by some IP Private Branch eXchanges (PBXs). </p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,8 +92,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>However, you can create the new auto attendant without listing an extension number or pilot number. An extension number isn't required. To add an extension, type the number in this box, and then click&nbsp;<strong>Add</strong>. You can associate more than one number with an auto attendant. You can also edit or remove an existing extension number. To edit an existing extension number, click the&nbsp;<strong>Edit</strong>&nbsp;button. To remove an existing extension number from the list, click the&nbsp;<strong>Remove</strong>&nbsp;button.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -108,8 +110,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this option to enable callers to respond verbally to auto attendant prompts to navigate the menu system. By default, when an auto attendant is created, it isn't speech-enabled. If you decide to create the UM auto attendant but not to speech-enable it, you can use the EMC or the Shell to speech-enable it after you finish using the New UM Auto Attendant wizard. You can then view the properties of the auto attendant and enable this option.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -126,8 +130,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Select this check box to enable the UM auto attendant to use a dual tone multi-frequency (DTMF) fallback auto attendant. A DTMF fallback auto attendant can be used only if the&nbsp;<strong>Auto attendant is speech-enabled</strong>&nbsp;option is selected.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -144,8 +150,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>You must first create a DTMF fallback auto attendant, and then click the&nbsp;<strong>Browse</strong>&nbsp;button to locate the appropriate DTMF auto attendant. A DTMF fallback auto attendant is used when the UM speech-enabled auto attendant can't understand or recognize the speech inputs from the caller. If the DTMF auto attendant is used, the caller is required to use DTMF inputs to navigate the menu system, spell a user's name, or use a custom menu prompt. A caller won't be able to use voice commands to navigate this auto attendant. If you don't configure a DTMF fallback auto attendant, we recommend that you configure an operator extension number on the auto attendant. If you don't configure an operator extension number, when callers use a speech-enabled auto attendant and the system doesn't recognize their voice inputs, they won't be able to navigate the system or be transferred to an operator for help. Although not required, we recommend that you configure the DTMF fallback auto attendant to have the same configuration as the speech-enabled auto attendant. The DTMF fallback auto attendant shouldn't be speech-enabled.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -162,8 +168,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the <strong>'Browse' </strong>button is clicked, select a </span>DTMF fallback auto attendant from the list.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -180,7 +186,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">And then click <strong>'OK'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -198,8 +204,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this check box to enable the UM auto attendant to look up names in the directory for callers. This setting is enabled by default. If this setting is disabled, callers won't be able to search the directory for a specific person using touchtone or voice commands.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

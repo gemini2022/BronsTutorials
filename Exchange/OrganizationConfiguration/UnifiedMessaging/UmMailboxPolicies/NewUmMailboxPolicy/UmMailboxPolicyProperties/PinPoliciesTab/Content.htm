@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn about the PIN Policies tab, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use the&nbsp;PIN Policies&nbsp;tab to configure PIN settings for users who are associated with a UM mailbox policy. Unified Messaging PINs enable users to access their Inboxes by using a telephone. By configuring settings on this page, you can specify the minimum number of digits for a UM PIN or the number of failed logon attempts before users are locked out of their UM mailbox. Make sure that you plan carefully for the UM PIN policies that you implement in your environment. If you don't plan and implement the appropriate UM PIN policies, you may introduce security threats and mistakenly allow unauthorized access to your network. To learn about the PIN Policies tab, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -18,8 +18,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
-        </ul>                  <br></td>
+                  <li>
+                    <p>Use this text box to specify the minimum number of digits that a UM user's PIN can contain. The default setting is six digits. The range is from 4 through 24 numeric digits. This setting can't be disabled. Increasing the number of digits required for a PIN increases the level of security for your Unified Messaging system. Decreasing the number of digits required for a PIN reduces the level of security for your network. The fewer the digits that are required in a PIN, the easier it is for a potential attacker to guess a user's PIN. If this setting is set too high, users might have problems remembering their PINs. However, if the setting is too low, you risk unauthorized access to the Unified Messaging system.</p>
+</li>
+      </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="405" border="0">
@@ -36,8 +38,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this text box to configure the number of days until the UM-enabled user's PIN expires. After the PIN expires, the user must create a new UM PIN. For most organizations, this value should be set to the default of 60 days. The value of this setting can be from 0 through 999. If it's set to 0, PINs never expire. Setting this value too low can frustrate users because they are required to create and memorize new PINS too frequently.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,8 +58,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this setting to set the number of unique PINs that users must use before they can reuse an old PIN. For most organizations, this value should be set to the default of 5, the number of PINs that the system will remember. PIN history can't be disabled. You can set this value from 1 through 20. Setting this value too high can frustrate users because it can be difficult to memorize many PINs. Setting it too low may introduce a security threat to your network.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -72,8 +78,14 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Use this setting to set PIN complexity requirements for Unified Messaging. These complexity requirements are enforced on PIN changes or when new PINs are created. If this option is disabled, sequential and repeated numbers and the suffix of the mailbox extension will be rejected. If this option is enabled, only the suffix of the mailbox extension will be rejected. As a security best practice, we recommend that you disable this setting. If this setting is disabled, user PINs can't contain the following:</span></li>
+                  <br>
+                  <ul>
+                    <li>Sequential numbers, such as 123456 or 456789.</li>
+                    <li>Repeated numbers, such as 111111 or 8888888.</li>
+                    <li>Suffix of the mailbox extension.                    </li>
+                  </ul>
+            </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,8 +102,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this text box to enter the number of sequential unsuccessful or failed logon attempts that can occur before the Unified Messaging system automatically resets a user's PIN. For most organizations, this value should be set to the default of 5 attempts. The value of this setting can be from 0 through 999. If it's set to 0, this setting is disabled and the system won't automatically reset users' PINs. Setting this value too low can frustrate users; setting it too high gives malicious users more attempts to determine the PIN. This setting must be set to a number lower than the number configured in the&nbsp;<strong>Number of incorrect PIN entries before UM mailbox is locked out</strong>&nbsp;setting. This setting is designed to help prevent a brute force attack on user PINs.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -108,8 +122,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Use this text box to enter the maximum number of sequential unsuccessful or failed logon attempts before users are locked out of their mailbox. For example, if a user tries to log on to the mailbox unsuccessfully five times, based on the&nbsp;<strong>Failed logon attempts before automatic PIN reset</strong>&nbsp;setting, the system will reset the user's PIN. If the user tries to use the new PIN five more times unsuccessfully, the system will again reset the PIN. If the user tries to use this new PIN five more times unsuccessfully, the user is then locked out of the mailbox. After a user is locked out, an administrator must manually reset or unlock the mailbox for the user. This value can be set from 1 through 999. Setting this value too low can frustrate users; setting it too high gives malicious users more attempts to determine the PIN. For most organizations, this value should be set to the default of 15 attempts. This number must be greater than the number set in the&nbsp;<strong>Number of incorrect PIN entries before PIN is automatically reset</strong>&nbsp;setting. This setting is designed to help prevent a brute force attack on user PINs.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
