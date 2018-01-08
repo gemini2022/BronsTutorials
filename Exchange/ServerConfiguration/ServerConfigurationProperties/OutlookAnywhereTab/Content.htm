@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn about the Outlook Anywhere tab, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use the&nbsp;<strong>Outlook Anywhere</strong>&nbsp;tab to view or configure Outlook Anywhere settings. This tab is available only on servers that have the Client Access server role installed. To learn about the Outlook Anywhere tab, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -18,8 +18,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
-        </ul>                  <br></td>
+                  <li>This read-only field displays whether Outlook Anywhere is enabled or disabled for the server.</li>
+      </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="405" border="0">
@@ -36,8 +36,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Use this text box to type the external host name or URL for your organization. Users will use this name to connect to the Exchange server by using Outlook Anywhere.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,8 +54,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>There are a couple of authentication options available for Outlook Anywhere. The first option <strong>'Basic authentication'</strong>, uses Basic authentication. Basic authentication sends the user's user name and password in clear text. Basic authentication also requires the user to enter their domain, user name, and password every time they connect to the Client Access server.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -72,7 +72,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-            <li><span dir="LTR">Then select <strong>'Server Configuration'</strong>.</span></li></ul></td>
+            <li>The next option <strong>'NTLM authentication'</strong>, uses NTLM authentication. NTLM authentication is also known as Integrated Windows authentication. When NTLM authentication is used, the user's credentials aren't sent over the network. Instead, the client computer and the server exchange hashed values of the user's credentials. NTLM can also use the current Microsoft Windows operating system logon information. Even though it is more secure, NTLM may not work with firewalls that examine and modify traffic. For more information about whether you can use NTLM with your firewall, see your firewall manufacturer's documentation. We recommend that you choose NTLM authentication with SSL when you're using an advanced firewall server such as Microsoft Internet Security and Acceleration (ISA) Server 2006. ISA Server 2006 allows NTLM authentication to be used with Outlook Anywhere.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -89,8 +90,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'Server Configuration' is selected, select the option <strong>'Properties'</strong> found in the Actions pane located </span>at the far right side of the Exchange Management Console window.</li>
-              </ul></td>
+                  <li>And then finally, select this check box if you will be using a separate server to handle Secure Sockets Layer (SSL) encryption and decryption. When you use SSL offloading, the firewall in front of the Client Access server ends the SSL session and then establishes a new non-SSL session to the Client Access server.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">

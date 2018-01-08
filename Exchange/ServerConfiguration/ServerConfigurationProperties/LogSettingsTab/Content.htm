@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn about the Log Settings tab, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use the&nbsp;<strong>Log Settings</strong>&nbsp;tab to enable or disable message tracking, enable or disable connectivity logging, and to view or change the path for the message tracking logs, connectivity logs, Send connector protocol logs, and Receive connector protocol logs. To learn about the Log Settings tab, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -18,8 +18,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
-        </ul>                  <br></td>
+                  <li>By default, message tracking is enabled on Hub Transport and Edge Transport servers. To disable message tracking, clear the check box next to&nbsp;<strong>Enable message tracking log</strong>. To enable message tracking, select the check box next to&nbsp;<strong>Enable message tracking log</strong>.</li>
+      </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="405" border="0">
@@ -36,8 +36,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>This field displays the current location of the message tracking logs. By default, the message tracking logs are stored at C:\Program&nbsp;Files\Microsoft\Exchange&nbsp;Server\V14\TransportRoles\Logs\MessageTracking. To change the location of the message tracking logs, type the path to the new log location. Before you can change the path, message tracking must be enabled.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,8 +54,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>By default, connectivity logging is disabled on Hub Transport and Edge Transport servers. To enable connectivity logging, select the check box next to&nbsp;<strong>Enable connectivity log</strong>. To disable connectivity logging, clear the check box next to&nbsp;<strong>Enable connectivity log</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -72,7 +72,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-            <li><span dir="LTR">Then select <strong>'Server Configuration'</strong>.</span></li></ul></td>
+            <li>This field displays the current location of the connectivity logs. By default, the connectivity logs are stored at C:\Program&nbsp;Files\Microsoft\Exchange&nbsp;Server\V14\TransportRoles\Logs\Connectivity. To change the location of the connectivity logs, type the path to the new log location. Before you can change the path, connectivity logging must be enabled.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -89,8 +90,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'Server Configuration' is selected, select the option <strong>'Properties'</strong> found in the Actions pane located </span>at the far right side of the Exchange Management Console window.</li>
-              </ul></td>
+                  <li>This field displays the current location of the Send connector protocol logs. By default, the Send connector protocol logs are stored at C:\Program&nbsp;Files\Microsoft\Exchange&nbsp;Server\V14\TransportRoles\Logs\ProtocolLog\SmtpSend. All the Send connectors that are configured on the Edge Transport server share the same protocol logs. By default, protocol logging is disabled on all Send connectors. To change the location of the Send connector protocol logs, type the path to the new log location.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -107,8 +108,10 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'Server Configuration' is selected, select the option <strong>'Properties'</strong> found in the Actions pane located </span>at the far right side of the Exchange Management Console window.</li>
-              </ul></td>
+                  <li>
+                    <p>This field displays the current location of the Receive connector protocol logs. By default, the Receive connector protocol logs are stored at C:\Program&nbsp;Files\Microsoft\Exchange&nbsp;Server\V14\TransportRoles\Logs\ProtocolLog\SmtpReceive. All the Receive connectors that are configured on the Edge Transport server share the same protocol logs. By default, protocol logging is disabled on all Receive connectors. To change the location of the Receive connector protocol logs, type the path to the new log location.</p>
+</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">

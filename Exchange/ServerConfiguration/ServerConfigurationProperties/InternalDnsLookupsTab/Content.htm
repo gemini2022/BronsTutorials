@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn about the Internal DNS Lookups tab, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use the&nbsp;<strong>'Internal DNS Lookups'</strong>&nbsp;tab to specify whether to use the DNS servers that are configured on a network adapter installed on this server or to use specific DNS servers when resolving the addresses of mail servers for internal mail delivery. Internal DNS servers are used to resolve IP addresses for servers inside your organization. To learn about the Internal DNS Lookups tab, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -18,8 +18,9 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
-        </ul>                  <br></td>
+                  <li>To use the DNS servers configured on the network adapters that are installed  on this Exchange server, select the option&nbsp;<strong>'Use network card DNS settings'</strong>.</li>
+                  </ul>
+            <p>&nbsp;</p><br></td>
                 
                 <td align="right">
                     <table width="405" border="0">
@@ -36,8 +37,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Then select a network adapter from the dropdown. The server then uses the DNS servers configured on that network adapter. The default setting is&nbsp;<strong>All Available IPv4</strong>. If you select this setting, the server uses the DNS servers configured on all the adapters on that server.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,8 +55,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">In this case, we will select a specific network ad</span>apter from the list.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -72,7 +73,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-            <li><span dir="LTR">Then select <strong>'Server Configuration'</strong>.</span></li></ul></td>
+            <li>Once a specific network adapter is selected, the IP address of the DNS server that is configured on that network adapter will be displayed here.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -89,8 +91,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'Server Configuration' is selected, select the option <strong>'Properties'</strong> found in the Actions pane located </span>at the far right side of the Exchange Management Console window.</li>
-              </ul></td>
+                  <li>To have the Exchange server select from a list of manually entered DNS servers to query when resolving an internal server, select&nbsp;the option <strong>'Use these DNS servers'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -107,8 +109,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'Server Configuration' is selected, select the option <strong>'Properties'</strong> found in the Actions pane located </span>at the far right side of the Exchange Management Console window.</li>
-              </ul></td>
+                  <li>Then, to add a server to the list, type the IP address of the internal DNS server here.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -125,8 +127,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'Server Configuration' is selected, select the option <strong>'Properties'</strong> found in the Actions pane located </span>at the far right side of the Exchange Management Console window.</li>
-              </ul></td>
+                  <li>In this case we will enter <strong>'192.168.1.2'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -143,8 +145,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'Server Configuration' is selected, select the option <strong>'Properties'</strong> found in the Actions pane located </span>at the far right side of the Exchange Management Console window.</li>
-              </ul></td>
+                  <li>Once the IP address of the internal DNS server has been entered, click&nbsp;<strong>'Add'</strong>.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -161,8 +163,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'Server Configuration' is selected, select the option <strong>'Properties'</strong> found in the Actions pane located </span>at the far right side of the Exchange Management Console window.</li>
-              </ul></td>
+                  <li>After clicking <strong>'Add'</strong>, the IP address of the internal DNS server will be displayed here.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">

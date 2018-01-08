@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn about the UM Settings tab, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use the&nbsp;<strong>UM Server Configuration</strong>&nbsp;tab to view and configure settings for the Unified Messaging (UM) server. For example, you can add or remove the UM dial plans that are associated with the UM server or view the languages that are supported by the UM server. After the Unified Messaging server role has been installed on a computer that is running Microsoft&nbsp;Exchange Server 2007, you can change UM server-specific settings. The settings that you modify apply only to the local UM server. When you modify the settings found on the UM server, those modifications are applied immediately after you click&nbsp;<strong>Accept</strong>. To learn about the UM Settings tab, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -18,8 +18,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
-        </ul>                  <br></td>
+                  <li>Use this text box to view the UM dial plans that are associated with the UM server.</li>
+    </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="405" border="0">
@@ -36,8 +36,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>When you install the Unified Messaging server role on a computer that is running Exchange 2007, the server is left in an enabled state. However, for the Unified Messaging server to answer and process incoming calls, you must also associate a UM dial plan with the UM server.  To do this, begin first by clicking <strong>'Add'</strong> to open the <strong>'Select Dial Plan' </strong>dialog box.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,8 +54,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
-                </ul></td>
+                  <li>Then use this dialog box to select a UM dial plan from the list of available UM dial plans. In this case, there is only one UM dial plan to choose, which is already selected by default.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -72,7 +72,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-            <li><span dir="LTR">Then select <strong>'Server Configuration'</strong>.</span></li></ul></td>
+            <li>Click <strong>'OK'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -89,8 +89,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'Server Configuration' is selected, select the option <strong>'Properties'</strong> found in the Actions pane located </span>at the far right side of the Exchange Management Console window.</li>
-              </ul></td>
+                  <li><span dir="LTR">Once the <strong>'OK' </strong> button on the <strong>'Select Dial Plan' </strong>dialog box has been clicked, the UM dial plan that you selected will be displayed here.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -107,8 +107,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'Server Configuration' is selected, select the option <strong>'Properties'</strong> found in the Actions pane located </span>at the far right side of the Exchange Management Console window.</li>
-              </ul></td>
+                  <li>Use this text box to view the languages that are supported by the Unified Messaging server. The languages that are listed in this text box are the languages or language packs that are installed on the UM server.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -125,8 +125,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'Server Configuration' is selected, select the option <strong>'Properties'</strong> found in the Actions pane located </span>at the far right side of the Exchange Management Console window.</li>
-              </ul></td>
+                  <li>You can use this dropdown to specify the startup mode for the Microsoft&nbsp;Exchange Unified Messaging service on a Mailbox server. By default, the Mailbox server will start up in TCP mode, but if you&rsquo;re using Transport Layer Security (TLS) to encrypt Voice over IP (VoIP) traffic, you must configure the Mailbox server to use TLS or Dual mode. We recommend that Mailbox servers be configured to use Dual as the startup mode. This is because all Client Access servers and Mailbox servers can answer incoming calls for all UM dial plans, and those dial plans can have different security settings (Unsecured, SIP secured, or Secured). If you change the startup mode, you must restart the Microsoft&nbsp;Exchange Unified Messaging service for the change to take effect.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -143,8 +143,13 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'Server Configuration' is selected, select the option <strong>'Properties'</strong> found in the Actions pane located </span>at the far right side of the Exchange Management Console window.</li>
-              </ul></td>
+                  <li><span dir="LTR">Once the dropdown is selected, you can choose from the following options:</span></li>
+                  <ul>
+                    <li><span dir="LTR">TCP</span></li>
+                    <li>TLS</li>
+                    <li>Dual</li>
+                  </ul>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -161,8 +166,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'Server Configuration' is selected, select the option <strong>'Properties'</strong> found in the Actions pane located </span>at the far right side of the Exchange Management Console window.</li>
-              </ul></td>
+                  <li>Use this text box to specify the number of concurrent incoming voice call connections that the Unified Messaging server will accept. When you increase the number of concurrent connections on a UM server, more system resources are required than if you decrease the number of concurrent voice call connections. Decreasing this setting is especially important on low-end, slower computers on which Unified Messaging is installed. The range for this setting is 0 to 200. The default setting is 100. There are performance counters that you can use to monitor the current number of voice calls that are connected to a UM server.</li>
+        </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
