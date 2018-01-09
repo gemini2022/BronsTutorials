@@ -18,8 +18,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting <strong>'owa (Default Web Site)'</strong>.</span></li>
-    </ul>                  <br></td>
+                  <li>Select this option to use one or more of the following standard authentication methods.</li>
+  </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="405" border="0">
@@ -36,8 +36,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'owa (Default Web Site)' has been selected, select the option&nbsp;<strong>'Properties'</strong>&nbsp;found in the Actions pane located&nbsp;</span>at the far right side of the Exchange Management Console window.</li>
-    </ul></td>
+                  <li>This method requires that users have a valid Windows Server 2008, Windows Server 2003, or Microsoft&nbsp;Windows 2000 Server user account name and password to access information. Users aren't prompted for their account names and passwords. Instead, the server negotiates with the Windows security packages installed on the client computer. Integrated Windows authentication enables the server to authenticate users without prompting them for information and without transmitting information that isn't encrypted over the network. For this method to work, the client computer must be a member of the same domain as the servers running Exchange, or of a domain that's trusted by the domain that the Exchange server is in.</li>
+  </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,8 +54,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'owa (Default Web Site)' has been selected, select the option&nbsp;<strong>'Properties'</strong>&nbsp;found in the Actions pane located&nbsp;</span>at the far right side of the Exchange Management Console window.</li>
-    </ul></td>
+                  <li>This method transmits passwords over the network as a hash value for additional security. Digest authentication can be used only in Windows Server 2008, Windows Server 2003, and Windows 2000 Server domains for users who have an account that's stored in Active Directory</li>
+  </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -72,8 +72,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'owa (Default Web Site)' has been selected, select the option&nbsp;<strong>'Properties'</strong>&nbsp;found in the Actions pane located&nbsp;</span>at the far right side of the Exchange Management Console window.</li>
-    </ul></td>
+                  <li>This method is a simple authentication mechanism defined by the HTTP specification that encodes a user's sign-in name and password before the user's credentials are sent to the server. To make sure that the password is as secure as possible, you should use Secure Sockets Layer (SSL) encryption between client computers and the server that has the Client Access server role installed.</li>
+  </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,8 +90,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'owa (Default Web Site)' has been selected, select the option&nbsp;<strong>'Properties'</strong>&nbsp;found in the Actions pane located&nbsp;</span>at the far right side of the Exchange Management Console window.</li>
-    </ul></td>
+                  <li>
+                    <p>Forms-based authentication provides enhanced security for Outlook Web App virtual directories located on Client Access servers. Forms-based authentication creates a sign-in page for Outlook Web App. You can configure the type of sign-in prompt used by forms-based authentication. For example, you can configure forms-based authentication to require users to provide their domain and user name information, in the domain\user name format on the Outlook Web App sign-in page.</p>
+</li>
+  </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -108,8 +110,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'owa (Default Web Site)' has been selected, select the option&nbsp;<strong>'Properties'</strong>&nbsp;found in the Actions pane located&nbsp;</span>at the far right side of the Exchange Management Console window.</li>
-    </ul></td>
+                  <li>Requires the user to enter their domain and user name in the format domain\user name. For example, for a user named Kweku in the domain Contoso, the sign-in would be contoso\kweku.</li>
+  </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -126,8 +128,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'owa (Default Web Site)' has been selected, select the option&nbsp;<strong>'Properties'</strong>&nbsp;found in the Actions pane located&nbsp;</span>at the far right side of the Exchange Management Console window.</li>
-    </ul></td>
+                  <li>If the user principal name (UPN) sign-in format is specified, the&nbsp;<strong>User Name</strong>&nbsp;field on the Outlook Web App sign-in page guides users to enter their e-mail address, for example, kweku@contoso.com. If a user's UPN isn't identical to the e-mail address, the user can't access Outlook Web App by using the&nbsp;<strong>PrincipalName</strong>&nbsp;sign-in prompt. It's a best practice to use the&nbsp;<strong>PrincipalName</strong>&nbsp;sign-in prompt only if users' UPNs match their e-mail addresses.</li>
+  </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -144,8 +146,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'owa (Default Web Site)' has been selected, select the option&nbsp;<strong>'Properties'</strong>&nbsp;found in the Actions pane located&nbsp;</span>at the far right side of the Exchange Management Console window.</li>
-    </ul></td>
+                  <li>The user enters their user name only, without the domain name, for example, Kweku. If you use the&nbsp;<strong>UserName</strong>&nbsp;sign-in prompt for forms-based authentication, you must also specify the&nbsp;<strong>DefaultDomain</strong>&nbsp;property. The&nbsp;<strong>DefaultDomain</strong>&nbsp;property determines the default domain to use when a user tries to access Outlook Web App. For example, if the default domain is Contoso, and a domain user named Kweku signs in to Outlook Web App, only Kweku must be entered as the user name. The server will use the default domain Contoso. If the user isn't a member of the Contoso domain, the domain and user name must be entered.</li>
+  </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -162,7 +164,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'owa (Default Web Site)' has been selected, select the option&nbsp;<strong>'Properties'</strong>&nbsp;found in the Actions pane located&nbsp;</span>at the far right side of the Exchange Management Console window.</li>
+                  <li><span dir="LTR">Once this option is selected, we next have to specify the DefaultDomain property. To do this, begin first by clicking <strong>'Browse'</strong> to open the <strong>'Select Domain'</strong> dialog box.</span></li>
     </ul></td>
                 
                 <td align="right">
@@ -180,8 +182,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'owa (Default Web Site)' has been selected, select the option&nbsp;<strong>'Properties'</strong>&nbsp;found in the Actions pane located&nbsp;</span>at the far right side of the Exchange Management Console window.</li>
-    </ul></td>
+                  <li>Then use this dialog box to select a default domain. In this case, there is only one default domain to choose, which is already selected by default.</li>
+</ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -198,8 +200,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'owa (Default Web Site)' has been selected, select the option&nbsp;<strong>'Properties'</strong>&nbsp;found in the Actions pane located&nbsp;</span>at the far right side of the Exchange Management Console window.</li>
-    </ul></td>
+                  <li><span dir="LTR">Click <strong>'OK'</strong>.</span></li></ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
