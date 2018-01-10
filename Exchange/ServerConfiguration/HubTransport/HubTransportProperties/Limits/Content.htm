@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn about the Limits tab, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use the&nbsp;<strong>'Limits'&nbsp;</strong>tab to specify the number of times that the server retries message delivery, to set notification for undelivered messages, and to specify connection restrictions. To learn about the Limits tab, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -18,8 +18,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
-        </ul>                  <br></td>
+                  <li>Select this option to specify the retry interval for subsequent connection attempts to a remote server where earlier connection attempts as specified by the transient failure retry attempts and the transient failure retry interval have failed. The valid input range is 1 minute to 28800 minutes (20 days). We recommend that you don't modify the default value unless Microsoft Customer Service and Support has advised you to do this. The default value is 10&nbsp;minutes.</li>
+      </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="405" border="0">
@@ -36,8 +36,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this option to specify the interval between each connection attempt specified by the&nbsp;<strong>Transient failure retry attempts</strong>&nbsp;option. The valid input range is 1 second to 43200 seconds (12 hours). The default value is 300 seconds (5&nbsp;minutes).</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,8 +54,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this option to specify the maximum number of times that a server immediately retries when it encounters a connection failure with a remote server. The default value is 6. The valid input range is 0 to 15. When this parameter is set to 0, the server doesn't immediately try to reconnect.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -72,8 +72,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this option to specify the expiration time-out for a particular message. If a message remains in the queue for longer than this period of time, the message is returned to the sender as a hard failure. The default value is 2 days. The valid input range is 1 day to 90 days.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,8 +90,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this option to specify how long the server waits before it generates a delivery status notification (DSN) that notifies the sender of a delivery delay. The default value is 4 hours. The valid input range is 1 hour to 720 hours (30 days).</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -108,8 +108,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this option to specify the maximum number of outgoing connections that can be open at a time. If the connection limit is reached, the server doesn't initiate new connections until the number of current connections decreases. The default value is 1000. The valid input range is 1 to 2147483647. To disable this restriction, clear the check box next to&nbsp;<strong>Maximum concurrent outbound connections</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -126,8 +126,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this option to specify the maximum number of concurrent connections to any single domain. The default value is 20. The valid input range is 1 to 2147483647. To disable this restriction, clear the check box next to&nbsp;<strong>Maximum concurrent outbound connections per domain</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

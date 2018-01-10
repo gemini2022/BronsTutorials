@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn about the Authentication tab, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use the&nbsp;<strong>'Authentication'</strong>&nbsp;tab to configure security options for incoming SMTP connections. To learn about the Authentication tab, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -18,8 +18,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
-        </ul>                  <br></td>
+                  <li>Select this option to offer Transport Layer Security (TLS) transmission for all messages received by this connector. When you select this option, the&nbsp;<strong>STARTTLS</strong>&nbsp;keyword is advertised in the EHLO response to connecting SMTP servers, and TLS authentication is accepted.</li>
+      </ul>                  <br></td>
                 
                 <td align="right"><table width="405" border="0">
               <tr>
@@ -35,8 +35,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>To instruct this Receive connector to accept a mutual TLS connection from a remote server, select this check box.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -53,8 +53,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this option to offer Basic authentication for all mail received by this connector. When you select&nbsp;<strong>Basic Authentication</strong>, the&nbsp;<strong>AUTH</strong>&nbsp;keyword is advertised in the EHLO response to connecting SMTP servers, and Basic authentication is accepted. Because the user name and password are sent in plaintext when Basic authentication is used, Basic authentication without encryption isn't recommended.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -71,8 +71,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>When you select this option, the connector starts TLS first, and then after TLS encryption is complete, the connector offers Basic authentication.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -89,8 +89,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this option to authenticate by using an Exchange authentication mechanism, such as TLS direct trust or Kerberos through TLS.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -107,8 +107,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this option to use Integrated Windows authentication, which represents NTLM, Kerberos, and Negotiate authentication mechanisms.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -125,8 +125,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>&nbsp;Use this option if the incoming connections to this Receive connector are secured by external means. For example, use this option if the connection is physically secured over a private network or by using Internet Protocol security (IPsec). When you select this option, you make an assertion of external security that can't be programmatically verified by Exchange. Before you select this authentication method, you must first select the&nbsp;<strong>Exchange servers</strong>&nbsp;permissions group on the&nbsp;<strong>Permission Groups</strong>&nbsp;tab.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">

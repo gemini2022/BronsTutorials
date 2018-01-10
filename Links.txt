@@ -121,9 +121,3 @@ Mail User Properties
 
 Move Request Properties
 	https://technet.microsoft.com/en-us/library/dd876924(v=exchg.141).aspx
-
-
-
-
-
-
