@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn about the Advanced tab, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>Use the&nbsp;<strong>'Advanced'</strong>&nbsp;tab to view or change the advanced distribution group settings, such as the expansion server and delivery report options. To learn how to do this, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -18,8 +18,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin by selecting the option&nbsp;<strong>'New Mailbox'</strong>&nbsp;found in the Actions pane located&nbsp;</span>at the far right side of the Exchange Management Console window.</li>
-    </ul>                  <br></td>
+                  <li>Use this box to view or modify the simple display name for the recipient. The&nbsp;<strong>Display Name</strong>&nbsp;field (located on the&nbsp;<strong>General</strong>&nbsp;tab) can contain Unicode characters. However, third-party applications and older clients may not support Unicode characters. If the system that is displaying the recipient properties doesn't support Unicode characters, you can use the simple display name.</li>
+  </ul>                  <br></td>
                 
                 <td align="right">
                     <table width="405" border="0">
@@ -36,8 +36,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>For each message that is sent to a distribution group, Exchange must access the full membership list to route the message to all recipients. This process is known as&nbsp;<em>distribution group expansion</em>. Select this option to choose a Hub Transport server in your Exchange organization that will be responsible for expanding the membership list for this distribution group. Expansion of very large distribution groups is a resource intensive process. If it occurs on a production server, it may impact mail flow. To avoid any production impact, you may want to specify expansion servers for very large distribution groups.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -54,7 +56,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Once the <strong>'Set expansion server'</strong> option is selected, click the <strong>'Browse'</strong> button to open the <strong>'Select Expansion Server'</strong> dialog box.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -72,8 +74,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Once the <strong>'Select Expansion Server'</strong> dialog box is open, select an expansion server from the list of available expansion servers. In this case, there is only one expansion server to choose, which is already selected by default.</li>
+          </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -90,7 +92,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Click <strong>'OK'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -108,8 +110,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li><span dir="LTR">Once the <strong>'OK' </strong>button is clicked on the <strong>'Select Expansion Server'</strong> dialog box, the expansion server that you selected will be displayed here.</span></li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -126,8 +128,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Select this check box to prevent the recipient from appearing in the global address list (GAL) and other address lists that are defined in your Exchange organization. After you select this check box, users in your Exchange organization can still send messages to the recipient by using the e-mail address.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -144,8 +148,10 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>
+                    <p>Select this check box to allow Out of Office messages from group members to be sent to the message sender. If this check box is selected, users who send messages to the distribution group will receive Out of Office replies from any member that has an Out of Office rule turned on. Clear this check box to prevent Out of Office replies from distribution group members to be sent to the message sender.</p>
+</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -162,8 +168,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select  this option to send non-delivery reports (NDRs) to only the distribution group manager.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -180,8 +186,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Select this option to send NDRs to the message sender.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
@@ -198,8 +204,8 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
-                </ul></td>
+                  <li>Or select this option to prevent the sending of NDRs.</li>
+              </ul></td>
                 
                 <td align="right">
                   <table width="405" border="0">
