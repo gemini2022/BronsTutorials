@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>To learn about Client Access, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>This first step, updating the Active Direcory Schema and preparing the domain, is not a requirement for  the installation of Exchange. This proccess will occur automatically if you install Exchange with an account that has permissions to update the schema and prepare the domain. However, you may have to perform this step if you are installing Exchange in a large organization or it may be a policy that has been put in place to do so. To learn how to update the Active Direcory Schema and prepare the domain, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -36,7 +36,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the 'Exchange Management Console' by selecting the <strong>'Exchange Management Console'</strong> icon.</span></li>
+                  <li><span dir="LTR">Then open the command prompt by clicking on the command prompt icon.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -54,7 +54,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Exchange Management Console' is open, expand the node <strong>'Microsoft Exchange On-Premise'</strong>.</span></li>
+                  <li><span dir="LTR">Once the command prompt is open, the first thing we need to do is change the directory to the folder where the Exchange setup file resides. To do this, begin by typing <strong>'cd'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -72,7 +72,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-              <li><span dir="LTR">Then expand <strong>'Organization Configuration'</strong>.</span></li></ul></td>
+              <li><span dir="LTR">Then type out the path to the </span>setup file. In this case, our setup file is located in the <strong>'Documents'</strong> folder, so the path will be, <strong>'C:\Users\Administrator\Documents'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -89,7 +89,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">After 'Organization Configuration' has been expanded, select the <strong>'Client Access' </strong>node.</span></li></ul></td>
+                  <li><span dir="LTR">Now that  the directory has been changed to the location where the Exchange setup file resides, we can now begin entering the commands that will </span>update the Active Direcory Schema and prepare the domain. First, start by entering <strong>'setup'</strong>.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -106,7 +107,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Client Access' node is selected, you can then view and manage information and data related to Client Access.</span></li></ul></td>
+                  <li>Followed by the parameter <strong>'/PrepareAD'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -123,7 +124,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Client Access' node is selected, you can then view and manage information and data related to Client Access.</span></li></ul></td>
+                  <li>Now, because Exhange has not  been installed on our domain as of yet, no Exchange organization container exists at this time. Therefore, with this next step, we have to specify an organization name. To do this, begin by typing <strong>'/OrganizationName:'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -140,7 +141,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Client Access' node is selected, you can then view and manage information and data related to Client Access.</span></li></ul></td>
+                  <li><span dir="LTR">Then type the name of your organization, which in this case is <strong>'bronstutorials'</strong>. After the organization name has been entered, press <strong>'Enter'</strong>.</span></li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -157,7 +158,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Client Access' node is selected, you can then view and manage information and data related to Client Access.</span></li></ul></td>
+                <li><span dir="LTR">After <strong>'Enter'</strong> is pressed, we then have the option of pressing any key to cancel  setup if we don't accept the licensing terms</span>. But in this case, we will let the setup continue.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -174,7 +175,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Client Access' node is selected, you can then view and manage information and data related to Client Access.</span></li></ul></td>
+                  <li><span dir="LTR">Once the setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -191,7 +192,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Client Access' node is selected, you can then view and manage information and data related to Client Access.</span></li></ul></td>
+                  <li><span dir="LTR">Now, the next </span>part in our configuration is preparing the domain. But first, type <strong>'cls'</strong> and then press <strong>'Enter' </strong>to clear the screen.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -208,7 +209,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Client Access' node is selected, you can then view and manage information and data related to Client Access.</span></li></ul></td>
+                  <li><span dir="LTR">Once the </span>screen is cleared, begin again by typing <strong>'setup'</strong>.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -225,7 +226,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Client Access' node is selected, you can then view and manage information and data related to Client Access.</span></li></ul></td>
+                  <li><span dir="LTR">But this time type <strong>'/PrepareAllDomains'</strong> and then press <strong>'Enter'</strong>.</span></li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -242,7 +243,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Client Access' node is selected, you can then view and manage information and data related to Client Access.</span></li></ul></td>
+                  <li><span dir="LTR">Again, after <strong>'Enter'</strong> is pressed, we  have the option of pressing any key to cancel  setup if we don't accept the licensing terms</span>. But in this case, we will let the setup continue.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -259,7 +261,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the 'Client Access' node is selected, you can then view and manage information and data related to Client Access.</span></li></ul></td>
+                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
+              </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
