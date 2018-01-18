@@ -1,0 +1,153 @@
+<html>
+	<head>
+		<title>Content</title>
+	</head>
+  	<body>
+	
+    <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td width="100%" align="left" valign="top"><p>To learn how to  install the necessary operating system components for Exchange using PowerShell cmdlets, proceed with the following steps...</p></td>
+                
+                
+          </tr>
+        </table>
+        
+        
+    	<hr>
+    
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Begin first by selecting the&nbsp;<strong>'PowerShell'</strong>&nbsp;button at the bottom left corner of your screen.</span></li>
+        </ul>                  <br></td>
+                
+                <td align="right">
+                    <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="220" height="128"></td>
+                        </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+        
+        <hr> 
+   
+		<table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Once PowerShell is open, type the following cmdlet and then press <strong>'Enter'</strong>:</span><br>
+                  </li>
+                </ul>
+                  <TABLE width="337" align="left" id="AutoNumber1" bordercolor="#111111" border="1" cellspacing="0" cellpadding="0">
+                        <TBODY>
+                          <TR>
+                            <TD width="410" align="right"><p align="center">Import-Module ServerManager </p></TD>
+                          </TR>
+                    </TBODY>
+                      </TABLE>
+                      <p>&nbsp;</p>
+              <td align="right">
+                  <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="2.jpg" width="988" height="631"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+		
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then type the following cmdlet to install the necessary operating system components and  press <strong>'Enter'</strong>:</span><br>
+                  </li>
+                </ul>
+                  <TABLE width="337" align="left" id="AutoNumber2" bordercolor="#111111" border="1" cellspacing="0" cellpadding="0">
+                    <TBODY>
+                      <TR>
+                        <TD width="410" align="right"><p align="center">Add-WindowsFeature NET-Framework,RSAT-ADDS,Web-Server,Web-Basic-Auth,Web-Windows-Auth,Web-Metabase,Web-Net-Ext,Web-Lgcy-Mgmt-Console,WAS-Process-Model,RSAT-Web-Server,Web-ISAPI-Ext,Web-Digest-Auth,Web-Dyn-Compression,NET-HTTP-Activation,RPC-Over-HTTP-Proxy,Desktop-Experience -Restart</p></TD>
+                      </TR>
+                    </TBODY>
+                  </TABLE>
+                  <p>
+                  <br>
+                  <p>
+                  <p>
+              <p></td>
+                  
+              <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="3.jpg" width="988" height="631"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr> 
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+            <li><span dir="LTR">Wait while </span>PowerShell  installs the necessary operating system components. When the installation completes, the server will automatically restart.</li></ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="4.jpg" width="988" height="631"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">After the server restarts,  select the&nbsp;<strong>'PowerShell'</strong>&nbsp;button again.</span></li>
+            </ul></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="1.jpg" width="220" height="128"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+      
+      <hr>
+        
+        <table width="100%" border="0">
+            <tr>
+                <td width="100%" align="left" valign="top"><ul>
+                  <li><span dir="LTR">Then type the following cmdlet and  press <strong>'Enter'</strong>:</span><br>
+                  </li>
+                </ul>
+                  <TABLE width="337" align="left" id="AutoNumber3" bordercolor="#111111" border="1" cellspacing="0" cellpadding="0">
+                    <TBODY>
+                      <TR>
+                        <TD width="410" align="right"><p align="center">Set-Service NetTcpPortSharing -StartupType Automatic</p></TD>
+                      </TR>
+                    </TBODY>
+                </TABLE></td>
+                
+                <td align="right">
+              <table width="405" border="0">
+                        <tr>
+                            <td align="center"><img src="5.jpg" width="988" height="631"></td>
+                        </tr>
+                  </table>
+                </td>
+            </tr>
+        </table>
+       
+    </body>
+</html>
