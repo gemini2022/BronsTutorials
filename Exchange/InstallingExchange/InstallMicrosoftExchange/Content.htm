@@ -6,7 +6,7 @@
 	
     <table width="100%" border="0" cellpadding="10">
             <tr>
-                <td width="100%" align="left" valign="top"><p>This first step, updating the Active Direcory Schema and preparing the domain, is not a requirement for  the installation of Exchange. This proccess will occur automatically if you install Exchange with an account that has permissions to update the schema and prepare the domain. However, you may have to perform this step if you are installing Exchange in a large organization or it may be a policy that has been put in place to do so. To learn how to update the Active Direcory Schema and prepare the domain, proceed with the following steps...</p></td>
+                <td width="100%" align="left" valign="top"><p>To learn how to install Exchange, proceed with the following steps...</p></td>
                 
                 
           </tr>
@@ -18,7 +18,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Begin first by selecting&nbsp;<strong>'Start'</strong>&nbsp;at the bottom left corner of your screen.</span></li>
+                  <li><span dir="LTR">Begin first by navigating to the directory where your Exchange </span>setup files are located, then double-click on the file labeled <strong>'setup'</strong> to run the Microsoft Exchange 2010 installer.</li>
         </ul>                  <br></td>
                 
                 <td align="right">
@@ -36,7 +36,7 @@
 		<table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then open the command prompt by clicking on the command prompt icon.</span></li>
+                  <li><span dir="LTR">Once the Microsoft Exchange 2010 installer is</span> open, we need to first install some pre-installation components. The first two will already be installed.</li>
                 </ul></td>
                 
                 <td align="right">
@@ -54,7 +54,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the command prompt is open, the first thing we need to do is change the directory to the folder where the Exchange setup file resides. To do this, begin by typing <strong>'cd'</strong>.</span></li>
+                  <li><span dir="LTR">So we will begin by selecting the third step <strong>'Choose Exchange language option'</strong>.</span></li>
                 </ul></td>
                 
                 <td align="right">
@@ -72,7 +72,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-              <li><span dir="LTR">Then type out the path to the </span>setup file. In this case, our setup file is located in the <strong>'Documents'</strong> folder, so the path will be, <strong>'C:\Users\Administrator\Documents'</strong>.</li></ul></td>
+            <li><span dir="LTR">Once the step <strong>'Choose Exchange language option'</strong></span> is selected, when then need to decide if we want to install all languages from the language bundle or install only languages from the DVD. </li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -89,7 +89,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Now that  the directory has been changed to the location where the Exchange setup file resides, we can now begin entering the commands that will </span>update the Active Direcory Schema and prepare the domain. First, start by entering <strong>'setup'</strong>.</li>
+                  <li><span dir="LTR">In this case, we will select the option <strong>'Install only languages from the DVD'</strong>.</span></li>
               </ul></td>
                 
                 <td align="right">
@@ -107,7 +107,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Followed by the parameter <strong>'/PrepareAD'</strong>.</li></ul></td>
+                  <li>Now we are ready to install Exchange. To do this, click on the fourth step <strong>'Install Microsoft Exchange'</strong> to open the <strong>'Exchange Server 2010 Setup'</strong> wizard.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -124,7 +124,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li>Now, because Exhange has not  been installed on our domain as of yet, no Exchange organization container exists at this time. Therefore, with this next step, we have to specify an organization name. To do this, begin by typing <strong>'/OrganizationName:'</strong>.</li></ul></td>
+                  <li>The first screen of the wizard is the introduction page, click <strong>'Next &gt;'</strong> to begin.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -141,7 +141,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Then type the name of your organization, which in this case is <strong>'bronstutorials'</strong>. After the organization name has been entered, press <strong>'Enter'</strong>.</span></li></ul></td>
+                  <li><span dir="LTR">Before Microsoft Exchange Server can be installed, we must first accept the terms in the license agreement. The license agreement will be displayed here. You may read it if you wish.</span></li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -158,7 +158,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                <li><span dir="LTR">After <strong>'Enter'</strong> is pressed, we then have the option of pressing any key to cancel  setup if we don't accept the licensing terms</span>. But in this case, we will let the setup continue.</li></ul></td>
+              <li><span dir="LTR">If you agree to the terms, then&nbsp;select the option <strong>'I Accept the terms in the license agreement'</strong>.</span></li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -175,7 +175,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li></ul></td>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -192,7 +192,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Now, the next </span>part in our configuration is preparing the domain. But first, type <strong>'cls'</strong> and then press <strong>'Enter' </strong>to clear the screen.</li></ul></td>
+                  <li><span dir="LTR">On this screen, you have the option of enabling the Exchange Error Reporting feature. If this option is enabled and an error occurs, then Microsoft Exchange will automatically send an error report to </span>Microsoft. In this case, we will not enable this feature and move on.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -209,7 +209,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Once the </span>screen is cleared, begin again by typing <strong>'setup'</strong>.</li></ul></td>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -226,7 +226,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">But this time type <strong>'/PrepareAllDomains'</strong> and then press <strong>'Enter'</strong>.</span></li></ul></td>
+                  <li><span dir="LTR">On this next screen, you have the option of choosing between two installation types.</span> The first installation type is <strong>'Typical Exchange Server Installation'</strong>. This option will install the basic components needed to send and receive mail.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -243,8 +243,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">Again, after <strong>'Enter'</strong> is pressed, we  have the option of pressing any key to cancel  setup if we don't accept the licensing terms</span>. But in this case, we will let the setup continue.</li>
-              </ul></td>
+                  <li><span dir="LTR">The second option is <strong>'Custom Exchange Server Installation'</strong>. With this option, you can customize the installation by choosing the roles you want to install.</span></li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -261,7 +260,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
+                  <li><span dir="LTR">In this case, we will select the option <strong>'Custom Exchange Server Installation'</strong>.</span></li>
               </ul></td>
                 
                 <td align="right">
@@ -279,7 +278,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
+                  <li><span dir="LTR">We can then specify where we want the Exchange Server program files to be </span>installed. In this case, we will leave the default path and move on.</li>
               </ul></td>
                 
                 <td align="right">
@@ -297,7 +296,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
               </ul></td>
                 
                 <td align="right">
@@ -314,8 +313,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
-              </ul></td>
+                  <li>Since we selected the option <strong>'Custom Exchange Server Installation'</strong>, we can now select the roles we want to install. In this case, we will select these four roles.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -332,8 +331,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
-              </ul></td>
+                  <li><span dir="LTR">The <strong>'Edge Transport Role'</strong>, can only be installed by itself. The edge transport server role is deployed in an Exchange organization's perimeter network. Message protection and security are handled by various&nbsp;agents&nbsp;that run on the edge transport server and act on email messages as they are processed.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -350,8 +349,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
-              </ul></td>
+                  <li><span dir="LTR">Once any of the Exchange server roles get selected, the option to install Management Tools will </span>automatically get selected as well.</li></ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -368,8 +366,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
-              </ul></td>
+                  <li><span dir="LTR">Again, we can then specify where we want the Exchange Server program files to be </span>installed. In this case, we will leave the default path and move on.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -386,7 +384,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
+                  <li>Click <strong>'Next &gt;'</strong>.</li>
               </ul></td>
                 
                 <td align="right">
@@ -404,8 +402,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
-              </ul></td>
+                  <li>If you have client computers running Office&nbsp;Outlook 2003 or earlier and you select&nbsp;<strong>'Yes'</strong>, Exchange 2010 will create a public folder database on the Mailbox server. If all your client computers are running Outlook 2010, public folders are optional in Exchange 2010. If you select&nbsp;<strong>'No'</strong>, Exchange 2010 won't create a public folder database on the Mailbox server. You can add a public folder database later. For example, if you add client computers running Outlook 2003 and you need a public folder database, you can create one on the Exchange 2010 Mailbox server. You must then configure the OAB for public folder distribution, and then restart the Microsoft Exchange Information Store service before client computers running Outlook 2003 and earlier will be able to connect to the server. In this case, we do not have client computers running Office&nbsp;Outlook 2003 or earlier, so we leave the option of <strong>'No' </strong>selected and move on.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -422,7 +420,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
               </ul></td>
                 
                 <td align="right">
@@ -440,8 +438,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
-              </ul></td>
+                  <li>If the Client Access server will be Internet-facing, you can configure a domain name that your Client Access server will use. To do this, begin by selecting the option <strong>'The Client Access server role will be Internet-facing'</strong>.</li>
+          </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -458,7 +456,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
+                  <li><span dir="LTR">Then enter the domain name here.</span></li>
               </ul></td>
                 
                 <td align="right">
@@ -476,7 +474,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
+                  <li><span dir="LTR">In this case, we will enter <strong>'mail.bronstutorials.com'</strong>.</span></li>
               </ul></td>
                 
                 <td align="right">
@@ -494,7 +492,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
               </ul></td>
                 
                 <td align="right">
@@ -512,8 +510,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
-              </ul></td>
+                  <li><span dir="LTR">On this screen, you have the option of participating in the <strong>'Customer Experience Improvement Program'</strong>. The Customer Experience Improvement Program (CEIP) collects information about how you use Microsoft Exchange in you organization. The information that is collected helps Microsoft identify which Microsoft Exchange features to improve. Here you have the option of either joining the Exchange </span>Customer Experience Improvement Program or not joining at this time.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -530,7 +528,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
+                  <li><span dir="LTR">In this case, we will choose the option <strong>'I don't wish to join the program at this time'</strong>.</span></li>
               </ul></td>
                 
                 <td align="right">
@@ -548,7 +546,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
+                  <li><span dir="LTR">Click <strong>'Next &gt;'</strong>.</span></li>
               </ul></td>
                 
                 <td align="right">
@@ -566,8 +564,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
-              </ul></td>
+                  <li>On this screen, view the status to determine if the organization and server role prerequisite checks completed successfully. If they haven't completed successfully, you must resolve any reported errors before you can install Exchange 2010. You don't need to exit Setup when resolving some of the prerequisite errors. After resolving a reported error, click&nbsp;<strong>Retry</strong>&nbsp;to rerun the prerequisite check. Be sure to also review any warnings that are reported.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -584,8 +582,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
-              </ul></td>
+                  <li>If all readiness checks have completed successfully, you will then be able to install Exchange 2010.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -602,7 +600,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
+                  <li><span dir="LTR">Click <strong>'Install'</strong>.</span></li>
               </ul></td>
                 
                 <td align="right">
@@ -620,7 +618,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
+                  <li><span dir="LTR">Wait while the Exchange 2010 installation takes place.</span></li>
               </ul></td>
                 
                 <td align="right">
@@ -638,8 +636,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
-              </ul></td>
+                  <li><span dir="LTR">Once the Exchange 2010 installation is complete, scroll down to the bottom of the list to verify that all installation components have installed successfully.</span></li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -655,8 +653,8 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
-              </ul></td>
+                  <li>If you keep the option <strong>'Finalize this installation using the Exchange Management Console' </strong>enabled,  the EMC will automatically open and connect to the nearest server in your Exchange organization.</li>
+            </ul></td>
                 
                 <td align="right">
               <table width="405" border="0">
@@ -673,7 +671,7 @@
         <table width="100%" border="0">
             <tr>
                 <td width="100%" align="left" valign="top"><ul>
-                  <li><span dir="LTR">And then finally, once this setup is done and if it completed successfully, a message will be displayed</span> informing you that it completed successfully.</li>
+                  <li><span dir="LTR">Click <strong>'Finish'</strong>.</span></li>
               </ul></td>
                 
                 <td align="right">
